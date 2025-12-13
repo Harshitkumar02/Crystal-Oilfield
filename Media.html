@@ -1,0 +1,1337 @@
+<html>
+
+  <head>
+    <link rel="icon" type="image/svg+xml" href="CO_Logo.svg">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media & Gallery | Crystal Oilfield Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      window.FontAwesomeConfig = {
+        autoReplaceSvg: 'nest'
+      };
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet">
+    <style>
+      ::-webkit-scrollbar
+      {
+        width: 12px;
+      }
+
+      ::-webkit-scrollbar-track
+      {
+        background: #f1f1f1;
+      }
+
+      ::-webkit-scrollbar-thumb
+      {
+        background: #f38120;
+        border-radius: 6px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover
+      {
+        background: #d97010;
+      }
+
+      body
+      {
+        font-family: 'Inter', sans-serif;
+      }
+
+      .oil-gradient
+      {
+        background: linear-gradient(135deg, #1a365d 0%, #2c5282 25%, #3182ce 50%, #4299e1 75%, #63b3ed 100%);
+      }
+
+      .industrial-pattern
+      {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .press-card
+      {
+        transition: all 0.3s ease;
+      }
+
+      .press-card:hover
+      {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      .gallery-item
+      {
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .gallery-item:hover
+      {
+        transform: scale(1.05);
+      }
+
+      .lightbox
+      {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+      }
+
+      .lightbox.active
+      {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .lightbox-content
+      {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+      }
+
+      /* Mobile Menu Styles */
+      .mobile-menu
+      {
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+      }
+
+      .mobile-menu.active
+      {
+        transform: translateX(0);
+      }
+
+      @media (max-width: 1023px)
+      {
+        .press-card:hover
+        {
+          transform: none;
+        }
+
+        .gallery-item:hover
+        {
+          transform: none;
+        }
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme:
+        {
+          extend:
+          {
+            colors:
+            {
+              'oil-blue': '#f38120',
+              'oil-dark': '#1e293b',
+              'oil-gray': '#475569',
+              'oil-light': '#e2e8f0',
+              'oil-accent': '#f59e0b'
+            }
+          }
+        }
+      }
+    </script>
+    <style data-grapesjs-styles="true">
+      *
+      {
+        box-sizing: border-box;
+      }
+
+      body
+      {
+        margin: 0;
+      }
+
+      body
+      {
+        font-family: Inter, sans-serif;
+      }
+
+      .industrial-pattern
+      {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .press-card
+      {
+        transition-behavior: normal;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        transition-property: all;
+      }
+
+      .press-card:hover
+      {
+        transform: translateY(-5px);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 40px;
+      }
+
+      .gallery-item
+      {
+        transition-behavior: normal;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        transition-property: all;
+        cursor: pointer;
+      }
+
+      .gallery-item:hover
+      {
+        transform: scale(1.05);
+      }
+
+      .lightbox
+      {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-image: initial;
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: initial;
+        background-repeat: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: rgba(0, 0, 0, 0.95);
+      }
+
+      .lightbox.active
+      {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .lightbox-content
+      {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+      }
+
+      .mobile-menu
+      {
+        transform: translateX(100%);
+        transition-behavior: normal;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        transition-property: transform;
+      }
+
+      .mobile-menu.active
+      {
+        transform: translateX(0px);
+      }
+
+      #ibpgo
+      {
+        padding: 9px;
+        margin: 20px;
+      }
+
+      @media (max-width: 1023px)
+      {
+        .press-card:hover
+        {
+          transform: none;
+        }
+
+        .gallery-item:hover
+        {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header id="header"
+      class="bg-white shadow-lg border-b-4 border-oil-blue relative z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center space-x-3 sm:space-x-4">
+            <div class="flex items-center">
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 bg-oil-blue rounded-lg flex items-center justify-center mr-2 sm:mr-3">
+                <i
+                  class="fa-solid fa-oil-well text-white text-lg sm:text-xl"></i>
+              </div>
+              <div>
+                <h1 class="text-base sm:text-xl font-bold text-oil-dark">Crystal
+                  Oilfield</h1>
+                <p class="text-xs text-oil-gray hidden sm:block">Contracting And
+                  Trading</p>
+              </div>
+            </div>
+          </div><!-- Desktop Navigation -->
+          <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8"><a href="index.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Home</a><a href="About.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">About</a>
+            <div class="relative group"><button
+                class="flex items-center space-x-1 text-oil-gray font-medium hover:text-oil-blue transition-colors"><span>Services</span><i
+                  class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition-transform duration-200"></i></button>
+              <div
+                class="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div class="p-2"><a href="Crystal%20Oilfield%20Services.html"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-oil-well text-oil-blue"></i>
+                    <div><span class="font-medium block">Crystal Oilfield
+                        Contracting</span></div>
+                  </a><a href="Crystal%20Vision%20Services.html"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-industry text-oil-blue"></i>
+                    <div><span class="font-medium block">Crystal Vision Steel
+                        Fabrication</span></div>
+                  </a></div>
+              </div>
+            </div><a href="Portfolio.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Portfolio</a><a href="Media.html"
+              class="text-oil-dark font-semibold hover:text-oil-blue transition-colors border-b-2 border-oil-blue pb-1">Media</a><a href="Career.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Career</a><a href="Contact.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Contact</a>
+          </nav><!-- Desktop Right Side -->
+          <div class="hidden lg:flex items-center space-x-4 xl:space-x-6">
+            <div class="flex items-center space-x-2 bg-gray-100 rounded-lg p-2"
+              id="ibpgo"><button
+                class="px-3 py-1 bg-oil-blue text-white rounded text-sm font-medium">English</button><button
+                class="px-3 py-1 text-oil-gray rounded text-sm font-medium hover:bg-white">العربية</button>
+            </div>
+            <div class="relative group"><button
+                class="flex items-center space-x-2 text-oil-gray font-medium hover:text-oil-blue transition-colors px-4 py-2 rounded-lg hover:bg-gray-50"><i
+                  class="fa-solid fa-building text-sm"></i><span>Our Other
+                  Companies</span><i
+                  class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition-transform duration-200"></i></button>
+              <div
+                class="absolute top-full right-0 mt-2 w-72 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div class="p-2"><a href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-building text-oil-blue"></i><span
+                      class="font-medium">Al Bahr Al Arabi Group</span></a><a
+                    href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-ship text-oil-blue"></i><span
+                      class="font-medium">Al Bahr Arabi Marine
+                      Engineering</span></a><a href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-bolt text-oil-blue"></i><span
+                      class="font-medium">Gulf Tech Energy Contracting
+                      LLC</span></a><a href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-oil-well text-oil-blue"></i><span
+                      class="font-medium">Crystal Petroleum</span></a><a
+                    href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-industry text-oil-blue"></i><span
+                      class="font-medium">Crystal Petrokimya Turkey</span></a><a
+                    href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-heart text-oil-blue"></i><span
+                      class="font-medium">Crystal Care KSA</span></a></div>
+              </div>
+            </div><button type="button" onclick="location.href='Contact.html#main-contact-form'"
+              class="bg-oil-accent text-white px-4 xl:px-6 py-2 xl:py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors flex items-center text-sm xl:text-base"><i
+                class="fa-solid fa-file-invoice mr-2"></i><span
+                class="hidden xl:inline">Request a Quote</span><span
+                class="xl:hidden">Quote</span></button>
+          </div><!-- Mobile Menu Button --><button id="mobile-menu-btn"
+            class="lg:hidden text-oil-gray p-2"><i
+              class="fa-solid fa-bars text-2xl"></i></button>
+        </div>
+      </div><!-- Mobile Menu -->
+      <div id="mobile-menu"
+        class="mobile-menu hidden fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 overflow-y-auto">
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-8">
+            <h3 class="text-xl font-bold text-oil-dark">Menu</h3><button
+              id="mobile-menu-close" class="text-oil-gray"><i
+                class="fa-solid fa-times text-2xl"></i></button>
+          </div>
+            <nav class="space-y-4"><a href="index.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Home</a><a
+              href="About.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">About</a>
+            <!-- Mobile Services Dropdown -->
+            <div><button id="mobile-services-toggle"
+                class="flex items-center justify-between w-full text-oil-gray font-medium hover:text-oil-blue transition-colors py-2"><span>Services</span><i
+                  class="fa-solid fa-chevron-down text-xs"></i></button>
+              <div id="mobile-services-menu" class="hidden ml-4 mt-2 space-y-2">
+                <a href="Crystal%20Oilfield%20Services.html"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2"><i
+                    class="fa-solid fa-oil-well text-oil-blue mr-2"></i>
+                  Crystal Oilfield Contracting
+                </a><a href="Crystal%20Vision%20Services.html"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2"><i
+                    class="fa-solid fa-industry text-oil-blue mr-2"></i>
+                  Crystal Vision Steel Fabrication
+                </a></div>
+            </div><a href="Portfolio.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Portfolio</a><a
+              href="Media.html"
+              class="block text-oil-dark font-semibold hover:text-oil-blue transition-colors py-2 border-l-4 border-oil-blue pl-4">Media</a><a
+              href="Career.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Career</a><a
+              href="Contact.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Contact</a>
+            <!-- Mobile Language Switcher -->
+            <div class="pt-4 border-t border-gray-200">
+              <p class="text-sm text-oil-gray mb-2">Language</p>
+              <div class="flex space-x-2"><button
+                  class="flex-1 px-3 py-2 bg-oil-blue text-white rounded text-sm font-medium">English</button><button
+                  class="flex-1 px-3 py-2 bg-gray-100 text-oil-gray rounded text-sm font-medium">العربية</button>
+              </div>
+            </div><!-- Mobile Other Companies -->
+            <div class="pt-4 border-t border-gray-200"><button
+                id="mobile-companies-toggle"
+                class="flex items-center justify-between w-full text-oil-gray font-medium hover:text-oil-blue transition-colors py-2"><span><i
+                    class="fa-solid fa-building mr-2"></i>Our Other
+                  Companies</span><i
+                  class="fa-solid fa-chevron-down text-xs"></i></button>
+              <div id="mobile-companies-menu"
+                class="hidden ml-4 mt-2 space-y-2"><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Al
+                  Bahr Al Arabi Group</a><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Al
+                  Bahr Arabi Marine Engineering</a><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Gulf
+                  Tech Energy Contracting LLC</a><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  Petroleum</a><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  Petrokimya Turkey</a><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  Care KSA</a></div>
+            </div><!-- Mobile Quote Button --><button type="button"
+              onclick="location.href='Contact.html#main-contact-form'"
+              class="w-full bg-oil-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors mt-6"><i
+                class="fa-solid fa-file-invoice mr-2"></i>
+              Request a Quote
+            </button>
+          </nav>
+          <div class="mt-8 space-y-4">
+            
+          </div>
+        </div>
+      </div>
+    </header><!-- Hero Section -->
+    <section id="media-hero"
+      class="relative h-[400px] sm:h-[500px] lg:h-[600px] overflow-hidden">
+      <div class="absolute inset-0"><img
+          src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d9db1c1f29-4254149dd8a77164c694.png"
+          alt="modern media center with press conference room and digital displays, oil and gas industry, professional photography"
+          class="w-full h-full object-cover">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-oil-dark/90 via-oil-dark/70 to-transparent">
+        </div>
+        <div class="absolute inset-0 industrial-pattern"></div>
+      </div>
+      <div
+        class="relative max-w-7xl mx-auto px-4 sm:px-6 h-full flex items-center">
+        <div class="max-w-4xl">
+          <div class="mb-4 sm:mb-6"><span
+              class="inline-block bg-oil-accent/20 text-oil-accent px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold backdrop-blur-sm"><i
+                class="fa-solid fa-newspaper mr-2"></i>MEDIA CENTER
+            </span></div>
+          <h1
+            class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-4 sm:mb-6 leading-tight">
+            Latest News &amp;
+            <span class="block text-oil-accent">Media Gallery</span>
+          </h1>
+          <p
+            class="text-base sm:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-3xl leading-relaxed">
+            Stay updated with our latest press releases, project milestones, and
+            explore our comprehensive gallery showcasing our engineering
+            excellence across the oil &amp; gas industry.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4"><a href="#press-releases"
+              class="bg-oil-blue text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-yellow-700 transition-all duration-300 flex items-center justify-center group"><i
+                class="fa-solid fa-newspaper mr-3 group-hover:scale-110 transition-transform duration-500"></i>
+              View Press Releases
+            </a><a href="#gallery"
+              class="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-white hover:text-oil-dark transition-all duration-300 flex items-center justify-center"><i
+                class="fa-solid fa-images mr-3"></i>
+              Explore Gallery
+            </a></div>
+        </div>
+      </div>
+    </section><!-- Press Releases Section -->
+    <section id="press-releases"
+      class="py-12 sm:py-16 lg:py-24 bg-white relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50">
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16"><span
+            class="text-oil-blue font-semibold text-base sm:text-lg tracking-wide">NEWS
+            &amp; UPDATES</span>
+          <h2
+            class="text-3xl sm:text-4xl lg:text-5xl font-bold text-oil-dark mt-3 sm:mt-4 mb-4 sm:mb-6">
+            Press <span class="text-oil-blue">Releases</span></h2>
+          <p
+            class="text-base sm:text-lg lg:text-xl text-oil-gray max-w-3xl mx-auto">
+            Latest announcements, project updates, and company milestones from
+            Crystal Oilfield
+          </p>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
+          <!-- Press Release Cards -->
+          <div
+            class="press-card bg-white rounded-xl overflow-hidden shadow-xl border border-gray-200">
+            <div class="h-48 sm:h-56 lg:h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d53f39b0d6-a9bab79f2d71c4aa75ff.png"
+                alt="major oil refinery project completion ceremony with officials and industrial facility in background"
+                class="w-full h-full object-cover"></div>
+            <div class="p-4 sm:p-6 lg:p-8">
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0 mb-4">
+                <span
+                  class="bg-green-100 text-green-600 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold w-fit"><i
+                    class="fa-solid fa-check-circle mr-1"></i>Project Completion
+                </span><span class="text-oil-gray text-xs sm:text-sm">December
+                  15, 2024</span></div>
+              <h3
+                class="text-lg sm:text-xl lg:text-2xl font-bold text-oil-dark mb-3 sm:mb-4">
+                Crystal Oilfield Completes USD 150M Storage Terminal Project
+              </h3>
+              <p
+                class="text-sm sm:text-base text-oil-gray mb-4 sm:mb-6 leading-relaxed">
+                Crystal Oilfield successfully delivered the Green Spring FZC Oil
+                Storage Terminal project ahead of schedule. The state-of-the-art
+                facility features advanced safety systems and environmental
+                controls, setting new standards in the region.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                  <div class="flex items-center text-oil-gray"><i
+                      class="fa-solid fa-map-marker-alt mr-2 text-oil-blue"></i><span
+                      class="text-xs sm:text-sm">Hamriyah FZ, UAE</span></div>
+                  <div class="flex items-center text-oil-gray"><i
+                      class="fa-solid fa-dollar-sign mr-2 text-green-600"></i><span
+                      class="text-xs sm:text-sm font-semibold">USD 150M</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="press-card bg-white rounded-xl overflow-hidden shadow-xl border border-gray-200">
+            <div class="h-48 sm:h-56 lg:h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a25bf2570a-ddab6594a64d1677ea67.png"
+                alt="new EPC project contract signing ceremony with executives and oil industry facility"
+                class="w-full h-full object-cover"></div>
+            <div class="p-4 sm:p-6 lg:p-8">
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0 mb-4">
+                <span
+                  class="bg-blue-100 text-blue-600 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold w-fit"><i
+                    class="fa-solid fa-handshake mr-1"></i>New Contract
+                </span><span class="text-oil-gray text-xs sm:text-sm">November
+                  28, 2024</span></div>
+              <h3
+                class="text-lg sm:text-xl lg:text-2xl font-bold text-oil-dark mb-3 sm:mb-4">
+                USD 1.37 Billion Ghana Project Contract Awarded</h3>
+              <p
+                class="text-sm sm:text-base text-oil-gray mb-4 sm:mb-6 leading-relaxed">
+                VEC awards Crystal Oilfield a major EPC contract for developing
+                a comprehensive oil storage tank farm and ancillary works in
+                Ghana. This landmark project represents our largest
+                international venture to date.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                  <div class="flex items-center text-oil-gray"><i
+                      class="fa-solid fa-map-marker-alt mr-2 text-oil-blue"></i><span
+                      class="text-xs sm:text-sm">Ghana</span></div>
+                  <div class="flex items-center text-oil-gray"><i
+                      class="fa-solid fa-dollar-sign mr-2 text-green-600"></i><span
+                      class="text-xs sm:text-sm font-semibold">USD 1.37B</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="press-card bg-white rounded-xl overflow-hidden shadow-xl border border-gray-200">
+            <div class="h-48 sm:h-56 lg:h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/7c360ae5ca-f6836d80335614324428.png"
+                alt="ISO certification award ceremony with quality management standards and oil industry professionals"
+                class="w-full h-full object-cover"></div>
+            <div class="p-4 sm:p-6 lg:p-8">
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0 mb-4">
+                <span
+                  class="bg-purple-100 text-purple-600 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold w-fit"><i
+                    class="fa-solid fa-award mr-1"></i>Certification
+                </span><span class="text-oil-gray text-xs sm:text-sm">October
+                  12, 2024</span></div>
+              <h3
+                class="text-lg sm:text-xl lg:text-2xl font-bold text-oil-dark mb-3 sm:mb-4">
+                Crystal Oilfield Achieves ISO 45001:2018 Certification</h3>
+              <p
+                class="text-sm sm:text-base text-oil-gray mb-4 sm:mb-6 leading-relaxed">
+                Demonstrating our commitment to occupational health and safety,
+                Crystal Oilfield has successfully obtained ISO 45001:2018
+                certification, complementing our existing ISO 9001 and ISO 14001
+                standards.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                  <div class="flex items-center text-oil-gray"><i
+                      class="fa-solid fa-shield-alt mr-2 text-oil-blue"></i><span
+                      class="text-xs sm:text-sm">Health &amp; Safety</span>
+                  </div>
+                  <div class="flex items-center text-oil-gray"><i
+                      class="fa-solid fa-certificate mr-2 text-purple-600"></i><span
+                      class="text-xs sm:text-sm font-semibold">ISO 45001</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="press-card bg-white rounded-xl overflow-hidden shadow-xl border border-gray-200">
+            <div class="h-48 sm:h-56 lg:h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f3b506b24f-41fe9e9eea861c582e70.png"
+                alt="oil refinery expansion project construction site with cranes and workers in Iraq"
+                class="w-full h-full object-cover"></div>
+            <div class="p-4 sm:p-6 lg:p-8">
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0 mb-4">
+                <span
+                  class="bg-orange-100 text-orange-600 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold w-fit"><i
+                    class="fa-solid fa-cogs mr-1"></i>Project Update
+                </span><span class="text-oil-gray text-xs sm:text-sm">September
+                  5, 2024</span></div>
+              <h3
+                class="text-lg sm:text-xl lg:text-2xl font-bold text-oil-dark mb-3 sm:mb-4">
+                Iraq Refinery Project Reaches 60% Completion Milestone</h3>
+              <p
+                class="text-sm sm:text-base text-oil-gray mb-4 sm:mb-6 leading-relaxed">
+                The USD 120M refinery reinstatement project in Iraq has achieved
+                significant progress with 60% completion. The 25,000 BPD
+                facility with Hydro Skimming Unit is on track for Q2 2025
+                commissioning.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                  <div class="flex items-center text-oil-gray"><i
+                      class="fa-solid fa-map-marker-alt mr-2 text-oil-blue"></i><span
+                      class="text-xs sm:text-sm">Iraq</span></div>
+                  <div class="flex items-center text-oil-gray"><i
+                      class="fa-solid fa-tasks mr-2 text-orange-600"></i><span
+                      class="text-xs sm:text-sm font-semibold">60%
+                      Complete</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="press-card bg-white rounded-xl overflow-hidden shadow-xl border border-gray-200">
+            <div class="h-48 sm:h-56 lg:h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ea418ef709-4c2ab870fcc382aabead.png"
+                alt="corporate partnership announcement with oil industry executives and modern office setting"
+                class="w-full h-full object-cover"></div>
+            <div class="p-4 sm:p-6 lg:p-8">
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0 mb-4">
+                <span
+                  class="bg-indigo-100 text-indigo-600 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold w-fit"><i
+                    class="fa-solid fa-users mr-1"></i>Partnership
+                </span><span class="text-oil-gray text-xs sm:text-sm">August 20,
+                  2024</span></div>
+              <h3
+                class="text-lg sm:text-xl lg:text-2xl font-bold text-oil-dark mb-3 sm:mb-4">
+                Strategic Partnership with Leading European Technology Provider
+              </h3>
+              <p
+                class="text-sm sm:text-base text-oil-gray mb-4 sm:mb-6 leading-relaxed">
+                Crystal Oilfield announces strategic partnership with a leading
+                European engineering firm to bring cutting-edge refinery
+                technologies and sustainable solutions to the Middle East
+                market.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                  <div class="flex items-center text-oil-gray"><i
+                      class="fa-solid fa-globe mr-2 text-oil-blue"></i><span
+                      class="text-xs sm:text-sm">International</span></div>
+                  <div class="flex items-center text-oil-gray"><i
+                      class="fa-solid fa-lightbulb mr-2 text-indigo-600"></i><span
+                      class="text-xs sm:text-sm font-semibold">Innovation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="press-card bg-white rounded-xl overflow-hidden shadow-xl border border-gray-200">
+            <div class="h-48 sm:h-56 lg:h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/93d2e2f6d8-d361639a21aa081c95ed.png"
+                alt="company anniversary celebration with employees and oil industry achievements display"
+                class="w-full h-full object-cover"></div>
+            <div class="p-4 sm:p-6 lg:p-8">
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0 mb-4">
+                <span
+                  class="bg-yellow-100 text-yellow-600 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold w-fit"><i
+                    class="fa-solid fa-birthday-cake mr-1"></i>Milestone
+                </span><span class="text-oil-gray text-xs sm:text-sm">July 1,
+                  2024</span></div>
+              <h3
+                class="text-lg sm:text-xl lg:text-2xl font-bold text-oil-dark mb-3 sm:mb-4">
+                Crystal Oilfield Celebrates 25 Years of Excellence</h3>
+              <p
+                class="text-sm sm:text-base text-oil-gray mb-4 sm:mb-6 leading-relaxed">
+                Marking a quarter-century of engineering excellence, Crystal
+                Oilfield celebrates 25 years of delivering world-class EPC
+                solutions with over USD 2 billion in executed projects across
+                the GCC and beyond.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                  <div class="flex items-center text-oil-gray"><i
+                      class="fa-solid fa-calendar mr-2 text-oil-blue"></i><span
+                      class="text-xs sm:text-sm">25 Years</span></div>
+                  <div class="flex items-center text-oil-gray"><i
+                      class="fa-solid fa-trophy mr-2 text-yellow-600"></i><span
+                      class="text-xs sm:text-sm font-semibold">20+
+                      Projects</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- Gallery Section -->
+    <section id="gallery"
+      class="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-oil-dark to-gray-900 relative overflow-hidden">
+      <div class="absolute inset-0 industrial-pattern opacity-20"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16"><span
+            class="text-oil-accent font-semibold text-base sm:text-lg tracking-wide">VISUAL
+            SHOWCASE</span>
+          <h2
+            class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-3 sm:mt-4 mb-4 sm:mb-6">
+            Project <span class="text-oil-accent">Gallery</span></h2>
+          <p
+            class="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto mb-6 sm:mb-8">
+            Explore our comprehensive gallery showcasing completed projects,
+            ongoing operations, and engineering excellence across the oil &amp;
+            gas industry
+          </p>
+          <div class="flex flex-wrap justify-center gap-2 sm:gap-4"><button
+              class="gallery-filter-btn active bg-oil-accent text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors text-sm sm:text-base"><i
+                class="fa-solid fa-th mr-2"></i>All Projects
+            </button><button
+              class="gallery-filter-btn bg-white/10 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-white/20 transition-colors text-sm sm:text-base"><i
+                class="fa-solid fa-database mr-2"></i>Storage Terminals
+            </button><button
+              class="gallery-filter-btn bg-white/10 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-white/20 transition-colors text-sm sm:text-base"><i
+                class="fa-solid fa-industry mr-2"></i>Refineries
+            </button><button
+              class="gallery-filter-btn bg-white/10 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-white/20 transition-colors text-sm sm:text-base"><i
+                class="fa-solid fa-hard-hat mr-2"></i>Construction
+            </button><button
+              class="gallery-filter-btn bg-white/10 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-white/20 transition-colors text-sm sm:text-base"><i
+                class="fa-solid fa-building mr-2"></i>Facilities
+            </button></div>
+        </div>
+        <div id="gallery-grid"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
+          <!-- Gallery Items -->
+          <div data-category="storage" class="gallery-item">
+            <div
+              class="relative overflow-hidden rounded-xl shadow-xl h-64 sm:h-72 lg:h-80">
+              <img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5c5d938794-3260f701c1b52fd0f226.png"
+                alt="large oil storage tanks aerial view industrial facility sunset"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                  <h4
+                    class="text-white font-bold text-base sm:text-lg lg:text-xl mb-1 sm:mb-2">
+                    Oil Storage Terminal Complex</h4>
+                  <p class="text-gray-300 text-xs sm:text-sm">Hamriyah Free
+                    Zone, UAE</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="refinery" class="gallery-item">
+            <div
+              class="relative overflow-hidden rounded-xl shadow-xl h-64 sm:h-72 lg:h-80">
+              <img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/11fddbc5f5-b6cc1f6ff0f3c59dbd9f.png"
+                alt="modern oil refinery with distillation towers at night illuminated industrial"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                  <h4
+                    class="text-white font-bold text-base sm:text-lg lg:text-xl mb-1 sm:mb-2">
+                    Hydro Skimming Refinery</h4>
+                  <p class="text-gray-300 text-xs sm:text-sm">Yemen - 25,000 BPD
+                    Capacity</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="construction" class="gallery-item">
+            <div
+              class="relative overflow-hidden rounded-xl shadow-xl h-64 sm:h-72 lg:h-80">
+              <img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9237517f70-6e1f2aac63ea4cd02fc6.png"
+                alt="oil storage tank construction site with cranes and workers industrial photography"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                  <h4
+                    class="text-white font-bold text-base sm:text-lg lg:text-xl mb-1 sm:mb-2">
+                    Tank Farm Construction</h4>
+                  <p class="text-gray-300 text-xs sm:text-sm">Ghana - Phase 1
+                    Development</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="facility" class="gallery-item">
+            <div
+              class="relative overflow-hidden rounded-xl shadow-xl h-64 sm:h-72 lg:h-80">
+              <img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9b15e33198-9f45a4e13bc22ee3d92b.png"
+                alt="modern industrial control room with monitors and equipment oil refinery"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                  <h4
+                    class="text-white font-bold text-base sm:text-lg lg:text-xl mb-1 sm:mb-2">
+                    Advanced Control Center</h4>
+                  <p class="text-gray-300 text-xs sm:text-sm">State-of-the-art
+                    Operations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="storage" class="gallery-item">
+            <div
+              class="relative overflow-hidden rounded-xl shadow-xl h-64 sm:h-72 lg:h-80">
+              <img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ae7aebc6b3-6294b2e2d11f4b97556f.png"
+                alt="petroleum storage tanks with pipelines industrial complex aerial view"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                  <h4
+                    class="text-white font-bold text-base sm:text-lg lg:text-xl mb-1 sm:mb-2">
+                    Petroleum Storage Facility</h4>
+                  <p class="text-gray-300 text-xs sm:text-sm">Iraq - EPC Project
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="refinery" class="gallery-item">
+            <div
+              class="relative overflow-hidden rounded-xl shadow-xl h-64 sm:h-72 lg:h-80">
+              <img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/95a0674245-e4ec564265df136a93f3.png"
+                alt="oil refinery distillation unit industrial equipment close up"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                  <h4
+                    class="text-white font-bold text-base sm:text-lg lg:text-xl mb-1 sm:mb-2">
+                    Distillation Plant</h4>
+                  <p class="text-gray-300 text-xs sm:text-sm">Advanced
+                    Processing Unit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="construction" class="gallery-item">
+            <div
+              class="relative overflow-hidden rounded-xl shadow-xl h-64 sm:h-72 lg:h-80">
+              <img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/44d94b0cd4-62e69dc6f20684182485.png"
+                alt="oil pipeline installation construction workers industrial site"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                  <h4
+                    class="text-white font-bold text-base sm:text-lg lg:text-xl mb-1 sm:mb-2">
+                    Pipeline Installation</h4>
+                  <p class="text-gray-300 text-xs sm:text-sm">Infrastructure
+                    Development</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="facility" class="gallery-item">
+            <div
+              class="relative overflow-hidden rounded-xl shadow-xl h-64 sm:h-72 lg:h-80">
+              <img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/eb4bdb8117-572ab205505c7767c245.png"
+                alt="water storage tanks industrial facility construction completed"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                  <h4
+                    class="text-white font-bold text-base sm:text-lg lg:text-xl mb-1 sm:mb-2">
+                    Water Storage Tanks</h4>
+                  <p class="text-gray-300 text-xs sm:text-sm">SIDEM Project -
+                    UAQ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="storage" class="gallery-item">
+            <div
+              class="relative overflow-hidden rounded-xl shadow-xl h-64 sm:h-72 lg:h-80">
+              <img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c378cc28fe-b559124ef1d36ae87fc0.png"
+                alt="oil terminal loading bay with ships industrial port facility"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                  <h4
+                    class="text-white font-bold text-base sm:text-lg lg:text-xl mb-1 sm:mb-2">
+                    Terminal Loading Bay</h4>
+                  <p class="text-gray-300 text-xs sm:text-sm">Marine Operations
+                    Facility</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="refinery" class="gallery-item">
+            <div
+              class="relative overflow-hidden rounded-xl shadow-xl h-64 sm:h-72 lg:h-80">
+              <img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/2eb9238182-a979d907bbe874741a31.png"
+                alt="oil refinery equipment maintenance workers safety gear industrial"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                  <h4
+                    class="text-white font-bold text-base sm:text-lg lg:text-xl mb-1 sm:mb-2">
+                    Refinery Maintenance</h4>
+                  <p class="text-gray-300 text-xs sm:text-sm">Safety &amp;
+                    Quality Standards</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="construction" class="gallery-item">
+            <div
+              class="relative overflow-hidden rounded-xl shadow-xl h-64 sm:h-72 lg:h-80">
+              <img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a5e2adebd1-401e79f5d54f36a48ab7.png"
+                alt="steel fabrication workshop for oil industry large structural components"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                  <h4
+                    class="text-white font-bold text-base sm:text-lg lg:text-xl mb-1 sm:mb-2">
+                    Steel Fabrication Workshop</h4>
+                  <p class="text-gray-300 text-xs sm:text-sm">Crystal Vision
+                    Manufacturing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-category="facility" class="gallery-item">
+            <div
+              class="relative overflow-hidden rounded-xl shadow-xl h-64 sm:h-72 lg:h-80">
+              <img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/03c1d37ffa-d6afca4f63d500e1b35e.png"
+                alt="modern office building oil company headquarters glass facade"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                  <h4
+                    class="text-white font-bold text-base sm:text-lg lg:text-xl mb-1 sm:mb-2">
+                    Corporate Headquarters</h4>
+                  <p class="text-gray-300 text-xs sm:text-sm">Doha, Qatar</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- Lightbox -->
+    <div id="lightbox" class="lightbox"><button
+        class="absolute top-4 sm:top-8 right-4 sm:right-8 text-white text-3xl sm:text-4xl hover:text-oil-accent transition-colors z-10"><i
+          class="fa-solid fa-times"></i></button><button
+        class="absolute left-2 sm:left-8 top-1/2 -translate-y-1/2 text-white text-3xl sm:text-4xl hover:text-oil-accent transition-colors z-10"><i
+          class="fa-solid fa-chevron-left"></i></button><button
+        class="absolute right-2 sm:right-8 top-1/2 -translate-y-1/2 text-white text-3xl sm:text-4xl hover:text-oil-accent transition-colors z-10"><i
+          class="fa-solid fa-chevron-right"></i></button><img id="lightbox-img"
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImZpbGw6IHJnYmEoMCwwLDAsMC4xNSk7IHRyYW5zZm9ybTogc2NhbGUoMC43NSkiPgogICAgICAgIDxwYXRoIGQ9Ik04LjUgMTMuNWwyLjUgMyAzLjUtNC41IDQuNSA2SDVtMTYgMVY1YTIgMiAwIDAgMC0yLTJINWMtMS4xIDAtMiAuOS0yIDJ2MTRjMCAxLjEuOSAyIDIgMmgxNGMxLjEgMCAyLS45IDItMnoiPjwvcGF0aD4KICAgICAgPC9zdmc+"
+        alt="Gallery Image" class="lightbox-content"></div><!-- Footer -->
+    <footer id="footer" class="bg-oil-dark text-white relative overflow-hidden">
+      <div class="absolute inset-0 industrial-pattern opacity-20"></div>
+      <div class="relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+            <div class="lg:col-span-2">
+              <div class="flex items-center mb-6">
+                <div class="mr-3">
+                  <img src="CO_Logo.svg" alt="Crystal Oilfield Logo" class="h-[72px] w-auto">
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold">Crystal Oilfield</h3>
+                  <p class="text-oil-accent">Contracting And Trading</p>
+                </div>
+              </div>
+              <p class="text-gray-300 mb-6 max-w-md">
+                Leading the oil and gas industry with innovative engineering
+                solutions, comprehensive EPC services, and unwavering commitment
+                to safety and quality across the GCC region.
+              </p>
+              <div class="flex space-x-4 mb-6"><span
+                  class="w-10 h-10 bg-oil-blue rounded-lg flex items-center justify-center hover:bg-yellow-700 transition-colors cursor-pointer"><i
+                    class="fa-brands fa-linkedin text-white"></i></span><span
+                  class="w-10 h-10 bg-oil-blue rounded-lg flex items-center justify-center hover:bg-yellow-700 transition-colors cursor-pointer"><i
+                    class="fa-brands fa-twitter text-white"></i></span><span
+                  class="w-10 h-10 bg-oil-blue rounded-lg flex items-center justify-center hover:bg-yellow-700 transition-colors cursor-pointer"><i
+                    class="fa-brands fa-facebook text-white"></i></span><span
+                  class="w-10 h-10 bg-oil-blue rounded-lg flex items-center justify-center hover:bg-yellow-700 transition-colors cursor-pointer"><i
+                    class="fa-brands fa-instagram text-white"></i></span><span
+                  class="w-10 h-10 bg-oil-blue rounded-lg flex items-center justify-center hover:bg-yellow-700 transition-colors cursor-pointer"><i
+                    class="fa-brands fa-youtube text-white"></i></span></div>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-6 text-oil-accent">Contact
+                Information</h4>
+              <div class="space-y-4">
+                <div class="flex items-start space-x-3"><i
+                    class="fa-solid fa-map-marker-alt text-oil-accent mt-1"></i>
+                  <div>
+                    <p class="text-white font-medium">Head Office</p>
+                    <p class="text-gray-300 text-sm">Office No. 3301,3302, Excellence Tower P. O. Box: 80025 |West Bay,<br>Doha, Qatar</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3"><i
+                    class="fa-solid fa-industry text-oil-accent mt-1"></i>
+                  <div>
+                    <p class="text-white font-medium">Fab Shop</p>
+                    <p class="text-gray-300 text-sm">Bldg. No.239, Zone 81, Street No.7, New Industrial Area <br>Doha, Qatar</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3"><i
+                    class="fa-solid fa-phone text-oil-accent mt-1"></i>
+                  <div>
+                    <p class="text-white font-medium">Phone</p>
+                    <p class="text-gray-300 text-sm">+974-40120736</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3"><i
+                    class="fa-solid fa-envelope text-oil-accent mt-1"></i>
+                  <div>
+                    <p class="text-white font-medium">Email</p>
+                    <p class="text-gray-300 text-sm">info@crystaloilfield.qa
+                    </p>
+                    <p class="text-gray-300 text-sm">proposals@crystaloilfield.qa
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-6 text-oil-accent">Quick Links
+              </h4>
+              <div class="space-y-3"><a href="index.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Home</span></a><a
+                  href="About.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>About
+                    Us</span></a>
+                <div class="relative group"><button
+                    class="flex items-center text-gray-300 hover:text-oil-accent transition-colors w-full"><i
+                      class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm"></i><span>Services</span><i
+                      class="fa-solid fa-chevron-down text-xs ml-2"></i></button>
+                  <div class="ml-6 mt-2 space-y-2 hidden group-hover:block"><a
+                      href="Crystal Oilfield Services.html"
+                      class="flex items-center text-gray-400 hover:text-oil-accent transition-colors text-sm"><i
+                        class="fa-solid fa-oil-well text-oil-accent mr-2 text-xs"></i><span>Crystal
+                        Oilfield Contracting</span></a><a href="Crystal Vision Services.html"
+                      class="flex items-center text-gray-400 hover:text-oil-accent transition-colors text-sm"><i
+                        class="fa-solid fa-industry text-oil-accent mr-2 text-xs"></i><span>Crystal
+                        Vision Steel Fabrication</span></a></div>
+                </div><a href="Portfolio.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Portfolio</span></a><a
+                  href="Media.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Media</span></a><a
+                  href="Career.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Career</span></a><a
+                  href="Contact.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Contact</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-white/20 py-6 sm:py-8">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center">
+              <p class="text-gray-300 text-xs sm:text-sm">© 2025 Crystal
+                Oilfield. All
+                rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer><!-- Scroll to Top Button -->
+    <div id="scroll-to-top"
+      class="fixed bottom-6 sm:bottom-8 right-6 sm:right-8 w-10 h-10 sm:w-12 sm:h-12 bg-oil-accent rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:bg-yellow-600 transition-colors z-50 opacity-0 invisible">
+      <i class="fa-solid fa-chevron-up text-white text-sm sm:text-base"></i>
+    </div>
+    <script>
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const closeMenuBtn = document.getElementById('mobile-menu-close');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuBtn.addEventListener('click', () =>
+      {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+
+      closeMenuBtn.addEventListener('click', () =>
+      {
+        mobileMenu.classList.remove('active');
+        mobileMenu.classList.add('hidden');
+        document.body.style.overflow = '';
+      });
+
+      // Close mobile menu when clicking outside
+      mobileMenu.addEventListener('click', (e) =>
+      {
+        if (e.target === mobileMenu)
+        {
+          mobileMenu.classList.remove('active');
+          mobileMenu.classList.add('hidden');
+          document.body.style.overflow = '';
+        }
+      });
+
+      // Mobile Submenu Toggle
+      const mobileServicesToggle = document.getElementById('mobile-services-toggle');
+      const mobileServicesMenu = document.getElementById('mobile-services-menu');
+      const mobileCompaniesToggle = document.getElementById('mobile-companies-toggle');
+      const mobileCompaniesMenu = document.getElementById('mobile-companies-menu');
+
+      const toggleDropdown = (toggleEl, menuEl) =>
+      {
+        if (!toggleEl || !menuEl)
+        {
+          return;
+        }
+
+        toggleEl.addEventListener('click', (e) =>
+        {
+          e.stopPropagation();
+          menuEl.classList.toggle('hidden');
+          const icon = toggleEl.querySelector('i.fa-chevron-down');
+          if (icon)
+          {
+            icon.classList.toggle('rotate-180');
+          }
+        });
+      };
+
+      toggleDropdown(mobileServicesToggle, mobileServicesMenu);
+      toggleDropdown(mobileCompaniesToggle, mobileCompaniesMenu);
+
+      function scrollToSection(sectionId)
+      {
+        document.getElementById(sectionId).scrollIntoView(
+        {
+          behavior: 'smooth'
+        });
+      }
+
+      function filterGallery(category)
+      {
+        const items = document.querySelectorAll('.gallery-item');
+        const buttons = document.querySelectorAll('.gallery-filter-btn');
+
+        buttons.forEach(btn =>
+        {
+          btn.classList.remove('active', 'bg-oil-accent');
+          btn.classList.add('bg-white/10');
+        });
+
+        event.target.classList.add('active', 'bg-oil-accent');
+        event.target.classList.remove('bg-white/10');
+
+        items.forEach(item =>
+        {
+          if (category === 'all' || item.dataset.category === category)
+          {
+            item.style.display = 'block';
+          }
+          else
+          {
+            item.style.display = 'none';
+          }
+        });
+      }
+
+      let currentImageIndex = 0;
+      let galleryImages = [];
+
+      function openLightbox(element)
+      {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const img = element.querySelector('img');
+
+        galleryImages = Array.from(document.querySelectorAll(
+          '.gallery-item img'));
+        currentImageIndex = galleryImages.indexOf(img);
+
+        lightboxImg.src = img.src;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox()
+      {
+        document.getElementById('lightbox').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      function nextImage()
+      {
+        currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+        document.getElementById('lightbox-img').src = galleryImages[
+          currentImageIndex].src;
+      }
+
+      function previousImage()
+      {
+        currentImageIndex = (currentImageIndex - 1 + galleryImages.length) %
+          galleryImages.length;
+        document.getElementById('lightbox-img').src = galleryImages[
+          currentImageIndex].src;
+      }
+
+      // Gallery item click handlers
+      document.querySelectorAll('.gallery-item').forEach(item =>
+      {
+        item.addEventListener('click', function()
+        {
+          openLightbox(this);
+        });
+      });
+
+      // Keyboard navigation for lightbox
+      document.addEventListener('keydown', function(e)
+      {
+        if (document.getElementById('lightbox').classList.contains(
+          'active'))
+        {
+          if (e.key === 'Escape') closeLightbox();
+          if (e.key === 'ArrowRight') nextImage();
+          if (e.key === 'ArrowLeft') previousImage();
+        }
+      });
+
+      // Scroll to top functionality
+      window.addEventListener('scroll', function()
+      {
+        const scrollToTopBtn = document.getElementById('scroll-to-top');
+
+        if (window.pageYOffset > 300)
+        {
+          scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+          scrollToTopBtn.classList.add('opacity-100', 'visible');
+        }
+        else
+        {
+          scrollToTopBtn.classList.add('opacity-0', 'invisible');
+          scrollToTopBtn.classList.remove('opacity-100', 'visible');
+        }
+      });
+
+      document.getElementById('scroll-to-top').addEventListener('click',
+        function()
+        {
+          window.scrollTo(
+          {
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+
+      // Gallery filter button handlers
+      document.querySelectorAll('.gallery-filter-btn').forEach((btn, index) =>
+      {
+        btn.addEventListener('click', function()
+        {
+          const categories = ['all', 'storage', 'refinery',
+            'construction', 'facility'
+          ];
+          filterGallery(categories[index]);
+        });
+      });
+    </script>
+  </body>
+
+</html>
+
+</html>

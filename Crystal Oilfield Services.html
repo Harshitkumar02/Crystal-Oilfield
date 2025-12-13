@@ -1,0 +1,1595 @@
+<html lang="en">
+
+  <head>
+    <link rel="icon" type="image/svg+xml" href="CO_Logo.svg">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oilfield Services | Crystal Oilfield Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      window.FontAwesomeConfig = {
+        autoReplaceSvg: 'nest'
+      };
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet">
+    <style>
+      ::-webkit-scrollbar
+      {
+        width: 12px;
+      }
+
+      ::-webkit-scrollbar-track
+      {
+        background: #f1f1f1;
+      }
+
+      ::-webkit-scrollbar-thumb
+      {
+        background: #f38120;
+        border-radius: 6px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover
+      {
+        background: #d97010;
+      }
+
+      body
+      {
+        font-family: 'Inter', sans-serif;
+      }
+
+      .oil-gradient
+      {
+        background: linear-gradient(135deg, #1a365d 0%, #2c5282 25%, #3182ce 50%, #4299e1 75%, #63b3ed 100%);
+      }
+
+      .industrial-pattern
+      {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .service-card
+      {
+        transition: all 0.3s ease;
+      }
+
+      .service-card:hover
+      {
+        transform: translateY(-5px);
+      }
+
+      .service-content
+      {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+      }
+
+      .service-content.expanded
+      {
+        max-height: 2000px;
+      }
+
+      @keyframes pulse-icon
+      {
+
+          <p
+            class="text-base sm:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-3xl leading-relaxed">
+            Engineering, Procurement &amp; Construction (EPC) excellence across
+            oil and gas, petrochemical, and infrastructure projects with a focus
+            on safety, quality, and reliability.
+          </p><button type="button"
+            onclick="location.href='#services-grid-section'"
+            class="bg-oil-accent text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-yellow-600 transition-colors inline-flex items-center"><i
+        {
+          transform: scale(1.1);
+        }
+      }
+
+      .animated-icon
+      {
+        animation: pulse-icon 2s ease-in-out infinite;
+      }
+
+      .image-overlay-icon
+      {
+        background: rgba(243, 129, 32, 0.9);
+        backdrop-filter: blur(8px);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme:
+        {
+          extend:
+          {
+            colors:
+            {
+              'oil-blue': '#f38120',
+              'oil-dark': '#1e293b',
+              'oil-gray': '#475569',
+              'oil-light': '#e2e8f0',
+              'oil-accent': '#f59e0b'
+            }
+          }
+        }
+      }
+    </script>
+    <style data-grapesjs-styles="true">
+      *
+      {
+        box-sizing: border-box;
+      }
+
+      body
+      {
+        margin: 0;
+      }
+
+      body
+      {
+        font-family: Inter, sans-serif;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+      }
+
+      .industrial-pattern
+      {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .service-card
+      {
+        transition-behavior: normal;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        transition-property: all;
+      }
+
+      .service-card:hover
+      {
+        transform: translateY(-5px);
+      }
+
+      .service-content
+      {
+        max-height: 0px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        transition-behavior: normal;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        transition-property: max-height;
+      }
+
+      .service-content.expanded
+      {
+        max-height: 2000px;
+      }
+
+      .animated-icon
+      {
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        animation-name: pulse-icon;
+        animation-timeline: auto;
+        animation-range-start: normal;
+        animation-range-end: normal;
+      }
+
+      .image-overlay-icon
+      {
+        background-image: initial;
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: initial;
+        background-repeat: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: rgba(243, 129, 32, 0.9);
+        backdrop-filter: blur(8px);
+      }
+
+      *
+      {
+        box-sizing: border-box;
+      }
+
+      #irhio
+      {
+        padding-top: 9px;
+        padding-right: 9px;
+        padding-bottom: 9px;
+        padding-left: 9px;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+      }
+
+      @keyframes pulse-icon
+      {
+
+        0%,
+        100%
+        {
+          transform: scale(1);
+        }
+
+        50%
+        {
+          transform: scale(1.1);
+        }
+      }
+    </style>
+    <style>
+      /* Add responsive styles */
+      @media (max-width: 1024px) {
+        .service-card {
+          margin-bottom: 1rem;
+        }
+        
+        #services-hero-section h1 {
+          font-size: 3rem;
+        }
+        
+        #services-hero-section p {
+          font-size: 1.125rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        #services-hero-section {
+          height: 500px;
+        }
+        
+        #services-hero-section h1 {
+          font-size: 2.5rem;
+        }
+        
+        #services-hero-section p {
+          font-size: 1rem;
+        }
+        
+        #services-hero-section button {
+          font-size: 1rem;
+          padding: 0.75rem 1.5rem;
+        }
+        
+        #services-grid-section h2 {
+          font-size: 2.5rem;
+        }
+        
+        #services-grid-section p {
+          font-size: 1rem;
+        }
+        
+        .service-card h3 {
+          font-size: 1.5rem;
+        }
+        
+        #cta-banner-section h2 {
+          font-size: 2.5rem;
+        }
+        
+        #cta-banner-section p {
+          font-size: 1rem;
+        }
+        
+        #cta-banner-section button {
+          font-size: 1rem;
+          padding: 0.875rem 1.75rem;
+        }
+      }
+
+      @media (max-width: 640px) {
+        #services-hero-section {
+          height: 450px;
+        }
+        
+        #services-hero-section h1 {
+          font-size: 2rem;
+          line-height: 1.2;
+        }
+        
+        #services-hero-section .mb-6 span {
+          font-size: 0.75rem;
+          padding: 0.5rem 0.75rem;
+        }
+        
+        #services-grid-section {
+          padding: 3rem 0;
+        }
+        
+        #services-grid-section h2 {
+          font-size: 2rem;
+        }
+        
+        #services-grid-section .text-center p {
+          font-size: 0.875rem;
+        }
+        
+        .service-card {
+          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .service-card h3 {
+          font-size: 1.25rem;
+        }
+        
+        .service-card p {
+          font-size: 0.875rem;
+        }
+        
+        #cta-banner-section {
+          padding: 3rem 0;
+        }
+        
+        #cta-banner-section h2 {
+          font-size: 1.875rem;
+        }
+        
+        #cta-banner-section p {
+          font-size: 0.875rem;
+        }
+        
+        #cta-banner-section .grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
+        }
+        
+        #cta-banner-section button {
+          width: 100%;
+          justify-content: center;
+        }
+        
+        #footer .grid {
+          gap: 2rem;
+        }
+        
+        #footer h3 {
+          font-size: 1.25rem;
+        }
+        
+        #footer h4 {
+          font-size: 1.125rem;
+        }
+        
+        .image-overlay-icon {
+          width: 3rem;
+          height: 3rem;
+        }
+        
+        .image-overlay-icon i {
+          font-size: 1.25rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        #services-hero-section {
+          height: 400px;
+        }
+        
+        #services-hero-section h1 {
+          font-size: 1.75rem;
+        }
+        
+        #services-hero-section button {
+          font-size: 0.875rem;
+          padding: 0.625rem 1.25rem;
+        }
+        
+        #services-grid-section h2 {
+          font-size: 1.75rem;
+        }
+        
+        .service-card .relative.h-64 {
+          height: 12rem;
+        }
+        
+        #cta-banner-section h2 {
+          font-size: 1.5rem;
+        }
+        
+        #cta-banner-section .text-4xl {
+          font-size: 2rem;
+        }
+      }
+
+      /* Mobile Menu Styles */
+      #mobile-menu {
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      #mobile-menu.active {
+        transform: translateX(0);
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Header Section - Responsive -->
+    <header id="header"
+      class="bg-white shadow-lg border-b-4 border-oil-blue relative z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo Section -->
+          <div class="flex items-center space-x-3 sm:space-x-4">
+            <div class="flex items-center">
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 bg-oil-blue rounded-lg flex items-center justify-center mr-2 sm:mr-3">
+                <i
+                  class="fa-solid fa-oil-well text-white text-lg sm:text-xl"></i>
+              </div>
+              <div>
+                <h1 class="text-base sm:text-xl font-bold text-oil-dark">Crystal
+                  Oilfield</h1>
+                <p class="text-xs text-oil-gray hidden sm:block">Contracting And
+                  Trading</p>
+              </div>
+            </div>
+          </div><!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8"><a
+              href="index.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Home</a><a
+              href="About.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">About</a>
+            <!-- Services Dropdown -->
+            <div class="relative group"><button
+                class="flex items-center space-x-1 text-oil-dark font-semibold hover:text-oil-blue transition-colors border-b-2 border-oil-blue pb-1"><span>Services</span><i
+                  class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition-transform duration-200"></i></button>
+              <div
+                class="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div class="p-2"><a href="Crystal%20Oilfield%20Services.html"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-oil-well text-oil-blue"></i><span
+                      class="font-medium">Crystal Oilfield Contracting and
+                      Trading</span></a><a href="Crystal%20Vision%20Services.html"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-industry text-oil-blue"></i><span
+                      class="font-medium">Crystal Vision Steel
+                      Fabrication</span></a></div>
+              </div>
+            </div><a href="Portfolio.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Portfolio</a><a
+              href="Media.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Media</a><a
+              href="Career.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Career</a><a
+              href="Contact.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Contact</a>
+          </nav><!-- Desktop Right Side -->
+          <div class="hidden lg:flex items-center space-x-4 xl:space-x-6">
+            <div class="flex items-center space-x-2 bg-gray-100 rounded-lg p-2"
+              id="irhio"><button
+                class="px-3 py-1 bg-oil-blue text-white rounded text-sm font-medium">English</button><button
+                class="px-3 py-1 text-oil-gray rounded text-sm font-medium hover:bg-white">العربية</button>
+            </div>
+            <div class="relative group"><button
+                class="flex items-center space-x-2 text-oil-gray font-medium hover:text-oil-blue transition-colors px-4 py-2 rounded-lg hover:bg-gray-50"><i
+                  class="fa-solid fa-building text-sm"></i><span>Our Other
+                  Companies</span><i
+                  class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition-transform duration-200"></i></button>
+              <div
+                class="absolute top-full right-0 mt-2 w-72 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div class="p-2"><a href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-building text-oil-blue"></i><span
+                      class="font-medium">Al Bahr Al Arabi Group</span></a><a
+                    href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-ship text-oil-blue"></i><span
+                      class="font-medium">Al Bahr Arabi Marine
+                      Engineering</span></a><a href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-bolt text-oil-blue"></i><span
+                      class="font-medium">Gulf Tech Energy Contracting
+                      LLC</span></a><a href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-oil-well text-oil-blue"></i><span
+                      class="font-medium">Crystal Petroleum</span></a><a
+                    href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-industry text-oil-blue"></i><span
+                      class="font-medium">Crystal Petrokimya Turkey</span></a><a
+                    href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-heart text-oil-blue"></i><span
+                      class="font-medium">Crystal Care KSA</span></a></div>
+              </div>
+            </div><button type="button"
+              onclick="location.href='Contact.html#main-contact-form'"
+              class="bg-oil-accent text-white px-4 xl:px-6 py-2 xl:py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors flex items-center text-sm xl:text-base"><i
+                class="fa-solid fa-file-invoice mr-2"></i><span
+                class="hidden xl:inline">Request a Quote</span><span
+                class="xl:hidden">Quote</span></button>
+          </div><!-- Mobile Menu Button --><button id="mobile-menu-btn"
+            class="lg:hidden text-oil-gray p-2"><i
+              class="fa-solid fa-bars text-2xl"></i></button>
+        </div>
+      </div><!-- Mobile Menu -->
+      <div id="mobile-menu"
+        class="mobile-menu hidden fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 overflow-y-auto">
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-8">
+            <h3 class="text-xl font-bold text-oil-dark">Menu</h3><button
+              id="mobile-menu-close" class="text-oil-gray"><i
+                class="fa-solid fa-times text-2xl"></i></button>
+          </div><!-- Mobile Navigation Links -->
+            <nav class="space-y-4"><a href="index.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Home</a><a
+              href="About.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">About</a>
+            <!-- Mobile Services Dropdown -->
+            <div><button id="mobile-services-toggle"
+                class="flex items-center justify-between w-full text-oil-dark font-semibold hover:text-oil-blue transition-colors py-2 border-l-4 border-oil-blue pl-4"><span>Services</span><i
+                  class="fa-solid fa-chevron-down text-xs"></i></button>
+              <div id="mobile-services-menu" class="hidden ml-4 mt-2 space-y-2">
+                <a href="Crystal%20Oilfield%20Services.html"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2"><i
+                    class="fa-solid fa-oil-well text-oil-blue mr-2"></i>
+                  Crystal Oilfield Contracting
+                </a><a href="Crystal%20Vision%20Services.html"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2"><i
+                    class="fa-solid fa-industry text-oil-blue mr-2"></i>
+                  Crystal Vision Steel Fabrication
+                </a></div>
+            </div><a href="Portfolio.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Portfolio</a><a
+              href="Media.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Media</a><a
+              href="Career.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Career</a><a
+              href="Contact.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Contact</a>
+            <!-- Mobile Language Switcher -->
+            <div class="pt-4 border-t border-gray-200">
+              <p class="text-sm text-oil-gray mb-2">Language</p>
+              <div class="flex space-x-2"><button
+                  class="flex-1 px-3 py-2 bg-oil-blue text-white rounded text-sm font-medium">English</button><button
+                  class="flex-1 px-3 py-2 bg-gray-100 text-oil-gray rounded text-sm font-medium">العربية</button>
+              </div>
+            </div><!-- Mobile Other Companies -->
+            <div class="pt-4 border-t border-gray-200"><button
+                id="mobile-companies-toggle"
+                class="flex items-center justify-between w-full text-oil-gray font-medium hover:text-oil-blue transition-colors py-2"><span><i
+                    class="fa-solid fa-building mr-2"></i>Our Other
+                  Companies</span><i
+                  class="fa-solid fa-chevron-down text-xs"></i></button>
+              <div id="mobile-companies-menu"
+                class="hidden ml-4 mt-2 space-y-2"><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Al
+                  Bahr Al Arabi Group</a><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Al
+                  Bahr Arabi Marine Engineering</a><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Gulf
+                  Tech Energy Contracting LLC</a><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  Petroleum</a><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  Petrokimya Turkey</a><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  Care KSA</a></div>
+            </div><!-- Mobile Quote Button --><button type="button"
+              onclick="location.href='Contact.html#main-contact-form'"
+              class="w-full bg-oil-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors mt-6"><i
+                class="fa-solid fa-file-invoice mr-2"></i>
+              Request a Quote
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="services-hero-section" class="relative h-[400px] sm:h-[500px] lg:h-[600px] overflow-hidden">
+      <div class="absolute inset-0"><img
+          src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f2432c937e-8600397fc1826cdf91eb.png"
+          alt="modern oil refinery facility with storage tanks and industrial pipelines at sunset"
+          class="w-full h-full object-cover">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-oil-dark/90 via-oil-dark/70 to-oil-dark/50">
+        </div>
+        <div class="absolute inset-0 industrial-pattern opacity-30"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 h-full flex items-center">
+        <div class="max-w-4xl">
+          <div class="mb-4 sm:mb-6">
+            <span class="inline-block bg-oil-accent/20 text-oil-accent px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold backdrop-blur-sm">
+              <i class="fa-solid fa-oil-well mr-2"></i>CRYSTAL OILFIELD CONTRACTING & TRADING
+            </span>
+          </div>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-4 sm:mb-6 leading-tight">
+            Complete EPC
+            <span class="block text-oil-accent">Solutions</span>
+          </h1>
+          <p class="text-base sm:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-3xl leading-relaxed">
+            Delivering comprehensive oil & gas construction, civil
+            engineering, tank farm development, and specialized industrial
+            services across Qatar & GCC region.
+          </p><button type="button"
+            onclick="location.href='#services-grid-section'"
+            class="bg-oil-accent text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-yellow-600 transition-colors inline-flex items-center">
+            <i class="fa-solid fa-arrow-down mr-2 sm:mr-3"></i>Explore Our Services
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="services-grid-section" class="py-12 sm:py-16 lg:py-24 bg-white relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-blue-50">
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16">
+          <span class="text-oil-blue font-semibold text-base sm:text-lg tracking-wide">COMPREHENSIVE
+            SERVICES</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-oil-dark mt-4 mb-4 sm:mb-6">
+            Oil &amp; Gas <span class="text-oil-blue">Engineering
+              Excellence</span></h2>
+          <p class="text-base sm:text-lg lg:text-xl text-oil-gray max-w-3xl mx-auto">
+            From civil construction to specialized oil &amp; gas project works,
+            delivering complete turnkey solutions with uncompromising quality
+            and safety standards
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div id="service-card-1"
+            class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div class="relative h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d612e980ea-ef050a629f7b61e27d0d.png"
+                alt="industrial civil construction site with concrete foundations and heavy equipment"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute top-4 left-4 image-overlay-icon w-14 h-14 rounded-lg flex items-center justify-center">
+                <i
+                  class="fa-solid fa-hammer text-white text-2xl animated-icon"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-oil-dark mb-3">Civil
+                Construction</h3>
+              <p class="text-oil-gray mb-4">Comprehensive civil construction
+                services for industrial, oil &amp; gas, power, and
+                infrastructure projects from site preparation to final
+                finishing.</p><button
+                onclick="toggleService(1)"
+                class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
+                  class="view-text">View Details</span><i
+                  class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
+              <div class="service-content mt-6">
+                <div class="border-t border-gray-200 pt-6">
+                  <p class="text-oil-gray mb-4">Civil works executed to support
+                    heavy industrial loads, operational safety, and long-term
+                    durability in harsh environmental conditions typical of oil
+                    &amp; gas facilities.</p>
+                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  </h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Earthworks, excavation,
+                        backfilling, and compaction</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Foundations for equipment, tanks,
+                        pipe racks, and structures</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Concrete works (RCC, PCC, precast
+                        where applicable)</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Drainage systems, bund walls, and
+                        underground utilities</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Compliance with QCS, ASTM, and
+                        international standards</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="service-card-2"
+            class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div class="relative h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/52a3738793-701196d96de93fa5b5b5.png"
+                alt="oil and gas refinery plant construction with pipelines and processing units"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute top-4 left-4 image-overlay-icon w-14 h-14 rounded-lg flex items-center justify-center">
+                <i
+                  class="fa-solid fa-industry text-white text-2xl animated-icon"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-oil-dark mb-3">Oil &amp; Gas
+                Project Works</h3>
+              <p class="text-oil-gray mb-4">End-to-end oil &amp; gas project
+                execution covering onshore facilities, refineries, terminals,
+                and gas processing plants.</p><button onclick="toggleService(2)"
+                class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
+                  class="view-text">View Details</span><i
+                  class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
+              <div class="service-content mt-6">
+                <div class="border-t border-gray-200 pt-6">
+                  <p class="text-oil-gray mb-4">Crystal Oilfield leverages EPC
+                    experience and multidisciplinary teams to manage complex
+                    interfaces between civil, mechanical, piping, E&amp;I, and
+                    safety systems.</p>
+                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  </h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Onshore oil &amp; gas facilities
+                        execution</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Coordination of multi-discipline
+                        construction activities</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Compliance with client and
+                        regulatory requirements</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Focus on schedule control, safety,
+                        and quality</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="service-card-3"
+            class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div class="relative h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/16c18512a4-7e0a793572e8f4df9c77.png"
+                alt="industrial landscaping with pavements walkways and green areas"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute top-4 left-4 image-overlay-icon w-14 h-14 rounded-lg flex items-center justify-center">
+                <i
+                  class="fa-solid fa-tree text-white text-2xl animated-icon"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-oil-dark mb-3">Hard &amp; Soft
+                Landscaping Works</h3>
+              <p class="text-oil-gray mb-4">Integrated hard and soft landscaping
+                solutions for industrial and infrastructure projects meeting
+                functional and environmental requirements.</p><button
+                onclick="toggleService(3)"
+                class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
+                  class="view-text">View Details</span><i
+                  class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
+              <div class="service-content mt-6">
+                <div class="border-t border-gray-200 pt-6">
+                  <p class="text-oil-gray mb-4">Landscaping designed to meet
+                    functional, environmental, and aesthetic requirements while
+                    complying with local environmental guidelines.</p>
+                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  </h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Hard landscaping: pavements,
+                        kerbs, walkways, retaining walls</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Soft landscaping: soil
+                        preparation, planting, turfing, irrigation</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Landscaping for industrial,
+                        commercial, and infrastructure sites</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Sustainable and low-maintenance
+                        landscape solutions</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="service-card-4"
+            class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div class="relative h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/0515e07ba7-a50fbd33178133e42312.png"
+                alt="petroleum storage tank farm with large white storage tanks and piping systems"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute top-4 left-4 image-overlay-icon w-14 h-14 rounded-lg flex items-center justify-center">
+                <i
+                  class="fa-solid fa-tank-water text-white text-2xl animated-icon"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-oil-dark mb-3">Tank Farm
+                Construction</h3>
+              <p class="text-oil-gray mb-4">Specialized tank farm construction
+                for petroleum and chemical products storage with complete civil,
+                mechanical, and structural works.</p><button
+                onclick="toggleService(4)"
+                class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
+                  class="view-text">View Details</span><i
+                  class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
+              <div class="service-content mt-6">
+                <div class="border-t border-gray-200 pt-6">
+                  <p class="text-oil-gray mb-4">Projects executed in line with
+                    international codes such as API 650, API 653, and NFPA,
+                    ensuring safety, environmental protection, and operational
+                    reliability.</p>
+                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  </h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Construction of tank foundations
+                        and bund walls</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Installation of storage tanks and
+                        associated piping</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Firefighting, drainage, and safety
+                        systems</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Compliance with petroleum storage
+                        standards</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="service-card-5"
+            class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div class="relative h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/85dfc5c66f-3aad3abea8ba94260864.png"
+                alt="oil and gas plant equipment installation with structural steel and piping"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute top-4 left-4 image-overlay-icon w-14 h-14 rounded-lg flex items-center justify-center">
+                <i
+                  class="fa-solid fa-gears text-white text-2xl animated-icon"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-oil-dark mb-3">Oil &amp; Gas
+                Plant Erection</h3>
+              <p class="text-oil-gray mb-4">Complete plant erection services
+                including mechanical equipment, structural steel, and piping
+                systems installation.</p><button
+                onclick="toggleService(5)"
+                class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
+                  class="view-text">View Details</span><i
+                  class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
+              <div class="service-content mt-6">
+                <div class="border-t border-gray-200 pt-6">
+                  <p class="text-oil-gray mb-4">Erection activities carefully
+                    planned to minimize downtime and ensure safe execution with
+                    coordination with commissioning teams.</p>
+                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  </h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Installation of static and
+                        rotating equipment</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Structural steel and pipe rack
+                        erection</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Alignment, leveling, and grouting
+                        works</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Coordination with commissioning
+                        teams</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="service-card-6"
+            class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div class="relative h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5b5df9845a-f3cde7faa27efabfa051.png"
+                alt="pipeline hydrostatic testing equipment with pressure gauges and water supply"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute top-4 left-4 image-overlay-icon w-14 h-14 rounded-lg flex items-center justify-center">
+                <i
+                  class="fa-solid fa-droplet text-white text-2xl animated-icon"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-oil-dark mb-3">Hydrotesting of
+                Pipelines</h3>
+              <p class="text-oil-gray mb-4">Hydrostatic testing services for
+                pipelines and piping systems to verify strength, integrity, and
+                leak-tightness.</p><button
+                onclick="toggleService(6)"
+                class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
+                  class="view-text">View Details</span><i
+                  class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
+              <div class="service-content mt-6">
+                <div class="border-t border-gray-200 pt-6">
+                  <p class="text-oil-gray mb-4">Testing carried out using
+                    calibrated equipment and approved procedures with complete
+                    documentation and certification.</p>
+                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  </h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Hydrotesting of onshore pipelines
+                        and piping networks</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Test pressure as per ASME and
+                        project specifications</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Documentation and test
+                        certification</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Safe disposal and environmental
+                        compliance</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="service-card-7"
+            class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div class="relative h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/86d35ca161-68d0e3011fe1aeb1e62e.png"
+                alt="industrial asset integrity inspection with NDT equipment and technicians"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute top-4 left-4 image-overlay-icon w-14 h-14 rounded-lg flex items-center justify-center">
+                <i
+                  class="fa-solid fa-shield-halved text-white text-2xl animated-icon"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-oil-dark mb-3">Asset Integrity
+                &amp; Reliability</h3>
+              <p class="text-oil-gray mb-4">Asset integrity and reliability
+                services maintaining safe, efficient, and compliant operations
+                throughout the asset lifecycle.</p><button
+                onclick="toggleService(7)"
+                class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
+                  class="view-text">View Details</span><i
+                  class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
+              <div class="service-content mt-6">
+                <div class="border-t border-gray-200 pt-6">
+                  <p class="text-oil-gray mb-4">Services focus on risk
+                    mitigation, inspection, and preventive maintenance with
+                    compliance to regulatory and safety requirements.</p>
+                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  </h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Inspection and condition
+                        assessment of assets</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Corrosion monitoring and integrity
+                        evaluation</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Reliability improvement
+                        strategies</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Compliance with regulatory and
+                        safety requirements</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="service-card-8"
+            class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div class="relative h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/0a8ae83db7-bbf8d9f52fd79b45279b.png"
+                alt="industrial plant modification work with piping rerouting and equipment installation"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute top-4 left-4 image-overlay-icon w-14 h-14 rounded-lg flex items-center justify-center">
+                <i
+                  class="fa-solid fa-wrench text-white text-2xl animated-icon"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-oil-dark mb-3">Plant Change
+                &amp; Modification</h3>
+              <p class="text-oil-gray mb-4">Brownfield and modification projects
+                including plant upgrades, system rerouting, and capacity
+                enhancement.</p><button onclick="toggleService(8)"
+                class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
+                  class="view-text">View Details</span><i
+                  class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
+              <div class="service-content mt-6">
+                <div class="border-t border-gray-200 pt-6">
+                  <p class="text-oil-gray mb-4">Works performed while minimizing
+                    operational disruption with strict safety control and
+                    coordination with ongoing plant operations.</p>
+                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  </h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Tie-ins, rerouting, and system
+                        upgrades</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Equipment replacement and
+                        retrofitting</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Brownfield execution with strict
+                        safety control</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Coordination with ongoing plant
+                        operations</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="service-card-9"
+            class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div class="relative h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8487e6012a-2f68e1bdb4ca65352ea4.png"
+                alt="industrial infrastructure development with roads drainage and utility corridors"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute top-4 left-4 image-overlay-icon w-14 h-14 rounded-lg flex items-center justify-center">
+                <i
+                  class="fa-solid fa-road text-white text-2xl animated-icon"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-oil-dark mb-3">Infrastructure
+                Development</h3>
+              <p class="text-oil-gray mb-4">Infrastructure development projects
+                supporting industrial zones, terminals, and utilities with
+                long-term durability.</p><button
+                onclick="toggleService(9)"
+                class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
+                  class="view-text">View Details</span><i
+                  class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
+              <div class="service-content mt-6">
+                <div class="border-t border-gray-200 pt-6">
+                  <p class="text-oil-gray mb-4">These works provide the backbone
+                    required for large-scale industrial operations with
+                    compliance to international standards.</p>
+                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  </h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Roads, drainage networks, and
+                        utility corridors</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Underground services and duct
+                        banks</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Industrial infrastructure for oil
+                        &amp; gas facilities</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Long-term durability and
+                        compliance with standards</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="service-card-10"
+            class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div class="relative h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9108f5556c-e14bd003386f1208b3c0.png"
+                alt="petroleum storage tank fabrication and erection with welding and testing"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute top-4 left-4 image-overlay-icon w-14 h-14 rounded-lg flex items-center justify-center">
+                <i
+                  class="fa-solid fa-oil-can text-white text-2xl animated-icon"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-oil-dark mb-3">Petroleum
+                Storage Tank Design &amp; Fabrication</h3>
+              <p class="text-oil-gray mb-4">Complete tank solutions covering
+                engineering, fabrication, erection, and testing of petroleum
+                storage tanks.</p><button
+                onclick="toggleService(10)"
+                class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
+                  class="view-text">View Details</span><i
+                  class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
+              <div class="service-content mt-6">
+                <div class="border-t border-gray-200 pt-6">
+                  <p class="text-oil-gray mb-4">Projects executed under
+                    stringent quality and safety controls with compliance to API
+                    standards for reliable storage solutions.</p>
+                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  </h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Engineering and design as per API
+                        standards</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Fabrication and erection of steel
+                        storage tanks</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Hydrotesting and commissioning
+                        support</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Suitable for crude oil, fuel, and
+                        chemical storage</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="service-card-11"
+            class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div class="relative h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d58a8fccb7-85916c5b0f249b807e6d.png"
+                alt="MEP and HVAC installation in industrial building with ductwork and piping"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute top-4 left-4 image-overlay-icon w-14 h-14 rounded-lg flex items-center justify-center">
+                <i
+                  class="fa-solid fa-fan text-white text-2xl animated-icon"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-oil-dark mb-3">MEP &amp; HVAC
+                Project Works</h3>
+              <p class="text-oil-gray mb-4">Complete MEP and HVAC services for
+                industrial, commercial, and infrastructure facilities ensuring
+                operational efficiency.</p><button
+                onclick="toggleService(11)"
+                class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
+                  class="view-text">View Details</span><i
+                  class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
+              <div class="service-content mt-6">
+                <div class="border-t border-gray-200 pt-6">
+                  <p class="text-oil-gray mb-4">Systems designed and installed
+                    to ensure operational efficiency, safety, and compliance
+                    with international energy standards.</p>
+                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  </h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Mechanical, electrical, and
+                        plumbing installations</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">HVAC systems for industrial and
+                        commercial buildings</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Testing, balancing, and
+                        commissioning</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Compliance with international MEP
+                        standards</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="service-card-12"
+            class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div class="relative h-64 overflow-hidden"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e8bca500bc-b0428b49dfb820a42f06.png"
+                alt="high pressure water jet cutting equipment for industrial applications"
+                class="w-full h-full object-cover">
+              <div
+                class="absolute top-4 left-4 image-overlay-icon w-14 h-14 rounded-lg flex items-center justify-center">
+                <i
+                  class="fa-solid fa-water text-white text-2xl animated-icon"></i>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-oil-dark mb-3">Water Jet
+                Cutting for Oil &amp; Gas</h3>
+              <p class="text-oil-gray mb-4">High-pressure water jet cutting
+                services for oil &amp; gas applications enabling safe cold
+                cutting without heat-affected zones.</p><button
+                onclick="toggleService(12)"
+                class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
+                  class="view-text">View Details</span><i
+                  class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
+              <div class="service-content mt-6">
+                <div class="border-t border-gray-200 pt-6">
+                  <p class="text-oil-gray mb-4">Ideal for hazardous environments
+                    where hot work is restricted, providing precision cutting
+                    without thermal distortion and reduced risk.</p>
+                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  </h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Cold cutting for pipes, tanks, and
+                        structures</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Safe execution in live plants and
+                        hazardous zones</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Precision cutting without thermal
+                        distortion</span></li>
+                    <li class="flex items-start"><i
+                        class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
+                        class="text-oil-gray">Reduced risk compared to
+                        conventional cutting</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta-banner-section" class="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-oil-dark to-gray-900 relative overflow-hidden">
+      <div class="absolute inset-0 industrial-pattern opacity-20"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
+        <div class="mb-6 sm:mb-8">
+          <i class="fa-solid fa-oil-well text-oil-accent text-4xl sm:text-5xl lg:text-6xl mb-4 sm:mb-6"></i>
+        </div>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
+          Delivering Engineering Excellence with
+          <span class="text-oil-accent block mt-2">Safety, Quality, and
+            Innovation</span>
+        </h2>
+        <p class="text-base sm:text-lg lg:text-xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto">
+          Partner with Crystal Oilfield for comprehensive EPC solutions backed
+          by decades of experience and unwavering commitment to excellence in
+          the oil &amp; gas sector
+        </p>
+        <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6">
+          <a href="Contact.html" class="bg-oil-accent text-white px-8 sm:px-10 py-4 sm:py-5 rounded-lg font-semibold text-base sm:text-lg hover:bg-yellow-600 transition-colors inline-flex items-center justify-center shadow-xl">
+            <i class="fa-solid fa-file-invoice mr-3"></i>Request a Quote
+          </a>
+          <a href="Portfolio.html" class="bg-white text-oil-dark px-8 sm:px-10 py-4 sm:py-5 rounded-lg font-semibold text-base sm:text-lg hover:bg-gray-100 transition-colors inline-flex items-center justify-center shadow-xl">
+            <i class="fa-solid fa-briefcase mr-3"></i>Explore Our Projects
+          </a>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 mt-12 sm:mt-16">
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+            <div class="text-4xl font-bold text-oil-accent mb-2">25+</div>
+            <p class="text-gray-300">Years of Excellence</p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+            <div class="text-4xl font-bold text-oil-accent mb-2">500+</div>
+            <p class="text-gray-300">Projects Completed</p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+            <div class="text-4xl font-bold text-oil-accent mb-2">100%</div>
+            <p class="text-gray-300">Safety Compliance</p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
+            <div class="text-4xl font-bold text-oil-accent mb-2">ISO</div>
+            <p class="text-gray-300">Certified Quality</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="bg-oil-dark text-white relative overflow-hidden">
+      <div class="absolute inset-0 industrial-pattern opacity-20"></div>
+      <div class="relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+            <div class="lg:col-span-2">
+              <div class="flex items-center mb-6">
+                <div class="mr-3">
+                  <img src="CO_Logo.svg" alt="Crystal Oilfield Logo" class="h-[72px] w-auto">
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold">Crystal Oilfield</h3>
+                  <p class="text-oil-accent">Contracting And Trading</p>
+                </div>
+              </div>
+              <p class="text-gray-300 mb-6 max-w-md">
+                Leading the oil and gas industry with innovative engineering
+                solutions, comprehensive EPC services, and unwavering commitment
+                to safety and quality across the GCC region.
+              </p>
+              <div class="flex space-x-4 mb-6"><span
+                  class="w-10 h-10 bg-oil-blue rounded-lg flex items-center justify-center hover:bg-yellow-700 transition-colors cursor-pointer"><i
+                    class="fa-brands fa-linkedin text-white"></i></span><span
+                  class="w-10 h-10 bg-oil-blue rounded-lg flex items-center justify-center hover:bg-yellow-700 transition-colors cursor-pointer"><i
+                    class="fa-brands fa-twitter text-white"></i></span><span
+                  class="w-10 h-10 bg-oil-blue rounded-lg flex items-center justify-center hover:bg-yellow-700 transition-colors cursor-pointer"><i
+                    class="fa-brands fa-facebook text-white"></i></span><span
+                  class="w-10 h-10 bg-oil-blue rounded-lg flex items-center justify-center hover:bg-yellow-700 transition-colors cursor-pointer"><i
+                    class="fa-brands fa-instagram text-white"></i></span><span
+                  class="w-10 h-10 bg-oil-blue rounded-lg flex items-center justify-center hover:bg-yellow-700 transition-colors cursor-pointer"><i
+                    class="fa-brands fa-youtube text-white"></i></span></div>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-6 text-oil-accent">Contact
+                Information</h4>
+              <div class="space-y-4">
+                <div class="flex items-start space-x-3"><i
+                    class="fa-solid fa-map-marker-alt text-oil-accent mt-1"></i>
+                  <div>
+                    <p class="text-white font-medium">Head Office</p>
+                    <p class="text-gray-300 text-sm">Office No. 3301,3302, Excellence Tower P. O. Box: 80025 |West Bay,<br>Doha, Qatar</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3"><i
+                    class="fa-solid fa-industry text-oil-accent mt-1"></i>
+                  <div>
+                    <p class="text-white font-medium">Fab Shop</p>
+                    <p class="text-gray-300 text-sm">Bldg. No.239, Zone 81, Street No.7, New Industrial Area <br>Doha, Qatar</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3"><i
+                    class="fa-solid fa-phone text-oil-accent mt-1"></i>
+                  <div>
+                    <p class="text-white font-medium">Phone</p>
+                    <p class="text-gray-300 text-sm">+974-40120736</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3"><i
+                    class="fa-solid fa-envelope text-oil-accent mt-1"></i>
+                  <div>
+                    <p class="text-white font-medium">Email</p>
+                    <p class="text-gray-300 text-sm">info@crystaloilfield.qa
+                    </p>
+                    <p class="text-gray-300 text-sm">proposals@crystaloilfield.qa
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-6 text-oil-accent">Quick Links
+              </h4>
+              <div class="space-y-3"><a href="index.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Home</span></a><a
+                  href="About.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>About
+                    Us</span></a>
+                <div class="relative group"><button
+                    class="flex items-center text-gray-300 hover:text-oil-accent transition-colors w-full"><i
+                      class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm"></i><span>Services</span><i
+                      class="fa-solid fa-chevron-down text-xs ml-2"></i></button>
+                  <div class="ml-6 mt-2 space-y-2 hidden group-hover:block"><a
+                      href="Crystal Oilfield Services.html"
+                      class="flex items-center text-gray-400 hover:text-oil-accent transition-colors text-sm"><i
+                        class="fa-solid fa-oil-well text-oil-accent mr-2 text-xs"></i><span>Crystal
+                        Oilfield Contracting</span></a><a href="Crystal Vision Services.html"
+                      class="flex items-center text-gray-400 hover:text-oil-accent transition-colors text-sm"><i
+                        class="fa-solid fa-industry text-oil-accent mr-2 text-xs"></i><span>Crystal
+                        Vision Steel Fabrication</span></a></div>
+                </div><a href="Portfolio.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Portfolio</span></a><a
+                  href="Media.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Media</span></a><a
+                  href="Career.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Career</span></a><a
+                  href="Contact.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Contact</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-white/20 py-6 sm:py-8">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center">
+              <p class="text-gray-300 text-xs sm:text-sm">© 2025 Crystal
+                Oilfield. All
+                rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="scroll-to-top" class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 w-10 h-10 sm:w-12 sm:h-12 bg-oil-accent rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:bg-yellow-600 transition-colors z-50 opacity-0 invisible">
+      <i class="fa-solid fa-chevron-up text-white text-sm sm:text-base"></i>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () =>
+      {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileServicesToggle = document.getElementById(
+          'mobile-services-toggle');
+        const mobileServicesMenu = document.getElementById(
+          'mobile-services-menu');
+        const mobileCompaniesToggle = document.getElementById(
+          'mobile-companies-toggle');
+        const mobileCompaniesMenu = document.getElementById(
+          'mobile-companies-menu');
+
+        const toggleMobileMenu = () =>
+        {
+          if (mobileMenu)
+          {
+            mobileMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('hidden');
+          }
+        };
+
+        mobileMenuBtn?.addEventListener('click', (e) =>
+        {
+          e.stopPropagation();
+          toggleMobileMenu();
+        });
+
+        mobileMenuClose?.addEventListener('click', (e) =>
+        {
+          e.stopPropagation();
+          toggleMobileMenu();
+        });
+
+        document.addEventListener('click', (e) =>
+        {
+          if (mobileMenu && mobileMenu.classList.contains('active') &&
+            !mobileMenu.contains(e.target) && e.target !== mobileMenuBtn)
+          {
+            mobileMenu.classList.remove('active');
+            mobileMenu.classList.add('hidden');
+          }
+        });
+
+        const toggleDropdown = (toggleEl, menuEl) =>
+        {
+          if (!toggleEl || !menuEl)
+          {
+            return;
+          }
+
+          toggleEl.addEventListener('click', (e) =>
+          {
+            e.stopPropagation();
+            menuEl.classList.toggle('hidden');
+            const icon = toggleEl.querySelector('i.fa-chevron-down');
+            if (icon)
+            {
+              icon.classList.toggle('rotate-180');
+            }
+          });
+        };
+
+        toggleDropdown(mobileServicesToggle, mobileServicesMenu);
+        toggleDropdown(mobileCompaniesToggle, mobileCompaniesMenu);
+      });
+
+      function toggleService(id)
+      {
+        const card = document.getElementById(`service-card-${id}`);
+        const content = card.querySelector('.service-content');
+        const button = card.querySelector('button');
+        const viewText = button.querySelector('.view-text');
+        const icon = button.querySelector('.toggle-icon');
+
+        if (content.classList.contains('expanded'))
+        {
+          content.classList.remove('expanded');
+          viewText.textContent = 'View Details';
+          icon.classList.remove('fa-chevron-up');
+          icon.classList.add('fa-chevron-down');
+        }
+        else
+        {
+          const allCards = document.querySelectorAll('.service-card');
+          allCards.forEach(c =>
+          {
+            const cont = c.querySelector('.service-content');
+            const btn = c.querySelector('button');
+            const txt = btn.querySelector('.view-text');
+            const icn = btn.querySelector('.toggle-icon');
+
+            if (cont.classList.contains('expanded'))
+            {
+              cont.classList.remove('expanded');
+              txt.textContent = 'View Details';
+              icn.classList.remove('fa-chevron-up');
+              icn.classList.add('fa-chevron-down');
+            }
+          });
+
+          content.classList.add('expanded');
+          viewText.textContent = 'Hide Details';
+          icon.classList.remove('fa-chevron-down');
+          icon.classList.add('fa-chevron-up');
+
+          setTimeout(() =>
+          {
+            card.scrollIntoView(
+            {
+              behavior: 'smooth',
+              block: 'nearest'
+            });
+          }, 300);
+        }
+      }
+
+      window.addEventListener('scroll', function()
+      {
+        const scrollToTopBtn = document.getElementById('scroll-to-top');
+        if (window.pageYOffset > 300)
+        {
+          scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+          scrollToTopBtn.classList.add('opacity-100', 'visible');
+        }
+        else
+        {
+          scrollToTopBtn.classList.add('opacity-0', 'invisible');
+          scrollToTopBtn.classList.remove('opacity-100', 'visible');
+        }
+      });
+
+      document.getElementById('scroll-to-top').addEventListener('click',
+        function()
+        {
+          window.scrollTo(
+          {
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+    </script>
+  </body>
+
+</html>

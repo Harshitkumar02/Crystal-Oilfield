@@ -1,0 +1,1428 @@
+<html>
+
+  <head>
+    <link rel="icon" type="image/svg+xml" href="CO_Logo.svg">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Crystal Oilfield Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      window.FontAwesomeConfig = {
+        autoReplaceSvg: 'nest'
+      };
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet">
+    <style>
+      ::-webkit-scrollbar
+      {
+        width: 12px;
+      }
+
+      ::-webkit-scrollbar-track
+      {
+        background: #f1f1f1;
+      }
+
+      ::-webkit-scrollbar-thumb
+      {
+        background: #f38120;
+        border-radius: 6px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover
+      {
+        background: #d97010;
+      }
+
+      body
+      {
+        font-family: 'Inter', sans-serif;
+      }
+
+      .oil-gradient
+      {
+        background: linear-gradient(135deg, #1a365d 0%, #2c5282 25%, #3182ce 50%, #4299e1 75%, #63b3ed 100%);
+      }
+
+      .oil-dark
+      {
+        background: linear-gradient(135deg, #1a202c 0%, #2d3748 50%, #4a5568 100%);
+      }
+
+      .industrial-pattern
+      {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      /* Mobile Menu Styles */
+      #mobile-menu
+      {
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      #mobile-menu.active
+      {
+        transform: translateX(0);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme:
+        {
+          extend:
+          {
+            colors:
+            {
+              'oil-blue': '#f38120',
+              'oil-dark': '#1e293b',
+              'oil-gray': '#475569',
+              'oil-light': '#e2e8f0',
+              'oil-accent': '#f59e0b'
+            }
+          }
+        }
+      }
+    </script>
+    <style data-grapesjs-styles="true">
+      *
+      {
+        box-sizing: border-box;
+      }
+
+      body
+      {
+        margin: 0;
+      }
+
+      body
+      {
+        font-family: Inter, sans-serif;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+      }
+
+      .industrial-pattern
+      {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      *
+      {
+        box-sizing: border-box;
+      }
+
+      #ie1tc
+      {
+        padding-top: 9px;
+        padding-right: 9px;
+        padding-bottom: 9px;
+        padding-left: 9px;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Header Section - Responsive -->
+    <header id="header"
+      class="bg-white shadow-lg border-b-4 border-oil-blue relative z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo Section -->
+          <div class="flex items-center space-x-3 sm:space-x-4">
+            <div class="flex items-center">
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 bg-oil-blue rounded-lg flex items-center justify-center mr-2 sm:mr-3">
+                <i
+                  class="fa-solid fa-oil-well text-white text-lg sm:text-xl"></i>
+              </div>
+              <div>
+                <h1 class="text-base sm:text-xl font-bold text-oil-dark">Crystal
+                  Oilfield</h1>
+                <p class="text-xs text-oil-gray hidden sm:block">Contracting And
+                  Trading</p>
+              </div>
+            </div>
+          </div><!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8"><a
+              href="index.html"
+              class="text-oil-dark font-semibold hover:text-oil-blue transition-colors border-b-2 border-oil-blue pb-1">Home</a><a
+              href="About.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">About</a>
+            <!-- Services Dropdown -->
+            <div class="relative group"><button
+                class="flex items-center space-x-1 text-oil-gray font-medium hover:text-oil-blue transition-colors"><span>Services</span><i
+                  class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition-transform duration-200"></i></button>
+              <div
+                class="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div class="p-2"><a href="Crystal%20Oilfield%20Services.html"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-oil-well text-oil-blue"></i><span
+                      class="font-medium">Crystal Oilfield Contracting and
+                      Trading</span></a><a href="Crystal%20Vision%20Services.html"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-industry text-oil-blue"></i><span
+                      class="font-medium">Crystal Vision Steel
+                      Fabrication</span></a></div>
+              </div>
+            </div><a href="Portfolio.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Portfolio</a><a
+              href="Media.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Media</a><a
+              href="Career.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Career</a><a
+              href="Contact.html"
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Contact</a>
+          </nav><!-- Right Side Actions - Desktop -->
+          <div class="hidden lg:flex items-center space-x-4 xl:space-x-6">
+            <!-- Language Switcher -->
+            <div class="flex items-center space-x-2 bg-gray-100 rounded-lg p-2"
+              id="ie1tc"><button
+                class="px-3 py-1 bg-oil-blue text-white rounded text-sm font-medium">English</button><button
+                class="px-3 py-1 text-oil-gray rounded text-sm font-medium hover:bg-white">العربية</button>
+            </div><!-- Other Companies Dropdown -->
+            <div class="relative group"><button
+                class="flex items-center space-x-2 text-oil-gray font-medium hover:text-oil-blue transition-colors px-4 py-2 rounded-lg hover:bg-gray-50"><i
+                  class="fa-solid fa-building text-sm"></i><span>Our Other
+                  Companies</span><i
+                  class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition-transform duration-200"></i></button>
+              <div
+                class="absolute top-full right-0 mt-2 w-72 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div class="p-2"><a href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-building text-oil-blue"></i><span
+                      class="font-medium">Al Bahr Al Arabi Group</span></a><a
+                    href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-ship text-oil-blue"></i><span
+                      class="font-medium">Al Bahr Arabi Marine
+                      Engineering</span></a><a href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-bolt text-oil-blue"></i><span
+                      class="font-medium">Gulf Tech Energy Contracting
+                      LLC</span></a><a href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-oil-well text-oil-blue"></i><span
+                      class="font-medium">Crystal Petroleum</span></a><a
+                    href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-industry text-oil-blue"></i><span
+                      class="font-medium">Crystal Petrokimya Turkey</span></a><a
+                    href="#"
+                    class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
+                      class="fa-solid fa-heart text-oil-blue"></i><span
+                      class="font-medium">Crystal Care KSA</span></a></div>
+              </div>
+            </div><button type="button"
+              onclick="location.href='Contact.html#main-contact-form'"
+              class="bg-oil-accent text-white px-4 xl:px-6 py-2 xl:py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors flex items-center text-sm xl:text-base"><i
+                class="fa-solid fa-file-invoice mr-2"></i>
+              Request a Quote
+            </button>
+          </div><!-- Mobile Menu Button --><button id="mobile-menu-btn"
+            class="lg:hidden text-oil-gray p-2"><i
+              class="fa-solid fa-bars text-2xl"></i></button>
+        </div>
+      </div><!-- Mobile Menu -->
+      <div id="mobile-menu"
+        class="fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 overflow-y-auto">
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-8">
+            <h3 class="text-xl font-bold text-oil-dark">Menu</h3><button
+              id="mobile-menu-close" class="text-oil-gray"><i
+                class="fa-solid fa-times text-2xl"></i></button>
+          </div><!-- Mobile Navigation Links -->
+            <nav class="space-y-4"><a href="index.html"
+              class="block text-oil-dark font-semibold hover:text-oil-blue transition-colors py-2 border-l-4 border-oil-blue pl-4">Home</a><a
+              href="About.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">About</a>
+            <!-- Mobile Services Dropdown -->
+            <div><button id="mobile-services-toggle"
+                class="flex items-center justify-between w-full text-oil-gray font-medium hover:text-oil-blue transition-colors py-2"><span>Services</span><i
+                  class="fa-solid fa-chevron-down text-xs"></i></button>
+              <div id="mobile-services-menu" class="hidden ml-4 mt-2 space-y-2">
+                <a href="Crystal%20Oilfield%20Services.html"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2"><i
+                    class="fa-solid fa-oil-well text-oil-blue mr-2"></i>
+                  Crystal Oilfield Contracting
+                </a><a href="Crystal%20Vision%20Services.html"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2"><i
+                    class="fa-solid fa-industry text-oil-blue mr-2"></i>
+                  Crystal Vision Steel Fabrication
+                </a></div>
+            </div><a href="Portfolio.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Portfolio</a><a
+              href="Media.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Media</a><a
+              href="Career.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Career</a><a
+              href="Contact.html"
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Contact</a>
+            <!-- Mobile Language Switcher -->
+            <div class="pt-4 border-t border-gray-200">
+              <p class="text-sm text-oil-gray mb-2">Language</p>
+              <div class="flex space-x-2"><button
+                  class="flex-1 px-3 py-2 bg-oil-blue text-white rounded text-sm font-medium">English</button><button
+                  class="flex-1 px-3 py-2 bg-gray-100 text-oil-gray rounded text-sm font-medium">العربية</button>
+              </div>
+            </div><!-- Mobile Other Companies -->
+            <div class="pt-4 border-t border-gray-200"><button
+                id="mobile-companies-toggle"
+                class="flex items-center justify-between w-full text-oil-gray font-medium hover:text-oil-blue transition-colors py-2"><span><i
+                    class="fa-solid fa-building mr-2"></i>Our Other
+                  Companies</span><i
+                  class="fa-solid fa-chevron-down text-xs"></i></button>
+              <div id="mobile-companies-menu"
+                class="hidden ml-4 mt-2 space-y-2"><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Al
+                  Bahr Al Arabi Group</a><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Al
+                  Bahr Arabi Marine Engineering</a><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Gulf
+                  Tech Energy Contracting LLC</a><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  Petroleum</a><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  Petrokimya Turkey</a><a href="#"
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  Care KSA</a></div>
+            </div><!-- Mobile Quote Button --><button type="button"
+              onclick="location.href='Contact.html#main-contact-form'"
+              class="w-full bg-oil-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors mt-6"><i
+                class="fa-solid fa-file-invoice mr-2"></i>
+              Request a Quote
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section id="hero-section"
+      class="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px] overflow-hidden">
+      <div class="absolute inset-0"><img
+          src="https://storage.googleapis.com/uxpilot-auth.appspot.com/184fc82b39-54a0de1f3cf3fca68aa6.png"
+          alt="Industrial oil refinery complex with storage tanks, pipelines, and processing units at sunset, industrial photography style"
+          class="w-full h-full object-cover">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-oil-dark/90 via-oil-dark/70 to-transparent">
+        </div>
+        <div class="absolute inset-0 industrial-pattern"></div>
+      </div>
+      <div
+        class="relative max-w-7xl mx-auto px-4 sm:px-6 h-full flex items-center">
+        <div class="max-w-3xl">
+          <div class="mb-4 sm:mb-6"><span
+              class="inline-block bg-oil-accent/20 text-oil-accent px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold backdrop-blur-sm"><i
+                class="fa-solid fa-award mr-1 sm:mr-2"></i>
+              ISO Certified Excellence
+            </span></div>
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-4 sm:mb-6 leading-tight">
+            Engineering
+            <span class="block text-oil-accent">Excellence</span><span
+              class="block text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light text-gray-300">in
+              Oil
+              &amp; Gas</span>
+          </h1>
+          <p
+            class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-2xl leading-relaxed">
+            Delivering comprehensive EPC, Fabrication, and Maintenance Solutions
+            across Qatar &amp; GCC region with over two decades of proven
+            industrial expertise.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12">
+            <button
+              class="bg-oil-blue text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base lg:text-lg hover:bg-yellow-700 transition-all duration-300 flex items-center justify-center group"><i
+                class="fa-solid fa-cogs mr-2 sm:mr-3 group-hover:rotate-180 transition-transform duration-500"></i>
+              Explore Services
+            </button></div>
+          <div class="grid grid-cols-3 gap-4 sm:gap-8">
+            <div class="text-center">
+              <div
+                class="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-1 sm:mb-2">
+                20+</div>
+              <div class="text-xs sm:text-sm text-gray-300">Years Experience
+              </div>
+            </div>
+            <div class="text-center">
+              <div
+                class="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-1 sm:mb-2">
+                500+</div>
+              <div class="text-xs sm:text-sm text-gray-300">Projects Completed
+              </div>
+            </div>
+            <div class="text-center">
+              <div
+                class="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-1 sm:mb-2">
+                50+</div>
+              <div class="text-xs sm:text-sm text-gray-300">Expert Engineers
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2">
+        <div class="animate-bounce"><i
+            class="fa-solid fa-chevron-down text-white text-xl sm:text-2xl"></i>
+        </div>
+      </div>
+    </section>
+    <section id="about-section"
+      class="py-12 sm:py-16 md:py-20 lg:py-24 bg-white relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50">
+      </div>
+      <div
+        class="absolute top-0 right-0 w-1/3 h-full opacity-5 hidden md:block">
+        <img
+          src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b196a8544d-80d695772a9d5938c77e.png"
+          alt="Technical engineering blueprints and industrial schematics pattern"
+          class="w-full h-full object-cover"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+          <div>
+            <div class="mb-6 sm:mb-8"><span
+                class="text-oil-blue font-semibold text-sm sm:text-base lg:text-lg tracking-wide">ABOUT
+                CRYSTAL OILFIELD</span>
+              <h2
+                class="text-3xl sm:text-4xl lg:text-5xl font-bold text-oil-dark mt-3 sm:mt-4 mb-4 sm:mb-6">
+                Pioneering Industrial
+                <span class="text-oil-blue">Solutions</span>
+              </h2>
+            </div>
+            <div
+              class="prose prose-sm sm:prose-base lg:prose-lg text-oil-gray mb-6 sm:mb-8">
+              <p class="mb-4 sm:mb-6 text-sm sm:text-base">
+                Crystal Oilfield stands as a beacon of engineering excellence in
+                the Middle East's oil and gas sector. With over two decades of
+                unwavering commitment to quality and innovation, we have
+                established ourselves as the premier provider of comprehensive
+                EPC solutions.
+              </p>
+              <p class="mb-4 sm:mb-6 text-sm sm:text-base">Our subsidiary CVSF
+                is equipped with state of
+                Qatar and serve as the
+                cornerstone for delivering world-class industrial solutions
+                across the GCC region.
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
+              <div
+                class="bg-white p-4 sm:p-6 rounded-lg shadow-lg border border-gray-200">
+                <div
+                  class="w-10 h-10 sm:w-12 sm:h-12 bg-oil-blue rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                  <i
+                    class="fa-solid fa-shield-halved text-white text-lg sm:text-xl"></i>
+                </div>
+                <h3 class="font-bold text-oil-dark mb-2 text-sm sm:text-base">
+                  Safety First</h3>
+                <p class="text-xs sm:text-sm text-oil-gray">Zero-incident safety
+                  record
+                  with comprehensive HSE protocols</p>
+              </div>
+              <div
+                class="bg-white p-4 sm:p-6 rounded-lg shadow-lg border border-gray-200">
+                <div
+                  class="w-10 h-10 sm:w-12 sm:h-12 bg-oil-accent rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                  <i
+                    class="fa-solid fa-lightbulb text-white text-lg sm:text-xl"></i>
+                </div>
+                <h3 class="font-bold text-oil-dark mb-2 text-sm sm:text-base">
+                  Innovation</h3>
+                <p class="text-xs sm:text-sm text-oil-gray">Cutting-edge
+                  solutions with
+                  latest technology integration</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
+              <a href="About.html"
+                class="bg-oil-blue text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-yellow-700 transition-colors text-sm sm:text-base w-full sm:w-auto text-center">
+                Read More About Us
+              </a></div>
+          </div>
+          <div class="relative mt-8 lg:mt-0">
+            <div class="grid grid-cols-2 gap-3 sm:gap-4">
+              <div class="space-y-3 sm:space-y-4">
+                <div class="bg-white rounded-lg overflow-hidden shadow-xl"><img
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9ca39165e5-91aaae4523c27fa54044.png"
+                    alt="Modern oil refinery control room with advanced monitoring systems"
+                    class="w-full h-32 sm:h-40 md:h-48 object-cover"></div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-xl"><img
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/aed65e6c91-832f09b08aee33cbe4b7.png"
+                    alt="Industrial welding and fabrication workshop"
+                    class="w-full h-24 sm:h-28 md:h-32 object-cover"></div>
+              </div>
+              <div class="space-y-3 sm:space-y-4 mt-6 sm:mt-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-xl"><img
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/bb236948cd-eaa1b54e99e13699da6d.png"
+                    alt="Oil pipeline construction and installation"
+                    class="w-full h-24 sm:h-28 md:h-32 object-cover"></div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-xl"><img
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/7413d015f2-2671c0901cf0160447d9.png"
+                    alt="Large scale storage tanks in industrial facility"
+                    class="w-full h-32 sm:h-40 md:h-48 object-cover"></div>
+              </div>
+            </div>
+            <div
+              class="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-oil-accent rounded-full flex items-center justify-center shadow-xl">
+              <div class="text-center">
+                <div
+                  class="text-sm sm:text-base md:text-lg font-bold text-white">
+                  20+</div>
+                <div class="text-xs text-white">Years</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services-section"
+      class="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-oil-dark to-gray-900 relative overflow-hidden">
+      <div class="absolute inset-0 industrial-pattern"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16"><span
+            class="text-oil-accent font-semibold text-sm sm:text-base lg:text-lg tracking-wide">OUR
+            SERVICES</span>
+          <h2
+            class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-3 sm:mt-4 mb-4 sm:mb-6">
+            Comprehensive Industrial
+            <span class="text-oil-accent">Solutions</span>
+          </h2>
+          <p
+            class="text-sm sm:text-base lg:text-xl text-gray-300 max-w-3xl mx-auto px-4">
+            From concept to completion, we deliver end-to-end engineering
+            solutions that meet the highest industry standards.
+          </p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div id="service-epc"
+            class="group bg-white/10 backdrop-blur-sm rounded-xl p-6 sm:p-8 hover:bg-white/20 transition-all duration-300 border border-white/20">
+            <div
+              class="w-14 h-14 sm:w-16 sm:h-16 bg-oil-blue rounded-lg flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-cogs text-white text-xl sm:text-2xl"></i>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
+              EPC &amp; Maintenance
+            </h3>
+            <p class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6">Complete
+              Engineering, Procurement, and
+              Construction services with comprehensive maintenance solutions.
+            </p>
+            <ul class="space-y-2 mb-4 sm:mb-6">
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                Process Engineering
+              </li>
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                Equipment Procurement
+              </li>
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                Construction Management
+              </li>
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                Preventive Maintenance
+              </li>
+            </ul>
+          </div>
+          <div id="service-fabrication"
+            class="group bg-white/10 backdrop-blur-sm rounded-xl p-6 sm:p-8 hover:bg-white/20 transition-all duration-300 border border-white/20">
+            <div
+              class="w-14 h-14 sm:w-16 sm:h-16 bg-oil-accent rounded-lg flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+              <i
+                class="fa-solid fa-industry text-white text-xl sm:text-2xl"></i>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
+              Fabrication &amp;
+              Manufacturing</h3>
+            <p class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6">Advanced
+              fabrication capabilities with
+              precision manufacturing for complex industrial components.</p>
+            <ul class="space-y-2 mb-4 sm:mb-6">
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                Structural Fabrication
+              </li>
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                Pressure Vessels
+              </li>
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                Pipeline Systems
+              </li>
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                Custom Components
+              </li>
+            </ul>
+          </div>
+          <div id="service-specialized"
+            class="group bg-white/10 backdrop-blur-sm rounded-xl p-6 sm:p-8 hover:bg-white/20 transition-all duration-300 border border-white/20">
+            <div
+              class="w-14 h-14 sm:w-16 sm:h-16 bg-indigo-600 rounded-lg flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-wrench text-white text-xl sm:text-2xl"></i>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
+              Specialized Services
+            </h3>
+            <p class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6">Expert
+              specialized services including
+              inspection, testing, and advanced technical solutions.</p>
+            <ul class="space-y-2 mb-4 sm:mb-6">
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                NDT Inspection
+              </li>
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                Quality Control
+              </li>
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                Technical Consulting
+              </li>
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                Equipment Testing
+              </li>
+            </ul>
+          </div>
+          <div id="service-civil"
+            class="group bg-white/10 backdrop-blur-sm rounded-xl p-6 sm:p-8 hover:bg-white/20 transition-all duration-300 border border-white/20">
+            <div
+              class="w-14 h-14 sm:w-16 sm:h-16 bg-green-600 rounded-lg flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+              <i
+                class="fa-solid fa-building text-white text-xl sm:text-2xl"></i>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
+              Civil &amp;
+              Infrastructure</h3>
+            <p class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6">
+              Comprehensive civil engineering and
+              infrastructure development services for industrial facilities.</p>
+            <ul class="space-y-2 mb-4 sm:mb-6">
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                Site Development
+              </li>
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                Foundation Works
+              </li>
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                Utility Systems
+              </li>
+              <li class="flex items-center text-gray-300 text-sm"><i
+                  class="fa-solid fa-check text-oil-accent mr-2"></i>
+                Roads &amp; Access
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects-section"
+      class="py-12 sm:py-16 md:py-20 lg:py-24 bg-white relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-blue-50">
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16"><span
+            class="text-oil-blue font-semibold text-sm sm:text-base lg:text-lg tracking-wide">OUR
+            PORTFOLIO</span>
+          <h2
+            class="text-3xl sm:text-4xl lg:text-5xl font-bold text-oil-dark mt-3 sm:mt-4 mb-4 sm:mb-6">
+            Landmark Projects &amp;
+            <span class="text-oil-blue">Success Stories</span>
+          </h2>
+          <p
+            class="text-sm sm:text-base lg:text-xl text-oil-gray max-w-3xl mx-auto px-4">
+            Showcasing our expertise through successful project deliveries
+            across the GCC region.
+          </p>
+        </div>
+        <div
+          class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
+          <div id="project-1"
+            class="group relative overflow-hidden rounded-xl shadow-xl"><img
+              src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4ada856e98-1cb6a6aa3a3e5ffb247f.png"
+              alt="Large oil storage tank farm construction site in Somalia"
+              class="w-full h-64 sm:h-72 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-oil-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-lg sm:text-xl font-bold mb-2">Tank Farm Project -
+                Somalia
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-300 mb-3">Prefabrication,
+                Supply and
+                Erection of Tank Farm for Mahamud Osman General Trading LLC</p>
+              <div class="flex items-center justify-between"><span
+                  class="text-oil-accent font-semibold text-sm sm:text-base">USD
+                  15M Project</span></div>
+            </div>
+          </div>
+          <div id="project-2"
+            class="group relative overflow-hidden rounded-xl shadow-xl"><img
+              src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a874784529-860fed3d346d0f1cf392.png"
+              alt="Modern oil storage terminal facility with large cylindrical tanks in Hamriyah Free Zone"
+              class="w-full h-64 sm:h-72 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-oil-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-lg sm:text-xl font-bold mb-2">Asia Petrochem
+                Terminal</h3>
+              <p class="text-xs sm:text-sm text-gray-300 mb-3">Oil Storage
+                Terminal
+                construction in Hamriyah Free Zone for Asia Petrochem FZE</p>
+              <div class="flex items-center justify-between"><span
+                  class="text-oil-accent font-semibold text-sm sm:text-base">AED
+                  7.5M Project</span></div>
+            </div>
+          </div>
+          <div id="project-3"
+            class="group relative overflow-hidden rounded-xl shadow-xl"><img
+              src="https://storage.googleapis.com/uxpilot-auth.appspot.com/2f2137cea9-a85ce7934e34ee0c98a1.png"
+              alt="Industrial oil storage terminal with multiple tanks and pipeline connections"
+              class="w-full h-64 sm:h-72 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-oil-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-lg sm:text-xl font-bold mb-2">ATS Terminals
+                Project</h3>
+              <p class="text-xs sm:text-sm text-gray-300 mb-3">Oil Storage
+                Terminal
+                development for ATS Terminals FZE in Hamriyah Free Zone</p>
+              <div class="flex items-center justify-between"><span
+                  class="text-oil-accent font-semibold text-sm sm:text-base">AED
+                  5M Project</span></div>
+            </div>
+          </div>
+          <div id="project-4"
+            class="group relative overflow-hidden rounded-xl shadow-xl"><img
+              src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a93bc9a2b3-7ea938478b878ceea646.png"
+              alt="Large scale oil storage terminal complex with advanced safety systems and modern infrastructure"
+              class="w-full h-64 sm:h-72 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-oil-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-lg sm:text-xl font-bold mb-2">GREENOL Storage
+                Terminal</h3>
+              <p class="text-xs sm:text-sm text-gray-300 mb-3">Comprehensive Oil
+                Storage
+                Terminal facility for GREENOL FZC in Hamriyah</p>
+              <div class="flex items-center justify-between"><span
+                  class="text-oil-accent font-semibold text-sm sm:text-base">AED
+                  18M Project</span></div>
+            </div>
+          </div>
+          <div id="project-5"
+            class="group relative overflow-hidden rounded-xl shadow-xl"><img
+              src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ff653a043b-17ffae5def41f43efa6a.png"
+              alt="Modern oil storage terminal with advanced control systems and monitoring equipment"
+              class="w-full h-64 sm:h-72 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-oil-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-lg sm:text-xl font-bold mb-2">AXCL Gulf Terminal
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-300 mb-3">Advanced Oil
+                Storage
+                Terminal construction for AXCL Gulf FZC in Hamriyah Free Zone
+              </p>
+              <div class="flex items-center justify-between"><span
+                  class="text-oil-accent font-semibold text-sm sm:text-base">AED
+                  20M Project</span></div>
+            </div>
+          </div>
+          <div id="project-6"
+            class="group relative overflow-hidden rounded-xl shadow-xl"><img
+              src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3c6630b932-86e8cfad34a3b68e0bbf.png"
+              alt="Integrated oil storage terminal and distillation plant complex with processing towers and storage tanks"
+              class="w-full h-64 sm:h-72 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-oil-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-lg sm:text-xl font-bold mb-2">Infinite Mining
+                Complex</h3>
+              <p class="text-xs sm:text-sm text-gray-300 mb-3">Oil Storage
+                Terminal and
+                Distillation Plant for Infinite Mining &amp; Energy FZC</p>
+              <div class="flex items-center justify-between"><span
+                  class="text-oil-accent font-semibold text-sm sm:text-base">AED
+                  52.6M Project</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center"><a href="Portfolio.html"
+            class="inline-block bg-oil-blue text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base lg:text-lg hover:bg-yellow-700 transition-colors"><i
+              class="fa-solid fa-folder-open mr-2 sm:mr-3"></i>
+            View All Projects
+          </a></div>
+      </div>
+    </section>
+    <section id="media-section"
+      class="py-24 bg-gradient-to-br from-oil-dark to-gray-900 relative overflow-hidden">
+      <div class="absolute inset-0 industrial-pattern opacity-30"></div>
+      <div class="relative max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16"><span
+            class="text-oil-accent font-semibold text-lg tracking-wide">MEDIA
+            CENTER</span>
+          <h2 class="text-5xl font-bold text-white mt-4 mb-6">
+            Latest News &amp;
+            <span class="text-oil-accent">Media Coverage</span>
+          </h2>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+            Stay updated with our latest achievements, industry insights, and
+            company developments through our comprehensive media coverage.
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12 mb-16">
+          <div id="press-releases"
+            class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
+            <h3 class="text-2xl font-bold text-white mb-6 flex items-center"><i
+                class="fa-solid fa-newspaper text-oil-accent mr-3"></i>
+              Press Releases
+            </h3>
+            <div class="space-y-4">
+              <div class="border-b border-white/20 pb-4">
+                <div class="flex justify-between items-start mb-2">
+                  <h4 class="text-white font-semibold">Q1 2024 Financial Results
+                  </h4><span class="text-oil-accent text-sm">Mar 20</span>
+                </div>
+                <p class="text-gray-300 text-sm">Record-breaking quarterly
+                  performance with 35% revenue growth...</p>
+              </div>
+              <div class="border-b border-white/20 pb-4">
+                <div class="flex justify-between items-start mb-2">
+                  <h4 class="text-white font-semibold">New Partnership with
+                    Shell</h4><span class="text-oil-accent text-sm">Mar
+                    18</span>
+                </div>
+                <p class="text-gray-300 text-sm">Strategic alliance for
+                  renewable energy projects across the region...</p>
+              </div>
+              <div class="pb-4">
+                <div class="flex justify-between items-start mb-2">
+                  <h4 class="text-white font-semibold">Safety Excellence Award
+                  </h4><span class="text-oil-accent text-sm">Mar 15</span>
+                </div>
+                <p class="text-gray-300 text-sm">Recognition for achieving 1000+
+                  days without incidents...</p>
+              </div>
+            </div><a href="Media.html#press-releases"
+              class="text-oil-accent font-semibold hover:text-yellow-400 transition-colors mt-4">
+              View All Press Releases <i
+                class="fa-solid fa-arrow-right ml-2"></i></a>
+          </div>
+          <div id="media-gallery"
+            class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
+            <h3 class="text-2xl font-bold text-white mb-6 flex items-center"><i
+                class="fa-solid fa-images text-oil-accent mr-3"></i>
+              Media Gallery
+            </h3>
+            <div class="grid grid-cols-2 gap-4 mb-6"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/89160d86c9-40aeca44858228035600.png"
+                alt="Industrial facility aerial view"
+                class="w-full h-24 object-cover rounded-lg"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/7645efa8d0-68c713f43f8757b3c5d6.png"
+                alt="Team of engineers in safety gear"
+                class="w-full h-24 object-cover rounded-lg"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/507de01e75-3a7fff6d30cc1f98dfe9.png"
+                alt="Modern control room operations"
+                class="w-full h-24 object-cover rounded-lg"><img
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/539ebe87ae-050749a1ccf51d1296c0.png"
+                alt="Heavy industrial equipment"
+                class="w-full h-24 object-cover rounded-lg"></div><a href="Media.html#gallery"
+              class="text-oil-accent font-semibold hover:text-yellow-400 transition-colors">
+              View Full Gallery <i
+                class="fa-solid fa-arrow-right ml-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="download-brochure-section"
+      class="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-oil-blue to-blue-900 relative overflow-hidden">
+      <div class="absolute inset-0 industrial-pattern opacity-20"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center">
+          <div class="mb-6 sm:mb-8"><span
+              class="text-oil-accent font-semibold text-sm sm:text-base lg:text-lg tracking-wide">COMPANY
+              OVERVIEW</span>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-3 sm:mt-4 mb-4 sm:mb-6">
+              Download Our
+              <span class="text-oil-accent">Company Brochure</span>
+            </h2>
+            <p
+              class="text-sm sm:text-base lg:text-xl text-gray-300 max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
+              Get comprehensive information about our services, capabilities,
+              and successful projects.
+              Fill out the form below to receive our detailed company brochure.
+            </p>
+          </div>
+          <div
+            class="max-w-md mx-auto bg-white/10 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-white/20">
+            <div class="mb-6">
+              <div
+                class="w-16 h-16 sm:w-20 sm:h-20 bg-oil-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <i
+                  class="fa-solid fa-download text-white text-2xl sm:text-3xl"></i>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Company
+                Brochure
+              </h3>
+              <p class="text-gray-300 text-xs sm:text-sm">Complete overview of
+                our services
+                and capabilities</p>
+            </div><button id="download-brochure-btn"
+              class="w-full bg-oil-accent text-white py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base lg:text-lg hover:bg-yellow-600 transition-colors flex items-center justify-center group"><i
+                class="fa-solid fa-file-pdf mr-2 sm:mr-3 group-hover:scale-110 transition-transform"></i>
+              Download Brochure (PDF)
+            </button>
+            <div
+              class="mt-4 flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-gray-300 text-xs sm:text-sm">
+              <span class="flex items-center"><i
+                  class="fa-solid fa-file-pdf text-red-400 mr-1"></i>
+                PDF Format
+              </span><span class="flex items-center"><i
+                  class="fa-solid fa-weight-hanging text-oil-accent mr-1"></i>
+                2.5 MB
+              </span><span class="flex items-center"><i
+                  class="fa-solid fa-file-lines text-blue-400 mr-1"></i>
+                24 Pages
+              </span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="brochure-modal"
+      class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center opacity-0 invisible transition-all duration-300">
+      <div
+        class="bg-white rounded-xl max-w-md w-full mx-4 transform scale-95 transition-transform duration-300">
+        <div class="p-8">
+          <div class="flex justify-between items-center mb-6">
+            <div>
+              <h3 class="text-2xl font-bold text-oil-dark">Download Brochure
+              </h3>
+              <p class="text-oil-gray">Please fill out the form to download</p>
+            </div><button id="close-modal"
+              class="text-oil-gray hover:text-oil-dark"><i
+                class="fa-solid fa-times text-xl"></i></button>
+          </div>
+          <form id="brochure-form" class="space-y-4">
+            <div><input type="text" name="name" placeholder="Full Name *"
+                required=""
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-oil-blue">
+            </div>
+            <div><input type="email" name="email" placeholder="Email Address *"
+                required=""
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-oil-blue">
+            </div>
+            <div><input type="tel" name="phone" placeholder="Phone Number"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-oil-blue">
+            </div>
+            <div><input type="text" name="company" placeholder="Company Name"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-oil-blue">
+            </div>
+            <div><select name="service"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-oil-blue">
+                <option value="">Service Interest (Optional)</option>
+                <option value="epc">EPC &amp; Maintenance</option>
+                <option value="fabrication">Fabrication &amp; Manufacturing
+                </option>
+                <option value="specialized">Specialized Services</option>
+                <option value="civil">Civil &amp; Infrastructure</option>
+              </select></div>
+            <div class="flex items-start space-x-2"><input type="checkbox"
+                id="agree-terms" name="terms" required="" class="mt-1"><label
+                for="agree-terms" class="text-sm text-oil-gray">
+                I agree to receive communications from Crystal Oilfield and
+                understand my information will be used according to the privacy
+                policy.
+              </label></div><button type="submit"
+              class="w-full bg-oil-blue text-white py-3 rounded-lg font-semibold hover:bg-yellow-700 transition-colors"><i
+                class="fa-solid fa-download mr-2"></i>
+              Submit &amp; Download
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <section id="certifications-section"
+      class="py-12 sm:py-16 bg-gradient-to-r from-oil-dark to-gray-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-8 sm:mb-12"><span
+            class="text-oil-accent font-semibold text-sm sm:text-base lg:text-lg tracking-wide">QUALITY
+            ASSURANCE</span>
+          <h2
+            class="text-3xl sm:text-4xl font-bold text-white mt-3 sm:mt-4 mb-4 sm:mb-6">
+            Certified Excellence &amp;
+            <span class="text-oil-accent">Industry Standards</span>
+          </h2>
+          <p
+            class="text-sm sm:text-base lg:text-xl text-gray-300 max-w-3xl mx-auto px-4">
+            Our commitment to quality is validated by internationally recognized
+            certifications.
+          </p>
+        </div>
+        <div
+          class="flex justify-center items-center gap-4 sm:gap-6 md:gap-8 flex-wrap max-w-4xl mx-auto">
+          <div id="cert-iso-9001"
+            class="group bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 text-center hover:bg-white/20 transition-all duration-300 border border-white/20 w-40 sm:w-48">
+            <div
+              class="w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+              <i
+                class="fa-solid fa-certificate text-oil-blue text-xl sm:text-2xl"></i>
+            </div>
+            <h3 class="text-white font-bold mb-2 text-sm sm:text-base">ISO 9001
+            </h3>
+            <p class="text-gray-300 text-xs sm:text-sm">Quality Management
+              System</p>
+          </div>
+          <div id="cert-iso-14001"
+            class="group bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 text-center hover:bg-white/20 transition-all duration-300 border border-white/20 w-40 sm:w-48">
+            <div
+              class="w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+              <i
+                class="fa-solid fa-leaf text-green-600 text-xl sm:text-2xl"></i>
+            </div>
+            <h3 class="text-white font-bold mb-2 text-sm sm:text-base">ISO 14001
+            </h3>
+            <p class="text-gray-300 text-xs sm:text-sm">Environmental Management
+            </p>
+          </div>
+          <div id="cert-ohsas-45001"
+            class="group bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 text-center hover:bg-white/20 transition-all duration-300 border border-white/20 w-40 sm:w-48">
+            <div
+              class="w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+              <i
+                class="fa-solid fa-shield-halved text-red-600 text-xl sm:text-2xl"></i>
+            </div>
+            <h3 class="text-white font-bold mb-2 text-sm sm:text-base">ISO 45001
+            </h3>
+            <p class="text-gray-300 text-xs sm:text-sm">Occupational Health
+              &amp; Safety
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="group-companies-section"
+      class="py-12 sm:py-16 md:py-20 lg:py-24 bg-white relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-blue-50">
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16"><span
+            class="text-oil-blue font-semibold text-sm sm:text-base lg:text-lg tracking-wide">OUR
+            NETWORK</span>
+          <h2
+            class="text-3xl sm:text-4xl lg:text-5xl font-bold text-oil-dark mt-3 sm:mt-4 mb-4 sm:mb-6">
+            Our
+            Group&nbsp;<span class="text-oil-blue">Companies</span></h2>
+          <p
+            class="text-sm sm:text-base lg:text-xl text-oil-gray max-w-3xl mx-auto px-4">
+            Part of a comprehensive network of specialized companies delivering
+            integrated solutions.
+          </p>
+        </div>
+        <div
+          class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+          <div id="company-1"
+            class="group bg-white rounded-xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-200">
+            <div class="flex items-center mb-4 sm:mb-6">
+              <div
+                class="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center mr-3 sm:mr-4">
+                <i class="fa-solid fa-eye text-white text-lg sm:text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-lg sm:text-2xl font-bold text-oil-dark">Crystal
+                  Vision</h3>
+                <p class="text-oil-gray text-xs sm:text-base">Technology
+                  Solutions</p>
+              </div>
+            </div>
+            <p class="text-oil-gray mb-4 sm:mb-6 text-sm sm:text-base">Advanced
+              automation, control systems,
+              and digital transformation solutions for industrial facilities.
+            </p>
+            <ul class="space-y-2 mb-4 sm:mb-6">
+              <li class="flex items-center text-oil-gray text-sm"><i
+                  class="fa-solid fa-check text-oil-blue mr-2"></i>
+                Industrial Automation
+              </li>
+              <li class="flex items-center text-oil-gray text-sm"><i
+                  class="fa-solid fa-check text-oil-blue mr-2"></i>
+                Control Systems
+              </li>
+              <li class="flex items-center text-oil-gray text-sm"><i
+                  class="fa-solid fa-check text-oil-blue mr-2"></i>
+                Digital Solutions
+              </li>
+            </ul><button
+              class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors text-sm sm:text-base">
+              Visit Website <i
+                class="fa-solid fa-external-link-alt ml-2"></i></button>
+          </div>
+          <div id="company-2"
+            class="group bg-white rounded-xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-200">
+            <div class="flex items-center mb-4 sm:mb-6">
+              <div
+                class="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-green-600 to-emerald-600 rounded-lg flex items-center justify-center mr-3 sm:mr-4">
+                <i class="fa-solid fa-leaf text-white text-lg sm:text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-lg sm:text-2xl font-bold text-oil-dark">Crystal
+                  Green</h3>
+                <p class="text-oil-gray text-xs sm:text-base">Environmental
+                  Solutions</p>
+              </div>
+            </div>
+            <p class="text-oil-gray mb-4 sm:mb-6 text-sm sm:text-base">
+              Sustainable environmental solutions,
+              waste management, and renewable energy integration services.</p>
+            <ul class="space-y-2 mb-4 sm:mb-6">
+              <li class="flex items-center text-oil-gray text-sm"><i
+                  class="fa-solid fa-check text-oil-blue mr-2"></i>
+                Waste Management
+              </li>
+              <li class="flex items-center text-oil-gray text-sm"><i
+                  class="fa-solid fa-check text-oil-blue mr-2"></i>
+                Environmental Consulting
+              </li>
+              <li class="flex items-center text-oil-gray text-sm"><i
+                  class="fa-solid fa-check text-oil-blue mr-2"></i>
+                Renewable Energy
+              </li>
+            </ul><button
+              class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors text-sm sm:text-base">
+              Visit Website <i
+                class="fa-solid fa-external-link-alt ml-2"></i></button>
+          </div>
+          <div id="company-3"
+            class="group bg-white rounded-xl shadow-xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-200">
+            <div class="flex items-center mb-4 sm:mb-6">
+              <div
+                class="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-purple-600 to-violet-600 rounded-lg flex items-center justify-center mr-3 sm:mr-4">
+                <i
+                  class="fa-solid fa-shipping-fast text-white text-lg sm:text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-lg sm:text-2xl font-bold text-oil-dark">Crystal
+                  Logistics
+                </h3>
+                <p class="text-oil-gray text-xs sm:text-base">Supply Chain
+                  Solutions</p>
+              </div>
+            </div>
+            <p class="text-oil-gray mb-4 sm:mb-6 text-sm sm:text-base">
+              Comprehensive logistics, supply chain
+              management, and procurement services for industrial projects.</p>
+            <ul class="space-y-2 mb-4 sm:mb-6">
+              <li class="flex items-center text-oil-gray text-sm"><i
+                  class="fa-solid fa-check text-oil-blue mr-2"></i>
+                Global Procurement
+              </li>
+              <li class="flex items-center text-oil-gray text-sm"><i
+                  class="fa-solid fa-check text-oil-blue mr-2"></i>
+                Logistics Management
+              </li>
+              <li class="flex items-center text-oil-gray text-sm"><i
+                  class="fa-solid fa-check text-oil-blue mr-2"></i>
+                Warehouse Solutions
+              </li>
+            </ul><button
+              class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors text-sm sm:text-base">
+              Visit Website <i
+                class="fa-solid fa-external-link-alt ml-2"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="bg-oil-dark text-white relative overflow-hidden">
+      <div class="absolute inset-0 industrial-pattern opacity-20"></div>
+      <div class="relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
+            <div class="lg:col-span-2">
+              <div class="flex items-center mb-6">
+                <div class="mr-3">
+                  <img src="CO_Logo.svg" alt="Crystal Oilfield Logo" class="h-[72px] w-auto">
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold">Crystal Oilfield</h3>
+                  <p class="text-oil-accent">Contracting And Trading</p>
+                </div>
+              </div>
+              <p class="text-gray-300 mb-6 max-w-md">
+                Leading the oil and gas industry with innovative engineering
+                solutions, comprehensive EPC services, and unwavering commitment
+                to safety and quality across the GCC region.
+              </p>
+              <div class="flex space-x-4 mb-6"><span
+                  class="w-10 h-10 bg-oil-blue rounded-lg flex items-center justify-center hover:bg-yellow-700 transition-colors cursor-pointer"><i
+                    class="fa-brands fa-linkedin text-white"></i></span><span
+                  class="w-10 h-10 bg-oil-blue rounded-lg flex items-center justify-center hover:bg-yellow-700 transition-colors cursor-pointer"><i
+                    class="fa-brands fa-twitter text-white"></i></span><span
+                  class="w-10 h-10 bg-oil-blue rounded-lg flex items-center justify-center hover:bg-yellow-700 transition-colors cursor-pointer"><i
+                    class="fa-brands fa-facebook text-white"></i></span><span
+                  class="w-10 h-10 bg-oil-blue rounded-lg flex items-center justify-center hover:bg-yellow-700 transition-colors cursor-pointer"><i
+                    class="fa-brands fa-instagram text-white"></i></span><span
+                  class="w-10 h-10 bg-oil-blue rounded-lg flex items-center justify-center hover:bg-yellow-700 transition-colors cursor-pointer"><i
+                    class="fa-brands fa-youtube text-white"></i></span></div>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-6 text-oil-accent">Contact
+                Information</h4>
+              <div class="space-y-4">
+                <div class="flex items-start space-x-3"><i
+                    class="fa-solid fa-map-marker-alt text-oil-accent mt-1"></i>
+                  <div>
+                    <p class="text-white font-medium">Head Office</p>
+                    <p class="text-gray-300 text-sm">Office No. 3301,3302, Excellence Tower P. O. Box: 80025 |West Bay,<br>Doha, Qatar</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3"><i
+                    class="fa-solid fa-industry text-oil-accent mt-1"></i>
+                  <div>
+                    <p class="text-white font-medium">Fab Shop</p>
+                    <p class="text-gray-300 text-sm">Bldg. No.239, Zone 81, Street No.7, New Industrial Area <br>Doha, Qatar</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3"><i
+                    class="fa-solid fa-phone text-oil-accent mt-1"></i>
+                  <div>
+                    <p class="text-white font-medium">Phone</p>
+                    <p class="text-gray-300 text-sm">+974-40120736</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3"><i
+                    class="fa-solid fa-envelope text-oil-accent mt-1"></i>
+                  <div>
+                    <p class="text-white font-medium">Email</p>
+                    <p class="text-gray-300 text-sm">info@crystaloilfield.qa
+                    </p>
+                    <p class="text-gray-300 text-sm">proposals@crystaloilfield.qa
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-6 text-oil-accent">Quick Links
+              </h4>
+              <div class="space-y-3"><a href="index.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Home</span></a><a
+                  href="About.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>About
+                    Us</span></a>
+                <div class="relative group"><button
+                    class="flex items-center text-gray-300 hover:text-oil-accent transition-colors w-full"><i
+                      class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm"></i><span>Services</span><i
+                      class="fa-solid fa-chevron-down text-xs ml-2"></i></button>
+                  <div class="ml-6 mt-2 space-y-2 hidden group-hover:block"><a
+                      href="Crystal Oilfield Services.html"
+                      class="flex items-center text-gray-400 hover:text-oil-accent transition-colors text-sm"><i
+                        class="fa-solid fa-oil-well text-oil-accent mr-2 text-xs"></i><span>Crystal
+                        Oilfield Contracting</span></a><a href="Crystal Vision Services.html"
+                      class="flex items-center text-gray-400 hover:text-oil-accent transition-colors text-sm"><i
+                        class="fa-solid fa-industry text-oil-accent mr-2 text-xs"></i><span>Crystal
+                        Vision Steel Fabrication</span></a></div>
+                </div><a href="Portfolio.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Portfolio</span></a><a
+                  href="Media.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Media</span></a><a
+                  href="Career.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Career</span></a><a
+                  href="Contact.html"
+                  class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Contact</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-white/20 py-6 sm:py-8">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center">
+              <p class="text-gray-300 text-xs sm:text-sm">© 2025 Crystal
+                Oilfield. All
+                rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="scroll-to-top"
+      class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 w-10 h-10 sm:w-12 sm:h-12 bg-oil-accent rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:bg-yellow-600 transition-colors z-50 opacity-0 invisible">
+      <i class="fa-solid fa-chevron-up text-white text-sm sm:text-base"></i>
+    </div>
+    <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+      mobileMenuBtn.addEventListener('click', () =>
+      {
+        mobileMenu.classList.add('active');
+      });
+
+      mobileMenuClose.addEventListener('click', () =>
+      {
+        mobileMenu.classList.remove('active');
+      });
+
+      // Mobile services dropdown
+      const mobileServicesToggle = document.getElementById(
+        'mobile-services-toggle');
+      const mobileServicesMenu = document.getElementById('mobile-services-menu');
+
+      mobileServicesToggle.addEventListener('click', () =>
+      {
+        mobileServicesMenu.classList.toggle('hidden');
+        const icon = mobileServicesToggle.querySelector('i');
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+      });
+
+      // Mobile companies dropdown
+      const mobileCompaniesToggle = document.getElementById(
+        'mobile-companies-toggle');
+      const mobileCompaniesMenu = document.getElementById(
+        'mobile-companies-menu');
+
+      mobileCompaniesToggle.addEventListener('click', () =>
+      {
+        mobileCompaniesMenu.classList.toggle('hidden');
+        const icon = mobileCompaniesToggle.querySelector('i');
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', function(event)
+      {
+        if (!mobileMenu.contains(event.target) && !mobileMenuBtn.contains(
+            event.target))
+        {
+          mobileMenu.classList.remove('active');
+        }
+      });
+
+      window.addEventListener('scroll', function()
+      {
+        const scrollToTopBtn = document.getElementById('scroll-to-top');
+        if (window.pageYOffset > 300)
+        {
+          scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+          scrollToTopBtn.classList.add('opacity-100', 'visible');
+        }
+        else
+        {
+          scrollToTopBtn.classList.add('opacity-0', 'invisible');
+          scrollToTopBtn.classList.remove('opacity-100', 'visible');
+        }
+      });
+
+      document.getElementById('scroll-to-top').addEventListener('click',
+        function()
+        {
+          window.scrollTo(
+          {
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+
+      const downloadBtn = document.getElementById('download-brochure-btn');
+      const modal = document.getElementById('brochure-modal');
+      const closeModal = document.getElementById('close-modal');
+      const brochureForm = document.getElementById('brochure-form');
+
+      downloadBtn.addEventListener('click', function()
+      {
+        modal.classList.remove('opacity-0', 'invisible');
+        modal.querySelector('.bg-white').classList.remove('scale-95');
+        modal.querySelector('.bg-white').classList.add('scale-100');
+      });
+
+      closeModal.addEventListener('click', function()
+      {
+        modal.classList.add('opacity-0', 'invisible');
+        modal.querySelector('.bg-white').classList.add('scale-95');
+        modal.querySelector('.bg-white').classList.remove('scale-100');
+      });
+
+      modal.addEventListener('click', function(e)
+      {
+        if (e.target === modal)
+        {
+          closeModal.click();
+        }
+      });
+
+      brochureForm.addEventListener('submit', function(e)
+      {
+        e.preventDefault();
+        const formData = new FormData(brochureForm);
+        const data = Object.fromEntries(formData);
+
+        downloadBtn.innerHTML =
+          '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Processing...';
+
+        setTimeout(() =>
+        {
+          const link = document.createElement('a');
+          link.href = '#';
+          link.download = 'Crystal-Oilfield-Company-Brochure.pdf';
+          link.click();
+
+          brochureForm.reset();
+          closeModal.click();
+          downloadBtn.innerHTML =
+            '<i class="fa-solid fa-file-pdf mr-3 group-hover:scale-110 transition-transform"></i>Download Brochure (PDF)';
+
+          alert(
+            'Thank you! Your brochure download will begin shortly. We will also send a copy to your email address.'
+          );
+        }, 2000);
+      });
+    </script>
+  </body>
+
+</html>
