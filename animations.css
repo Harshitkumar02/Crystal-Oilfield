@@ -1,1 +1,9 @@
-
+/* Global subtle animations */
+.fade-in-up{opacity:0;transform:translateY(8px);transition:opacity 600ms ease,transform 600ms ease;will-change:opacity,transform}
+.in-view{opacity:1 !important;transform:translateY(0) !important}
+.anim-hover-scale{transition:transform 200ms ease,box-shadow 200ms ease}
+.anim-hover-scale:hover{transform:scale(1.03)}
+.parallax-target{will-change:transform}
+@media (prefers-reduced-motion: reduce){
+  .fade-in-up,.anim-hover-scale,.parallax-target{transition:none !important;transform:none !important}
+}
