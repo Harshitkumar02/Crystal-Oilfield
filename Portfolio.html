@@ -19,7 +19,6 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="animations.css">
     <style>
       ::-webkit-scrollbar
       {
@@ -167,6 +166,13 @@
   </head>
 
   <body class="bg-gray-50">
+    <!-- Loading Animation -->
+    <div id="loading-container" class="loading-container">
+      <div class="logo-spinner">
+        <img src="CO_Logo.svg" alt="Crystal Oilfield Services">
+      </div>
+      <div class="loading-text">Loading...</div>
+    </div>
     <!-- Header Section - Responsive -->
     <header id="header"
       class="bg-white shadow-lg border-b-4 border-oil-blue relative z-50">
@@ -334,7 +340,7 @@
       </div>
     </header><!-- Hero Section -->
     <section id="portfolio-hero"
-      class="relative h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden">
+      class="relative h-[400px] sm:h-[500px] md:h-[600px] overflow-visible z-0">
       <div class="absolute inset-0"><img
           src="https://storage.googleapis.com/uxpilot-auth.appspot.com/184fc82b39-bc594ea54660fc4a94fb.png"
           alt="Industrial oil refinery complex with large storage tanks and processing units, aerial view, professional photography"
@@ -378,7 +384,7 @@
       </div>
     </section><!-- Key Metrics Section -->
     <section id="key-metrics"
-      class="py-12 sm:py-16 md:py-24 bg-white relative overflow-hidden">
+      class="py-12 sm:py-16 md:py-24 bg-white relative">
       <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50">
       </div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
@@ -462,7 +468,7 @@
       </div>
     </section><!-- Completed Projects Section -->
     <section id="completed-projects"
-      class="py-12 sm:py-16 md:py-24 bg-gradient-to-br from-oil-dark to-gray-900 relative overflow-hidden">
+      class="py-12 sm:py-16 md:py-24 bg-gradient-to-br from-oil-dark to-gray-900 relative">
       <div class="absolute inset-0 industrial-pattern opacity-30"></div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-8 sm:mb-12 md:mb-16"><span
@@ -481,10 +487,14 @@
           class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
           <div data-location="somalia" data-value="15"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c2472b187a-2d4ce74da64dbb7b9b20.png"
                 alt="Industrial storage tank farm construction site in desert landscape Somalia"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -508,10 +518,14 @@
           </div>
           <div data-location="uae" data-value="7.5"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ce2991660f-9d8c3b1ecc8c03056f73.png"
                 alt="Oil storage terminal industrial facility Hamriyah free zone UAE"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -536,10 +550,14 @@
           </div>
           <div data-location="uae" data-value="5"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a93bc9a2b3-3cd321785363c5f21957.png"
                 alt="ATS Terminals oil storage facility"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -564,10 +582,14 @@
           </div>
           <div data-location="uae" data-value="18"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ce2991660f-9d8c3b1ecc8c03056f73.png"
                 alt="GREENOL oil storage terminal facility"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -591,10 +613,14 @@
           </div>
           <div data-location="uae" data-value="20"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ff653a043b-0fddddc77b1c0df9c45d.png"
                 alt="AXCL Gulf oil storage terminal"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -619,10 +645,14 @@
           </div>
           <div data-location="uae" data-value="52.6"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ff653a043b-0fddddc77b1c0df9c45d.png"
                 alt="Modern oil storage terminal with distillation plant industrial facility"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -647,10 +677,14 @@
           </div>
           <div data-location="uae" data-value="10"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/63c60350a9-220ab0f6f336ddd304ea.png"
                 alt="AP Energy oil storage terminal"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -675,10 +709,14 @@
           </div>
           <div data-location="uae" data-value="35"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5e24f24b17-49f554860d13727f6090.png"
                 alt="Water storage tanks construction industrial project UAQ"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -701,10 +739,14 @@
           </div>
           <div data-location="uae" data-value="5"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c75c3f4749-93d64942fbcf269f44ff.png"
                 alt="Coral Energy oil storage terminal"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -729,10 +771,14 @@
           </div>
           <div data-location="uae" data-value="15"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/63c60350a9-220ab0f6f336ddd304ea.png"
                 alt="Gulf Trust Ship Fuel Supply terminal"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -757,10 +803,14 @@
           </div>
           <div data-location="uae" data-value="70"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/63c60350a9-220ab0f6f336ddd304ea.png"
                 alt="Modern petroleum terminal with storage facilities"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -784,10 +834,14 @@
           </div>
           <div data-location="uae" data-value="150"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a93bc9a2b3-3cd321785363c5f21957.png"
                 alt="Large scale oil storage terminal complex with multiple tanks"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -812,10 +866,14 @@
           </div>
           <div data-location="uae" data-value="35"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/75d644fde1-4dbb13c8a7bbc4544944.png"
                 alt="Regal Petro Trading terminal"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -840,10 +898,14 @@
           </div>
           <div data-location="uae" data-value="85"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c75c3f4749-93d64942fbcf269f44ff.png"
                 alt="Oil storage terminal construction with cranes and industrial equipment"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -868,10 +930,14 @@
           </div>
           <div data-location="uae" data-value="72"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5d426dcbbb-d9865de9cd51ba2676a3.png"
                 alt="Alaska International oil storage terminal construction"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -896,10 +962,14 @@
           </div>
           <div data-location="uae" data-value="38"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/75d644fde1-4dbb13c8a7bbc4544944.png"
                 alt="Texol oil storage terminal industrial facility"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -923,10 +993,14 @@
           </div>
           <div data-location="uae" data-value="12"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl">
-            <div class="h-40 sm:h-48 overflow-hidden"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ce2991660f-9d8c3b1ecc8c03056f73.png"
                 alt="United Oil Supply terminal expansion project"
-                class="w-full h-full object-cover"></div>
+                class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
             <div class="p-4 sm:p-6">
               <div class="flex justify-between items-start mb-3 sm:mb-4">
                 <div>
@@ -953,7 +1027,7 @@
       </div>
     </section><!-- Ongoing Projects Section -->
     <section id="ongoing-projects"
-      class="py-12 sm:py-16 md:py-24 bg-white relative overflow-hidden">
+      class="py-12 sm:py-16 md:py-24 bg-white relative">
       <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50">
       </div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
@@ -974,10 +1048,13 @@
           class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
           <div data-location="yemen" data-value="25000"
             class="project-card bg-gradient-to-br from-oil-blue to-blue-700 rounded-xl overflow-hidden shadow-xl text-white border-4 border-oil-accent">
-            <div class="h-40 sm:h-48 overflow-hidden relative"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/0190c30064-5f4ba980fa73bebb83b7.png"
                 alt="Large scale oil refinery construction site with cranes and equipment Yemen"
                 class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
               <div class="absolute top-4 left-4"><span
                   class="bg-oil-accent text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse"><i
                     class="fa-solid fa-cogs mr-1"></i>In Progress</span></div>
@@ -1001,10 +1078,13 @@
           </div>
           <div data-location="ghana" data-value="1370"
             class="project-card bg-gradient-to-br from-green-600 to-emerald-700 rounded-xl overflow-hidden shadow-xl text-white border-4 border-oil-accent">
-            <div class="h-40 sm:h-48 overflow-hidden relative"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/0d82221444-48d74abf9e53c5c4111d.png"
                 alt="Oil storage tank farm construction in Ghana industrial complex"
                 class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
               <div class="absolute top-4 left-4"><span
                   class="bg-oil-accent text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse"><i
                     class="fa-solid fa-cogs mr-1"></i>In Progress</span></div>
@@ -1028,10 +1108,13 @@
           </div>
           <div data-location="iraq" data-value="120"
             class="project-card bg-gradient-to-br from-purple-600 to-violet-700 rounded-xl overflow-hidden shadow-xl text-white border-4 border-oil-accent">
-            <div class="h-40 sm:h-48 overflow-hidden relative"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8514204c9a-bdf9374c4b8b064cfce0.png"
                 alt="Refinery reconstruction project with industrial equipment Iraq"
                 class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
               <div class="absolute top-4 left-4"><span
                   class="bg-oil-accent text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse"><i
                     class="fa-solid fa-cogs mr-1"></i>In Progress</span></div>
@@ -1055,10 +1138,13 @@
           </div>
           <div data-location="iraq" data-value="60"
             class="project-card bg-gradient-to-br from-red-600 to-pink-700 rounded-xl overflow-hidden shadow-xl text-white border-4 border-oil-accent">
-            <div class="h-40 sm:h-48 overflow-hidden relative"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/63c60350a9-220ab0f6f336ddd304ea.png"
                 alt="Oil storage tank farm construction with industrial infrastructure Iraq"
                 class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
               <div class="absolute top-4 left-4"><span
                   class="bg-oil-accent text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse"><i
                     class="fa-solid fa-cogs mr-1"></i>In Progress</span></div>
@@ -1082,10 +1168,13 @@
           </div>
           <div data-location="uae" data-value="136"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl border-4 border-oil-accent">
-            <div class="h-40 sm:h-48 overflow-hidden relative"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c75c3f4749-0c9ffabeb738ee1293ba.png"
                 alt="Oil storage terminal construction with distillation unit"
                 class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
               <div class="absolute top-4 left-4"><span
                   class="bg-oil-accent text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse"><i
                     class="fa-solid fa-cogs mr-1"></i>In Progress</span></div>
@@ -1110,10 +1199,13 @@
           </div>
           <div data-location="uae" data-value="106"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl border-4 border-oil-accent">
-            <div class="h-40 sm:h-48 overflow-hidden relative"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/cd31c5762f-9666a98a39c1977fbf7a.png"
                 alt="Petrochemical terminal construction project"
                 class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
               <div class="absolute top-4 left-4"><span
                   class="bg-oil-accent text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse"><i
                     class="fa-solid fa-cogs mr-1"></i>In Progress</span></div>
@@ -1137,10 +1229,13 @@
           </div>
           <div data-location="uae" data-value="72"
             class="project-card bg-white rounded-xl overflow-hidden shadow-xl border-4 border-oil-accent">
-            <div class="h-40 sm:h-48 overflow-hidden relative"><img
+            <div class="relative h-40 sm:h-48 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e88df16e5e-72b4ae06eecda40afcbd.png"
                 alt="Oil storage facility with distillation plant construction"
                 class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
               <div class="absolute top-4 left-4"><span
                   class="bg-oil-accent text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse"><i
                     class="fa-solid fa-cogs mr-1"></i>In Progress</span></div>
@@ -1631,7 +1726,12 @@
         });
     </script>
     <script src="animations.js"></script>
-  <script src="animations.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+        const loader = document.getElementById('loading-container');
+        if (loader) loader.classList.add('hidden');
+      });
+    </script>
   </body>
 
 </html>

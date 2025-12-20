@@ -1,8 +1,121 @@
+/* Loading Animation - Logo Centric */
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.loading-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.logo-spinner {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.logo-spinner::before {
+  content: '';
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border: 3px solid rgba(243, 129, 32, 0.2);
+  border-radius: 50%;
+  animation: pulseRing 1.5s ease-in-out infinite;
+}
+
+.logo-spinner::after {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border: 2px solid rgba(243, 129, 32, 0.1);
+  border-radius: 50%;
+  animation: pulseRing 1.5s ease-in-out infinite 0.3s;
+}
+
+.logo-spinner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: logoPulse 1.5s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes logoPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
+}
+
+.loading-text {
+  color: #f38120;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  animation: fadeInOut 1.5s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 /* Global subtle animations */
 .fade-in-up{opacity:0;transform:translateY(8px);transition:opacity 600ms ease,transform 600ms ease;will-change:opacity,transform}
 .in-view{opacity:1 !important;transform:translateY(0) !important}
 .anim-hover-scale{transition:transform 200ms ease,box-shadow 200ms ease}
 .anim-hover-scale:hover{transform:scale(1.03)}
+
+/* Card overlay hover effects - Media style */
+.service-card .relative.h-64 .absolute.inset-0:not(.image-overlay-icon),
+.project-card .h-40.sm\:h-48 ~ .absolute.inset-0,
+.gallery-item .absolute.inset-0:not(.image-overlay-icon){
+  transition:opacity 300ms ease;
+}
+
+.service-card:hover .relative.h-64 .absolute.inset-0:not(.image-overlay-icon),
+.project-card:hover .absolute.inset-0,
+.gallery-item:hover .absolute.inset-0{
+  opacity:1 !important;
+}
+
 .parallax-target{will-change:transform}
 @media (prefers-reduced-motion: reduce){
   .fade-in-up,.anim-hover-scale,.parallax-target{transition:none !important;transform:none !important}

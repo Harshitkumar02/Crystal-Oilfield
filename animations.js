@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
   var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var supportsIO = 'IntersectionObserver' in window;
 
   // Hover-scale for interactive elements
   var hoverSelectors=['button','a','i.fa','img','.project-card','.image-overlay-icon','.filter-btn'];
@@ -8,11 +7,9 @@ document.addEventListener('DOMContentLoaded', function(){
     el.classList.add('anim-hover-scale');
   });
 
-  var fadeTargets=document.querySelectorAll('section, .project-card, h1, h2, h3, h4, p, li, img, .grid > div, .rounded-xl, .card');
-  var shouldAnimateOnScroll = !prefersReduced && supportsIO;
-
-  if(shouldAnimateOnScroll){
-    // Fade-in on scroll for content elements with earlier trigger on mobile
+  if(!prefersReduced){
+    // Fade-in on scroll for content elements - exclude hero sections
+    var fadeTargets=document.querySelectorAll('section:not([id*="hero"]), .project-card, h1, h2, h3, h4, p, li, img, .grid > div, .rounded-xl, .card');
     var io=new IntersectionObserver(function(entries){
       entries.forEach(function(entry){
         if(entry.isIntersecting){
@@ -20,30 +17,12 @@ document.addEventListener('DOMContentLoaded', function(){
           io.unobserve(entry.target);
         }
       });
-    },{threshold:0.1, rootMargin:'0px 0px -10% 0px'});
-
+    },{threshold:0.05, rootMargin:'100px'});
     fadeTargets.forEach(function(el){
       el.classList.add('fade-in-up');
       io.observe(el);
     });
 
-    // Safety reveal in case an element never intersects (e.g., rare layout edge cases)
-    setTimeout(function(){
-      fadeTargets.forEach(function(el){
-        if(!el.classList.contains('in-view')){
-          el.classList.add('in-view');
-        }
-      });
-    },1500);
-  } else {
-    // When animations are reduced or IO unsupported, show content immediately
-    fadeTargets.forEach(function(el){
-      el.classList.remove('fade-in-up');
-      el.classList.add('in-view');
-    });
-  }
-
-  if(!prefersReduced){
     // Parallax for hero images
     var heroSections=Array.prototype.slice.call(document.querySelectorAll('section[id*="hero"]'));
     var parallaxImages=[];
@@ -65,4 +44,19 @@ document.addEventListener('DOMContentLoaded', function(){
     applyParallax();
     window.addEventListener('scroll',applyParallax,{passive:true});
   }
+
+  // On page load, animate visible elements and set a fallback timeout
+  window.addEventListener('load', function(){
+    setTimeout(function(){
+      document.querySelectorAll('.fade-in-up').forEach(function(el){
+        var rect = el.getBoundingClientRect();
+        // If element is in viewport or close to it, trigger animation
+        if(rect.bottom >= -100 && rect.top <= window.innerHeight + 100){
+          if(!el.classList.contains('in-view')){
+            el.classList.add('in-view');
+          }
+        }
+      });
+    }, 100);
+  });
 });

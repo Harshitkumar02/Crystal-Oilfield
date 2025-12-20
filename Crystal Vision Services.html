@@ -250,6 +250,13 @@
   </head>
 
   <body class="bg-gray-50">
+    <!-- Loading Animation -->
+    <div id="loading-container" class="loading-container">
+      <div class="logo-spinner">
+        <img src="CV_Logo.svg" alt="Crystal Oilfield Services">
+      </div>
+      <div class="loading-text">Loading...</div>
+    </div>
     <!-- Header Section - Responsive -->
     <header id="header"
       class="bg-white shadow-lg border-b-4 border-oil-blue relative z-50">
@@ -416,7 +423,7 @@
       </div>
     </header><!-- Hero Section -->
     <section id="services-hero-section"
-      class="relative h-[400px] sm:h-[500px] lg:h-[600px] overflow-hidden">
+      class="relative h-[400px] sm:h-[500px] lg:h-[600px] overflow-visible z-0">
       <div class="absolute inset-0"><img
           src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5de459816c-89d3b9f20053ac142c85.png"
           alt="modern industrial steel fabrication facility"
@@ -454,7 +461,7 @@
       </div>
     </section><!-- Services Grid Section -->
     <section id="services-grid-section"
-      class="py-12 sm:py-16 lg:py-24 bg-white relative overflow-hidden">
+      class="py-12 sm:py-16 lg:py-24 bg-white relative">
       <div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-blue-50">
       </div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
@@ -479,6 +486,9 @@
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/da25d1b8b7-256212e6127cefa9dede.png"
                 alt="structural steel fabrication"
                 class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
               <div
                 class="absolute top-3 left-3 sm:top-4 sm:left-4 image-overlay-icon w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center">
                 <i
@@ -537,6 +547,9 @@
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/84863ecad5-f20365c861bf98cc8648.png"
                 alt="steel frame structures" class="w-full h-full object-cover">
               <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div
                 class="absolute top-3 left-3 sm:top-4 sm:left-4 image-overlay-icon w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center">
                 <i
                   class="fa-solid fa-layer-group text-white text-xl sm:text-2xl animated-icon"></i>
@@ -593,6 +606,9 @@
                 alt="industrial piping spools"
                 class="w-full h-full object-cover">
               <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div
                 class="absolute top-3 left-3 sm:top-4 sm:left-4 image-overlay-icon w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center">
                 <i
                   class="fa-solid fa-pipe text-white text-xl sm:text-2xl animated-icon"></i>
@@ -647,6 +663,9 @@
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9beb7e9dea-7d91b9915ecd3539217b.png"
                 alt="stainless steel materials"
                 class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
               <div
                 class="absolute top-3 left-3 sm:top-4 sm:left-4 image-overlay-icon w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center">
                 <i
@@ -704,6 +723,9 @@
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/30d335218f-eee3a588920b0dc470ab.png"
                 alt="industrial bolts" class="w-full h-full object-cover">
               <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div
                 class="absolute top-3 left-3 sm:top-4 sm:left-4 image-overlay-icon w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center">
                 <i
                   class="fa-solid fa-bolt text-white text-xl sm:text-2xl animated-icon"></i>
@@ -757,6 +779,9 @@
             <div class="relative h-48 sm:h-56 lg:h-64 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/122bc35409-51558db611545f07e2fa.png"
                 alt="abrasive blasting" class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
               <div
                 class="absolute top-3 left-3 sm:top-4 sm:left-4 image-overlay-icon w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center">
                 <i
@@ -813,6 +838,9 @@
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8a5e3454b4-d68cb811ff44cca397c7.png"
                 alt="pressure vessels" class="w-full h-full object-cover">
               <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div
                 class="absolute top-3 left-3 sm:top-4 sm:left-4 image-overlay-icon w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center">
                 <i
                   class="fa-solid fa-tank-water text-white text-xl sm:text-2xl animated-icon"></i>
@@ -865,6 +893,9 @@
             <div class="relative h-48 sm:h-56 lg:h-64 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d5089115d7-a5780e8045ee4beb603f.png"
                 alt="heat exchangers" class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
               <div
                 class="absolute top-3 left-3 sm:top-4 sm:left-4 image-overlay-icon w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center">
                 <i
@@ -919,6 +950,9 @@
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ca6c82ca41-3feee55f796fc23d200f.png"
                 alt="offshore platform" class="w-full h-full object-cover">
               <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div
                 class="absolute top-3 left-3 sm:top-4 sm:left-4 image-overlay-icon w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center">
                 <i
                   class="fa-solid fa-ship text-white text-xl sm:text-2xl animated-icon"></i>
@@ -971,6 +1005,9 @@
             <div class="relative h-48 sm:h-56 lg:h-64 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5ebfcfde7a-58932b769c270a1eaa09.png"
                 alt="thick wall pipe" class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
               <div
                 class="absolute top-3 left-3 sm:top-4 sm:left-4 image-overlay-icon w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center">
                 <i
@@ -1025,6 +1062,9 @@
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6c1b63338d-c0b546f5f2646896f7db.png"
                 alt="modular skid" class="w-full h-full object-cover">
               <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div
                 class="absolute top-3 left-3 sm:top-4 sm:left-4 image-overlay-icon w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center">
                 <i
                   class="fa-solid fa-cubes text-white text-xl sm:text-2xl animated-icon"></i>
@@ -1077,6 +1117,9 @@
             <div class="relative h-48 sm:h-56 lg:h-64 overflow-hidden"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/bfb46b5ae8-90f3b1a9e568a2ecfe11.png"
                 alt="thermal spray" class="w-full h-full object-cover">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+              </div>
               <div
                 class="absolute top-3 left-3 sm:top-4 sm:left-4 image-overlay-icon w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center">
                 <i
@@ -1462,6 +1505,12 @@
         });
     </script>
   <script src="animations.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+        const loader = document.getElementById('loading-container');
+        if (loader) loader.classList.add('hidden');
+      });
+    </script>
   </body>
 
 </html>
