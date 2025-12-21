@@ -1415,24 +1415,44 @@
 
           let matches = true;
 
-          if (department && !jobHTML.includes(department.replace(/_/g, ' '))) {
-            if (!jobHTML.includes('engineering') && department === 'engineering') matches = false;
-            if (!jobHTML.includes('operations') && department === 'operations') matches = false;
-            if (!jobHTML.includes('health') && department === 'hse') matches = false;
-            if (!jobHTML.includes('management') && department === 'management') matches = false;
-            if (!jobHTML.includes('admin') && department === 'admin') matches = false;
+          // Department filtering
+          if (department) {
+            let departmentMatch = false;
+            if (department === 'engineering' && jobHTML.includes('engineering')) departmentMatch = true;
+            if (department === 'operations' && jobHTML.includes('operations')) departmentMatch = true;
+            if (department === 'hse' && (jobHTML.includes('hse') || jobHTML.includes('health'))) departmentMatch = true;
+            if (department === 'management' && (jobHTML.includes('management') || jobHTML.includes('manager'))) departmentMatch = true;
+            if (department === 'admin' && jobHTML.includes('admin')) departmentMatch = true;
+            if (!departmentMatch) matches = false;
           }
 
-          if (location && !jobHTML.includes(location)) {
-            matches = false;
+          // Location filtering
+          if (location) {
+            let locationMatch = false;
+            if (location === 'doha' && jobHTML.includes('doha')) locationMatch = true;
+            if (location === 'dubai' && jobHTML.includes('dubai')) locationMatch = true;
+            if (location === 'riyadh' && jobHTML.includes('riyadh')) locationMatch = true;
+            if (location === 'istanbul' && jobHTML.includes('istanbul')) locationMatch = true;
+            if (!locationMatch) matches = false;
           }
 
-          if (jobType && !jobHTML.includes(jobType)) {
-            matches = false;
+          // Job Type filtering
+          if (jobType) {
+            let jobTypeMatch = false;
+            if (jobType === 'fulltime' && (jobHTML.includes('full-time') || jobHTML.includes('fulltime'))) jobTypeMatch = true;
+            if (jobType === 'contract' && jobHTML.includes('contract')) jobTypeMatch = true;
+            if (jobType === 'consultant' && jobHTML.includes('consultant')) jobTypeMatch = true;
+            if (!jobTypeMatch) matches = false;
           }
 
-          if (experience && !jobHTML.includes(experience.replace(/-/g, ' '))) {
-            matches = false;
+          // Experience filtering
+          if (experience) {
+            let experienceMatch = false;
+            if (experience === 'entry' && (jobHTML.includes('entry level') || jobHTML.includes('entry-level') || jobHTML.includes('graduate'))) experienceMatch = true;
+            if (experience === 'mid' && (jobHTML.includes('mid level') || jobHTML.includes('specialist'))) experienceMatch = true;
+            if (experience === 'senior' && jobHTML.includes('senior')) experienceMatch = true;
+            if (experience === 'executive' && (jobHTML.includes('executive') || jobHTML.includes('manager'))) experienceMatch = true;
+            if (!experienceMatch) matches = false;
           }
 
           job.style.display = matches ? 'block' : 'none';
