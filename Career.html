@@ -798,7 +798,8 @@
                 <option value="executive">Executive</option>
               </select></div>
           </div>
-          <div class="mt-4 flex justify-end"><button
+            <div class="mt-4 flex justify-end"><button
+              id="apply-filters-btn"
               class="bg-oil-blue text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-yellow-700 transition-colors text-sm sm:text-base"><i
                 class="fa-solid fa-filter mr-2"></i>Apply Filters
             </button></div>
@@ -883,9 +884,7 @@
                   class="bg-gray-100 text-oil-gray px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm">Benefits
                   Package</span></div>
               <div class="flex gap-2 sm:gap-3"><button
-                  class="flex-1 sm:flex-none border border-oil-blue text-oil-blue px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-oil-blue hover:text-white transition-colors text-sm sm:text-base">
-                  Save
-                </button><button
+                  onclick="document.getElementById('talent-pool-form').scrollIntoView({behavior: 'smooth'})"
                   class="flex-1 sm:flex-none bg-oil-blue text-white px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-yellow-700 transition-colors text-sm sm:text-base">
                   Apply
                 </button></div>
@@ -924,7 +923,7 @@
                   class="bg-gray-100 text-oil-gray px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm">Leadership
                   Role</span></div>
               <div class="flex gap-2 sm:gap-3"><button
-                  class="flex-1 sm:flex-none border border-oil-blue text-oil-blue px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-oil-blue hover:text-white transition-colors text-sm sm:text-base">Save</button><button
+                  onclick="document.getElementById('talent-pool-form').scrollIntoView({behavior: 'smooth'})"
                   class="flex-1 sm:flex-none bg-oil-blue text-white px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-yellow-700 transition-colors text-sm sm:text-base">Apply</button>
               </div>
             </div>
@@ -961,7 +960,7 @@
                   class="bg-gray-100 text-oil-gray px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm">Safety
                   Focus</span></div>
               <div class="flex gap-2 sm:gap-3"><button
-                  class="flex-1 sm:flex-none border border-oil-blue text-oil-blue px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-oil-blue hover:text-white transition-colors text-sm sm:text-base">Save</button><button
+                  onclick="document.getElementById('talent-pool-form').scrollIntoView({behavior: 'smooth'})"
                   class="flex-1 sm:flex-none bg-oil-blue text-white px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-yellow-700 transition-colors text-sm sm:text-base">Apply</button>
               </div>
             </div>
@@ -998,7 +997,7 @@
                   class="bg-gray-100 text-oil-gray px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm">Mentorship</span>
               </div>
               <div class="flex gap-2 sm:gap-3"><button
-                  class="flex-1 sm:flex-none border border-oil-blue text-oil-blue px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-oil-blue hover:text-white transition-colors text-sm sm:text-base">Save</button><button
+                  onclick="document.getElementById('talent-pool-form').scrollIntoView({behavior: 'smooth'})"
                   class="flex-1 sm:flex-none bg-oil-blue text-white px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-yellow-700 transition-colors text-sm sm:text-base">Apply</button>
               </div>
             </div>
@@ -1395,6 +1394,52 @@
         `;
           }
         });
+
+      // Job Filtering Functionality
+      const departmentSelect = document.querySelectorAll('#job-filters select')[0];
+      const locationSelect = document.querySelectorAll('#job-filters select')[1];
+      const jobTypeSelect = document.querySelectorAll('#job-filters select')[2];
+      const experienceSelect = document.querySelectorAll('#job-filters select')[3];
+      const applyFiltersBtn = document.getElementById('apply-filters-btn');
+      const jobListings = document.querySelectorAll('#job-listings > div');
+
+      function filterJobs() {
+        const department = departmentSelect.value.toLowerCase();
+        const location = locationSelect.value.toLowerCase();
+        const jobType = jobTypeSelect.value.toLowerCase();
+        const experience = experienceSelect.value.toLowerCase();
+
+        jobListings.forEach(job => {
+          const jobText = job.textContent.toLowerCase();
+          const jobHTML = job.innerHTML.toLowerCase();
+
+          let matches = true;
+
+          if (department && !jobHTML.includes(department.replace(/_/g, ' '))) {
+            if (!jobHTML.includes('engineering') && department === 'engineering') matches = false;
+            if (!jobHTML.includes('operations') && department === 'operations') matches = false;
+            if (!jobHTML.includes('health') && department === 'hse') matches = false;
+            if (!jobHTML.includes('management') && department === 'management') matches = false;
+            if (!jobHTML.includes('admin') && department === 'admin') matches = false;
+          }
+
+          if (location && !jobHTML.includes(location)) {
+            matches = false;
+          }
+
+          if (jobType && !jobHTML.includes(jobType)) {
+            matches = false;
+          }
+
+          if (experience && !jobHTML.includes(experience.replace(/-/g, ' '))) {
+            matches = false;
+          }
+
+          job.style.display = matches ? 'block' : 'none';
+        });
+      }
+
+      applyFiltersBtn.addEventListener('click', filterJobs);
     </script>
   <script src="animations.js"></script>
     <script>
