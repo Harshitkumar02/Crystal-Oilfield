@@ -6,7 +6,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Crystal Oilfield Services</title>
+    <title id="page-title">About Us | Crystal Oilfield Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       window.FontAwesomeConfig = {
@@ -71,6 +71,13 @@
       #mobile-menu.active
       {
         transform: translateX(0);
+      }
+
+      /* Force LTR direction for titles */
+      .hero-title
+      {
+        direction: ltr;
+        unicode-bidi: bidi-override;
       }
 
       /* Responsive adjustments */
@@ -191,44 +198,44 @@
           </div><!-- Desktop Navigation -->
             <nav class="hidden lg:flex items-center space-x-5 xl:space-x-7 ml-8"><a
               href="index.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Home</a><a
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navHome">Home</a><a
               href="About.html"
-              class="text-oil-dark font-semibold hover:text-oil-blue transition-colors border-b-2 border-oil-blue pb-1">About</a>
+              class="text-oil-dark font-semibold hover:text-oil-blue transition-colors border-b-2 border-oil-blue pb-1" data-lang-key="navAbout">About</a>
             <!-- Services Dropdown -->
             <div class="relative group"><button
-                class="flex items-center space-x-1 text-oil-gray font-medium hover:text-oil-blue transition-colors"><span>Services</span><i
+                class="flex items-center space-x-1 text-oil-gray font-medium hover:text-oil-blue transition-colors"><span data-lang-key="navServices">Services</span><i
                   class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition-transform duration-200"></i></button>
               <div
                 class="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div class="p-2"><a href="Crystal%20Oilfield%20Services.html"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-oil-well text-oil-blue"></i><span
-                      class="font-medium">Crystal Oilfield Contracting and
+                      class="font-medium" data-lang-key="navServicesOilfield">Crystal Oilfield Contracting and
                       Trading</span></a><a href="Crystal%20Vision%20Services.html"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-industry text-oil-blue"></i><span
-                      class="font-medium">Crystal Vision Steel
+                      class="font-medium" data-lang-key="navServicesVision">Crystal Vision Steel
                       Fabrication</span></a></div>
               </div>
             </div><a href="Portfolio.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Portfolio</a><a
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navPortfolio">Portfolio</a><a
               href="Media.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Media</a><a
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navMedia">Media</a><a
               href="Career.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Career</a><a
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navCareer">Career</a><a
               href="Contact.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Contact</a>
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navContact">Contact</a>
           </nav><!-- Right Side Actions - Desktop -->
           <div class="hidden lg:flex items-center space-x-4 xl:space-x-6">
             <!-- Language Switcher -->
             <div class="flex items-center space-x-2 bg-gray-100 rounded-lg p-2"
-              id="ii9ro"><button
-                class="px-3 py-1 bg-oil-blue text-white rounded text-sm font-medium">English</button><button
+              id="ii9ro"><button id="lang-en-desktop"
+                class="px-3 py-1 bg-oil-blue text-white rounded text-sm font-medium">English</button><button id="lang-ar-desktop"
                 class="px-3 py-1 text-oil-gray rounded text-sm font-medium hover:bg-white">العربية</button>
             </div><!-- Other Companies Dropdown -->
             <div class="relative group"><button
                 class="flex items-center space-x-2 text-oil-gray font-medium hover:text-oil-blue transition-colors px-4 py-2 rounded-lg hover:bg-gray-50"><i
-                  class="fa-solid fa-building text-sm"></i><span>Our Other
+                  class="fa-solid fa-building text-sm"></i><span data-lang-key="navOtherCompanies">Our Other
                   Companies</span><i
                   class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition-transform duration-200"></i></button>
               <div
@@ -236,33 +243,33 @@
                 <div class="p-2"><a href="https://albahralarabi.com/" target="_blank"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-building text-oil-blue"></i><span
-                      class="font-medium">Al Bahr Al Arabi Group</span></a><a
+                      class="font-medium" data-lang-key="company1Name">Al Bahr Al Arabi Group</span></a><a
                     href="https://albahralarabi.com/al-bahr-al-arabi-marine-engineering/" target="_blank"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-ship text-oil-blue"></i><span
-                      class="font-medium">Al Bahr Arabi Marine
+                      class="font-medium" data-lang-key="company2Name">Al Bahr Arabi Marine
                       Engineering</span></a><a href="https://albahralarabi.com/gulf-tech-energy-contracting-llc/" target="_blank"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-bolt text-oil-blue"></i><span
-                      class="font-medium">Gulf Tech Energy Contracting
+                      class="font-medium" data-lang-key="company3Name">Gulf Tech Energy Contracting
                       LLC</span></a><a href="#"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-oil-well text-oil-blue"></i><span
-                      class="font-medium">Crystal Petroleum</span></a><a
+                      class="font-medium" data-lang-key="company4Name">Crystal Petroleum</span></a><a
                     href="#"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-industry text-oil-blue"></i><span
-                      class="font-medium">Crystal Petrokimya Turkey</span></a><a
+                      class="font-medium" data-lang-key="company5Name">Crystal Petrokimya Turkey</span></a><a
                     href="#"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-heart text-oil-blue"></i><span
-                      class="font-medium">Crystal Care KSA</span></a></div>
+                      class="font-medium" data-lang-key="company6Name">Crystal Care KSA</span></a></div>
               </div>
             </div><button type="button"
               onclick="location.href='Contact.html#main-contact-form'"
               class="bg-oil-accent text-white px-4 xl:px-6 py-2 xl:py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors flex items-center text-sm xl:text-base"><i
                 class="fa-solid fa-file-invoice mr-2"></i>
-              Request a Quote
+              <span data-lang-key="btnRequestQuote">Request a Quote</span>
             </button>
           </div><!-- Mobile Menu Button --><button id="mobile-menu-btn"
             class="lg:hidden text-oil-gray p-2"><i
@@ -278,64 +285,63 @@
                 class="fa-solid fa-times text-2xl"></i></button>
           </div><!-- Mobile Navigation Links -->
             <nav class="space-y-4"><a href="index.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Home</a><a
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navHome">Home</a><a
               href="About.html"
-              class="block text-oil-dark font-semibold hover:text-oil-blue transition-colors py-2 border-l-4 border-oil-blue pl-4">About</a>
+              class="block text-oil-dark font-semibold hover:text-oil-blue transition-colors py-2 border-l-4 border-oil-blue pl-4" data-lang-key="navAbout">About</a>
             <!-- Mobile Services Dropdown -->
             <div><button id="mobile-services-toggle"
-                class="flex items-center justify-between w-full text-oil-gray font-medium hover:text-oil-blue transition-colors py-2"><span>Services</span><i
+                class="flex items-center justify-between w-full text-oil-gray font-medium hover:text-oil-blue transition-colors py-2"><span data-lang-key="navServices">Services</span><i
                   class="fa-solid fa-chevron-down text-xs"></i></button>
               <div id="mobile-services-menu" class="hidden ml-4 mt-2 space-y-2">
                 <a href="Crystal%20Oilfield%20Services.html"
                   class="block text-sm text-oil-gray hover:text-oil-blue py-2"><i
-                    class="fa-solid fa-oil-well text-oil-blue mr-2"></i>
-                  Crystal Oilfield Contracting
+                    class="fa-solid fa-oil-well text-oil-blue mr-2"></i><span data-lang-key="navServicesOilfield">
+                  Crystal Oilfield Contracting</span>
                 </a><a href="Crystal%20Vision%20Services.html"
                   class="block text-sm text-oil-gray hover:text-oil-blue py-2"><i
-                    class="fa-solid fa-industry text-oil-blue mr-2"></i>
-                  Crystal Vision Steel Fabrication
+                    class="fa-solid fa-industry text-oil-blue mr-2"></i><span data-lang-key="navServicesVision">
+                  Crystal Vision Steel Fabrication</span>
                 </a></div>
             </div><a href="Portfolio.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Portfolio</a><a
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navPortfolio">Portfolio</a><a
               href="Media.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Media</a><a
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navMedia">Media</a><a
               href="Career.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Career</a><a
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navCareer">Career</a><a
               href="Contact.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Contact</a>
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navContact">Contact</a>
             <!-- Mobile Language Switcher -->
             <div class="pt-4 border-t border-gray-200">
-              <p class="text-sm text-oil-gray mb-2">Language</p>
-              <div class="flex space-x-2"><button
-                  class="flex-1 px-3 py-2 bg-oil-blue text-white rounded text-sm font-medium">English</button><button
+              <p class="text-sm text-oil-gray mb-2" data-lang-key="languageLabel">Language</p>
+              <div class="flex space-x-2"><button id="lang-en-mobile"
+                  class="flex-1 px-3 py-2 bg-oil-blue text-white rounded text-sm font-medium">English</button><button id="lang-ar-mobile"
                   class="flex-1 px-3 py-2 bg-gray-100 text-oil-gray rounded text-sm font-medium">العربية</button>
               </div>
             </div><!-- Mobile Other Companies -->
             <div class="pt-4 border-t border-gray-200"><button
                 id="mobile-companies-toggle"
                 class="flex items-center justify-between w-full text-oil-gray font-medium hover:text-oil-blue transition-colors py-2"><span><i
-                    class="fa-solid fa-building mr-2"></i>Our Other
-                  Companies</span><i
+                    class="fa-solid fa-building mr-2"></i><span data-lang-key="navOtherCompanies">Our Other
+                  Companies</span></span><i
                   class="fa-solid fa-chevron-down text-xs"></i></button>
               <div id="mobile-companies-menu"
                 class="hidden ml-4 mt-2 space-y-2"><a href="https://albahralarabi.com/"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Al
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company1Name">Al
                   Bahr Al Arabi Group</a><a href="https://albahralarabi.com/al-bahr-al-arabi-marine-engineering/"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Al
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company2Name">Al
                   Bahr Arabi Marine Engineering</a><a href="https://albahralarabi.com/gulf-tech-energy-contracting-llc/"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Gulf
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company3Name">Gulf
                   Tech Energy Contracting LLC</a><a href="#"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company4Name">Crystal
                   Petroleum</a><a href="#"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company5Name">Crystal
                   Petrokimya Turkey</a><a href="#"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company6Name">Crystal
                   Care KSA</a></div>
             </div><!-- Mobile Quote Button --><button type="button"
               onclick="location.href='Contact.html#main-contact-form'"
               class="w-full bg-oil-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors mt-6"><i
-                class="fa-solid fa-file-invoice mr-2"></i>
-              Request a Quote
+                class="fa-solid fa-file-invoice mr-2"></i><span data-lang-key="btnRequestQuote">Request a Quote</span>
             </button>
           </nav>
         </div>
@@ -357,24 +363,24 @@
         <div class="max-w-4xl">
           <h1
             class="hero-title text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-4 sm:mb-6 leading-tight">
-            About
-            <span class="block text-oil-accent">Crystal Oilfield</span>
+            <span data-lang-key="heroAbout">About</span>
+            <span class="block text-oil-accent" data-lang-key="heroCrystalOilfield">Crystal Oilfield</span>
           </h1>
           <p
-            class="text-base sm:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-3xl leading-relaxed">
+            class="text-base sm:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-3xl leading-relaxed" data-lang-key="heroDescription">
             Pioneering excellence in Oil &amp; Gas engineering solutions across
             Qatar and the GCC region since our establishment in 2024.
           </p>
           <div class="flex flex-col sm:flex-row gap-3 sm:gap-4"><a
               href="index.html#download-brochure-section"
               class="bg-oil-blue text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-yellow-700 transition-all duration-300 flex items-center justify-center"><i
-                class="fa-solid fa-download mr-3"></i>
-              Download Profile
+                class="fa-solid fa-download mr-3"></i><span data-lang-key="btnDownloadProfile">
+              Download Profile</span>
             </a><a
               href="Contact.html"
               class="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-white hover:text-oil-dark transition-all duration-300 flex items-center justify-center"><i
-                class="fa-solid fa-phone mr-3"></i>
-              Contact Our Team
+                class="fa-solid fa-phone mr-3"></i><span data-lang-key="btnContactTeam">
+              Contact Our Team</span>
             </a></div>
         </div>
       </div>
@@ -387,19 +393,19 @@
         <div
           class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-12 lg:mb-20">
           <div><span
-              class="text-oil-blue font-semibold text-sm sm:text-base lg:text-lg tracking-wide">COMPANY
+              class="text-oil-blue font-semibold text-sm sm:text-base lg:text-lg tracking-wide" data-lang-key="sectionCompanyOverview">COMPANY
               OVERVIEW</span>
             <h2
               class="section-title text-3xl sm:text-4xl lg:text-5xl font-bold text-oil-dark mt-3 sm:mt-4 mb-6 sm:mb-8">
-              Introduction to
-              <span class="text-oil-blue">Crystal Oilfield</span>
+              <span data-lang-key="introductionTo">Introduction to</span>
+              <span class="text-oil-blue" data-lang-key="heroCrystalOilfield">Crystal Oilfield</span>
             </h2>
             <div
               class="prose prose-base sm:prose-lg text-oil-gray space-y-4 sm:space-y-6">
-              <p>Crystal Oilfield Contracting and Trading W.L.L, a distinguished
+              <p data-lang-key="companyOverviewPara1">Crystal Oilfield Contracting and Trading W.L.L, a distinguished
                 member of the Al Bahr Al Arabi Group (UAE), was established in
                 Qatar in 2024.</p>
-              <p>We provide specialized EPC (Engineering, Procurement, and
+              <p data-lang-key="companyOverviewPara2">We provide specialized EPC (Engineering, Procurement, and
                 Construction) and maintenance services for the Oil &amp; Gas,
                 Power, and Desalination industries.</p>
             </div>
@@ -412,9 +418,9 @@
                   <i
                     class="fa-solid fa-certificate text-white text-lg sm:text-xl"></i>
                 </div>
-                <h3 class="font-bold text-oil-dark mb-2 text-sm sm:text-base">
+                <h3 class="font-bold text-oil-dark mb-2 text-sm sm:text-base" data-lang-key="commercialLicense">
                   Commercial License</h3>
-                <p class="text-xs sm:text-sm text-oil-gray">Approved and
+                <p class="text-xs sm:text-sm text-oil-gray" data-lang-key="approvedOperational">Approved and
                   operational in Qatar</p>
               </div>
               <div
@@ -424,9 +430,9 @@
                   <i
                     class="fa-solid fa-building text-white text-lg sm:text-xl"></i>
                 </div>
-                <h3 class="font-bold text-oil-dark mb-2 text-sm sm:text-base">
+                <h3 class="font-bold text-oil-dark mb-2 text-sm sm:text-base" data-lang-key="officeLocation">
                   Office Location</h3>
-                <p class="text-xs sm:text-sm text-oil-gray">Excellence Tower,
+                <p class="text-xs sm:text-sm text-oil-gray" data-lang-key="officeAddress">Excellence Tower,
                   West Bay, Doha</p>
               </div>
             </div>
@@ -442,14 +448,14 @@
                     <div
                       class="text-2xl sm:text-3xl font-bold text-oil-blue mb-2">
                       2024</div>
-                    <div class="text-xs sm:text-sm text-oil-gray">Established
+                    <div class="text-xs sm:text-sm text-oil-gray" data-lang-key="established">Established
                     </div>
                   </div>
                   <div class="text-center">
                     <div
                       class="text-2xl sm:text-3xl font-bold text-oil-blue mb-2">
                       26+</div>
-                    <div class="text-xs sm:text-sm text-oil-gray">Group Heritage
+                    <div class="text-xs sm:text-sm text-oil-gray" data-lang-key="groupHeritageYears">Group Heritage
                       Years</div>
                   </div>
                 </div>
@@ -464,13 +470,13 @@
       <div class="absolute inset-0 industrial-pattern opacity-20"></div>
       <div class="relative max-w-7xl mx-auto px-6">
         <div class="text-center mb-16"><span
-            class="text-oil-accent font-semibold text-lg tracking-wide">OPERATIONAL
+            class="text-oil-accent font-semibold text-lg tracking-wide" data-lang-key="sectionOperationalStatus">OPERATIONAL
             STATUS</span>
-          <h2 class="text-5xl font-bold text-white mt-4 mb-6">
+          <h2 class="text-5xl font-bold text-white mt-4 mb-6" data-lang-key="operationsHeading">
             Current Operations &amp;
-            <span class="text-oil-accent">Infrastructure</span>
+            <span class="text-oil-accent" data-lang-key="operationsInfrastructure">Infrastructure</span>
           </h2>
-          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-lang-key="operationsDescription">
             Our comprehensive operational framework supports seamless project
             delivery across Qatar's industrial landscape.
           </p>
@@ -479,9 +485,9 @@
         <div
           class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
           <div class="text-center mb-8">
-            <h3 class="text-3xl font-bold text-white mb-4">Engineering &amp;
+            <h3 class="text-3xl font-bold text-white mb-4" data-lang-key="engineeringProjectReadiness">Engineering &amp;
               Project Readiness</h3>
-            <p class="text-gray-300 max-w-2xl mx-auto">Our comprehensive
+            <p class="text-gray-300 max-w-2xl mx-auto" data-lang-key="engineeringReadinessDescription">Our comprehensive
               capabilities ensure we're fully prepared to engage in upcoming
               tenders and deliver exceptional project results.</p>
           </div>
@@ -491,9 +497,9 @@
                 class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-drafting-compass text-white text-3xl"></i>
               </div>
-              <h4 class="text-xl font-bold text-white mb-2">Engineering Support
+              <h4 class="text-xl font-bold text-white mb-2" data-lang-key="engineeringSupport">Engineering Support
               </h4>
-              <p class="text-gray-300 text-sm">Initiated with Al Bahar
+              <p class="text-gray-300 text-sm" data-lang-key="engineeringSupportDescription">Initiated with Al Bahar
                 subsidiaries, with plans to establish a dedicated engineering
                 office in Qatar in the near future.</p>
             </div>
@@ -502,9 +508,9 @@
                 class="w-20 h-20 bg-oil-blue rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-file-contract text-white text-3xl"></i>
               </div>
-              <h4 class="text-xl font-bold text-white mb-2">Tender Participation
+              <h4 class="text-xl font-bold text-white mb-2" data-lang-key="tenderParticipation">Tender Participation
               </h4>
-              <p class="text-gray-300 text-sm">Fully prepared to engage in
+              <p class="text-gray-300 text-sm" data-lang-key="tenderParticipationDescription">Fully prepared to engage in
                 upcoming tenders in Qatar with comprehensive proposal
                 capabilities.</p>
             </div>
@@ -512,9 +518,9 @@
               <div
                 class="w-20 h-20 bg-oil-accent rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-rocket text-white text-3xl"></i></div>
-              <h4 class="text-xl font-bold text-white mb-2">Initial Operations
+              <h4 class="text-xl font-bold text-white mb-2" data-lang-key="initialOperations">Initial Operations
               </h4>
-              <p class="text-gray-300 text-sm">Currently ongoing with active
+              <p class="text-gray-300 text-sm" data-lang-key="initialOperationsDescription">Currently ongoing with active
                 project pursuits and operational framework establishment.</p>
             </div>
           </div>
@@ -527,13 +533,13 @@
       </div>
       <div class="relative max-w-7xl mx-auto px-6">
         <div class="text-center mb-16"><span
-            class="text-oil-blue font-semibold text-lg tracking-wide">OUR
+            class="text-oil-blue font-semibold text-lg tracking-wide" data-lang-key="sectionOurDirection">OUR
             DIRECTION</span>
-          <h2 class="text-5xl font-bold text-oil-dark mt-4 mb-6">
+          <h2 class="text-5xl font-bold text-oil-dark mt-4 mb-6" data-lang-key="visionMissionHeading">
             Vision, Mission &amp;
-            <span class="text-oil-blue">Values</span>
+            <span class="text-oil-blue" data-lang-key="valuesLabel">Values</span>
           </h2>
-          <p class="text-xl text-oil-gray max-w-3xl mx-auto">
+          <p class="text-xl text-oil-gray max-w-3xl mx-auto" data-lang-key="visionMissionDescription">
             Guiding principles that drive our commitment to excellence and
             sustainable growth in the oil and gas industry.
           </p>
@@ -545,9 +551,9 @@
               <div
                 class="w-16 h-16 bg-oil-blue rounded-lg flex items-center justify-center mr-4">
                 <i class="fa-solid fa-eye text-white text-2xl"></i></div>
-              <h3 class="text-3xl font-bold text-oil-dark">Our Vision</h3>
+              <h3 class="text-3xl font-bold text-oil-dark" data-lang-key="ourVisionLabel">Our Vision</h3>
             </div>
-            <p class="text-oil-gray leading-relaxed text-lg">
+            <p class="text-oil-gray leading-relaxed text-lg" data-lang-key="ourVisionDescription">
               To be recognized as a leading provider of comprehensive
               construction and engineering solutions in the MENA region,
               specializing in Oil &amp; Gas projects, MEP contracting,
@@ -564,9 +570,9 @@
               <div
                 class="w-16 h-16 bg-oil-accent rounded-lg flex items-center justify-center mr-4">
                 <i class="fa-solid fa-target text-white text-2xl"></i></div>
-              <h3 class="text-3xl font-bold text-oil-dark">Our Mission</h3>
+              <h3 class="text-3xl font-bold text-oil-dark" data-lang-key="ourMissionLabel">Our Mission</h3>
             </div>
-            <p class="text-oil-gray leading-relaxed text-lg">
+            <p class="text-oil-gray leading-relaxed text-lg" data-lang-key="ourMissionDescription">
               We are committed to delivering exceptional Oil &amp; Gas services
               through innovative, technology-driven solutions. By upholding the
               highest standards of quality, safety, and environmental
@@ -577,8 +583,8 @@
         </div>
         <div class="bg-oil-dark rounded-2xl p-12">
           <div class="text-center mb-12">
-            <h3 class="text-4xl font-bold text-white mb-4">Our Core Values</h3>
-            <p class="text-gray-300 text-xl max-w-3xl mx-auto">The fundamental
+            <h3 class="text-4xl font-bold text-white mb-4" data-lang-key="ourCoreValuesLabel">Our Core Values</h3>
+            <p class="text-gray-300 text-xl max-w-3xl mx-auto" data-lang-key="ourCoreValuesDescription">The fundamental
               principles that guide our operations and define our corporate
               culture.</p>
           </div>
@@ -587,8 +593,8 @@
               <div
                 class="w-20 h-20 bg-oil-blue rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-award text-white text-3xl"></i></div>
-              <h4 class="text-2xl font-bold text-white mb-3">Quality</h4>
-              <p class="text-gray-300">We are dedicated to delivering superior
+              <h4 class="text-2xl font-bold text-white mb-3" data-lang-key="valueQuality">Quality</h4>
+              <p class="text-gray-300" data-lang-key="valueQualityDescription">We are dedicated to delivering superior
                 quality in every aspect of our work, ensuring that our services
                 meet or exceed industry standards.</p>
             </div>
@@ -597,8 +603,8 @@
                 class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-shield-halved text-white text-3xl"></i>
               </div>
-              <h4 class="text-2xl font-bold text-white mb-3">Safety</h4>
-              <p class="text-gray-300">The safety of our employees, clients, and
+              <h4 class="text-2xl font-bold text-white mb-3" data-lang-key="valueSafety">Safety</h4>
+              <p class="text-gray-300" data-lang-key="valueSafetyDescription">The safety of our employees, clients, and
                 stakeholders is our top priority. We are committed to
                 maintaining a safe and healthy work environment.</p>
             </div>
@@ -606,8 +612,8 @@
               <div
                 class="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-handshake text-white text-3xl"></i></div>
-              <h4 class="text-2xl font-bold text-white mb-3">Integrity</h4>
-              <p class="text-gray-300">We conduct business with honesty,
+              <h4 class="text-2xl font-bold text-white mb-3" data-lang-key="valueIntegrity">Integrity</h4>
+              <p class="text-gray-300" data-lang-key="valueIntegrityDescription">We conduct business with honesty,
                 transparency, and ethical practices. We value trust and strive
                 to build long-lasting relationships with our clients and
                 partners.</p>
@@ -616,8 +622,8 @@
               <div
                 class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-lightbulb text-white text-3xl"></i></div>
-              <h4 class="text-2xl font-bold text-white mb-3">Innovation</h4>
-              <p class="text-gray-300">We embrace innovation and continuously
+              <h4 class="text-2xl font-bold text-white mb-3" data-lang-key="valueInnovation">Innovation</h4>
+              <p class="text-gray-300" data-lang-key="valueInnovationDescription">We embrace innovation and continuously
                 seek new technologies and approaches to improve our services and
                 meet the evolving needs of our clients.</p>
             </div>
@@ -627,8 +633,8 @@
               <div
                 class="w-20 h-20 bg-oil-accent rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-users text-white text-3xl"></i></div>
-              <h4 class="text-2xl font-bold text-white mb-3">Teamwork</h4>
-              <p class="text-gray-300">We foster a collaborative work culture
+              <h4 class="text-2xl font-bold text-white mb-3" data-lang-key="valueTeamwork">Teamwork</h4>
+              <p class="text-gray-300" data-lang-key="valueTeamworkDescription">We foster a collaborative work culture
                 that promotes teamwork, mutual respect, and open communication.
                 We believe in the power of collective effort to achieve success.
               </p>
@@ -637,8 +643,8 @@
               <div
                 class="w-20 h-20 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-heart text-white text-3xl"></i></div>
-              <h4 class="text-2xl font-bold text-white mb-3">Customer Focus</h4>
-              <p class="text-gray-300">Our clients are at the center of
+              <h4 class="text-2xl font-bold text-white mb-3" data-lang-key="valueCustomerFocus">Customer Focus</h4>
+              <p class="text-gray-300" data-lang-key="valueCustomerFocusDescription">Our clients are at the center of
                 everything we do. We listen to their needs, provide tailored
                 solutions, and strive to exceed their expectations.</p>
             </div>
@@ -646,8 +652,8 @@
               <div
                 class="w-20 h-20 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-leaf text-white text-3xl"></i></div>
-              <h4 class="text-2xl font-bold text-white mb-3">Sustainability</h4>
-              <p class="text-gray-300">We are committed to minimizing our
+              <h4 class="text-2xl font-bold text-white mb-3" data-lang-key="valueSustainability">Sustainability</h4>
+              <p class="text-gray-300" data-lang-key="valueSustainabilityDescription">We are committed to minimizing our
                 environmental impact and promoting sustainable practices in our
                 operations. We aim to contribute to a greener and more
                 sustainable future.</p>
@@ -661,13 +667,13 @@
       <div class="absolute inset-0 industrial-pattern opacity-20"></div>
       <div class="relative max-w-7xl mx-auto px-6">
         <div class="text-center mb-16"><span
-            class="text-oil-accent font-semibold text-lg tracking-wide">INTERNATIONAL
+            class="text-oil-accent font-semibold text-lg tracking-wide" data-lang-key="sectionInternationalReach">INTERNATIONAL
             REACH</span>
-          <h2 class="text-5xl font-bold text-white mt-4 mb-6">
+          <h2 class="text-5xl font-bold text-white mt-4 mb-6" data-lang-key="ourGlobalHeading">
             Our Global
-            <span class="text-oil-accent">Presence</span>
+            <span class="text-oil-accent" data-lang-key="presenceLabel">Presence</span>
           </h2>
-          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-lang-key="internationalDescription">
             Over the years, we have expanded our footprint beyond borders,
             establishing a strong international presence through our group
             companies and subsidiaries.
@@ -676,9 +682,9 @@
         <div
           class="bg-white/10 backdrop-blur-sm rounded-2xl p-12 border border-white/20 mb-16">
           <div class="text-center mb-12">
-            <h3 class="text-3xl font-bold text-white mb-6">Operating Across
+            <h3 class="text-3xl font-bold text-white mb-6" data-lang-key="operatingMultipleMarketsHeading">Operating Across
               Multiple Markets</h3>
-            <p class="text-gray-300 text-lg max-w-4xl mx-auto">
+            <p class="text-gray-300 text-lg max-w-4xl mx-auto" data-lang-key="operatingMultipleMarketsDescription">
               Operating across the UAE, Saudi Arabia, Qatar, Turkey, and the
               United Kingdom, we continue to strengthen our global network and
               deliver world-class solutions tailored to regional needs.
@@ -689,40 +695,40 @@
               <div
                 class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-flag text-white text-2xl"></i></div>
-              <h4 class="text-xl font-bold text-white mb-2">UAE</h4>
-              <p class="text-gray-300 text-sm">Headquarters &amp; Operations</p>
+              <h4 class="text-xl font-bold text-white mb-2" data-lang-key="countryUAE">UAE</h4>
+              <p class="text-gray-300 text-sm" data-lang-key="countryUAEDescription">Headquarters &amp; Operations</p>
             </div>
             <div class="text-center">
               <div
                 class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-flag text-white text-2xl"></i></div>
-              <h4 class="text-xl font-bold text-white mb-2">Saudi Arabia</h4>
-              <p class="text-gray-300 text-sm">Strategic Operations</p>
+              <h4 class="text-xl font-bold text-white mb-2" data-lang-key="countrySaudiArabia">Saudi Arabia</h4>
+              <p class="text-gray-300 text-sm" data-lang-key="countrySaudiArabiaDescription">Strategic Operations</p>
             </div>
             <div class="text-center">
               <div
                 class="w-20 h-20 bg-oil-blue rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-flag text-white text-2xl"></i></div>
-              <h4 class="text-xl font-bold text-white mb-2">Qatar</h4>
-              <p class="text-gray-300 text-sm">New Market Entry</p>
+              <h4 class="text-xl font-bold text-white mb-2" data-lang-key="countryQatar">Qatar</h4>
+              <p class="text-gray-300 text-sm" data-lang-key="countryQatarDescription">New Market Entry</p>
             </div>
             <div class="text-center">
               <div
                 class="w-20 h-20 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-flag text-white text-2xl"></i></div>
-              <h4 class="text-xl font-bold text-white mb-2">Turkey</h4>
-              <p class="text-gray-300 text-sm">Regional Expansion</p>
+              <h4 class="text-xl font-bold text-white mb-2" data-lang-key="countryTurkey">Turkey</h4>
+              <p class="text-gray-300 text-sm" data-lang-key="countryTurkeyDescription">Regional Expansion</p>
             </div>
             <div class="text-center">
               <div
                 class="w-20 h-20 bg-blue-800 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-flag text-white text-2xl"></i></div>
-              <h4 class="text-xl font-bold text-white mb-2">United Kingdom</h4>
-              <p class="text-gray-300 text-sm">European Operations</p>
+              <h4 class="text-xl font-bold text-white mb-2" data-lang-key="countryUnitedKingdom">United Kingdom</h4>
+              <p class="text-gray-300 text-sm" data-lang-key="countryUnitedKingdomDescription">European Operations</p>
             </div>
           </div>
           <div class="text-center">
-            <p class="text-gray-300 text-lg">
+            <p class="text-gray-300 text-lg" data-lang-key="subsidiariesDescription">
               Through our subsidiaries — such as Al Bahr Al Arabi Marine
               Engineering, Crystal Petrochemical DMCC, Crystal Care LLC, Crystal
               Oilfield Contracting W.L.L, and Crystal Petrokimya Ticaret Sirket
@@ -739,13 +745,13 @@
       </div>
       <div class="relative max-w-7xl mx-auto px-6">
         <div class="text-center mb-16"><span
-            class="text-oil-blue font-semibold text-lg tracking-wide">OUR
+            class="text-oil-blue font-semibold text-lg tracking-wide" data-lang-key="sectionOurJourney">OUR
             JOURNEY</span>
           <h2 class="text-5xl font-bold text-oil-dark mt-4 mb-6">
-            Group
-            <span class="text-oil-blue">Milestones</span>
+            <span data-lang-key="groupLabel">Group</span>
+            <span class="text-oil-blue" data-lang-key="milestonesLabel">Milestones</span>
           </h2>
-          <p class="text-xl text-oil-gray max-w-3xl mx-auto">
+          <p class="text-xl text-oil-gray max-w-3xl mx-auto" data-lang-key="journeyDescription">
             A comprehensive timeline showcasing our strategic growth and
             expansion across multiple markets and industries.
           </p>
@@ -759,9 +765,9 @@
               <div class="w-1/2 pr-8 text-right">
                 <div
                   class="bg-gradient-to-r from-oil-blue to-blue-700 rounded-xl shadow-xl p-8 text-white">
-                  <div class="text-3xl font-bold mb-2">2024</div>
-                  <h3 class="text-xl font-bold mb-3">Crystal Oilfield Qatar</h3>
-                  <p>Positioned as the Group's flagship and industrial hub in
+                  <div class="text-3xl font-bold mb-2" data-lang-key="year2024">2024</div>
+                  <h3 class="text-xl font-bold mb-3" data-lang-key="milestone2024Title">Crystal Oilfield Qatar</h3>
+                  <p data-lang-key="milestone2024Desc">Positioned as the Group's flagship and industrial hub in
                     the Qatari market, representing our latest milestone in
                     regional expansion.</p>
                 </div>
@@ -779,10 +785,10 @@
               <div class="w-1/2 pl-8">
                 <div
                   class="bg-white rounded-xl shadow-xl p-8 border border-gray-200">
-                  <div class="text-3xl font-bold text-red-600 mb-2">2021</div>
-                  <h3 class="text-xl font-bold text-oil-dark mb-3">Crystal
+                  <div class="text-3xl font-bold text-red-600 mb-2" data-lang-key="year2021">2021</div>
+                  <h3 class="text-xl font-bold text-oil-dark mb-3" data-lang-key="milestone2021Title">Crystal
                     Petrokimya – Turkey</h3>
-                  <p class="text-oil-gray">International expansion into the
+                  <p class="text-oil-gray" data-lang-key="milestone2021Desc">International expansion into the
                     Turkish market, establishing our presence in European
                     operations.</p>
                 </div>
@@ -792,11 +798,11 @@
               <div class="w-1/2 pr-8 text-right">
                 <div
                   class="bg-white rounded-xl shadow-xl p-8 border border-gray-200">
-                  <div class="text-3xl font-bold text-purple-600 mb-2">2019
+                  <div class="text-3xl font-bold text-purple-600 mb-2" data-lang-key="year2019">2019
                   </div>
-                  <h3 class="text-xl font-bold text-oil-dark mb-3">Crystal
+                  <h3 class="text-xl font-bold text-oil-dark mb-3" data-lang-key="milestone2019Title">Crystal
                     Petroleum FZE – UAE</h3>
-                  <p class="text-oil-gray">Strategic expansion into oil trading
+                  <p class="text-oil-gray" data-lang-key="milestone2019Desc">Strategic expansion into oil trading
                     and petroleum products, diversifying our portfolio in the
                     energy sector.</p>
                 </div>
@@ -814,10 +820,10 @@
               <div class="w-1/2 pl-8">
                 <div
                   class="bg-white rounded-xl shadow-xl p-8 border border-gray-200">
-                  <div class="text-3xl font-bold text-green-600 mb-2">2006</div>
-                  <h3 class="text-xl font-bold text-oil-dark mb-3">Crystal
+                  <div class="text-3xl font-bold text-green-600 mb-2" data-lang-key="year2006">2006</div>
+                  <h3 class="text-xl font-bold text-oil-dark mb-3" data-lang-key="milestone2006Title">Crystal
                     Vision Steel – Qatar</h3>
-                  <p class="text-oil-gray">Establishment of our integrated steel
+                  <p class="text-oil-gray" data-lang-key="milestone2006Desc">Establishment of our integrated steel
                     fabrication plant in Qatar, marking our entry into the
                     Qatari market.</p>
                 </div>
@@ -827,11 +833,11 @@
               <div class="w-1/2 pr-8 text-right">
                 <div
                   class="bg-white rounded-xl shadow-xl p-8 border border-gray-200">
-                  <div class="text-3xl font-bold text-oil-accent mb-2">2004
+                  <div class="text-3xl font-bold text-oil-accent mb-2" data-lang-key="year2004">2004
                   </div>
-                  <h3 class="text-xl font-bold text-oil-dark mb-3">Al Bahr Al
+                  <h3 class="text-xl font-bold text-oil-dark mb-3" data-lang-key="milestone2004Title">Al Bahr Al
                     Arabi Technical Industries – UAE</h3>
-                  <p class="text-oil-gray">Expansion into technical industries,
+                  <p class="text-oil-gray" data-lang-key="milestone2004Desc">Expansion into technical industries,
                     broadening our capabilities in industrial solutions and
                     engineering services.</p>
                 </div>
@@ -849,10 +855,10 @@
               <div class="w-1/2 pl-8">
                 <div
                   class="bg-white rounded-xl shadow-xl p-8 border border-gray-200">
-                  <div class="text-3xl font-bold text-oil-blue mb-2">1998</div>
-                  <h3 class="text-xl font-bold text-oil-dark mb-3">Al Bahr Al
+                  <div class="text-3xl font-bold text-oil-blue mb-2" data-lang-key="year1998">1998</div>
+                  <h3 class="text-xl font-bold text-oil-dark mb-3" data-lang-key="milestone1998Title">Al Bahr Al
                     Arabi Marine Engineering – UAE</h3>
-                  <p class="text-oil-gray">Foundation of our group with marine
+                  <p class="text-oil-gray" data-lang-key="milestone1998Desc">Foundation of our group with marine
                     engineering expertise, establishing our presence in the UAE
                     market.</p>
                 </div>
@@ -867,13 +873,13 @@
       <div class="absolute inset-0 industrial-pattern opacity-20"></div>
       <div class="relative max-w-7xl mx-auto px-6">
         <div class="text-center mb-16"><span
-            class="text-oil-accent font-semibold text-lg tracking-wide">OUR
+            class="text-oil-accent font-semibold text-lg tracking-wide" data-lang-key="sectionOurLeadership">OUR
             LEADERSHIP</span>
           <h2 class="text-5xl font-bold text-white mt-4 mb-6">
-            Executive
-            <span class="text-oil-accent">Leadership</span>
+            <span data-lang-key="executiveLabel">Executive</span>
+            <span class="text-oil-accent" data-lang-key="leadershipLabel">Leadership</span>
           </h2>
-          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-lang-key="leadershipDescription">
             Meet the visionary leaders driving our success and strategic growth
             across global markets.
           </p>
@@ -883,16 +889,16 @@
             class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
             <div class="flex items-start space-x-6 mb-6">
               <div>
-                <h3 class="text-2xl font-bold text-white mb-2">Muhammed Akram
+                <h3 class="text-2xl font-bold text-white mb-2" data-lang-key="leader1Name">Muhammed Akram
                 </h3>
-                <p class="text-oil-accent font-semibold mb-2">Director</p>
+                <p class="text-oil-accent font-semibold mb-2" data-lang-key="leader1Title">Director</p>
                 <div class="flex items-center space-x-2"><i
                     class="fa-solid fa-building text-gray-400"></i><span
-                    class="text-gray-300 text-sm">Al Bahr Al Arabi Group
+                    class="text-gray-300 text-sm" data-lang-key="leader1Role">Al Bahr Al Arabi Group
                     Owner</span></div>
               </div>
             </div>
-            <p class="text-gray-300 leading-relaxed mb-6">
+            <p class="text-gray-300 leading-relaxed mb-6" data-lang-key="leader1Bio">
               Mr. Muhammed Akram, a distinguished Board Member and owner of Al
               Bahr Al Arabi Group (est. 1998, UAE), brings extensive expertise
               in the Oil &amp; Gas sector, particularly in petroleum storage
@@ -902,8 +908,8 @@
             <div class="bg-white/10 rounded-lg p-4 mb-4">
               <div class="flex items-center space-x-3 mb-2"><i
                   class="fa-solid fa-trophy text-oil-accent"></i><span
-                  class="text-white font-semibold">Key Achievement</span></div>
-              <p class="text-gray-300 text-sm">
+                  class="text-white font-semibold" data-lang-key="keyAchievementLabel">Key Achievement</span></div>
+              <p class="text-gray-300 text-sm" data-lang-key="leader1Achievement">
                 Under his leadership, Al Bahr has successfully completed 65 oil
                 storage terminals in Hamriyah Free Zone, contributing
                 significantly to the region's energy infrastructure and the
@@ -911,25 +917,25 @@
               </p>
             </div>
             <div class="flex items-center space-x-4"><span
-                class="bg-oil-blue px-3 py-1 rounded-full text-white text-sm">26+
+                class="bg-oil-blue px-3 py-1 rounded-full text-white text-sm" data-lang-key="leader1Exp">26+
                 Years Experience</span><span
-                class="bg-oil-accent px-3 py-1 rounded-full text-white text-sm">Group
+                class="bg-oil-accent px-3 py-1 rounded-full text-white text-sm" data-lang-key="founder">Group
                 Founder</span></div>
           </div>
           <div
             class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
             <div class="flex items-start space-x-6 mb-6">
               <div>
-                <h3 class="text-2xl font-bold text-white mb-2">Mohammed Kazim
+                <h3 class="text-2xl font-bold text-white mb-2" data-lang-key="leader2Name">Mohammed Kazim
                   Khan</h3>
-                <p class="text-oil-accent font-semibold mb-2">General Manager
+                <p class="text-oil-accent font-semibold mb-2" data-lang-key="leader2Title">General Manager
                 </p>
                 <div class="flex items-center space-x-2"><i
                     class="fa-solid fa-cogs text-gray-400"></i><span
-                    class="text-gray-300 text-sm">Operations Leader</span></div>
+                    class="text-gray-300 text-sm" data-lang-key="leader2Role">Operations Leader</span></div>
               </div>
             </div>
-            <p class="text-gray-300 leading-relaxed mb-6">
+            <p class="text-gray-300 leading-relaxed mb-6" data-lang-key="leader2Bio">
               Mr. Mohammed Kazim Khan is an accomplished leader with over 25
               years of experience in the Oil &amp; Gas sector across India and
               Qatar. As General Manager, he oversees the company's Oil &amp; Gas
@@ -939,8 +945,8 @@
             <div class="bg-white/10 rounded-lg p-4 mb-4">
               <div class="flex items-center space-x-3 mb-2"><i
                   class="fa-solid fa-project-diagram text-oil-accent"></i><span
-                  class="text-white font-semibold">Major Projects</span></div>
-              <p class="text-gray-300 text-sm">
+                  class="text-white font-semibold" data-lang-key="majorProjectsLabel">Major Projects</span></div>
+              <p class="text-gray-300 text-sm" data-lang-key="leader2Achievement">
                 He has successfully led major EPIC projects for QatarEnergy,
                 including the CNG Bus Filling Stations at MIC &amp; RLIC and
                 DPFU Phase-1 Mechanical Completion at Dukhan. His extensive
@@ -949,17 +955,17 @@
               </p>
             </div>
             <div class="flex items-center space-x-4"><span
-                class="bg-oil-blue px-3 py-1 rounded-full text-white text-sm">25+
+                class="bg-oil-blue px-3 py-1 rounded-full text-white text-sm" data-lang-key="leader2Exp">25+
                 Years Experience</span><span
-                class="bg-green-600 px-3 py-1 rounded-full text-white text-sm">Qatar
+                class="bg-green-600 px-3 py-1 rounded-full text-white text-sm" data-lang-key="qatarExpert">Qatar
                 Expert</span></div>
           </div>
         </div>
         <div
           class="mt-16 bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 text-center">
-          <h3 class="text-3xl font-bold text-white mb-6">Leadership Excellence
+          <h3 class="text-3xl font-bold text-white mb-6" data-lang-key="leadershipExcellenceLabel">Leadership Excellence
           </h3>
-          <p class="text-gray-300 text-lg max-w-4xl mx-auto mb-8">
+          <p class="text-gray-300 text-lg max-w-4xl mx-auto mb-8" data-lang-key="leadershipExcellenceDesc">
             Our leadership team combines decades of industry experience with
             visionary strategic planning, ensuring Crystal Oilfield remains at
             the forefront of innovation and excellence in the Oil &amp; Gas
@@ -968,15 +974,15 @@
           <div class="grid md:grid-cols-3 gap-8">
             <div class="text-center">
               <div class="text-4xl font-bold text-oil-accent mb-2">50+</div>
-              <div class="text-gray-300">Combined Years of Leadership</div>
+              <div class="text-gray-300" data-lang-key="stat1Label">Combined Years of Leadership</div>
             </div>
             <div class="text-center">
               <div class="text-4xl font-bold text-oil-accent mb-2">65+</div>
-              <div class="text-gray-300">Major Projects Delivered</div>
+              <div class="text-gray-300" data-lang-key="stat2Label">Major Projects Delivered</div>
             </div>
             <div class="text-center">
               <div class="text-4xl font-bold text-oil-accent mb-2">5</div>
-              <div class="text-gray-300">Countries of Operations</div>
+              <div class="text-gray-300" data-lang-key="stat3Label">Countries of Operations</div>
             </div>
           </div>
         </div>
@@ -988,13 +994,13 @@
       </div>
       <div class="relative max-w-7xl mx-auto px-6">
         <div class="text-center mb-16"><span
-            class="text-oil-blue font-semibold text-lg tracking-wide">OUR
+            class="text-oil-blue font-semibold text-lg tracking-wide" data-lang-key="sectionOurCapabilities">OUR
             CAPABILITIES</span>
           <h2 class="text-5xl font-bold text-oil-dark mt-4 mb-6">
-            Comprehensive
-            <span class="text-oil-blue">Solutions Portfolio</span>
+            <span data-lang-key="comprehensiveLabel">Comprehensive</span>
+            <span class="text-oil-blue" data-lang-key="solutionsPortfolioLabel">Solutions Portfolio</span>
           </h2>
-          <p class="text-xl text-oil-gray max-w-3xl mx-auto">
+          <p class="text-xl text-oil-gray max-w-3xl mx-auto" data-lang-key="capabilitiesDescription">
             From engineering design to project completion, we deliver integrated
             solutions across the entire value chain of Oil &amp; Gas operations.
           </p>
@@ -1006,26 +1012,26 @@
               class="w-16 h-16 bg-oil-blue rounded-lg flex items-center justify-center mb-6">
               <i class="fa-solid fa-drafting-compass text-white text-2xl"></i>
             </div>
-            <h3 class="text-2xl font-bold text-oil-dark mb-4">Engineering
+            <h3 class="text-2xl font-bold text-oil-dark mb-4" data-lang-key="cap1Title">Engineering
               Excellence</h3>
-            <p class="text-oil-gray mb-6">Advanced engineering solutions with
+            <p class="text-oil-gray mb-6" data-lang-key="cap1Desc">Advanced engineering solutions with
               cutting-edge design capabilities and technical expertise.</p>
             <ul class="space-y-2">
               <li class="flex items-center text-oil-gray"><i
                   class="fa-solid fa-check text-oil-blue mr-2"></i>
-                Process Engineering
+                <span data-lang-key="cap1Item1">Process Engineering</span>
               </li>
               <li class="flex items-center text-oil-gray"><i
                   class="fa-solid fa-check text-oil-blue mr-2"></i>
-                Structural Design
+                <span data-lang-key="cap1Item2">Structural Design</span>
               </li>
               <li class="flex items-center text-oil-gray"><i
                   class="fa-solid fa-check text-oil-blue mr-2"></i>
-                MEP Systems
+                <span data-lang-key="cap1Item3">MEP Systems</span>
               </li>
               <li class="flex items-center text-oil-gray"><i
                   class="fa-solid fa-check text-oil-blue mr-2"></i>
-                Advanced Engineering Services
+                <span data-lang-key="cap1Item4">Advanced Engineering Services</span>
               </li>
             </ul>
           </div>
@@ -1034,27 +1040,27 @@
             <div
               class="w-16 h-16 bg-oil-accent rounded-lg flex items-center justify-center mb-6">
               <i class="fa-solid fa-industry text-white text-2xl"></i></div>
-            <h3 class="text-2xl font-bold text-oil-dark mb-4">Fabrication
+            <h3 class="text-2xl font-bold text-oil-dark mb-4" data-lang-key="cap2Title">Fabrication
               Expertise</h3>
-            <p class="text-oil-gray mb-6">State-of-the-art fabrication
+            <p class="text-oil-gray mb-6" data-lang-key="cap2Desc">State-of-the-art fabrication
               facilities delivering precision-engineered components and
               structures.</p>
             <ul class="space-y-2">
               <li class="flex items-center text-oil-gray"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Piping Spools
+                <span data-lang-key="cap2Item1">Piping Spools</span>
               </li>
               <li class="flex items-center text-oil-gray"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Structural Works
+                <span data-lang-key="cap2Item2">Structural Works</span>
               </li>
               <li class="flex items-center text-oil-gray"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Steel Welded Tanks
+                <span data-lang-key="cap2Item3">Steel Welded Tanks</span>
               </li>
               <li class="flex items-center text-oil-gray"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Process Skids
+                <span data-lang-key="cap2Item4">Process Skids</span>
               </li>
             </ul>
           </div>
@@ -1063,56 +1069,56 @@
             <div
               class="w-16 h-16 bg-green-600 rounded-lg flex items-center justify-center mb-6">
               <i class="fa-solid fa-cogs text-white text-2xl"></i></div>
-            <h3 class="text-2xl font-bold text-oil-dark mb-4">EPC Integration
+            <h3 class="text-2xl font-bold text-oil-dark mb-4" data-lang-key="cap3Title">EPC Integration
             </h3>
-            <p class="text-oil-gray mb-6">Complete project lifecycle management
+            <p class="text-oil-gray mb-6" data-lang-key="cap3Desc">Complete project lifecycle management
               from conception to commissioning and beyond.</p>
             <ul class="space-y-2">
               <li class="flex items-center text-oil-gray"><i
                   class="fa-solid fa-check text-green-600 mr-2"></i>
-                Engineering Design
+                <span data-lang-key="cap3Item1">Engineering Design</span>
               </li>
               <li class="flex items-center text-oil-gray"><i
                   class="fa-solid fa-check text-green-600 mr-2"></i>
-                Procurement Management
+                <span data-lang-key="cap3Item2">Procurement Management</span>
               </li>
               <li class="flex items-center text-oil-gray"><i
                   class="fa-solid fa-check text-green-600 mr-2"></i>
-                Construction Services
+                <span data-lang-key="cap3Item3">Construction Services</span>
               </li>
               <li class="flex items-center text-oil-gray"><i
                   class="fa-solid fa-check text-green-600 mr-2"></i>
-                Maintenance Solutions
+                <span data-lang-key="cap3Item4">Maintenance Solutions</span>
               </li>
             </ul>
           </div>
         </div>
         <div class="bg-oil-dark rounded-2xl p-12 text-center">
-          <h3 class="text-3xl font-bold text-white mb-6">Ready for Qatar's
+          <h3 class="text-3xl font-bold text-white mb-6" data-lang-key="readyQatarLabel">Ready for Qatar's
             Future</h3>
-          <p class="text-gray-300 text-lg max-w-4xl mx-auto mb-8">
+          <p class="text-gray-300 text-lg max-w-4xl mx-auto mb-8" data-lang-key="readyQatarDesc">
             With our comprehensive capabilities, strategic partnerships, and
             proven track record, Crystal Oilfield is positioned to be a key
             contributor to Qatar's continued growth in the Oil &amp; Gas sector.
           </p>
           <div class="grid md:grid-cols-4 gap-8">
             <div class="text-center">
-              <div class="text-3xl font-bold text-oil-accent mb-2">Ready</div>
-              <div class="text-gray-300">For Tenders</div>
+              <div class="text-3xl font-bold text-oil-accent mb-2" data-lang-key="keywordReady">Ready</div>
+              <div class="text-gray-300" data-lang-key="stat1Ready">For Tenders</div>
             </div>
             <div class="text-center">
-              <div class="text-3xl font-bold text-oil-accent mb-2">Flexible
+              <div class="text-3xl font-bold text-oil-accent mb-2" data-lang-key="keywordFlexible">Flexible
               </div>
-              <div class="text-gray-300">Resource Mobilization</div>
+              <div class="text-gray-300" data-lang-key="stat2Flexible">Resource Mobilization</div>
             </div>
             <div class="text-center">
-              <div class="text-3xl font-bold text-oil-accent mb-2">Proven</div>
-              <div class="text-gray-300">Track Record</div>
+              <div class="text-3xl font-bold text-oil-accent mb-2" data-lang-key="keywordProven">Proven</div>
+              <div class="text-gray-300" data-lang-key="stat3Proven">Track Record</div>
             </div>
             <div class="text-center">
-              <div class="text-3xl font-bold text-oil-accent mb-2">Strategic
+              <div class="text-3xl font-bold text-oil-accent mb-2" data-lang-key="keywordStrategic">Strategic
               </div>
-              <div class="text-gray-300">Location</div>
+              <div class="text-gray-300" data-lang-key="stat4Strategic">Location</div>
             </div>
           </div>
         </div>
@@ -1128,7 +1134,7 @@
               <div class="flex items-center mb-6">
                 <img src="CO_Logo.svg" alt="Crystal Oilfield Logo" class="h-[72px] w-auto">
               </div>
-              <p class="text-gray-300 mb-6 max-w-md">
+              <p class="text-gray-300 mb-6 max-w-md" data-lang-key="footerDescription">
                 Leading the oil and gas industry with innovative engineering
                 solutions, comprehensive EPC services, and unwavering commitment
                 to safety and quality across the GCC region.
@@ -1146,76 +1152,76 @@
                     class="fa-brands fa-youtube text-white"></i></span></div>
             </div>
             <div>
-              <h4 class="text-xl font-bold mb-6 text-oil-accent">Contact
+              <h4 class="text-xl font-bold mb-6 text-oil-accent" data-lang-key="footerContactHeading">Contact
                 Information</h4>
               <div class="space-y-4">
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-map-marker-alt text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Head Office</p>
-                    <p class="text-gray-300 text-sm">Office No. 3301,3302, Excellence Tower P. O. Box: 80025 |West Bay,<br>Doha, Qatar</p>
+                    <p class="text-white font-medium" data-lang-key="headOfficeLabel">Head Office</p>
+                    <p class="text-gray-300 text-sm" data-lang-key="headOfficeAddress">Office No. 3301,3302, Excellence Tower P. O. Box: 80025 |West Bay,<br>Doha, Qatar</p>
                   </div>
                 </div>
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-industry text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Fab Shop</p>
-                    <p class="text-gray-300 text-sm">Bldg. No.239, Zone 81, Street No.7, New Industrial Area <br>Doha, Qatar</p>
+                    <p class="text-white font-medium" data-lang-key="fabShopLabel">Fab Shop</p>
+                    <p class="text-gray-300 text-sm" data-lang-key="fabShopAddress">Bldg. No.239, Zone 81, Street No.7, New Industrial Area <br>Doha, Qatar</p>
                   </div>
                 </div>
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-phone text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Phone</p>
-                    <p class="text-gray-300 text-sm">+974-40120736</p>
+                    <p class="text-white font-medium" data-lang-key="phoneLabel">Phone</p>
+                    <p class="text-gray-300 text-sm" data-lang-key="phoneNumber">+974-40120736</p>
                   </div>
                 </div>
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-envelope text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Email</p>
-                    <p class="text-gray-300 text-sm">info@crystaloilfield.qa
+                    <p class="text-white font-medium" data-lang-key="emailLabel">Email</p>
+                    <p class="text-gray-300 text-sm" data-lang-key="emailInfo">info@crystaloilfield.qa
                     </p>
-                    <p class="text-gray-300 text-sm">proposals@crystaloilfield.qa
+                    <p class="text-gray-300 text-sm" data-lang-key="emailProposals">proposals@crystaloilfield.qa
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div>
-              <h4 class="text-xl font-bold mb-6 text-oil-accent">Quick Links
+              <h4 class="text-xl font-bold mb-6 text-oil-accent" data-lang-key="footerQuickLinksHeading">Quick Links
               </h4>
               <div class="space-y-3"><a href="index.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Home</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerHome">Home</span></a><a
                   href="About.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>About
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerAbout">About
                     Us</span></a>
                 <div class="relative group"><button
                     class="flex items-center text-gray-300 hover:text-oil-accent transition-colors w-full"><i
-                      class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm"></i><span>Services</span><i
+                      class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm"></i><span data-lang-key="footerServices">Services</span><i
                       class="fa-solid fa-chevron-down text-xs ml-2"></i></button>
                   <div class="ml-6 mt-2 space-y-2 hidden group-hover:block"><a
                       href="Crystal%20Oilfield%20Services.html"
                       class="flex items-center text-gray-400 hover:text-oil-accent transition-colors text-sm"><i
-                        class="fa-solid fa-oil-well text-oil-accent mr-2 text-xs"></i><span>Crystal
+                        class="fa-solid fa-oil-well text-oil-accent mr-2 text-xs"></i><span data-lang-key="footerServicesOilfield">Crystal
                         Oilfield Contracting</span></a><a href="Crystal%20Vision%20Services.html"
                       class="flex items-center text-gray-400 hover:text-oil-accent transition-colors text-sm"><i
-                        class="fa-solid fa-industry text-oil-accent mr-2 text-xs"></i><span>Crystal
+                        class="fa-solid fa-industry text-oil-accent mr-2 text-xs"></i><span data-lang-key="footerServicesVision">Crystal
                         Vision Steel Fabrication</span></a></div>
                 </div><a href="Portfolio.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Portfolio</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerPortfolio">Portfolio</span></a><a
                   href="Media.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Media</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerMedia">Media</span></a><a
                   href="Career.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Career</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerCareer">Career</span></a><a
                   href="Contact.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Contact</span></a>
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerContact">Contact</span></a>
               </div>
             </div>
           </div>
@@ -1223,7 +1229,7 @@
         <div class="border-t border-white/20 py-6 sm:py-8">
           <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="text-center">
-              <p class="text-gray-300 text-xs sm:text-sm">© 2025 Crystal
+              <p class="text-gray-300 text-xs sm:text-sm" data-lang-key="footerCopyright">© 2025 Crystal
                 Oilfield. All
                 rights reserved.</p>
             </div>
@@ -1316,6 +1322,478 @@
       });
     </script>
   <script src="animations.js"></script>
+    <script>
+      // Language Translation System
+      const translations = {
+        en: {
+          // Page Title
+          pageTitle: 'About Us | Crystal Oilfield Services',
+          // Navigation
+          navHome: 'Home',
+          navAbout: 'About',
+          navServices: 'Services',
+          navServicesOilfield: 'Crystal Oilfield Contracting and Trading',
+          navServicesVision: 'Crystal Vision Steel Fabrication',
+          navPortfolio: 'Portfolio',
+          navMedia: 'Media',
+          navCareer: 'Career',
+          navContact: 'Contact',
+          navOtherCompanies: 'Our Other Companies',
+          btnRequestQuote: 'Request a Quote',
+          languageLabel: 'Language',
+          // Company Names
+          company1Name: 'Al Bahr Al Arabi Group',
+          company2Name: 'Al Bahr Arabi Marine Engineering',
+          company3Name: 'Gulf Tech Energy Contracting LLC',
+          company4Name: 'Crystal Petroleum',
+          company5Name: 'Crystal Petrokimya Turkey',
+          company6Name: 'Crystal Care KSA',
+          // Hero Section
+          heroAbout: 'About',
+          heroCrystalOilfield: 'Crystal Oilfield',
+          heroDescription: 'Pioneering excellence in Oil & Gas engineering solutions across Qatar and the GCC region since our establishment in 2024.',
+          btnDownloadProfile: 'Download Profile',
+          btnContactTeam: 'Contact Our Team',
+          sectionCompanyOverview: 'COMPANY OVERVIEW',
+          introductionTo: 'Introduction to',
+          companyOverviewPara1: 'Crystal Oilfield Contracting and Trading W.L.L, a distinguished member of the Al Bahr Al Arabi Group (UAE), was established in Qatar in 2024.',
+          companyOverviewPara2: 'We provide specialized EPC (Engineering, Procurement, and Construction) and maintenance services for the Oil & Gas, Power, and Desalination industries.',
+          commercialLicense: 'Commercial License',
+          approvedOperational: 'Approved and operational in Qatar',
+          officeLocation: 'Office Location',
+          officeAddress: 'Excellence Tower, West Bay, Doha',
+          established: 'Established',
+          groupHeritageYears: 'Group Heritage Years',
+          sectionOperationalStatus: 'OPERATIONAL STATUS',
+          operationsHeading: 'Current Operations &',
+          operationsInfrastructure: 'Infrastructure',
+          operationsDescription: 'Our comprehensive operational framework supports seamless project delivery across Qatar\'s industrial landscape.',
+          engineeringProjectReadiness: 'Engineering & Project Readiness',
+          engineeringReadinessDescription: 'Our comprehensive capabilities ensure we\'re fully prepared to engage in upcoming tenders and deliver exceptional project results.',
+          engineeringSupport: 'Engineering Support',
+          engineeringSupportDescription: 'Initiated with Al Bahar subsidiaries, with plans to establish a dedicated engineering office in Qatar in the near future.',
+          tenderParticipation: 'Tender Participation',
+          tenderParticipationDescription: 'Fully prepared to engage in upcoming tenders in Qatar with comprehensive proposal capabilities.',
+          initialOperations: 'Initial Operations',
+          initialOperationsDescription: 'Currently ongoing with active project pursuits and operational framework establishment.',
+          sectionOurDirection: 'OUR DIRECTION',
+          visionMissionHeading: 'Vision, Mission &',
+          valuesLabel: 'Values',
+          visionMissionDescription: 'Guiding principles that drive our commitment to excellence and sustainable growth in the oil and gas industry.',
+          ourVisionLabel: 'Our Vision',
+          ourVisionDescription: 'To be recognized as a leading provider of comprehensive construction and engineering solutions in the MENA region, specializing in Oil & Gas projects, MEP contracting, fabrication of piping spools, structural works, skids, steel welded tanks, and advanced engineering services. We aim to be the preferred partner for our clients by consistently exceeding expectations through our unwavering commitment to excellence, professionalism, and integrity.',
+          ourMissionLabel: 'Our Mission',
+          ourMissionDescription: 'We are committed to delivering exceptional Oil & Gas services through innovative, technology-driven solutions. By upholding the highest standards of quality, safety, and environmental sustainability, we aim to drive growth and development for our clients and communities.',
+          ourCoreValuesLabel: 'Our Core Values',
+          ourCoreValuesDescription: 'The fundamental principles that guide our operations and define our corporate culture.',
+          valueQuality: 'Quality',
+          valueQualityDescription: 'We are dedicated to delivering superior quality in every aspect of our work, ensuring that our services meet or exceed industry standards.',
+          valueSafety: 'Safety',
+          valueSafetyDescription: 'The safety of our employees, clients, and stakeholders is our top priority. We are committed to maintaining a safe and healthy work environment.',
+          valueIntegrity: 'Integrity',
+          valueIntegrityDescription: 'We conduct business with honesty, transparency, and ethical practices. We value trust and strive to build long-lasting relationships with our clients and partners.',
+          valueInnovation: 'Innovation',
+          valueInnovationDescription: 'We embrace innovation and continuously seek new technologies and approaches to improve our services and meet the evolving needs of our clients.',
+          valueTeamwork: 'Teamwork',
+          valueTeamworkDescription: 'We foster a collaborative work culture that promotes teamwork, mutual respect, and open communication. We believe in the power of collective effort to achieve success.',
+          valueCustomerFocus: 'Customer Focus',
+          valueCustomerFocusDescription: 'Our clients are at the center of everything we do. We listen to their needs, provide tailored solutions, and strive to exceed their expectations.',
+          valueSustainability: 'Sustainability',
+          valueSustainabilityDescription: 'We are committed to minimizing our environmental impact and promoting sustainable practices in our operations. We aim to contribute to a greener and more sustainable future.',
+          sectionInternationalReach: 'INTERNATIONAL REACH',
+          ourGlobalHeading: 'Our Global',
+          presenceLabel: 'Presence',
+          internationalDescription: 'Over the years, we have expanded our footprint beyond borders, establishing a strong international presence through our group companies and subsidiaries.',
+          operatingMultipleMarketsHeading: 'Operating Across Multiple Markets',
+          operatingMultipleMarketsDescription: 'Operating across the UAE, Saudi Arabia, Qatar, Turkey, and the United Kingdom, we continue to strengthen our global network and deliver world-class solutions tailored to regional needs.',
+          countryUAE: 'UAE',
+          countryUAEDescription: 'Headquarters & Operations',
+          countrySaudiArabia: 'Saudi Arabia',
+          countrySaudiArabiaDescription: 'Strategic Operations',
+          countryQatar: 'Qatar',
+          countryQatarDescription: 'New Market Entry',
+          countryTurkey: 'Turkey',
+          countryTurkeyDescription: 'Regional Expansion',
+          countryUnitedKingdom: 'United Kingdom',
+          countryUnitedKingdomDescription: 'European Operations',
+          subsidiariesDescription: 'Through our subsidiaries — such as Al Bahr Al Arabi Marine Engineering, Crystal Petrochemical DMCC, Crystal Care LLC, Crystal Oilfield Contracting W.L.L, and Crystal Petrokimya Ticaret Sirket — we contribute to key sectors including Oil & Gas, Construction, and Infrastructure.',
+          // OUR JOURNEY Section
+          sectionOurJourney: 'OUR JOURNEY',
+          groupLabel: 'Group',
+          milestonesLabel: 'Milestones',
+          journeyDescription: 'A comprehensive timeline showcasing our strategic growth and expansion across multiple markets and industries.',
+          year2024: '2024',
+          milestone2024Title: 'Crystal Oilfield Qatar',
+          milestone2024Desc: 'Positioned as the Group\'s flagship and industrial hub in the Qatari market, representing our latest milestone in regional expansion.',
+          year2021: '2021',
+          milestone2021Title: 'Crystal Petrokimya – Turkey',
+          milestone2021Desc: 'International expansion into the Turkish market, establishing our presence in European operations.',
+          year2019: '2019',
+          milestone2019Title: 'Crystal Petroleum FZE – UAE',
+          milestone2019Desc: 'Strategic expansion into oil trading and petroleum products, diversifying our portfolio in the energy sector.',
+          year2006: '2006',
+          milestone2006Title: 'Crystal Vision Steel – Qatar',
+          milestone2006Desc: 'Establishment of our integrated steel fabrication plant in Qatar, marking our entry into the Qatari market.',
+          year2004: '2004',
+          milestone2004Title: 'Al Bahr Al Arabi Technical Industries – UAE',
+          milestone2004Desc: 'Expansion into technical industries, broadening our capabilities in industrial solutions and engineering services.',
+          year1998: '1998',
+          milestone1998Title: 'Al Bahr Al Arabi Marine Engineering – UAE',
+          milestone1998Desc: 'Foundation of our group with marine engineering expertise, establishing our presence in the UAE market.',
+          // OUR LEADERSHIP Section
+          sectionOurLeadership: 'OUR LEADERSHIP',
+          executiveLabel: 'Executive',
+          leadershipLabel: 'Leadership',
+          leadershipDescription: 'Meet the visionary leaders driving our success and strategic growth across global markets.',
+          leader1Name: 'Muhammed Akram',
+          leader1Title: 'Director',
+          leader1Role: 'Al Bahr Al Arabi Group Owner',
+          leader1Bio: 'Mr. Muhammed Akram, a distinguished Board Member and owner of Al Bahr Al Arabi Group (est. 1998, UAE), brings extensive expertise in the Oil & Gas sector, particularly in petroleum storage tank construction. He also owns a fully operational oil storage terminal in Al Hamriyah Free Zone.',
+          keyAchievementLabel: 'Key Achievement',
+          leader1Achievement: 'Under his leadership, Al Bahr has successfully completed 65 oil storage terminals in Hamriyah Free Zone, contributing significantly to the region\'s energy infrastructure and the company\'s continued growth.',
+          leader1Exp: '26+ Years Experience',
+          founder: 'Group Founder',
+          leader2Name: 'Mohammed Kazim Khan',
+          leader2Title: 'General Manager',
+          leader2Role: 'Operations Leader',
+          leader2Bio: 'Mr. Mohammed Kazim Khan is an accomplished leader with over 25 years of experience in the Oil & Gas sector across India and Qatar. As General Manager, he oversees the company\'s Oil & Gas operations, including steel fabrication and project management, ensuring excellence in quality, safety, and timely delivery.',
+          majorProjectsLabel: 'Major Projects',
+          leader2Achievement: 'He has successfully led major EPIC projects for QatarEnergy, including the CNG Bus Filling Stations at MIC & RLIC and DPFU Phase-1 Mechanical Completion at Dukhan. His extensive experience in Ras Laffan, Dukhan, and Mesaieed strengthens the company\'s operational capabilities.',
+          leader2Exp: '25+ Years Experience',
+          qatarExpert: 'Qatar Expert',
+          leadershipExcellenceLabel: 'Leadership Excellence',
+          leadershipExcellenceDesc: 'Our leadership team combines decades of industry experience with visionary strategic planning, ensuring Crystal Oilfield remains at the forefront of innovation and excellence in the Oil & Gas sector.',
+          stat1Label: 'Combined Years of Leadership',
+          stat2Label: 'Major Projects Delivered',
+          stat3Label: 'Countries of Operations',
+          // OUR CAPABILITIES Section
+          sectionOurCapabilities: 'OUR CAPABILITIES',
+          comprehensiveLabel: 'Comprehensive',
+          solutionsPortfolioLabel: 'Solutions Portfolio',
+          capabilitiesDescription: 'From engineering design to project completion, we deliver integrated solutions across the entire value chain of Oil & Gas operations.',
+          cap1Title: 'Engineering Excellence',
+          cap1Desc: 'Advanced engineering solutions with cutting-edge design capabilities and technical expertise.',
+          cap1Item1: 'Process Engineering',
+          cap1Item2: 'Structural Design',
+          cap1Item3: 'MEP Systems',
+          cap1Item4: 'Advanced Engineering Services',
+          cap2Title: 'Fabrication Expertise',
+          cap2Desc: 'State-of-the-art fabrication facilities delivering precision-engineered components and structures.',
+          cap2Item1: 'Piping Spools',
+          cap2Item2: 'Structural Works',
+          cap2Item3: 'Steel Welded Tanks',
+          cap2Item4: 'Process Skids',
+          cap3Title: 'EPC Integration',
+          cap3Desc: 'Complete project lifecycle management from conception to commissioning and beyond.',
+          cap3Item1: 'Engineering Design',
+          cap3Item2: 'Procurement Management',
+          cap3Item3: 'Construction Services',
+          cap3Item4: 'Maintenance Solutions',
+          readyQatarLabel: 'Ready for Qatar\'s Future',
+          readyQatarDesc: 'With our comprehensive capabilities, strategic partnerships, and proven track record, Crystal Oilfield is positioned to be a key contributor to Qatar\'s continued growth in the Oil & Gas sector.',
+          keywordReady: 'Ready',
+          keywordFlexible: 'Flexible',
+          keywordProven: 'Proven',
+          keywordStrategic: 'Strategic',
+          stat1Ready: 'For Tenders',
+          stat2Flexible: 'Resource Mobilization',
+          stat3Proven: 'Track Record',
+          stat4Strategic: 'Location',
+          // Footer Section
+          footerDescription: 'Leading the oil and gas industry with innovative engineering solutions, comprehensive EPC services, and unwavering commitment to safety and quality across the GCC region.',
+          footerContactHeading: 'Contact Information',
+          headOfficeLabel: 'Head Office',
+          headOfficeAddress: 'Office No. 3301,3302, Excellence Tower P. O. Box: 80025 |West Bay, Doha, Qatar',
+          fabShopLabel: 'Fab Shop',
+          fabShopAddress: 'Bldg. No.239, Zone 81, Street No.7, New Industrial Area Doha, Qatar',
+          phoneLabel: 'Phone',
+          phoneNumber: '+974-40120736',
+          emailLabel: 'Email',
+          emailInfo: 'info@crystaloilfield.qa',
+          emailProposals: 'proposals@crystaloilfield.qa',
+          footerQuickLinksHeading: 'Quick Links',
+          footerHome: 'Home',
+          footerAbout: 'About Us',
+          footerServices: 'Services',
+          footerServicesOilfield: 'Crystal Oilfield Contracting',
+          footerServicesVision: 'Crystal Vision Steel Fabrication',
+          footerPortfolio: 'Portfolio',
+          footerMedia: 'Media',
+          footerCareer: 'Career',
+          footerContact: 'Contact',
+          footerCopyright: '© 2025 Crystal Oilfield. All rights reserved.'
+        },
+        ar: {
+          // Page Title
+          pageTitle: 'عننا | خدمات كريستال أويل فيلد',
+          // Navigation
+          navHome: 'الرئيسية',
+          navAbout: 'عننا',
+          navServices: 'الخدمات',
+          navServicesOilfield: 'كريستال أويل فيلد للمقاولات والتجارة',
+          navServicesVision: 'كريستال فيجن لتصنيع الفولاذ',
+          navPortfolio: 'المشاريع',
+          navMedia: 'الإعلام',
+          navCareer: 'التوظيف',
+          navContact: 'اتصل بنا',
+          navOtherCompanies: 'شركاتنا الأخرى',
+          btnRequestQuote: 'طلب عرض أسعار',
+          languageLabel: 'اللغة',
+          // Company Names
+          company1Name: 'مجموعة البحر العربي',
+          company2Name: 'البحر العربي للهندسة البحرية',
+          company3Name: 'شركة الخليج تك للطاقة والمقاولات',
+          company4Name: 'كريستال للبترول',
+          company5Name: 'كريستال بتروكيميا تركيا',
+          company6Name: 'كريستال كير السعودية',
+          // Hero Section
+          heroAbout: 'عننا',
+          heroCrystalOilfield: 'كريستال أويل فيلد',
+          heroDescription: 'نحن رواد التميز في حلول الهندسة والنفط والغاز عبر قطر ومنطقة الخليج منذ تأسيسنا في عام 2024.',
+          btnDownloadProfile: 'تحميل الملف الشخصي',
+          btnContactTeam: 'اتصل بفريقنا',
+          sectionCompanyOverview: 'نظرة عامة عن الشركة',
+          introductionTo: 'مقدمة عن',
+          companyOverviewPara1: 'شركة كريستال أويل فيلد للمقاولات والتجارة شركة ذات مسؤولية محدودة، عضو مرموق في مجموعة البحر العربي (الإمارات العربية المتحدة)، تأسست في قطر عام 2024.',
+          companyOverviewPara2: 'نحن نقدم خدمات متخصصة للهندسة والشراء والبناء والصيانة لصناعات النفط والغاز والطاقة وتحلية المياه.',
+          commercialLicense: 'الترخيص التجاري',
+          approvedOperational: 'معتمد وعاملة في قطر',
+          officeLocation: 'موقع المكتب',
+          officeAddress: 'برج التميز، خليج الغرب، الدوحة',
+          established: 'تأسست',
+          groupHeritageYears: 'سنوات التراث المجموعة',
+          sectionOperationalStatus: 'حالة التشغيل',
+          operationsHeading: 'العمليات الحالية و',
+          operationsInfrastructure: 'البنية التحتية',
+          operationsDescription: 'يدعم إطار العمل التشغيلي الشامل لدينا تسليم المشاريع بسلاسة عبر المشهد الصناعي في قطر.',
+          engineeringProjectReadiness: 'الهندسة والجاهزية للمشاريع',
+          engineeringReadinessDescription: 'تضمن قدراتنا الشاملة أننا مستعدون بالكامل للمشاركة في المناقصات القادمة وتقديم نتائج مشاريع استثنائية.',
+          engineeringSupport: 'الدعم الهندسي',
+          engineeringSupportDescription: 'تم البدء مع الشركات التابعة للبحر، مع خطط لإنشاء مكتب هندسة مخصص في قطر في المستقبل القريب.',
+          tenderParticipation: 'المشاركة في المناقصات',
+          tenderParticipationDescription: 'مستعدون تماماً للمشاركة في المناقصات القادمة في قطر مع قدرات الاقتراح الشاملة.',
+          initialOperations: 'العمليات الأولية',
+          initialOperationsDescription: 'جارية حالياً مع المتابعة النشطة للمشاريع وتأسيس إطار العمل التشغيلي.',
+          sectionOurDirection: 'اتجاهنا',
+          visionMissionHeading: 'الرؤية والرسالة و',
+          valuesLabel: 'القيم',
+          visionMissionDescription: 'المبادئ الموجهة التي تدفع التزامنا بالتميز والنمو المستدام في صناعة النفط والغاز.',
+          ourVisionLabel: 'رؤيتنا',
+          ourVisionDescription: 'أن نُعترف بها كمزود رائد لحلول البناء والهندسة الشاملة في منطقة العالم العربي والمتوسط، مع التركيز على مشاريع النفط والغاز والتعاقدات الميكانيكية والكهربائية وأعمال البناء، وتصنيع روابط الأنابيب والهياكل المعدنية والخزانات الملحومة من الفولاذ وخدمات الهندسة المتقدمة. نهدف إلى العمل كمالراظي المفضل لدو عملائنا من خلال تجاوز التوقعات باستمرار ولا مبالات عن الالتزام بالتميز والمهنية والنزاهة.',
+          ourMissionLabel: 'رسالتنا',
+          ourMissionDescription: 'نحن ملتزمون بتقديم خدمات استثنائية للنفط والغاز من خلال حلول مبتكرة ومتطورة تكنولوجياً. من خلال الجهب بأعلى معايير الجودة والسلامة والاستدامة البيئية، نهدف إلى النمو والعالمات لعملائنا والمجتمعات المحلية.',
+          ourCoreValuesLabel: 'قيمنا الأساسية',
+          ourCoreValuesDescription: 'المبادئ الأساسية التي توجه عملياتنا وتحدد معالم ثقافتنا المؤسسية.',
+          valueQuality: 'الجودة',
+          valueQualityDescription: 'نحن ملتزمون بقديم جودة عالية في كل جانب من عملنا، مما يضمن أن خدماتنا تلبي أو تتجاوز معايير الصناعة.',
+          valueSafety: 'السلامة',
+          valueSafetyDescription: 'سلامة موظفينا وعملائنا وأصحاب المصالح هي أولوية رئيسية لنا. نحن ملتزمون بالحفاظ على بيئة عمل آمنة وصحية.',
+          valueIntegrity: 'النزاهة',
+          valueIntegrityDescription: 'نتعامل بإلمام وشفافية وبممارسات أخلاقية. نقيم بالثقة وسعي لبناء علاقات طويلة الأمد مع عملائنا وشركائنا.',
+          valueInnovation: 'الابتكار',
+          valueInnovationDescription: 'نحن نعتنق بالابتكار ونبحث باستمرار عن التقنيات الجديدة والمنهجيات لتحسين زاخر مالعواطليك وتلبية الاحتياجات المحتورة لعملائنا.',
+          valueTeamwork: 'روح الفريق',
+          valueTeamworkDescription: 'نتعزز ثقافة عمل تعاونية تعزز العمل الجماعي والاحترام المتبادل والتواصل المفتوح. نؤمن بقوة الجهد الجماعي الموحد في تحقيق النجاح.',
+          valueCustomerFocus: 'التركيز على العميل',
+          valueCustomerFocusDescription: 'عملاؤنا هم تركيز كل ما نقوم به. نستمع إلى احتياجاتهم ونقدم حلولاً مخصصة وسعي لتجاوز توقعاتهم.',
+          valueSustainability: 'الاستدامة',
+          valueSustainabilityDescription: 'نحن ملتزمون بتقليل تأثيرنا على البيئة وتعزيز الممارسات المستدامة في عملياتنا. نهدف إلى الاسهام لعالم أكثر خضرة واستدامة.',
+          sectionInternationalReach: 'الوصول الدولي',
+          ourGlobalHeading: 'وجودنا العالمي',
+          presenceLabel: 'الحضور',
+          internationalDescription: 'على مدى السنوات، قمنا بتوسيع موطئ قدمنا عبر الحدود، مما أرسى وجوداً دولياً قوياً من خلال شركاتنا ومختلفة التابعة.',
+          operatingMultipleMarketsHeading: 'العمل عبر أسواق متعددة',
+          operatingMultipleMarketsDescription: 'نعمل في الإمارات والمملكة العربية السعودية وقطر وتركيا والمملكة المتحدة، ونستمر في تقوية شبكتنا العالمية وتقديم حلول عالمية المستوى مخصصة للاحتياجات الإقليمية.',
+          countryUAE: 'الإمارات العربية المتحدة',
+          countryUAEDescription: 'المقر الرئيسي والعمليات',
+          countrySaudiArabia: 'المملكة العربية السعودية',
+          countrySaudiArabiaDescription: 'العمليات الإستراتيجية',
+          countryQatar: 'قطر',
+          countryQatarDescription: 'دخول سوق جديد',
+          countryTurkey: 'تركيا',
+          countryTurkeyDescription: 'التوسع الإقليمي',
+          countryUnitedKingdom: 'المملكة المتحدة',
+          countryUnitedKingdomDescription: 'العمليات الأوروبية',
+          subsidiariesDescription: 'من خلال شركاتنا التابعة — مثل البحر العربي للهندسة البحرية، كريستال بتروكيميكال DMCC، كريستال كير LLC، كريستال أويل فيلد للمقاولات W.L.L، وكريستال بتروكيميا Ticaret Sirket — نساهم في قطاعات رئيسية بما في ذلك النفط والغاز والبناء والبنية التحتية.',
+          // OUR JOURNEY Section
+          sectionOurJourney: 'رحلتنا',
+          groupLabel: 'المجموعة',
+          milestonesLabel: 'معالم الإنجاز',
+          journeyDescription: 'خط زمني شامل يعرض نمونا الإستراتيجي وتوسعنا عبر أسواق وصناعات متعددة.',
+          year2024: '2024',
+          milestone2024Title: 'كريستال أويل فيلد قطر',
+          milestone2024Desc: 'موضعها كرائدة المجموعة والمركز الصناعي في السوق القطرية، تمثل أحدث معلم لنا في التوسع الإقليمي.',
+          year2021: '2021',
+          milestone2021Title: 'كريستال بتروكيميا - تركيا',
+          milestone2021Desc: 'التوسع الدولي في السوق التركية، مما يؤسس وجودنا في العمليات الأوروبية.',
+          year2019: '2019',
+          milestone2019Title: 'كريستال بترولويم FZE - الإمارات',
+          milestone2019Desc: 'التوسع الإستراتيجي في تجارة النفط والمنتجات البترولية، وتنويع محفظتنا في قطاع الطاقة.',
+          year2006: '2006',
+          milestone2006Title: 'كريستال فيجن ستيل - قطر',
+          milestone2006Desc: 'تأسيس مصنع تصنيع الفولاذ المتكامل لدينا في قطر، مما يعلن دخولنا السوق القطرية.',
+          year2004: '2004',
+          milestone2004Title: 'البحر العربي للصناعات التقنية - الإمارات',
+          milestone2004Desc: 'التوسع في الصناعات التقنية، وتوسيع قدراتنا في الحلول الصناعية وخدمات الهندسة.',
+          year1998: '1998',
+          milestone1998Title: 'البحر العربي للهندسة البحرية - الإمارات',
+          milestone1998Desc: 'تأسيس مجموعتنا بخبرة الهندسة البحرية، مما يؤسس وجودنا في سوق الإمارات.',
+          // OUR LEADERSHIP Section
+          sectionOurLeadership: 'قيادتنا',
+          executiveLabel: 'الإدارة',
+          leadershipLabel: 'التنفيذية',
+          leadershipDescription: 'التقي القادة الرؤيويين الذين يقودون نجاحنا والنمو الإستراتيجي عبر الأسواق العالمية.',
+          leader1Name: 'محمد أكرم',
+          leader1Title: 'مدير',
+          leader1Role: 'مالك مجموعة البحر العربي',
+          leader1Bio: 'السيد محمد أكرم، عضو مجلس مميز ومالك مجموعة البحر العربي (تأسست عام 1998، الإمارات)، يجلب خبرة واسعة في قطاع النفط والغاز، خاصة في بناء خزانات تخزين البترول. كما أنه يمتلك محطة تخزين نفط عاملة بكامل طاقتها في منطقة الحمرية الحرة.',
+          keyAchievementLabel: 'الإنجاز الرئيسي',
+          leader1Achievement: 'تحت قيادته، أكمل البحر بنجاح 65 محطة تخزين نفط في منطقة الحمرية الحرة، مما ساهم بشكل كبير في البنية التحتية للطاقة في المنطقة والنمو المستمر للشركة.',
+          leader1Exp: '26+ سنة من الخبرة',
+          founder: 'مؤسس المجموعة',
+          leader2Name: 'محمد قاسم خان',
+          leader2Title: 'مدير عام',
+          leader2Role: 'قائد العمليات',
+          leader2Bio: 'السيد محمد قاسم خان قائد متمرس يتمتع بأكثر من 25 سنة من الخبرة في قطاع النفط والغاز في الهند وقطر. بصفته مدير عام، يشرف على عمليات شركتنا في النفط والغاز، بما في ذلك تصنيع الفولاذ وإدارة المشاريع، مما يضمن التميز في الجودة والسلامة والتسليم في الوقت المناسب.',
+          majorProjectsLabel: 'المشاريع الرئيسية',
+          leader2Achievement: 'قاد بنجاح مشاريع EPIC الرئيسية لشركة قطارإنرجي، بما في ذلك محطات ملء الحافلات بالغاز الطبيعي المضغوط في MIC و RLIC والإنجاز الميكانيكي لمرحلة DPFU Phase-1 في دوخان. تعزز خبرته الواسعة في رأس لفان ودوخان والمسيعيد قدرات الشركة التشغيلية.',
+          leader2Exp: '25+ سنة من الخبرة',
+          qatarExpert: 'خبير قطر',
+          leadershipExcellenceLabel: 'تميز القيادة',
+          leadershipExcellenceDesc: 'يجمع فريق القيادة لدينا بين عقود من الخبرة الصناعية والتخطيط الإستراتيجي الرؤيوي، مما يضمن بقاء كريستال أويل فيلد في طليعة الابتكار والتميز في قطاع النفط والغاز.',
+          stat1Label: 'السنوات المشتركة للقيادة',
+          stat2Label: 'المشاريع الرئيسية المسلمة',
+          stat3Label: 'دول العمليات',
+          // OUR CAPABILITIES Section
+          sectionOurCapabilities: 'قدراتنا',
+          comprehensiveLabel: 'حلول شاملة',
+          solutionsPortfolioLabel: 'محفظة الحلول',
+          capabilitiesDescription: 'من التصميم الهندسي إلى إنجاز المشروع، نقدم حلولاً متكاملة عبر سلسلة القيمة الكاملة لعمليات النفط والغاز.',
+          cap1Title: 'التميز الهندسي',
+          cap1Desc: 'حلول هندسية متقدمة مع قدرات تصميم متطورة والخبرة التقنية.',
+          cap1Item1: 'الهندسة الإجرائية',
+          cap1Item2: 'التصميم الإنشائي',
+          cap1Item3: 'أنظمة الكهرباء والميكانيكا والسباكة',
+          cap1Item4: 'خدمات الهندسة المتقدمة',
+          cap2Title: 'خبرة التصنيع',
+          cap2Desc: 'منشآت تصنيع متقدمة توفر مكونات وهياكل مصنعة بدقة.',
+          cap2Item1: 'أنابيب الملفات',
+          cap2Item2: 'الأعمال الإنشائية',
+          cap2Item3: 'خزانات الفولاذ الملحومة',
+          cap2Item4: 'وحدات العمليات',
+          cap3Title: 'تكامل هندسة التوريد والتشييد',
+          cap3Desc: 'إدارة دورة حياة المشروع الكاملة من التصميم إلى الإنجاز وما بعده.',
+          cap3Item1: 'التصميم الهندسي',
+          cap3Item2: 'إدارة الشراء',
+          cap3Item3: 'خدمات البناء',
+          cap3Item4: 'حلول الصيانة',
+          readyQatarLabel: 'جاهز لمستقبل قطر',
+          readyQatarDesc: 'مع قدراتنا الشاملة والشراكات الإستراتيجية والسجل الحافل، تتمتع شركة كريستال أويل فيلد بموضع قوي لتكون مساهماً رئيسياً في نمو قطر المستمر في قطاع النفط والغاز.',
+          keywordReady: 'جاهز',
+          keywordFlexible: 'مرن',
+          keywordProven: 'مثبت',
+          keywordStrategic: 'إستراتيجي',
+          stat1Ready: 'للمناقصات',
+          stat2Flexible: 'التنقل المرن للموارد',
+          stat3Proven: 'السجل المثبت',
+          stat4Strategic: 'الموقع',
+          // Footer Section
+          footerDescription: 'مقدمة في صناعة النفط والغاز بحلول هندسية مبتكرة، وخدمات EPC شاملة، والتزام لايزع بالسلامة والجودة عبر منطقة الخليج.',
+          footerContactHeading: 'معلومات الاتصال',
+          headOfficeLabel: 'المقر الرئيسي',
+          headOfficeAddress: 'رقم المكتب 3301، 3302، برج التميز ص.ب: 80025 الخليج الغربي، الدوحة، قطر',
+          fabShopLabel: 'محل الفبركة',
+          fabShopAddress: 'المبنى رقم 239، المنطقة 81، الشارع رقم 7، منطقة الصناعات الجديدة الدوحة، قطر',
+          phoneLabel: 'الهاتف',
+          phoneNumber: '+974-40120736',
+          emailLabel: 'البريد الإلكتروني',
+          emailInfo: 'info@crystaloilfield.qa',
+          emailProposals: 'proposals@crystaloilfield.qa',
+          footerQuickLinksHeading: 'روابط سريعة',
+          footerHome: 'الرئيسية',
+          footerAbout: 'عننا',
+          footerServices: 'الخدمات',
+          footerServicesOilfield: 'كريستال أويل فيلد للمقاولات',
+          footerServicesVision: 'كريستال فيجن لتصنيع الفولاذ',
+          footerPortfolio: 'محفظة المشاريع',
+          footerMedia: 'الإعلام',
+          footerCareer: 'الوظائف',
+          footerContact: 'اتصل بنا',
+          footerDescription: 'نقود صناعة النفط والغاز بحلول هندسية مبتكرة وخدمات هندسة ومشتريات وإنشاءات شاملة والتزام ثابت بالسلامة والجودة في جميع أنحاء منطقة دول مجلس التعاون الخليجي.',
+          footerCopyright: '© 2025 كريستال أويل فيلد. جميع الحقوق محفوظة.'
+        }
+      };
+
+      // Get current language from localStorage or default to English
+      let currentLanguage = localStorage.getItem('crystalOilfieldLang') || 'en';
+
+      // Get all language buttons
+      const langEnDesktop = document.getElementById('lang-en-desktop');
+      const langArDesktop = document.getElementById('lang-ar-desktop');
+      const langEnMobile = document.getElementById('lang-en-mobile');
+      const langArMobile = document.getElementById('lang-ar-mobile');
+
+      // Get all translatable elements
+      const translatableElements = document.querySelectorAll('[data-lang-key]');
+
+      // Function to set language
+      function setLanguage(lang) {
+        currentLanguage = lang;
+        localStorage.setItem('crystalOilfieldLang', lang);
+        
+        // Update page title
+        if (translations[lang] && translations[lang].pageTitle) {
+          document.title = translations[lang].pageTitle;
+        }
+        
+        // Force LTR direction for both languages
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.body.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute('lang', lang);
+        
+        // Update all translatable elements
+        translatableElements.forEach(el => {
+          const key = el.dataset.langKey;
+          if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
+          }
+        });
+        
+        // Update button styles
+        if (langEnDesktop && langArDesktop && langEnMobile && langArMobile) {
+          if (lang === 'en') {
+            langEnDesktop.classList.add('bg-oil-blue', 'text-white');
+            langEnDesktop.classList.remove('text-oil-gray', 'hover:bg-white');
+            langArDesktop.classList.remove('bg-oil-blue', 'text-white');
+            langArDesktop.classList.add('text-oil-gray', 'hover:bg-white');
+            
+            langEnMobile.classList.add('bg-oil-blue', 'text-white');
+            langEnMobile.classList.remove('bg-gray-100', 'text-oil-gray');
+            langArMobile.classList.remove('bg-oil-blue', 'text-white');
+            langArMobile.classList.add('bg-gray-100', 'text-oil-gray');
+          } else {
+            langArDesktop.classList.add('bg-oil-blue', 'text-white');
+            langArDesktop.classList.remove('text-oil-gray', 'hover:bg-white');
+            langEnDesktop.classList.remove('bg-oil-blue', 'text-white');
+            langEnDesktop.classList.add('text-oil-gray', 'hover:bg-white');
+            
+            langArMobile.classList.add('bg-oil-blue', 'text-white');
+            langArMobile.classList.remove('bg-gray-100', 'text-oil-gray');
+            langEnMobile.classList.remove('bg-oil-blue', 'text-white');
+            langEnMobile.classList.add('bg-gray-100', 'text-oil-gray');
+          }
+        }
+      }
+
+      // Set initial language
+      setLanguage(currentLanguage);
+
+      // Add event listeners for language buttons
+      if (langEnDesktop) langEnDesktop.addEventListener('click', () => setLanguage('en'));
+      if (langArDesktop) langArDesktop.addEventListener('click', () => setLanguage('ar'));
+      if (langEnMobile) langEnMobile.addEventListener('click', () => setLanguage('en'));
+      if (langArMobile) langArMobile.addEventListener('click', () => setLanguage('ar'));
+    </script>
     <script>
       window.addEventListener('load', () => {
         const loader = document.getElementById('loading-container');

@@ -9,9 +9,427 @@
     <title>Steel Fabrication Services | Crystal Oilfield Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      window.FontAwesomeConfig = {
-        autoReplaceSvg: 'nest'
+      // Configure FontAwesome separately
+      window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };
+    </script>
+    <script>
+      // Language Translation System (header-only)
+      const translations = {
+        en: {
+          // Page Title
+          pageTitle: 'Steel Fabrication Services | Crystal Oilfield Services',
+          // Navigation
+          navHome: 'Home',
+          navAbout: 'About',
+          navServices: 'Services',
+          navServicesOilfield: 'Crystal Oilfield Contracting and Trading',
+          navServicesVision: 'Crystal Vision Steel Fabrication',
+          navPortfolio: 'Portfolio',
+          navMedia: 'Media',
+          navCareer: 'Career',
+          navContact: 'Contact',
+          navOtherCompanies: 'Our Other Companies',
+          languageLabel: 'Language',
+          btnRequestQuote: 'Request a Quote',
+          menuLabel: 'Menu',
+          // Hero
+          heroBadgeCV: 'CRYSTAL VISION STEEL FABRICATION',
+          heroTitleMain: 'Precision Steel',
+          heroTitleAccent: 'Fabrication',
+          heroDescription: 'High-capacity structural steel, piping, and specialized fabrication services with advanced manufacturing capabilities up to 1200 tons per month.',
+          heroCtaExplore: 'Explore Our Services',
+          // Fabrication Section
+          fabricationExcellenceLabel: 'FABRICATION EXCELLENCE',
+          fabricationTitleMain: 'Complete Fabrication',
+          fabricationTitleAccent: 'Solutions',
+          fabricationDescription: 'Advanced manufacturing capabilities for structural steel, piping, pressure vessels, and specialized industrial components',
+          // CTA Banner
+          ctaTitleMain: 'Advanced Steel Fabrication with',
+          ctaTitleAccent: 'Precision, Quality, and Innovation',
+          ctaDescription: 'Partner with Crystal Vision Steel Fabrication for comprehensive manufacturing solutions backed by advanced technology and commitment to excellence',
+          ctaCtaExploreProjects: 'Explore Our Projects',
+          ctaCapacityLabel: 'Tons/Month Capacity',
+          ctaDiaInchLabel: 'Dia-Inch Piping/Month',
+          ctaQualityLabel: 'Quality Compliance',
+          ctaCertifiedLabel: 'Certified Standards',
+          // Services Details - common heading
+          keyCapabilities: 'Key Capabilities:',
+          // Card 1 details
+          svc1Detail: 'Crystal Vision Steel Fabrication provides high-capacity structural steel fabrication services designed to support large-scale industrial, oil & gas, power, infrastructure, and offshore projects with strict dimensional accuracy and weld integrity.',
+          svc1Bullet1: 'High-volume fabrication capability for fast-track projects',
+          svc1Bullet2: 'Precision fabrication using CNC cutting and advanced welding',
+          svc1Bullet3: 'Strict dimensional control and quality inspection',
+          svc1Bullet4: 'Compliance with ASTM, ASME, AISC, and ISO standards',
+          // Card 2 details
+          svc2Detail: 'Specialized fabrication of beams, columns, trusses, frames, pipe racks, platforms, staircases, ladders, handrails, and equipment support structures engineered to withstand operational loads and environmental conditions.',
+          svc2Bullet1: 'Load-bearing and non-load-bearing structures',
+          svc2Bullet2: 'Custom-designed structures based on client drawings',
+          svc2Bullet3: 'Suitable for onshore plants, offshore modules, warehouses',
+          svc2Bullet4: 'High structural integrity with certified welding procedures',
+          // Card 3 details
+          svc3Detail: 'Comprehensive piping spool fabrication services including cutting, beveling, fit-up, welding, NDT, hydrotesting, surface treatment for both carbon and alloy piping systems.',
+          svc3Bullet1: 'High-capacity spool fabrication for fast project execution',
+          svc3Bullet2: 'Compliance with ASME B31.3, B31.4, and B31.8 standards',
+          svc3Bullet3: 'In-house testing and inspection facilities',
+          svc3Bullet4: 'Suitable for oil, gas, petrochemical, and utility pipelines',
+          svc3Bullet5: 'Piping fabrication materials CS, SS, SDSS, LTCS and inconel',
+          // Card 4 details
+          svc4Detail: 'Proven capability in handling Carbon Steel (CS), Stainless Steel (SS), Super Duplex Stainless Steel (SDSS), and Low-Temperature Carbon Steel (LTCS) with material traceability, PMI testing, and controlled welding.',
+          svc4Bullet1: 'Corrosion-resistant and low-temperature materials',
+          svc4Bullet2: 'Strict material traceability and quality documentation',
+          svc4Bullet3: 'Suitable for sour service, cryogenic, and offshore environments',
+          svc4Bullet4: 'Project-specific metallurgical requirements compliance',
+          // Card 5 details
+          svc5Detail: 'Custom manufacturing of bolts, anchor bolts, foundation bolts, and special fasteners as per client drawings with controlled threading, heat treatment, and dimensional accuracy.',
+          svc5Bullet1: 'Custom sizes and configurations',
+          svc5Bullet2: 'Heavy structures and equipment foundations',
+          svc5Bullet3: 'High load-bearing and corrosion-resistant options',
+          svc5Bullet4: 'Quality inspection and dimensional verification',
+          // Card 6 details
+          svc6Detail: 'Abrasive blasting (SA 2, SA 2.5, SA 3) followed by application of industrial paint systems including epoxy, PU, zinc-rich, and fire-resistant coatings for marine and offshore environments.',
+          svc6Bullet1: 'Abrasive blasting to international standards',
+          svc6Bullet2: 'Application of epoxy, PU, zinc-rich, and fire-resistant coatings',
+          svc6Bullet3: 'Extended service life of steel structures',
+          svc6Bullet4: 'Suitable for offshore and aggressive environments',
+          // Card 7 details
+          svc7Detail: 'Fabrication of pressure vessels, process columns, and vertical/horizontal vessels with mandatory inspections, NDT, and hydrostatic testing before delivery.',
+          svc7Bullet1: 'Fabrication as per ASME Section VIII',
+          svc7Bullet2: 'High-pressure and high-temperature service capability',
+          svc7Bullet3: 'Full quality documentation and inspection records',
+          svc7Bullet4: 'Suitable for critical process applications',
+          // Card 8 details
+          svc8Detail: 'Fabrication of shell & tube and custom exchangers designed for precision, material compatibility, and thermal performance with strict testing procedures.',
+          svc8Bullet1: 'Shell & tube and custom exchanger fabrication',
+          svc8Bullet2: 'High thermal efficiency designs',
+          svc8Bullet3: 'Suitable for refinery and process plant applications',
+          svc8Bullet4: 'Strict testing and inspection procedures',
+          // Card 9 details
+          svc9Detail: 'Fabrication of offshore decks, jackets, modules, and sub-assemblies designed to withstand wave loads and corrosion exposure with high structural strength.',
+          svc9Bullet1: 'Heavy-duty offshore fabrication capability',
+          svc9Bullet2: 'Compliance with offshore and marine standards',
+          svc9Bullet3: 'High structural strength and fatigue resistance',
+          svc9Bullet4: 'Suitable for offshore oil & gas installations',
+          // Card 10 details
+          svc10Detail: 'Fabrication of thick-wall piping systems with specialized welding procedures and controlled heat treatment ensuring mechanical integrity for critical process lines.',
+          svc10Bullet1: 'Thick-wall and high-pressure piping fabrication',
+          svc10Bullet2: 'Qualified welders and approved WPS',
+          svc10Bullet3: 'Suitable for critical process lines',
+          svc10Bullet4: 'High reliability and long service life',
+          // Card 11 details
+          svc11Detail: 'Fabrication of modular, transport-ready skid assemblies that reduce site installation time and improve quality control for oil & gas process packages.',
+          svc11Bullet1: 'Modular, transport-ready assemblies',
+          svc11Bullet2: 'Integrated mechanical and structural fabrication',
+          svc11Bullet3: 'Reduced site work and faster commissioning',
+          svc11Bullet4: 'Ideal for oil & gas process packages',
+          // Card 12 details
+          svc12Detail: 'Thermal spray coating services providing enhanced surface protection and durability for equipment operating in abrasive or corrosive environments.',
+          svc12Bullet1: 'Enhanced surface protection and durability',
+          svc12Bullet2: 'Improved resistance to wear and corrosion',
+          svc12Bullet3: 'Extended equipment service life',
+          svc12Bullet4: 'Suitable for high-wear and corrosive environments',
+          // Services Cards
+          svc1Title: 'Structural Steel Fabrication',
+          svc1Desc: 'High-capacity fabrication up to 1200 tons per month for large-scale industrial and infrastructure projects.',
+          svc2Title: 'Light, Medium & Heavy Steel Structures',
+          svc2Desc: 'Complete fabrication across all structural complexity levels from light supports to heavy industrial frameworks.',
+          svc3Title: 'Piping Fabrication',
+          svc3Desc: 'High-capacity piping spool fabrication up to 40,000 Dia-Inch per month for process plants and refineries.',
+          svc4Title: 'Material Handling & Fabrication',
+          svc4Desc: 'Expert handling of CS, SS, SDSS, and LTCS materials with complete traceability and quality control.',
+          svc5Title: 'Manufacturing of Bolts & Anchor Bolts',
+          svc5Desc: 'Custom bolts, anchor bolts, and special fasteners for structural and equipment installation.',
+          svc6Title: 'Blasting & Painting Services',
+          svc6Desc: 'Complete surface preparation and protective coating services for enhanced durability and corrosion resistance.',
+          svc7Title: 'Pressure Vessels & Columns',
+          svc7Desc: 'Fabrication of pressure vessels and process columns for oil, gas, petrochemical, and chemical industries.',
+          svc8Title: 'Heat Exchangers & Reactors',
+          svc8Desc: 'Manufacturing of heat exchangers and reactors for efficient thermal and chemical processes.',
+          svc9Title: 'Offshore Platform Structures',
+          svc9Desc: 'Fabrication of offshore structural components designed to withstand harsh marine conditions.',
+          svc10Title: 'Heavy Thickness Piping',
+          svc10Desc: 'Thick-wall piping systems for high-pressure and high-temperature services with specialized welding.',
+          svc11Title: 'Fabrication of Skids',
+          svc11Desc: 'Modular skids integrating piping, equipment, valves, and structural frames into pre-assembled units.',
+          svc12Title: 'Thermal Spray Coating',
+          svc12Desc: 'Advanced coating services to protect components from wear, corrosion, and high temperatures.',
+          viewDetails: 'View Details',
+          hideDetails: 'Hide Details',
+          // Company Names
+          company1Name: 'Al Bahr Al Arabi Group',
+          company2Name: 'Al Bahr Arabi Marine Engineering',
+          company3Name: 'Gulf Tech Energy Contracting LLC',
+          company4Name: 'Crystal Petroleum',
+          company5Name: 'Crystal Petrokimya Turkey',
+          company6Name: 'Crystal Care KSA',
+          // Footer Section
+          footerDescription: 'Leading the oil and gas industry with innovative engineering solutions, comprehensive EPC services, and unwavering commitment to safety and quality across the GCC region.',
+          footerContactHeading: 'Contact Information',
+          headOfficeLabel: 'Head Office',
+          headOfficeAddress: 'Office No. 3301,3302, Excellence Tower P. O. Box: 80025 |West Bay, Doha, Qatar',
+          fabShopLabel: 'Fab Shop',
+          fabShopAddress: 'Bldg. No.239, Zone 81, Street No.7, New Industrial Area Doha, Qatar',
+          phoneLabel: 'Phone',
+          phoneNumber: '+974-40120736',
+          emailLabel: 'Email',
+          emailInfo: 'info@crystaloilfield.qa',
+          emailProposals: 'proposals@crystaloilfield.qa',
+          footerQuickLinksHeading: 'Quick Links',
+          footerHome: 'Home',
+          footerAbout: 'About Us',
+          footerServices: 'Services',
+          footerServicesOilfield: 'Crystal Oilfield Contracting',
+          footerServicesVision: 'Crystal Vision Steel Fabrication',
+          footerPortfolio: 'Portfolio',
+          footerMedia: 'Media',
+          footerCareer: 'Career',
+          footerContact: 'Contact',
+          footerCopyright: '© 2025 Crystal Oilfield. All rights reserved.'
+        },
+        ar: {
+          // Page Title
+          pageTitle: 'خدمات تصنيع الفولاذ | خدمات كريستال أويل فيلد',
+          // Navigation
+          navHome: 'الرئيسية',
+          navAbout: 'عننا',
+          navServices: 'الخدمات',
+          navServicesOilfield: 'كريستال أويل فيلد للمقاولات والتجارة',
+          navServicesVision: 'كريستال فيشن لتصنيع الفولاذ',
+          navPortfolio: 'المشاريع',
+          navMedia: 'الوسائط',
+          navCareer: 'الوظائف',
+          navContact: 'الاتصال',
+          navOtherCompanies: 'شركاتنا الأخرى',
+          languageLabel: 'اللغة',
+          btnRequestQuote: 'اطلب عرض سعر',
+          menuLabel: 'القائمة',
+          // Hero
+          heroBadgeCV: 'كريستال فيشن لتصنيع الفولاذ',
+          heroTitleMain: 'تصنيع الفولاذ',
+          heroTitleAccent: 'بدقة عالية',
+          heroDescription: 'خدمات تصنيع عالية السعة للهيكل الفولاذي والأنابيب والتصنيع المتخصص مع قدرات تصنيع متقدمة تصل إلى 1200 طن شهريًا.',
+          heroCtaExplore: 'استكشف خدماتنا',
+          // Fabrication Section
+          fabricationExcellenceLabel: 'تميز التصنيع',
+          fabricationTitleMain: 'تصنيع متكامل',
+          fabricationTitleAccent: 'حلول',
+          fabricationDescription: 'قدرات تصنيع متقدمة للهيكل الفولاذي والأنابيب وأوعية الضغط والمكونات الصناعية المتخصصة',
+          // CTA Banner
+          ctaTitleMain: 'تصنيع فولاذ متقدم مع',
+          ctaTitleAccent: 'الدقة والجودة والابتكار',
+          ctaDescription: 'تعاون مع كريستال فيشن لتصنيع الفولاذ للحصول على حلول تصنيع شاملة مدعومة بتقنيات متقدمة والتزام بالتميّز',
+          ctaCtaExploreProjects: 'استكشف مشاريعنا',
+          ctaCapacityLabel: 'سعة (طن/شهريًا)',
+          ctaDiaInchLabel: 'أنابيب (قطر-بوصة/شهريًا)',
+          ctaQualityLabel: 'امتثال الجودة',
+          ctaCertifiedLabel: 'معايير معتمدة',
+          // Services Details - common heading
+          keyCapabilities: 'القدرات الرئيسية:',
+          // Card 1 details
+          svc1Detail: 'توفر كريستال فيشن لتصنيع الفولاذ خدمات تصنيع عالية السعة للهياكل الفولاذية لدعم مشاريع الصناعات والنفط والغاز والطاقة والبنية التحتية والبحرية مع دقة أبعاد صارمة وجودة لحام.',
+          svc1Bullet1: 'قدرة تصنيع عالية للمشاريع السريعة',
+          svc1Bullet2: 'تصنيع دقيق باستخدام القطع CNC واللحام المتقدم',
+          svc1Bullet3: 'تحكم صارم بالأبعاد وفحوصات الجودة',
+          svc1Bullet4: 'الامتثال لمعايير ASTM وASME وAISC وISO',
+          // Card 2 details
+          svc2Detail: 'تصنيع متخصص للعوارض والأعمدة والحوامل والهياكل والأرفف الأنبوية والمنصات والسلالم والدراجات اليدوية ودعامات المعدات، مصممة لتحمّل الأحمال والظروف البيئية.',
+          svc2Bullet1: 'هياكل حاملة وغير حاملة',
+          svc2Bullet2: 'تصاميم مخصصة وفق رسومات العميل',
+          svc2Bullet3: 'مناسبة للمصانع البرية والوحدات البحرية والمستودعات',
+          svc2Bullet4: 'سلامة إنشائية عالية مع إجراءات لحام معتمدة',
+          // Card 3 details
+          svc3Detail: 'خدمات شاملة لتصنيع وحدات الأنابيب تشمل القطع والتشطيب والتجميع واللحام والاختبارات غير الإتلافية والضغط والمعالجة السطحية لأنظمة الأنابيب الكربونية والسبيكية.',
+          svc3Bullet1: 'تصنيع وحدات عالي السعة لتنفيذ سريع للمشاريع',
+          svc3Bullet2: 'الامتثال لمعايير ASME B31.3 وB31.4 وB31.8',
+          svc3Bullet3: 'منشآت داخلية للاختبار والفحص',
+          svc3Bullet4: 'مناسبة لخطوط النفط والغاز والبتروكيماويات والمرافق',
+          svc3Bullet5: 'مواد التصنيع: CS وSS وSDSS وLTCS وإنكونيل',
+          // Card 4 details
+          svc4Detail: 'قدرة مثبتة على مناولة فولاذ الكربون (CS) والفولاذ المقاوم للصدأ (SS) والفولاذ فائق الدوبلكس (SDSS) وفولاذ الكربون منخفض الحرارة (LTCS) مع تتبع المواد واختبارات PMI ولحام مضبوط.',
+          svc4Bullet1: 'مواد مقاومة للتآكل ومنخفضة الحرارة',
+          svc4Bullet2: 'تتبع صارم للمواد وتوثيق الجودة',
+          svc4Bullet3: 'مناسبة لخدمات حمضية وبيئات مبردة وبحرية',
+          svc4Bullet4: 'الامتثال لمتطلبات المعادن الخاصة بالمشاريع',
+          // Card 5 details
+          svc5Detail: 'تصنيع مخصص للبراغي وبراغي التثبيت وبراغي الأساسات والمثبتات الخاصة وفق رسومات العميل مع تحكم بالخيوط والمعالجة الحرارية ودقة الأبعاد.',
+          svc5Bullet1: 'أحجام وتكوينات مخصصة',
+          svc5Bullet2: 'هياكل ثقيلة وأساسات معدات',
+          svc5Bullet3: 'خيارات عالية التحمل ومقاومة للتآكل',
+          svc5Bullet4: 'فحص جودة وتحقق من الأبعاد',
+          // Card 6 details
+          svc6Detail: 'سنفرة بالمواد الكاشطة (SA 2 وSA 2.5 وSA 3) يليها تطبيق أنظمة الطلاء الصناعية بما يشمل الإيبوكسي والبولي يوريثان والغنية بالزنك وطلاءات مقاومة الحريق للبيئات البحرية.',
+          svc6Bullet1: 'سنفرة وفق المعايير الدولية',
+          svc6Bullet2: 'تطبيق الإيبوكسي والبولي يوريثان وطلاءات الزنك ومقاومة الحريق',
+          svc6Bullet3: 'إطالة عمر الهياكل الفولاذية',
+          svc6Bullet4: 'مناسبة للبيئات البحرية والقاسية',
+          // Card 7 details
+          svc7Detail: 'تصنيع أوعية الضغط وأعمدة العمليات والأوعية الأفقية/العمودية مع فحوصات إلزامية واختبارات غير إتلافية واختبار ضغط قبل التسليم.',
+          svc7Bullet1: 'تصنيع وفق ASME القسم الثامن',
+          svc7Bullet2: 'قدرة خدمة لضغط وحرارة مرتفعين',
+          svc7Bullet3: 'توثيق كامل للجودة وسجلات الفحص',
+          svc7Bullet4: 'مناسبة لتطبيقات العمليات الحرجة',
+          // Card 8 details
+          svc8Detail: 'تصنيع مبادلات قشرية وأنبوبية ومخصصة مصممة للدقة والتوافق المادي والأداء الحراري مع إجراءات اختبار صارمة.',
+          svc8Bullet1: 'تصنيع مبادلات قشرية وأنبوبية ومخصصة',
+          svc8Bullet2: 'تصاميم عالية الكفاءة الحرارية',
+          svc8Bullet3: 'مناسبة لمصافي النفط ومصانع العمليات',
+          svc8Bullet4: 'إجراءات اختبار وفحص صارمة',
+          // Card 9 details
+          svc9Detail: 'تصنيع منصات بحرية ووحدات وهياكل فرعية مصممة لتحمّل أمواج البحر والتعرض للتآكل مع قوة إنشائية عالية.',
+          svc9Bullet1: 'قدرة تصنيع بحرية عالية التحمل',
+          svc9Bullet2: 'الامتثال لمعايير البحرية والمنصات',
+          svc9Bullet3: 'قوة إنشائية عالية ومقاومة للإجهاد',
+          svc9Bullet4: 'مناسبة لمنشآت النفط والغاز البحرية',
+          // Card 10 details
+          svc10Detail: 'تصنيع أنظمة أنابيب ذات جدران سميكة بإجراءات لحام متخصصة ومعالجة حرارية مضبوطة لضمان السلامة الميكانيكية لخطوط العمليات الحرجة.',
+          svc10Bullet1: 'تصنيع أنابيب بسماكات عالية وضغوط مرتفعة',
+          svc10Bullet2: 'لحّامين مؤهلين وإجراءات WPS معتمدة',
+          svc10Bullet3: 'مناسبة لخطوط العمليات الحرجة',
+          svc10Bullet4: 'موثوقية عالية وعمر خدمة طويل',
+          // Card 11 details
+          svc11Detail: 'تصنيع وحدات سكيد معيارية جاهزة للنقل تقلّل وقت التركيب في الموقع وتحسّن ضبط الجودة لحزم عمليات النفط والغاز.',
+          svc11Bullet1: 'وحدات معيارية جاهزة للنقل',
+          svc11Bullet2: 'تكامل التصنيع الميكانيكي والإنشائي',
+          svc11Bullet3: 'تقليل العمل بالموقع وتسريع التشغيل',
+          svc11Bullet4: 'مثالية لحزم عمليات النفط والغاز',
+          // Card 12 details
+          svc12Detail: 'خدمات الطلاء بالرش الحراري لتوفير حماية سطحية ومتانة محسّنة للمعدات العاملة في البيئات الكاشطة أو المسببة للتآكل.',
+          svc12Bullet1: 'حماية سطحية ومتانة محسّنة',
+          svc12Bullet2: 'مقاومة أفضل للتآكل والاهتراء',
+          svc12Bullet3: 'إطالة عمر المعدات',
+          svc12Bullet4: 'مناسبة لبيئات عالية التآكل والتآكل',
+          // Services Cards
+          svc1Title: 'تصنيع الهياكل الفولاذية',
+          svc1Desc: 'تصنيع عالي السعة يصل إلى 1200 طن شهريًا للمشاريع الصناعية والبنية التحتية واسعة النطاق.',
+          svc2Title: 'هياكل فولاذية خفيفة ومتوسطة وثقيلة',
+          svc2Desc: 'تصنيع متكامل عبر جميع مستويات التعقيد من الدعامات الخفيفة إلى الأطر الصناعية الثقيلة.',
+          svc3Title: 'تصنيع الأنابيب',
+          svc3Desc: 'تصنيع وحدات الأنابيب بسعة تصل إلى 40,000 بوصة-قطر شهريًا للمصانع ومحطات التكرير.',
+          svc4Title: 'مناولة المواد والتصنيع',
+          svc4Desc: 'مناولة مواد CS وSS وSDSS وLTCS مع تتبع كامل للجودة والرقابة.',
+          svc5Title: 'تصنيع البراغي وبراغي التثبيت',
+          svc5Desc: 'براغي مخصصة وبراغي تثبيت ومثبتات خاصة لتركيب الهياكل والمعدات.',
+          svc6Title: 'خدمات السنفرة والدهان',
+          svc6Desc: 'تحضير كامل للأسطح وطلاءات وقائية لتعزيز المتانة ومقاومة التآكل.',
+          svc7Title: 'أوعية ضغط وأعمدة العمليات',
+          svc7Desc: 'تصنيع أوعية الضغط وأعمدة العمليات لقطاعات النفط والغاز والبتروكيماويات والكيماويات.',
+          svc8Title: 'مبادلات حرارية ومفاعلات',
+          svc8Desc: 'تصنيع المبادلات الحرارية والمفاعلات لعمليات حرارية وكيميائية فعّالة.',
+          svc9Title: 'هياكل منصات بحرية',
+          svc9Desc: 'تصنيع مكوّنات هيكلية بحرية مصممة لتحمّل الظروف البحرية القاسية.',
+          svc10Title: 'أنابيب بسماكات عالية',
+          svc10Desc: 'أنظمة أنابيب ذات جدران سميكة للضغط والحرارة العاليين مع لحام متخصص.',
+          svc11Title: 'تصنيع وحدات سكيد',
+          svc11Desc: 'وحدات سكيد معيارية تضم الأنابيب والمعدات والصمامات والهياكل في وحدات مسبقة التجميع.',
+          svc12Title: 'الطلاء بالرش الحراري',
+          svc12Desc: 'خدمات طلاء متقدمة لحماية المكوّنات من التآكل والحرارة المرتفعة.',
+          viewDetails: 'عرض التفاصيل',
+          hideDetails: 'إخفاء التفاصيل',
+          // Company Names
+          company1Name: 'مجموعة البحر الأحمر',
+          company2Name: 'هندسة البحر الأحمر البحرية',
+          company3Name: 'خليج تعهد لعقود الطاقة ذ.م.م',
+          company4Name: 'كريستال البترول',
+          company5Name: 'كريستال بتروكيميا تركيا',
+          company6Name: 'كريستال كير السعودية',
+          // Footer Section
+          footerDescription: 'نقود صناعة النفط والغاز بحلول هندسية مبتكرة وخدمات هندسة ومشتريات وإنشاءات شاملة والتزام ثابت بالسلامة والجودة في جميع أنحاء منطقة دول مجلس التعاون الخليجي.',
+          footerContactHeading: 'معلومات الاتصال',
+          headOfficeLabel: 'المقر الرئيسي',
+          headOfficeAddress: 'رقم المكتب 3301، 3302، برج التميز ص.ب: 80025 الخليج الغربي، الدوحة، قطر',
+          fabShopLabel: 'محل الفبركة',
+          fabShopAddress: 'المبنى رقم 239، المنطقة 81، الشارع رقم 7، منطقة الصناعات الجديدة الدوحة، قطر',
+          phoneLabel: 'الهاتف',
+          phoneNumber: '+974-40120736',
+          emailLabel: 'البريد الإلكتروني',
+          emailInfo: 'info@crystaloilfield.qa',
+          emailProposals: 'proposals@crystaloilfield.qa',
+          footerQuickLinksHeading: 'روابط سريعة',
+          footerHome: 'الرئيسية',
+          footerAbout: 'عننا',
+          footerServices: 'الخدمات',
+          footerServicesOilfield: 'كريستال أويل فيلد للمقاولات',
+          footerServicesVision: 'كريستال فيجن لتصنيع الفولاذ',
+          footerPortfolio: 'محفظة المشاريع',
+          footerMedia: 'الإعلام',
+          footerCareer: 'الوظائف',
+          footerContact: 'اتصل بنا',
+          footerCopyright: '© 2025 كريستال أويل فيلد. جميع الحقوق محفوظة.'
+        }
       };
+
+      // Get current language from localStorage or default to English
+      let currentLanguage = localStorage.getItem('crystalOilfieldLang') || 'en';
+
+      document.addEventListener('DOMContentLoaded', () => {
+        // Get all language buttons (after DOM is ready)
+        const langEnDesktop = document.getElementById('lang-en-desktop');
+        const langArDesktop = document.getElementById('lang-ar-desktop');
+        const langEnMobile = document.getElementById('lang-en-mobile');
+        const langArMobile = document.getElementById('lang-ar-mobile');
+
+        // Get all translatable elements
+        const translatableElements = document.querySelectorAll('[data-lang-key]');
+
+        function setLanguage(lang) {
+          currentLanguage = lang;
+          localStorage.setItem('crystalOilfieldLang', lang);
+          
+          // Update page title
+          if (translations[lang] && translations[lang].pageTitle) {
+            document.title = translations[lang].pageTitle;
+          }
+
+          // Force LTR direction for both languages to keep layout stable
+          document.documentElement.setAttribute('dir', 'ltr');
+          document.body.setAttribute('dir', 'ltr');
+          document.documentElement.setAttribute('lang', lang);
+
+          // Update all translatable elements
+          translatableElements.forEach(el => {
+            const key = el.getAttribute('data-lang-key');
+            if (translations[lang] && translations[lang][key]) {
+              el.textContent = translations[lang][key];
+            }
+          });
+
+          // Update button styles
+          if (langEnDesktop && langArDesktop) {
+            if (lang === 'en') {
+              langEnDesktop.classList.add('bg-oil-blue', 'text-white');
+              langEnDesktop.classList.remove('text-oil-gray', 'hover:bg-white');
+              langArDesktop.classList.remove('bg-oil-blue', 'text-white');
+              langArDesktop.classList.add('text-oil-gray', 'hover:bg-white');
+            } else {
+              langArDesktop.classList.add('bg-oil-blue', 'text-white');
+              langArDesktop.classList.remove('text-oil-gray', 'hover:bg-white');
+              langEnDesktop.classList.remove('bg-oil-blue', 'text-white');
+              langEnDesktop.classList.add('text-oil-gray', 'hover:bg-white');
+            }
+          }
+
+          if (langEnMobile && langArMobile) {
+            if (lang === 'en') {
+              langEnMobile.classList.add('bg-oil-blue', 'text-white');
+              langEnMobile.classList.remove('bg-gray-100', 'text-oil-gray');
+              langArMobile.classList.remove('bg-oil-blue', 'text-white');
+              langArMobile.classList.add('bg-gray-100', 'text-oil-gray');
+            } else {
+              langArMobile.classList.add('bg-oil-blue', 'text-white');
+              langArMobile.classList.remove('bg-gray-100', 'text-oil-gray');
+              langEnMobile.classList.remove('bg-oil-blue', 'text-white');
+              langEnMobile.classList.add('bg-gray-100', 'text-oil-gray');
+            }
+          }
+        }
+
+        // Set initial language and bind events
+        setLanguage(currentLanguage);
+
+        if (langEnDesktop) langEnDesktop.addEventListener('click', () => setLanguage('en'));
+        if (langArDesktop) langArDesktop.addEventListener('click', () => setLanguage('ar'));
+        if (langEnMobile) langEnMobile.addEventListener('click', () => setLanguage('en'));
+        if (langArMobile) langArMobile.addEventListener('click', () => setLanguage('ar'));
+      });
     </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
@@ -145,6 +563,12 @@
         font-family: Inter, sans-serif;
       }
 
+      /* Prevent horizontal scroll caused by off-canvas elements */
+      html,
+      body {
+        overflow-x: hidden;
+      }
+
       .industrial-pattern
       {
         background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -273,43 +697,43 @@
           </div><!-- Desktop Navigation -->
             <nav class="hidden lg:flex items-center space-x-5 xl:space-x-7 ml-8"><a
               href="index.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Home</a><a
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navHome">Home</a><a
               href="About.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">About</a>
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navAbout">About</a>
             <!-- Services Dropdown -->
             <div class="relative group"><button
-                class="flex items-center space-x-1 text-oil-dark font-semibold hover:text-oil-blue transition-colors border-b-2 border-oil-blue pb-1"><span>Services</span><i
+                class="flex items-center space-x-1 text-oil-dark font-semibold hover:text-oil-blue transition-colors border-b-2 border-oil-blue pb-1"><span data-lang-key="navServices">Services</span><i
                   class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition-transform duration-200"></i></button>
               <div
                 class="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div class="p-2"><a href="Crystal%20Oilfield%20Services.html"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-oil-well text-oil-blue"></i><span
-                      class="font-medium">Crystal Oilfield Contracting and
+                      class="font-medium" data-lang-key="navServicesOilfield">Crystal Oilfield Contracting and
                       Trading</span></a><a href="Crystal%20Vision%20Services.html"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-industry text-oil-blue"></i><span
-                      class="font-medium">Crystal Vision Steel
+                      class="font-medium" data-lang-key="navServicesVision">Crystal Vision Steel
                       Fabrication</span></a></div>
               </div>
             </div><a href="Portfolio.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Portfolio</a><a
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navPortfolio">Portfolio</a><a
               href="Media.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Media</a><a
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navMedia">Media</a><a
               href="Career.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Career</a><a
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navCareer">Career</a><a
               href="Contact.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Contact</a>
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navContact">Contact</a>
           </nav><!-- Desktop Right Side -->
           <div class="hidden lg:flex items-center space-x-4 xl:space-x-6">
             <div class="flex items-center space-x-2 bg-gray-100 rounded-lg p-2"
-              id="iu8zh"><button
-                class="px-3 py-1 bg-oil-blue text-white rounded text-sm font-medium">English</button><button
+              id="iu8zh"><button id="lang-en-desktop"
+                class="px-3 py-1 bg-oil-blue text-white rounded text-sm font-medium">English</button><button id="lang-ar-desktop"
                 class="px-3 py-1 text-oil-gray rounded text-sm font-medium hover:bg-white">العربية</button>
             </div>
             <div class="relative group"><button
                 class="flex items-center space-x-2 text-oil-gray font-medium hover:text-oil-blue transition-colors px-4 py-2 rounded-lg hover:bg-gray-50"><i
-                  class="fa-solid fa-building text-sm"></i><span>Our Other
+                  class="fa-solid fa-building text-sm"></i><span data-lang-key="navOtherCompanies">Our Other
                   Companies</span><i
                   class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition-transform duration-200"></i></button>
               <div
@@ -317,33 +741,33 @@
                 <div class="p-2"><a href="https://albahralarabi.com/" target="_blank"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-building text-oil-blue"></i><span
-                      class="font-medium">Al Bahr Al Arabi Group</span></a><a
+                      class="font-medium" data-lang-key="company1Name">Al Bahr Al Arabi Group</span></a><a
                     href="https://albahralarabi.com/al-bahr-al-arabi-marine-engineering/" target="_blank"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-ship text-oil-blue"></i><span
-                      class="font-medium">Al Bahr Arabi Marine
+                      class="font-medium" data-lang-key="company2Name">Al Bahr Arabi Marine
                       Engineering</span></a><a href="https://albahralarabi.com/gulf-tech-energy-contracting-llc/" target="_blank"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-bolt text-oil-blue"></i><span
-                      class="font-medium">Gulf Tech Energy Contracting
+                      class="font-medium" data-lang-key="company3Name">Gulf Tech Energy Contracting
                       LLC</span></a><a href="#"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-oil-well text-oil-blue"></i><span
-                      class="font-medium">Crystal Petroleum</span></a><a
+                      class="font-medium" data-lang-key="company4Name">Crystal Petroleum</span></a><a
                     href="#"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-industry text-oil-blue"></i><span
-                      class="font-medium">Crystal Petrokimya Turkey</span></a><a
+                      class="font-medium" data-lang-key="company5Name">Crystal Petrokimya Turkey</span></a><a
                     href="#"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-heart text-oil-blue"></i><span
-                      class="font-medium">Crystal Care KSA</span></a></div>
+                      class="font-medium" data-lang-key="company6Name">Crystal Care KSA</span></a></div>
               </div>
             </div><button type="button"
               onclick="location.href='Contact.html#main-contact-form'"
               class="bg-oil-accent text-white px-4 xl:px-6 py-2 xl:py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors flex items-center text-sm xl:text-base"><i
                 class="fa-solid fa-file-invoice mr-2"></i><span
-                class="hidden xl:inline">Request a Quote</span><span
+                class="hidden xl:inline" data-lang-key="btnRequestQuote">Request a Quote</span><span
                 class="xl:hidden">Quote</span></button>
           </div><!-- Mobile Menu Button --><button id="mobile-menu-btn"
             class="lg:hidden text-oil-gray p-2"><i
@@ -354,69 +778,69 @@
         class="mobile-menu hidden fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 overflow-y-auto">
         <div class="p-6">
           <div class="flex justify-between items-center mb-8">
-            <h3 class="text-xl font-bold text-oil-dark">Menu</h3><button
+            <h3 class="text-xl font-bold text-oil-dark" data-lang-key="menuLabel">Menu</h3><button
               id="mobile-menu-close" class="text-oil-gray p-2"><i
                 class="fa-solid fa-times text-2xl"></i></button>
           </div><!-- Mobile Navigation Links -->
             <nav class="space-y-4"><a href="index.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Home</a><a
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navHome">Home</a><a
               href="About.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">About</a>
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navAbout">About</a>
             <!-- Mobile Services Dropdown -->
             <div><button id="mobile-services-toggle"
-                class="flex items-center justify-between w-full text-oil-dark font-semibold hover:text-oil-blue transition-colors py-2 border-l-4 border-oil-blue pl-4"><span>Services</span><i
+                class="flex items-center justify-between w-full text-oil-dark font-semibold hover:text-oil-blue transition-colors py-2 border-l-4 border-oil-blue pl-4"><span data-lang-key="navServices">Services</span><i
                   class="fa-solid fa-chevron-down text-xs"></i></button>
               <div id="mobile-services-menu" class="hidden ml-4 mt-2 space-y-2">
                 <a href="Crystal%20Oilfield%20Services.html"
                   class="block text-sm text-oil-gray hover:text-oil-blue py-2"><i
                     class="fa-solid fa-oil-well text-oil-blue mr-2"></i>
-                  Crystal Oilfield Contracting
+                  <span data-lang-key="navServicesOilfield">Crystal Oilfield Contracting</span>
                 </a><a href="Crystal%20Vision%20Services.html"
                   class="block text-sm text-oil-gray hover:text-oil-blue py-2"><i
                     class="fa-solid fa-industry text-oil-blue mr-2"></i>
-                  Crystal Vision Steel Fabrication
+                  <span data-lang-key="navServicesVision">Crystal Vision Steel Fabrication</span>
                 </a></div>
             </div><a href="Portfolio.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Portfolio</a><a
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navPortfolio">Portfolio</a><a
               href="Media.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Media</a><a
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navMedia">Media</a><a
               href="Career.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Career</a><a
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navCareer">Career</a><a
               href="Contact.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Contact</a>
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navContact">Contact</a>
             <!-- Mobile Language Switcher -->
             <div class="pt-4 border-t border-gray-200">
-              <p class="text-sm text-oil-gray mb-2">Language</p>
-              <div class="flex space-x-2"><button
-                  class="flex-1 px-3 py-2 bg-oil-blue text-white rounded text-sm font-medium">English</button><button
+              <p class="text-sm text-oil-gray mb-2" data-lang-key="languageLabel">Language</p>
+              <div class="flex space-x-2"><button id="lang-en-mobile"
+                  class="flex-1 px-3 py-2 bg-oil-blue text-white rounded text-sm font-medium">English</button><button id="lang-ar-mobile"
                   class="flex-1 px-3 py-2 bg-gray-100 text-oil-gray rounded text-sm font-medium">العربية</button>
               </div>
             </div><!-- Mobile Other Companies -->
             <div class="pt-4 border-t border-gray-200"><button
                 id="mobile-companies-toggle"
                 class="flex items-center justify-between w-full text-oil-gray font-medium hover:text-oil-blue transition-colors py-2"><span><i
-                    class="fa-solid fa-building mr-2"></i>Our Other
-                  Companies</span><i
+                    class="fa-solid fa-building mr-2"></i><span data-lang-key="navOtherCompanies">Our Other
+                  Companies</span></span><i
                   class="fa-solid fa-chevron-down text-xs"></i></button>
               <div id="mobile-companies-menu"
                 class="hidden ml-4 mt-2 space-y-2"><a href="https://albahralarabi.com/"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Al
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company1Name">Al
                   Bahr Al Arabi Group</a><a href="https://albahralarabi.com/al-bahr-al-arabi-marine-engineering/"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Al
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company2Name">Al
                   Bahr Arabi Marine Engineering</a><a href="https://albahralarabi.com/gulf-tech-energy-contracting-llc/"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Gulf
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company3Name">Gulf
                   Tech Energy Contracting LLC</a><a href="#"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company4Name">Crystal
                   Petroleum</a><a href="#"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company5Name">Crystal
                   Petrokimya Turkey</a><a href="#"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company6Name">Crystal
                   Care KSA</a></div>
             </div><!-- Mobile Quote Button --><button type="button"
               onclick="location.href='Contact.html#main-contact-form'"
               class="w-full bg-oil-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors mt-6"><i
                 class="fa-solid fa-file-invoice mr-2"></i>
-              Request a Quote
+              <span data-lang-key="btnRequestQuote">Request a Quote</span>
             </button>
           </nav>
         </div>
@@ -438,24 +862,20 @@
         <div class="max-w-4xl">
           <div class="mb-4 sm:mb-6"><span
               class="inline-block bg-oil-accent/20 text-oil-accent px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold backdrop-blur-sm"><i
-                class="fa-solid fa-industry mr-2"></i>CRYSTAL VISION STEEL
-              FABRICATION
+                class="fa-solid fa-industry mr-2"></i><span data-lang-key="heroBadgeCV">CRYSTAL VISION STEEL FABRICATION</span>
             </span></div>
           <h1
             class="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-4 sm:mb-6 leading-tight">
-            Precision Steel
-            <span class="block text-oil-accent">Fabrication</span>
+            <span data-lang-key="heroTitleMain">Precision Steel</span>
+            <span class="block text-oil-accent" data-lang-key="heroTitleAccent">Fabrication</span>
           </h1>
           <p
-            class="text-base sm:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-3xl leading-relaxed">
-            High-capacity structural steel, piping, and specialized fabrication
-            services with advanced manufacturing capabilities up to 1200 tons
-            per month.
+            class="text-base sm:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-3xl leading-relaxed" data-lang-key="heroDescription">
+            High-capacity structural steel, piping, and specialized fabrication services with advanced manufacturing capabilities up to 1200 tons per month.
           </p><button type="button"
             onclick="location.href='#services-grid-section'"
             class="bg-oil-accent text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-yellow-600 transition-colors inline-flex items-center"><i
-              class="fa-solid fa-arrow-down mr-2 sm:mr-3"></i>Explore Our
-            Services
+              class="fa-solid fa-arrow-down mr-2 sm:mr-3"></i><span data-lang-key="heroCtaExplore">Explore Our Services</span>
           </button>
         </div>
       </div>
@@ -466,16 +886,15 @@
       </div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-8 sm:mb-12 lg:mb-16"><span
-            class="text-oil-blue font-semibold text-base sm:text-lg tracking-wide">FABRICATION
+            class="text-oil-blue font-semibold text-base sm:text-lg tracking-wide" data-lang-key="fabricationExcellenceLabel">FABRICATION
             EXCELLENCE</span>
           <h2
             class="text-3xl sm:text-4xl lg:text-5xl font-bold text-oil-dark mt-3 sm:mt-4 mb-4 sm:mb-6">
-            Complete Fabrication <span class="text-oil-blue">Solutions</span>
+            <span data-lang-key="fabricationTitleMain">Complete Fabrication</span> <span class="text-oil-blue" data-lang-key="fabricationTitleAccent">Solutions</span>
           </h2>
           <p
-            class="text-base sm:text-lg lg:text-xl text-oil-gray max-w-3xl mx-auto px-4">
-            Advanced manufacturing capabilities for structural steel, piping,
-            pressure vessels, and specialized industrial components
+            class="text-base sm:text-lg lg:text-xl text-oil-gray max-w-3xl mx-auto px-4" data-lang-key="fabricationDescription">
+            Advanced manufacturing capabilities for structural steel, piping, pressure vessels, and specialized industrial components
           </p>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
@@ -497,44 +916,44 @@
             </div>
             <div class="p-4 sm:p-5 lg:p-6">
               <h3
-                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3">
+                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3" data-lang-key="svc1Title">
                 Structural Steel Fabrication</h3>
-              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc1Desc">
                 High-capacity fabrication up to 1200 tons per month for
                 large-scale industrial and infrastructure projects.</p><button
                 onclick="toggleService(1)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center text-sm sm:text-base"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-4 sm:mt-6">
                 <div class="border-t border-gray-200 pt-4 sm:pt-6">
-                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc1Detail">
                     Crystal Vision Steel Fabrication provides high-capacity
                     structural steel fabrication services designed to support
                     large-scale industrial, oil &amp; gas, power,
                     infrastructure, and offshore projects with strict
                     dimensional accuracy and weld integrity.</p>
                   <h4
-                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base">
+                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base" data-lang-key="keyCapabilities">
                     Key Capabilities:</h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">High-volume
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc1Bullet1">High-volume
                         fabrication capability for fast-track projects</span>
                     </li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Precision
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc1Bullet2">Precision
                         fabrication using CNC cutting and advanced
                         welding</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Strict
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc1Bullet3">Strict
                         dimensional control and quality inspection</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Compliance
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc1Bullet4">Compliance
                         with ASTM, ASME, AISC, and ISO standards</span></li>
                   </ul>
                 </div>
@@ -557,41 +976,41 @@
             </div>
             <div class="p-4 sm:p-5 lg:p-6">
               <h3
-                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3">
+                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3" data-lang-key="svc2Title">
                 Light, Medium &amp; Heavy Steel Structures</h3>
-              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc2Desc">
                 Complete fabrication across all structural complexity levels
                 from light supports to heavy industrial frameworks.</p><button
                 onclick="toggleService(2)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center text-sm sm:text-base"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-4 sm:mt-6">
                 <div class="border-t border-gray-200 pt-4 sm:pt-6">
-                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc2Detail">
                     Specialized fabrication of beams, columns, trusses, frames,
                     pipe racks, platforms, staircases, ladders, handrails, and
                     equipment support structures engineered to withstand
                     operational loads and environmental conditions.</p>
                   <h4
-                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base">
+                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base" data-lang-key="keyCapabilities">
                     Key Capabilities:</h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Load-bearing
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc2Bullet1">Load-bearing
                         and non-load-bearing structures</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Custom-designed
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc2Bullet2">Custom-designed
                         structures based on client drawings</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Suitable for
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc2Bullet3">Suitable for
                         onshore plants, offshore modules, warehouses</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">High
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc2Bullet4">High
                         structural integrity with certified welding
                         procedures</span></li>
                   </ul>
@@ -616,41 +1035,41 @@
             </div>
             <div class="p-4 sm:p-5 lg:p-6">
               <h3
-                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3">
+                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3" data-lang-key="svc3Title">
                 Piping Fabrication</h3>
-              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc3Desc">
                 High-capacity piping spool fabrication up to 40,000 Dia-Inch per month for process plants and refineries.</p><button
                 onclick="toggleService(3)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center text-sm sm:text-base"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-4 sm:mt-6">
                 <div class="border-t border-gray-200 pt-4 sm:pt-6">
-                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc3Detail">
                     Comprehensive piping spool fabrication services including
                     cutting, beveling, fit-up, welding, NDT, hydrotesting,
                     surface treatment for both carbon and alloy piping systems.
                   </p>
                   <h4
-                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base">
+                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base" data-lang-key="keyCapabilities">
                     Key Capabilities:</h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">High-capacity spool fabrication for fast project execution</span></li>
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc3Bullet1">High-capacity spool fabrication for fast project execution</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Compliance with ASME B31.3, B31.4, and B31.8 standards</span></li>
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc3Bullet2">Compliance with ASME B31.3, B31.4, and B31.8 standards</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">In-house testing and inspection facilities</span></li>
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc3Bullet3">In-house testing and inspection facilities</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Suitable for oil, gas, petrochemical, and utility pipelines</span>
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc3Bullet4">Suitable for oil, gas, petrochemical, and utility pipelines</span>
                     </li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Piping fabrication materials CS, SS, SDSS, LTCS and inconel</span>
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc3Bullet5">Piping fabrication materials CS, SS, SDSS, LTCS and inconel</span>
                     </li>
                   </ul>
                 </div>
@@ -674,43 +1093,43 @@
             </div>
             <div class="p-4 sm:p-5 lg:p-6">
               <h3
-                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3">
+                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3" data-lang-key="svc4Title">
                 Material Handling &amp; Fabrication</h3>
-              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">Expert
+              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc4Desc">Expert
                 handling of CS, SS, SDSS, and LTCS materials with complete
                 traceability and quality control.</p><button
                 onclick="toggleService(4)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center text-sm sm:text-base"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-4 sm:mt-6">
                 <div class="border-t border-gray-200 pt-4 sm:pt-6">
-                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc4Detail">
                     Proven capability in handling Carbon Steel (CS), Stainless
                     Steel (SS), Super Duplex Stainless Steel (SDSS), and
                     Low-Temperature Carbon Steel (LTCS) with material
                     traceability, PMI testing, and controlled welding.</p>
                   <h4
-                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base">
+                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base" data-lang-key="keyCapabilities">
                     Key Capabilities:</h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Corrosion-resistant
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc4Bullet1">Corrosion-resistant
                         and low-temperature materials</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Strict
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc4Bullet2">Strict
                         material traceability and quality documentation</span>
                     </li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Suitable for
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc4Bullet3">Suitable for
                         sour service, cryogenic, and offshore
                         environments</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Project-specific
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc4Bullet4">Project-specific
                         metallurgical requirements compliance</span></li>
                   </ul>
                 </div>
@@ -733,41 +1152,41 @@
             </div>
             <div class="p-4 sm:p-5 lg:p-6">
               <h3
-                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3">
+                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3" data-lang-key="svc5Title">
                 Manufacturing of Bolts &amp; Anchor Bolts</h3>
-              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">Custom
+              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc5Desc">Custom
                 bolts, anchor bolts, and special fasteners for structural and
                 equipment installation.</p><button
                 onclick="toggleService(5)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center text-sm sm:text-base"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-4 sm:mt-6">
                 <div class="border-t border-gray-200 pt-4 sm:pt-6">
-                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc5Detail">
                     Custom manufacturing of bolts, anchor bolts, foundation
                     bolts, and special fasteners as per client drawings with
                     controlled threading, heat treatment, and dimensional
                     accuracy.</p>
                   <h4
-                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base">
+                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base" data-lang-key="keyCapabilities">
                     Key Capabilities:</h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Custom sizes
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc5Bullet1">Custom sizes
                         and configurations</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Heavy
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc5Bullet2">Heavy
                         structures and equipment foundations</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">High
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc5Bullet3">High
                         load-bearing and corrosion-resistant options</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Quality
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc5Bullet4">Quality
                         inspection and dimensional verification</span></li>
                   </ul>
                 </div>
@@ -790,42 +1209,42 @@
             </div>
             <div class="p-4 sm:p-5 lg:p-6">
               <h3
-                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3">
+                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3" data-lang-key="svc6Title">
                 Blasting &amp; Painting Services</h3>
-              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc6Desc">
                 Complete surface preparation and protective coating services for
                 enhanced durability and corrosion resistance.</p><button
                 onclick="toggleService(6)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center text-sm sm:text-base"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-4 sm:mt-6">
                 <div class="border-t border-gray-200 pt-4 sm:pt-6">
-                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc6Detail">
                     Abrasive blasting (SA 2, SA 2.5, SA 3) followed by
                     application of industrial paint systems including epoxy, PU,
                     zinc-rich, and fire-resistant coatings for marine and
                     offshore environments.</p>
                   <h4
-                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base">
+                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base" data-lang-key="keyCapabilities">
                     Key Capabilities:</h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Abrasive
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc6Bullet1">Abrasive
                         blasting to international standards</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Application
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc6Bullet2">Application
                         of epoxy, PU, zinc-rich, and fire-resistant
                         coatings</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Extended
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc6Bullet3">Extended
                         service life of steel structures</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Suitable for
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc6Bullet4">Suitable for
                         offshore and aggressive environments</span></li>
                   </ul>
                 </div>
@@ -848,40 +1267,40 @@
             </div>
             <div class="p-4 sm:p-5 lg:p-6">
               <h3
-                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3">
+                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3" data-lang-key="svc7Title">
                 Pressure Vessels &amp; Columns</h3>
-              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc7Desc">
                 Fabrication of pressure vessels and process columns for oil,
                 gas, petrochemical, and chemical industries.</p><button
                 onclick="toggleService(7)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center text-sm sm:text-base"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-4 sm:mt-6">
                 <div class="border-t border-gray-200 pt-4 sm:pt-6">
-                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc7Detail">
                     Fabrication of pressure vessels, process columns, and
                     vertical/horizontal vessels with mandatory inspections, NDT,
                     and hydrostatic testing before delivery.</p>
                   <h4
-                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base">
+                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base" data-lang-key="keyCapabilities">
                     Key Capabilities:</h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Fabrication
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc7Bullet1">Fabrication
                         as per ASME Section VIII</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">High-pressure
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc7Bullet2">High-pressure
                         and high-temperature service capability</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Full quality
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc7Bullet3">Full quality
                         documentation and inspection records</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Suitable for
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc7Bullet4">Suitable for
                         critical process applications</span></li>
                   </ul>
                 </div>
@@ -904,40 +1323,40 @@
             </div>
             <div class="p-4 sm:p-5 lg:p-6">
               <h3
-                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3">
+                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3" data-lang-key="svc8Title">
                 Heat Exchangers &amp; Reactors</h3>
-              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc8Desc">
                 Manufacturing of heat exchangers and reactors for efficient
                 thermal and chemical processes.</p><button
                 onclick="toggleService(8)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center text-sm sm:text-base"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-4 sm:mt-6">
                 <div class="border-t border-gray-200 pt-4 sm:pt-6">
-                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc8Detail">
                     Fabrication of shell &amp; tube and custom exchangers
                     designed for precision, material compatibility, and thermal
                     performance with strict testing procedures.</p>
                   <h4
-                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base">
+                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base" data-lang-key="keyCapabilities">
                     Key Capabilities:</h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Shell &amp;
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc8Bullet1">Shell &amp;
                         tube and custom exchanger fabrication</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">High thermal
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc8Bullet2">High thermal
                         efficiency designs</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Suitable for
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc8Bullet3">Suitable for
                         refinery and process plant applications</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Strict
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc8Bullet4">Strict
                         testing and inspection procedures</span></li>
                   </ul>
                 </div>
@@ -960,40 +1379,40 @@
             </div>
             <div class="p-4 sm:p-5 lg:p-6">
               <h3
-                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3">
+                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3" data-lang-key="svc9Title">
                 Offshore Platform Structures</h3>
-              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc9Desc">
                 Fabrication of offshore structural components designed to
                 withstand harsh marine conditions.</p><button
                 onclick="toggleService(9)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center text-sm sm:text-base"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-4 sm:mt-6">
                 <div class="border-t border-gray-200 pt-4 sm:pt-6">
-                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc9Detail">
                     Fabrication of offshore decks, jackets, modules, and
                     sub-assemblies designed to withstand wave loads and
                     corrosion exposure with high structural strength.</p>
                   <h4
-                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base">
+                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base" data-lang-key="keyCapabilities">
                     Key Capabilities:</h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Heavy-duty
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc9Bullet1">Heavy-duty
                         offshore fabrication capability</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Compliance
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc9Bullet2">Compliance
                         with offshore and marine standards</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">High
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc9Bullet3">High
                         structural strength and fatigue resistance</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Suitable for
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc9Bullet4">Suitable for
                         offshore oil &amp; gas installations</span></li>
                   </ul>
                 </div>
@@ -1016,40 +1435,40 @@
             </div>
             <div class="p-4 sm:p-5 lg:p-6">
               <h3
-                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3">
+                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3" data-lang-key="svc10Title">
                 Heavy Thickness Piping</h3>
-              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc10Desc">
                 Thick-wall piping systems for high-pressure and high-temperature
                 services with specialized welding.</p><button
                 onclick="toggleService(10)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center text-sm sm:text-base"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-4 sm:mt-6">
                 <div class="border-t border-gray-200 pt-4 sm:pt-6">
-                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc10Detail">
                     Fabrication of thick-wall piping systems with specialized
                     welding procedures and controlled heat treatment ensuring
                     mechanical integrity for critical process lines.</p>
                   <h4
-                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base">
+                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base" data-lang-key="keyCapabilities">
                     Key Capabilities:</h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Thick-wall
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc10Bullet1">Thick-wall
                         and high-pressure piping fabrication</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Qualified
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc10Bullet2">Qualified
                         welders and approved WPS</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Suitable for
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc10Bullet3">Suitable for
                         critical process lines</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">High
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc10Bullet4">High
                         reliability and long service life</span></li>
                   </ul>
                 </div>
@@ -1072,40 +1491,40 @@
             </div>
             <div class="p-4 sm:p-5 lg:p-6">
               <h3
-                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3">
+                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3" data-lang-key="svc11Title">
                 Fabrication of Skids</h3>
-              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">Modular
+              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc11Desc">Modular
                 skids integrating piping, equipment, valves, and structural
                 frames into pre-assembled units.</p><button
                 onclick="toggleService(11)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center text-sm sm:text-base"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-4 sm:mt-6">
                 <div class="border-t border-gray-200 pt-4 sm:pt-6">
-                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc11Detail">
                     Fabrication of modular, transport-ready skid assemblies that
                     reduce site installation time and improve quality control
                     for oil &amp; gas process packages.</p>
                   <h4
-                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base">
+                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base" data-lang-key="keyCapabilities">
                     Key Capabilities:</h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Modular,
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc11Bullet1">Modular,
                         transport-ready assemblies</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Integrated
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc11Bullet2">Integrated
                         mechanical and structural fabrication</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Reduced site
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc11Bullet3">Reduced site
                         work and faster commissioning</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Ideal for oil
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc11Bullet4">Ideal for oil
                         &amp; gas process packages</span></li>
                   </ul>
                 </div>
@@ -1128,40 +1547,40 @@
             </div>
             <div class="p-4 sm:p-5 lg:p-6">
               <h3
-                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3">
+                class="text-xl sm:text-2xl font-bold text-oil-dark mb-2 sm:mb-3" data-lang-key="svc12Title">
                 Thermal Spray Coating</h3>
-              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+              <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc12Desc">
                 Advanced coating services to protect components from wear,
                 corrosion, and high temperatures.</p><button
                 onclick="toggleService(12)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center text-sm sm:text-base"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-4 sm:mt-6">
                 <div class="border-t border-gray-200 pt-4 sm:pt-6">
-                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4">
+                  <p class="text-sm sm:text-base text-oil-gray mb-3 sm:mb-4" data-lang-key="svc12Detail">
                     Thermal spray coating services providing enhanced surface
                     protection and durability for equipment operating in
                     abrasive or corrosive environments.</p>
                   <h4
-                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base">
+                    class="font-bold text-oil-dark mb-2 sm:mb-3 text-sm sm:text-base" data-lang-key="keyCapabilities">
                     Key Capabilities:</h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Enhanced
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc12Bullet1">Enhanced
                         surface protection and durability</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Improved
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc12Bullet2">Improved
                         resistance to wear and corrosion</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Extended
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc12Bullet3">Extended
                         equipment service life</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-2 sm:mr-3 mt-1 flex-shrink-0"></i><span
-                        class="text-sm sm:text-base text-oil-gray">Suitable for
+                        class="text-sm sm:text-base text-oil-gray" data-lang-key="svc12Bullet4">Suitable for
                         industrial and offshore applications</span></li>
                   </ul>
                 </div>
@@ -1180,12 +1599,12 @@
         </div>
         <h2
           class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 px-4">
-          Advanced Steel Fabrication with
-          <span class="text-oil-accent block mt-2">Precision, Quality, and
+          <span data-lang-key="ctaTitleMain">Advanced Steel Fabrication with</span>
+          <span class="text-oil-accent block mt-2" data-lang-key="ctaTitleAccent">Precision, Quality, and
             Innovation</span>
         </h2>
         <p
-          class="text-base sm:text-lg lg:text-xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto px-4">
+          class="text-base sm:text-lg lg:text-xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto px-4" data-lang-key="ctaDescription">
           Partner with Crystal Vision Steel Fabrication for comprehensive
           manufacturing solutions backed by advanced technology and commitment
           to excellence
@@ -1195,12 +1614,11 @@
           <a
             href="Contact.html"
             class="bg-oil-accent text-white px-8 sm:px-10 py-4 sm:py-5 rounded-lg font-semibold text-base sm:text-lg hover:bg-yellow-600 transition-colors inline-flex items-center justify-center shadow-xl"><i
-              class="fa-solid fa-file-invoice mr-2 sm:mr-3"></i>Request a Quote
+              class="fa-solid fa-file-invoice mr-2 sm:mr-3"></i><span data-lang-key="btnRequestQuote">Request a Quote</span>
           </a><a
             href="Portfolio.html"
             class="bg-white text-oil-dark px-8 sm:px-10 py-4 sm:py-5 rounded-lg font-semibold text-base sm:text-lg hover:bg-gray-100 transition-colors inline-flex items-center justify-center shadow-xl"><i
-              class="fa-solid fa-briefcase mr-2 sm:mr-3"></i>Explore Our
-            Projects
+              class="fa-solid fa-briefcase mr-2 sm:mr-3"></i><span data-lang-key="ctaCtaExploreProjects">Explore Our Projects</span>
           </a></div>
         <div
           class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mt-12 sm:mt-16">
@@ -1209,7 +1627,7 @@
             <div
               class="text-2xl sm:text-3xl lg:text-4xl font-bold text-oil-accent mb-1 sm:mb-2">
               1200</div>
-            <p class="text-sm sm:text-base text-gray-300">Tons/Month Capacity
+            <p class="text-sm sm:text-base text-gray-300" data-lang-key="ctaCapacityLabel">Tons/Month Capacity
             </p>
           </div>
           <div
@@ -1217,7 +1635,7 @@
             <div
               class="text-2xl sm:text-3xl lg:text-4xl font-bold text-oil-accent mb-1 sm:mb-2">
               12,000</div>
-            <p class="text-sm sm:text-base text-gray-300">Dia-Inch Piping/Month
+            <p class="text-sm sm:text-base text-gray-300" data-lang-key="ctaDiaInchLabel">Dia-Inch Piping/Month
             </p>
           </div>
           <div
@@ -1225,14 +1643,14 @@
             <div
               class="text-2xl sm:text-3xl lg:text-4xl font-bold text-oil-accent mb-1 sm:mb-2">
               100%</div>
-            <p class="text-sm sm:text-base text-gray-300">Quality Compliance</p>
+            <p class="text-sm sm:text-base text-gray-300" data-lang-key="ctaQualityLabel">Quality Compliance</p>
           </div>
           <div
             class="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-white/20">
             <div
               class="text-2xl sm:text-3xl lg:text-4xl font-bold text-oil-accent mb-1 sm:mb-2">
               ASME</div>
-            <p class="text-sm sm:text-base text-gray-300">Certified Standards
+            <p class="text-sm sm:text-base text-gray-300" data-lang-key="ctaCertifiedLabel">Certified Standards
             </p>
           </div>
         </div>
@@ -1254,7 +1672,7 @@
                   <p class="text-oil-accent">Steel Fabrication</p>
                 </div>
               </div>
-              <p class="text-gray-300 mb-6 max-w-md">
+              <p class="text-gray-300 mb-6 max-w-md" data-lang-key="footerDescription">
                 Leading the oil and gas industry with innovative engineering
                 solutions, comprehensive EPC services, and unwavering commitment
                 to safety and quality across the GCC region.
@@ -1272,76 +1690,76 @@
                     class="fa-brands fa-youtube text-white"></i></span></div>
             </div>
             <div>
-              <h4 class="text-xl font-bold mb-6 text-oil-accent">Contact
+              <h4 class="text-xl font-bold mb-6 text-oil-accent" data-lang-key="footerContactHeading">Contact
                 Information</h4>
               <div class="space-y-4">
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-map-marker-alt text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Head Office</p>
-                    <p class="text-gray-300 text-sm">Office No. 3301,3302, Excellence Tower P. O. Box: 80025 |West Bay,<br>Doha, Qatar</p>
+                    <p class="text-white font-medium" data-lang-key="headOfficeLabel">Head Office</p>
+                    <p class="text-gray-300 text-sm" data-lang-key="headOfficeAddress">Office No. 3301,3302, Excellence Tower P. O. Box: 80025 |West Bay,<br>Doha, Qatar</p>
                   </div>
                 </div>
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-industry text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Fab Shop</p>
-                    <p class="text-gray-300 text-sm">Bldg. No.239, Zone 81, Street No.7, New Industrial Area <br>Doha, Qatar</p>
+                    <p class="text-white font-medium" data-lang-key="fabShopLabel">Fab Shop</p>
+                    <p class="text-gray-300 text-sm" data-lang-key="fabShopAddress">Bldg. No.239, Zone 81, Street No.7, New Industrial Area <br>Doha, Qatar</p>
                   </div>
                 </div>
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-phone text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Phone</p>
-                    <p class="text-gray-300 text-sm">+974-40120736</p>
+                    <p class="text-white font-medium" data-lang-key="phoneLabel">Phone</p>
+                    <p class="text-gray-300 text-sm" data-lang-key="phoneNumber">+974-40120736</p>
                   </div>
                 </div>
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-envelope text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Email</p>
-                    <p class="text-gray-300 text-sm">info@crystaloilfield.qa
+                    <p class="text-white font-medium" data-lang-key="emailLabel">Email</p>
+                    <p class="text-gray-300 text-sm" data-lang-key="emailInfo">info@crystaloilfield.qa
                     </p>
-                    <p class="text-gray-300 text-sm">proposals@crystaloilfield.qa
+                    <p class="text-gray-300 text-sm" data-lang-key="emailProposals">proposals@crystaloilfield.qa
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div>
-              <h4 class="text-xl font-bold mb-6 text-oil-accent">Quick Links
+              <h4 class="text-xl font-bold mb-6 text-oil-accent" data-lang-key="footerQuickLinksHeading">Quick Links
               </h4>
               <div class="space-y-3"><a href="index.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Home</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerHome">Home</span></a><a
                   href="About.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>About
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerAbout">About
                     Us</span></a>
                 <div class="relative group"><button
                     class="flex items-center text-gray-300 hover:text-oil-accent transition-colors w-full"><i
-                      class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm"></i><span>Services</span><i
+                      class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm"></i><span data-lang-key="footerServices">Services</span><i
                       class="fa-solid fa-chevron-down text-xs ml-2"></i></button>
                   <div class="ml-6 mt-2 space-y-2 hidden group-hover:block"><a
                       href="Crystal Oilfield Services.html"
                       class="flex items-center text-gray-400 hover:text-oil-accent transition-colors text-sm"><i
-                        class="fa-solid fa-oil-well text-oil-accent mr-2 text-xs"></i><span>Crystal
+                        class="fa-solid fa-oil-well text-oil-accent mr-2 text-xs"></i><span data-lang-key="footerServicesOilfield">Crystal
                         Oilfield Contracting</span></a><a href="Crystal Vision Services.html"
                       class="flex items-center text-gray-400 hover:text-oil-accent transition-colors text-sm"><i
-                        class="fa-solid fa-industry text-oil-accent mr-2 text-xs"></i><span>Crystal
+                        class="fa-solid fa-industry text-oil-accent mr-2 text-xs"></i><span data-lang-key="footerServicesVision">Crystal
                         Vision Steel Fabrication</span></a></div>
                 </div><a href="Portfolio.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Portfolio</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerPortfolio">Portfolio</span></a><a
                   href="Media.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Media</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerMedia">Media</span></a><a
                   href="Career.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Career</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerCareer">Career</span></a><a
                   href="Contact.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Contact</span></a>
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerContact">Contact</span></a>
               </div>
             </div>
           </div>
@@ -1349,7 +1767,7 @@
         <div class="border-t border-white/20 py-6 sm:py-8">
           <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="text-center">
-              <p class="text-gray-300 text-xs sm:text-sm">© 2025 Crystal
+              <p class="text-gray-300 text-xs sm:text-sm" data-lang-key="footerCopyright">© 2025 Crystal
                 Oilfield. All
                 rights reserved.</p>
             </div>
@@ -1440,7 +1858,11 @@
         if (content.classList.contains('expanded'))
         {
           content.classList.remove('expanded');
-          viewText.textContent = 'View Details';
+          if (typeof translations !== 'undefined' && translations[currentLanguage]) {
+            viewText.textContent = translations[currentLanguage].viewDetails;
+          } else {
+            viewText.textContent = 'View Details';
+          }
           icon.classList.remove('fa-chevron-up');
           icon.classList.add('fa-chevron-down');
         }
@@ -1457,14 +1879,22 @@
             if (cont.classList.contains('expanded'))
             {
               cont.classList.remove('expanded');
-              txt.textContent = 'View Details';
+              if (typeof translations !== 'undefined' && translations[currentLanguage]) {
+                txt.textContent = translations[currentLanguage].viewDetails;
+              } else {
+                txt.textContent = 'View Details';
+              }
               icn.classList.remove('fa-chevron-up');
               icn.classList.add('fa-chevron-down');
             }
           });
 
           content.classList.add('expanded');
-          viewText.textContent = 'Hide Details';
+          if (typeof translations !== 'undefined' && translations[currentLanguage]) {
+            viewText.textContent = translations[currentLanguage].hideDetails;
+          } else {
+            viewText.textContent = 'Hide Details';
+          }
           icon.classList.remove('fa-chevron-down');
           icon.classList.add('fa-chevron-up');
 
