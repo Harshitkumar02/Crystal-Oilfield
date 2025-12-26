@@ -2,6 +2,18 @@
 
   <head>
     <link rel="icon" type="image/svg+xml" href="CO_Logo2.svg">
+    <link rel="canonical" href="" />
+    <meta name="description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta charset="UTF-8">
@@ -129,9 +141,15 @@
         box-sizing: border-box;
       }
 
+      html
+      {
+        overflow-x: hidden;
+      }
+
       body
       {
         margin: 0;
+        overflow-x: hidden;
       }
 
       body
@@ -425,6 +443,7 @@
       }
     </style>
   <link rel="stylesheet" href="animations.css">
+  <script src="seo.js"></script>
   </head>
 
   <body class="bg-gray-50">
@@ -446,43 +465,43 @@
           </div><!-- Desktop Navigation -->
             <nav class="hidden lg:flex items-center space-x-5 xl:space-x-7 ml-8"><a
               href="index.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Home</a><a
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navHome">Home</a><a
               href="About.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">About</a>
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navAbout">About</a>
             <!-- Services Dropdown -->
             <div class="relative group"><button
-                class="flex items-center space-x-1 text-oil-dark font-semibold hover:text-oil-blue transition-colors border-b-2 border-oil-blue pb-1"><span>Services</span><i
+                class="flex items-center space-x-1 text-oil-dark font-semibold hover:text-oil-blue transition-colors border-b-2 border-oil-blue pb-1"><span data-lang-key="navServices">Services</span><i
                   class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition-transform duration-200"></i></button>
               <div
                 class="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div class="p-2"><a href="Crystal%20Oilfield%20Services.html"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-oil-well text-oil-blue"></i><span
-                      class="font-medium">Crystal Oilfield Contracting and
+                      class="font-medium" data-lang-key="navServicesOilfield">Crystal Oilfield Contracting and
                       Trading</span></a><a href="Crystal%20Vision%20Services.html"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-industry text-oil-blue"></i><span
-                      class="font-medium">Crystal Vision Steel
+                      class="font-medium" data-lang-key="navServicesVision">Crystal Vision Steel
                       Fabrication</span></a></div>
               </div>
             </div><a href="Portfolio.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Portfolio</a><a
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navPortfolio">Portfolio</a><a
               href="Media.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Media</a><a
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navMedia">Media</a><a
               href="Career.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Career</a><a
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navCareer">Career</a><a
               href="Contact.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Contact</a>
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navContact">Contact</a>
           </nav><!-- Desktop Right Side -->
           <div class="hidden lg:flex items-center space-x-4 xl:space-x-6">
             <div class="flex items-center space-x-2 bg-gray-100 rounded-lg p-2"
-              id="irhio"><button
-                class="px-3 py-1 bg-oil-blue text-white rounded text-sm font-medium">English</button><button
+              id="irhio"><button id="lang-en-desktop"
+                class="px-3 py-1 bg-oil-blue text-white rounded text-sm font-medium">English</button><button id="lang-ar-desktop"
                 class="px-3 py-1 text-oil-gray rounded text-sm font-medium hover:bg-white">العربية</button>
             </div>
             <div class="relative group"><button
                 class="flex items-center space-x-2 text-oil-gray font-medium hover:text-oil-blue transition-colors px-4 py-2 rounded-lg hover:bg-gray-50"><i
-                  class="fa-solid fa-building text-sm"></i><span>Our Other
+                  class="fa-solid fa-building text-sm"></i><span data-lang-key="navOtherCompanies">Our Other
                   Companies</span><i
                   class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition-transform duration-200"></i></button>
               <div
@@ -490,34 +509,34 @@
                 <div class="p-2"><a href="https://albahralarabi.com/" target="_blank"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-building text-oil-blue"></i><span
-                      class="font-medium">Al Bahr Al Arabi Group</span></a><a
+                      class="font-medium" data-lang-key="company1Name">Al Bahr Al Arabi Group</span></a><a
                     href="https://albahralarabi.com/al-bahr-al-arabi-marine-engineering/" target="_blank"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-ship text-oil-blue"></i><span
-                      class="font-medium">Al Bahr Arabi Marine
+                      class="font-medium" data-lang-key="company2Name">Al Bahr Arabi Marine
                       Engineering</span></a><a href="https://albahralarabi.com/gulf-tech-energy-contracting-llc/" target="_blank"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-bolt text-oil-blue"></i><span
-                      class="font-medium">Gulf Tech Energy Contracting
+                      class="font-medium" data-lang-key="company3Name">Gulf Tech Energy Contracting
                       LLC</span></a><a href="#"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-oil-well text-oil-blue"></i><span
-                      class="font-medium">Crystal Petroleum</span></a><a
+                      class="font-medium" data-lang-key="company4Name">Crystal Petroleum</span></a><a
                     href="#"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-industry text-oil-blue"></i><span
-                      class="font-medium">Crystal Petrokimya Turkey</span></a><a
+                      class="font-medium" data-lang-key="company5Name">Crystal Petrokimya Turkey</span></a><a
                     href="#"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-heart text-oil-blue"></i><span
-                      class="font-medium">Crystal Care KSA</span></a></div>
+                      class="font-medium" data-lang-key="company6Name">Crystal Care KSA</span></a></div>
               </div>
             </div><button type="button"
               onclick="location.href='Contact.html#main-contact-form'"
               class="bg-oil-accent text-white px-4 xl:px-6 py-2 xl:py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors flex items-center text-sm xl:text-base"><i
                 class="fa-solid fa-file-invoice mr-2"></i><span
-                class="hidden xl:inline">Request a Quote</span><span
-                class="xl:hidden">Quote</span></button>
+                class="hidden xl:inline" data-lang-key="btnRequestQuote">Request a Quote</span><span
+                class="xl:hidden" data-lang-key="btnRequestQuote">Quote</span></button>
           </div><!-- Mobile Menu Button --><button id="mobile-menu-btn"
             class="lg:hidden text-oil-gray p-2"><i
               class="fa-solid fa-bars text-2xl"></i></button>
@@ -527,69 +546,68 @@
         class="mobile-menu hidden fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 overflow-y-auto">
         <div class="p-6">
           <div class="flex justify-between items-center mb-8">
-            <h3 class="text-xl font-bold text-oil-dark">Menu</h3><button
+            <h3 class="text-xl font-bold text-oil-dark" data-lang-key="mobileMenuTitle">Menu</h3><button
               id="mobile-menu-close" class="text-oil-gray"><i
                 class="fa-solid fa-times text-2xl"></i></button>
           </div><!-- Mobile Navigation Links -->
             <nav class="space-y-4"><a href="index.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Home</a><a
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navHome">Home</a><a
               href="About.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">About</a>
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navAbout">About</a>
             <!-- Mobile Services Dropdown -->
             <div><button id="mobile-services-toggle"
-                class="flex items-center justify-between w-full text-oil-dark font-semibold hover:text-oil-blue transition-colors py-2 border-l-4 border-oil-blue pl-4"><span>Services</span><i
+                class="flex items-center justify-between w-full text-oil-dark font-semibold hover:text-oil-blue transition-colors py-2 border-l-4 border-oil-blue pl-4"><span data-lang-key="navServices">Services</span><i
                   class="fa-solid fa-chevron-down text-xs"></i></button>
               <div id="mobile-services-menu" class="hidden ml-4 mt-2 space-y-2">
                 <a href="Crystal%20Oilfield%20Services.html"
                   class="block text-sm text-oil-gray hover:text-oil-blue py-2"><i
                     class="fa-solid fa-oil-well text-oil-blue mr-2"></i>
-                  Crystal Oilfield Contracting
+                  <span data-lang-key="navServicesOilfield">Crystal Oilfield Contracting and Trading</span>
                 </a><a href="Crystal%20Vision%20Services.html"
                   class="block text-sm text-oil-gray hover:text-oil-blue py-2"><i
                     class="fa-solid fa-industry text-oil-blue mr-2"></i>
-                  Crystal Vision Steel Fabrication
+                  <span data-lang-key="navServicesVision">Crystal Vision Steel Fabrication</span>
                 </a></div>
             </div><a href="Portfolio.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Portfolio</a><a
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navPortfolio">Portfolio</a><a
               href="Media.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Media</a><a
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navMedia">Media</a><a
               href="Career.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Career</a><a
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navCareer">Career</a><a
               href="Contact.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Contact</a>
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navContact">Contact</a>
             <!-- Mobile Language Switcher -->
             <div class="pt-4 border-t border-gray-200">
-              <p class="text-sm text-oil-gray mb-2">Language</p>
-              <div class="flex space-x-2"><button
-                  class="flex-1 px-3 py-2 bg-oil-blue text-white rounded text-sm font-medium">English</button><button
+              <p class="text-sm text-oil-gray mb-2" data-lang-key="languageLabel">Language</p>
+              <div class="flex space-x-2"><button id="lang-en-mobile"
+                  class="flex-1 px-3 py-2 bg-oil-blue text-white rounded text-sm font-medium">English</button><button id="lang-ar-mobile"
                   class="flex-1 px-3 py-2 bg-gray-100 text-oil-gray rounded text-sm font-medium">العربية</button>
               </div>
             </div><!-- Mobile Other Companies -->
             <div class="pt-4 border-t border-gray-200"><button
-                id="mobile-companies-toggle"
-                class="flex items-center justify-between w-full text-oil-gray font-medium hover:text-oil-blue transition-colors py-2"><span><i
-                    class="fa-solid fa-building mr-2"></i>Our Other
-                  Companies</span><i
+              id="mobile-companies-toggle"
+              class="flex items-center justify-between w-full text-oil-gray font-medium hover:text-oil-blue transition-colors py-2"><span><i
+                class="fa-solid fa-building mr-2"></i><span data-lang-key="navOtherCompanies">Our Other Companies</span></span><i
                   class="fa-solid fa-chevron-down text-xs"></i></button>
               <div id="mobile-companies-menu"
                 class="hidden ml-4 mt-2 space-y-2"><a href="https://albahralarabi.com/"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Al
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company1Name">Al
                   Bahr Al Arabi Group</a><a href="https://albahralarabi.com/al-bahr-al-arabi-marine-engineering/"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Al
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company2Name">Al
                   Bahr Arabi Marine Engineering</a><a href="https://albahralarabi.com/gulf-tech-energy-contracting-llc/"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Gulf
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company3Name">Gulf
                   Tech Energy Contracting LLC</a><a href="#"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company4Name">Crystal
                   Petroleum</a><a href="#"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company5Name">Crystal
                   Petrokimya Turkey</a><a href="#"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company6Name">Crystal
                   Care KSA</a></div>
             </div><!-- Mobile Quote Button --><button type="button"
               onclick="location.href='Contact.html#main-contact-form'"
               class="w-full bg-oil-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors mt-6"><i
                 class="fa-solid fa-file-invoice mr-2"></i>
-              Request a Quote
+              <span data-lang-key="btnRequestQuote">Request a Quote</span>
             </button>
           </nav>
         </div>
@@ -610,21 +628,21 @@
         <div class="max-w-4xl">
           <div class="mb-4 sm:mb-6">
             <span class="inline-block bg-oil-accent/20 text-oil-accent px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold backdrop-blur-sm">
-              <i class="fa-solid fa-oil-well mr-2"></i>CRYSTAL OILFIELD CONTRACTING & TRADING
+              <i class="fa-solid fa-oil-well mr-2"></i><span data-lang-key="heroBadge">CRYSTAL OILFIELD CONTRACTING & TRADING</span>
             </span>
           </div>
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-4 sm:mb-6 leading-tight">
-            Complete EPC
-            <span class="block text-oil-accent">Solutions</span>
+            <span data-lang-key="heroTitle1">Complete EPC</span>
+            <span class="block text-oil-accent" data-lang-key="heroTitle2">Solutions</span>
           </h1>
-          <p class="text-base sm:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-3xl leading-relaxed">
+          <p class="text-base sm:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-3xl leading-relaxed" data-lang-key="heroDescription">
             Delivering comprehensive oil & gas construction, civil
             engineering, tank farm development, and specialized industrial
             services across Qatar & GCC region.
           </p><button type="button"
             onclick="location.href='#services-grid-section'"
             class="bg-oil-accent text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-yellow-600 transition-colors inline-flex items-center">
-            <i class="fa-solid fa-arrow-down mr-2 sm:mr-3"></i>Explore Our Services
+            <i class="fa-solid fa-arrow-down mr-2 sm:mr-3"></i><span data-lang-key="heroButton">Explore Our Services</span>
           </button>
         </div>
       </div>
@@ -635,12 +653,12 @@
       </div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-12 sm:mb-16">
-          <span class="text-oil-blue font-semibold text-base sm:text-lg tracking-wide">COMPREHENSIVE
+          <span class="text-oil-blue font-semibold text-base sm:text-lg tracking-wide" data-lang-key="servicesLabel">COMPREHENSIVE
             SERVICES</span>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-oil-dark mt-4 mb-4 sm:mb-6">
-            Oil &amp; Gas <span class="text-oil-blue">Engineering
+            <span data-lang-key="servicesTitle1">Oil &amp; Gas</span> <span class="text-oil-blue" data-lang-key="servicesTitle2">Engineering
               Excellence</span></h2>
-          <p class="text-base sm:text-lg lg:text-xl text-oil-gray max-w-3xl mx-auto">
+          <p class="text-base sm:text-lg lg:text-xl text-oil-gray max-w-3xl mx-auto" data-lang-key="servicesDescription">
             From civil construction to specialized oil &amp; gas project works,
             delivering complete turnkey solutions with uncompromising quality
             and safety standards
@@ -663,44 +681,44 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-oil-dark mb-3">Civil
+              <h3 class="text-2xl font-bold text-oil-dark mb-3" data-lang-key="service1Title">Civil
                 Construction</h3>
-              <p class="text-oil-gray mb-4">Comprehensive civil construction
+              <p class="text-oil-gray mb-4" data-lang-key="service1Description">Comprehensive civil construction
                 services for industrial, oil &amp; gas, power, and
                 infrastructure projects from site preparation to final
                 finishing.</p><button
                 onclick="toggleService(1)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-6">
                 <div class="border-t border-gray-200 pt-6">
-                  <p class="text-oil-gray mb-4">Civil works executed to support
+                  <p class="text-oil-gray mb-4" data-lang-key="service1DetailPara">Civil works executed to support
                     heavy industrial loads, operational safety, and long-term
                     durability in harsh environmental conditions typical of oil
                     &amp; gas facilities.</p>
-                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  <h4 class="font-bold text-oil-dark mb-3" data-lang-key="keyCapabilities">Key Capabilities:
                   </h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Earthworks, excavation,
+                        class="text-oil-gray" data-lang-key="service1Point1">Earthworks, excavation,
                         backfilling, and compaction</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Foundations for equipment, tanks,
+                        class="text-oil-gray" data-lang-key="service1Point2">Foundations for equipment, tanks,
                         pipe racks, and structures</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Concrete works (RCC, PCC, precast
+                        class="text-oil-gray" data-lang-key="service1Point3">Concrete works (RCC, PCC, precast
                         where applicable)</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Drainage systems, bund walls, and
+                        class="text-oil-gray" data-lang-key="service1Point4">Drainage systems, bund walls, and
                         underground utilities</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Compliance with QCS, ASTM, and
+                        class="text-oil-gray" data-lang-key="service1Point5">Compliance with QCS, ASTM, and
                         international standards</span></li>
                   </ul>
                 </div>
@@ -723,38 +741,38 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-oil-dark mb-3">Oil &amp; Gas
+              <h3 class="text-2xl font-bold text-oil-dark mb-3" data-lang-key="service2Title">Oil &amp; Gas
                 Project Works</h3>
-              <p class="text-oil-gray mb-4">End-to-end oil &amp; gas project
+              <p class="text-oil-gray mb-4" data-lang-key="service2Description">End-to-end oil &amp; gas project
                 execution covering onshore facilities, refineries, terminals,
                 and gas processing plants.</p><button onclick="toggleService(2)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-6">
                 <div class="border-t border-gray-200 pt-6">
-                  <p class="text-oil-gray mb-4">Crystal Oilfield leverages EPC
+                  <p class="text-oil-gray mb-4" data-lang-key="service2DetailPara">Crystal Oilfield leverages EPC
                     experience and multidisciplinary teams to manage complex
                     interfaces between civil, mechanical, piping, E&amp;I, and
                     safety systems.</p>
-                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  <h4 class="font-bold text-oil-dark mb-3" data-lang-key="keyCapabilities">Key Capabilities:
                   </h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Onshore oil &amp; gas facilities
+                        class="text-oil-gray" data-lang-key="service2Point1">Onshore oil &amp; gas facilities
                         execution</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Coordination of multi-discipline
+                        class="text-oil-gray" data-lang-key="service2Point2">Coordination of multi-discipline
                         construction activities</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Compliance with client and
+                        class="text-oil-gray" data-lang-key="service2Point3">Compliance with client and
                         regulatory requirements</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Focus on schedule control, safety,
+                        class="text-oil-gray" data-lang-key="service2Point4">Focus on schedule control, safety,
                         and quality</span></li>
                   </ul>
                 </div>
@@ -777,38 +795,38 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-oil-dark mb-3">Hard &amp; Soft
+              <h3 class="text-2xl font-bold text-oil-dark mb-3" data-lang-key="service3Title">Hard &amp; Soft
                 Landscaping Works</h3>
-              <p class="text-oil-gray mb-4">Integrated hard and soft landscaping
+              <p class="text-oil-gray mb-4" data-lang-key="service3Description">Integrated hard and soft landscaping
                 solutions for industrial and infrastructure projects meeting
                 functional and environmental requirements.</p><button
                 onclick="toggleService(3)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-6">
                 <div class="border-t border-gray-200 pt-6">
-                  <p class="text-oil-gray mb-4">Landscaping designed to meet
+                  <p class="text-oil-gray mb-4" data-lang-key="service3DetailPara">Landscaping designed to meet
                     functional, environmental, and aesthetic requirements while
                     complying with local environmental guidelines.</p>
-                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  <h4 class="font-bold text-oil-dark mb-3" data-lang-key="keyCapabilities">Key Capabilities:
                   </h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Hard landscaping: pavements,
+                        class="text-oil-gray" data-lang-key="service3Point1">Hard landscaping: pavements,
                         kerbs, walkways, retaining walls</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Soft landscaping: soil
+                        class="text-oil-gray" data-lang-key="service3Point2">Soft landscaping: soil
                         preparation, planting, turfing, irrigation</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Landscaping for industrial,
+                        class="text-oil-gray" data-lang-key="service3Point3">Landscaping for industrial,
                         commercial, and infrastructure sites</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Sustainable and low-maintenance
+                        class="text-oil-gray" data-lang-key="service3Point4">Sustainable and low-maintenance
                         landscape solutions</span></li>
                   </ul>
                 </div>
@@ -831,39 +849,39 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-oil-dark mb-3">Tank Farm
+              <h3 class="text-2xl font-bold text-oil-dark mb-3" data-lang-key="service4Title">Tank Farm
                 Construction</h3>
-              <p class="text-oil-gray mb-4">Specialized tank farm construction
+              <p class="text-oil-gray mb-4" data-lang-key="service4Description">Specialized tank farm construction
                 for petroleum and chemical products storage with complete civil,
                 mechanical, and structural works.</p><button
                 onclick="toggleService(4)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-6">
                 <div class="border-t border-gray-200 pt-6">
-                  <p class="text-oil-gray mb-4">Projects executed in line with
+                  <p class="text-oil-gray mb-4" data-lang-key="service4DetailPara">Projects executed in line with
                     international codes such as API 650, API 653, and NFPA,
                     ensuring safety, environmental protection, and operational
                     reliability.</p>
-                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  <h4 class="font-bold text-oil-dark mb-3" data-lang-key="keyCapabilities">Key Capabilities:
                   </h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Construction of tank foundations
+                        class="text-oil-gray" data-lang-key="service4Point1">Construction of tank foundations
                         and bund walls</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Installation of storage tanks and
+                        class="text-oil-gray" data-lang-key="service4Point2">Installation of storage tanks and
                         associated piping</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Firefighting, drainage, and safety
+                        class="text-oil-gray" data-lang-key="service4Point3">Firefighting, drainage, and safety
                         systems</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Compliance with petroleum storage
+                        class="text-oil-gray" data-lang-key="service4Point4">Compliance with petroleum storage
                         standards</span></li>
                   </ul>
                 </div>
@@ -886,38 +904,38 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-oil-dark mb-3">Oil &amp; Gas
+              <h3 class="text-2xl font-bold text-oil-dark mb-3" data-lang-key="service5Title">Oil &amp; Gas
                 Plant Erection</h3>
-              <p class="text-oil-gray mb-4">Complete plant erection services
+              <p class="text-oil-gray mb-4" data-lang-key="service5Description">Complete plant erection services
                 including mechanical equipment, structural steel, and piping
                 systems installation.</p><button
                 onclick="toggleService(5)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-6">
                 <div class="border-t border-gray-200 pt-6">
-                  <p class="text-oil-gray mb-4">Erection activities carefully
+                  <p class="text-oil-gray mb-4" data-lang-key="service5DetailPara">Erection activities carefully
                     planned to minimize downtime and ensure safe execution with
                     coordination with commissioning teams.</p>
-                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  <h4 class="font-bold text-oil-dark mb-3" data-lang-key="keyCapabilities">Key Capabilities:
                   </h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Installation of static and
+                        class="text-oil-gray" data-lang-key="service5Point1">Installation of static and
                         rotating equipment</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Structural steel and pipe rack
+                        class="text-oil-gray" data-lang-key="service5Point2">Structural steel and pipe rack
                         erection</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Alignment, leveling, and grouting
+                        class="text-oil-gray" data-lang-key="service5Point3">Alignment, leveling, and grouting
                         works</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Coordination with commissioning
+                        class="text-oil-gray" data-lang-key="service5Point4">Coordination with commissioning
                         teams</span></li>
                   </ul>
                 </div>
@@ -940,38 +958,38 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-oil-dark mb-3">Hydrotesting of
+              <h3 class="text-2xl font-bold text-oil-dark mb-3" data-lang-key="service6Title">Hydrotesting of
                 Pipelines</h3>
-              <p class="text-oil-gray mb-4">Hydrostatic testing services for
+              <p class="text-oil-gray mb-4" data-lang-key="service6Description">Hydrostatic testing services for
                 pipelines and piping systems to verify strength, integrity, and
                 leak-tightness.</p><button
                 onclick="toggleService(6)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-6">
                 <div class="border-t border-gray-200 pt-6">
-                  <p class="text-oil-gray mb-4">Testing carried out using
+                  <p class="text-oil-gray mb-4" data-lang-key="service6DetailPara">Testing carried out using
                     calibrated equipment and approved procedures with complete
                     documentation and certification.</p>
-                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  <h4 class="font-bold text-oil-dark mb-3" data-lang-key="keyCapabilities">Key Capabilities:
                   </h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Hydrotesting of onshore pipelines
+                        class="text-oil-gray" data-lang-key="service6Point1">Hydrotesting of onshore pipelines
                         and piping networks</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Test pressure as per ASME and
+                        class="text-oil-gray" data-lang-key="service6Point2">Test pressure as per ASME and
                         project specifications</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Documentation and test
+                        class="text-oil-gray" data-lang-key="service6Point3">Documentation and test
                         certification</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Safe disposal and environmental
+                        class="text-oil-gray" data-lang-key="service6Point4">Safe disposal and environmental
                         compliance</span></li>
                   </ul>
                 </div>
@@ -994,38 +1012,38 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-oil-dark mb-3">Asset Integrity
+              <h3 class="text-2xl font-bold text-oil-dark mb-3" data-lang-key="service7Title">Asset Integrity
                 &amp; Reliability</h3>
-              <p class="text-oil-gray mb-4">Asset integrity and reliability
+              <p class="text-oil-gray mb-4" data-lang-key="service7Description">Asset integrity and reliability
                 services maintaining safe, efficient, and compliant operations
                 throughout the asset lifecycle.</p><button
                 onclick="toggleService(7)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-6">
                 <div class="border-t border-gray-200 pt-6">
-                  <p class="text-oil-gray mb-4">Services focus on risk
+                  <p class="text-oil-gray mb-4" data-lang-key="service7DetailPara">Services focus on risk
                     mitigation, inspection, and preventive maintenance with
                     compliance to regulatory and safety requirements.</p>
-                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  <h4 class="font-bold text-oil-dark mb-3" data-lang-key="keyCapabilities">Key Capabilities:
                   </h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Inspection and condition
+                        class="text-oil-gray" data-lang-key="service7Point1">Inspection and condition
                         assessment of assets</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Corrosion monitoring and integrity
+                        class="text-oil-gray" data-lang-key="service7Point2">Corrosion monitoring and integrity
                         evaluation</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Reliability improvement
+                        class="text-oil-gray" data-lang-key="service7Point3">Reliability improvement
                         strategies</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Compliance with regulatory and
+                        class="text-oil-gray" data-lang-key="service7Point4">Compliance with regulatory and
                         safety requirements</span></li>
                   </ul>
                 </div>
@@ -1048,37 +1066,37 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-oil-dark mb-3">Plant Change
+              <h3 class="text-2xl font-bold text-oil-dark mb-3" data-lang-key="service8Title">Plant Change
                 &amp; Modification</h3>
-              <p class="text-oil-gray mb-4">Brownfield and modification projects
+              <p class="text-oil-gray mb-4" data-lang-key="service8Description">Brownfield and modification projects
                 including plant upgrades, system rerouting, and capacity
                 enhancement.</p><button onclick="toggleService(8)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-6">
                 <div class="border-t border-gray-200 pt-6">
-                  <p class="text-oil-gray mb-4">Works performed while minimizing
+                  <p class="text-oil-gray mb-4" data-lang-key="service8DetailPara">Works performed while minimizing
                     operational disruption with strict safety control and
                     coordination with ongoing plant operations.</p>
-                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  <h4 class="font-bold text-oil-dark mb-3" data-lang-key="keyCapabilities">Key Capabilities:
                   </h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Tie-ins, rerouting, and system
+                        class="text-oil-gray" data-lang-key="service8Point1">Tie-ins, rerouting, and system
                         upgrades</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Equipment replacement and
+                        class="text-oil-gray" data-lang-key="service8Point2">Equipment replacement and
                         retrofitting</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Brownfield execution with strict
+                        class="text-oil-gray" data-lang-key="service8Point3">Brownfield execution with strict
                         safety control</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Coordination with ongoing plant
+                        class="text-oil-gray" data-lang-key="service8Point4">Coordination with ongoing plant
                         operations</span></li>
                   </ul>
                 </div>
@@ -1101,38 +1119,38 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-oil-dark mb-3">Infrastructure
+              <h3 class="text-2xl font-bold text-oil-dark mb-3" data-lang-key="service9Title">Infrastructure
                 Development</h3>
-              <p class="text-oil-gray mb-4">Infrastructure development projects
+              <p class="text-oil-gray mb-4" data-lang-key="service9Description">Infrastructure development projects
                 supporting industrial zones, terminals, and utilities with
                 long-term durability.</p><button
                 onclick="toggleService(9)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-6">
                 <div class="border-t border-gray-200 pt-6">
-                  <p class="text-oil-gray mb-4">These works provide the backbone
+                  <p class="text-oil-gray mb-4" data-lang-key="service9DetailPara">These works provide the backbone
                     required for large-scale industrial operations with
                     compliance to international standards.</p>
-                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  <h4 class="font-bold text-oil-dark mb-3" data-lang-key="keyCapabilities">Key Capabilities:
                   </h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Roads, drainage networks, and
+                        class="text-oil-gray" data-lang-key="service9Point1">Roads, drainage networks, and
                         utility corridors</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Underground services and duct
+                        class="text-oil-gray" data-lang-key="service9Point2">Underground services and duct
                         banks</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Industrial infrastructure for oil
+                        class="text-oil-gray" data-lang-key="service9Point3">Industrial infrastructure for oil
                         &amp; gas facilities</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Long-term durability and
+                        class="text-oil-gray" data-lang-key="service9Point4">Long-term durability and
                         compliance with standards</span></li>
                   </ul>
                 </div>
@@ -1155,38 +1173,38 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-oil-dark mb-3">Petroleum
+              <h3 class="text-2xl font-bold text-oil-dark mb-3" data-lang-key="service10Title">Petroleum
                 Storage Tank Design &amp; Fabrication</h3>
-              <p class="text-oil-gray mb-4">Complete tank solutions covering
+              <p class="text-oil-gray mb-4" data-lang-key="service10Description">Complete tank solutions covering
                 engineering, fabrication, erection, and testing of petroleum
                 storage tanks.</p><button
                 onclick="toggleService(10)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-6">
                 <div class="border-t border-gray-200 pt-6">
-                  <p class="text-oil-gray mb-4">Projects executed under
+                  <p class="text-oil-gray mb-4" data-lang-key="service10DetailPara">Projects executed under
                     stringent quality and safety controls with compliance to API
                     standards for reliable storage solutions.</p>
-                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  <h4 class="font-bold text-oil-dark mb-3" data-lang-key="keyCapabilities">Key Capabilities:
                   </h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Engineering and design as per API
+                        class="text-oil-gray" data-lang-key="service10Point1">Engineering and design as per API
                         standards</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Fabrication and erection of steel
+                        class="text-oil-gray" data-lang-key="service10Point2">Fabrication and erection of steel
                         storage tanks</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Hydrotesting and commissioning
+                        class="text-oil-gray" data-lang-key="service10Point3">Hydrotesting and commissioning
                         support</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Suitable for crude oil, fuel, and
+                        class="text-oil-gray" data-lang-key="service10Point4">Suitable for crude oil, fuel, and
                         chemical storage</span></li>
                   </ul>
                 </div>
@@ -1209,38 +1227,38 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-oil-dark mb-3">MEP &amp; HVAC
+              <h3 class="text-2xl font-bold text-oil-dark mb-3" data-lang-key="service11Title">MEP &amp; HVAC
                 Project Works</h3>
-              <p class="text-oil-gray mb-4">Complete MEP and HVAC services for
+              <p class="text-oil-gray mb-4" data-lang-key="service11Description">Complete MEP and HVAC services for
                 industrial, commercial, and infrastructure facilities ensuring
                 operational efficiency.</p><button
                 onclick="toggleService(11)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-6">
                 <div class="border-t border-gray-200 pt-6">
-                  <p class="text-oil-gray mb-4">Systems designed and installed
+                  <p class="text-oil-gray mb-4" data-lang-key="service11DetailPara">Systems designed and installed
                     to ensure operational efficiency, safety, and compliance
                     with international energy standards.</p>
-                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  <h4 class="font-bold text-oil-dark mb-3" data-lang-key="keyCapabilities">Key Capabilities:
                   </h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Mechanical, electrical, and
+                        class="text-oil-gray" data-lang-key="service11Point1">Mechanical, electrical, and
                         plumbing installations</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">HVAC systems for industrial and
+                        class="text-oil-gray" data-lang-key="service11Point2">HVAC systems for industrial and
                         commercial buildings</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Testing, balancing, and
+                        class="text-oil-gray" data-lang-key="service11Point3">Testing, balancing, and
                         commissioning</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Compliance with international MEP
+                        class="text-oil-gray" data-lang-key="service11Point4">Compliance with international MEP
                         standards</span></li>
                   </ul>
                 </div>
@@ -1263,38 +1281,38 @@
               </div>
             </div>
             <div class="p-6">
-              <h3 class="text-2xl font-bold text-oil-dark mb-3">Water Jet
+              <h3 class="text-2xl font-bold text-oil-dark mb-3" data-lang-key="service12Title">Water Jet
                 Cutting for Oil &amp; Gas</h3>
-              <p class="text-oil-gray mb-4">High-pressure water jet cutting
+              <p class="text-oil-gray mb-4" data-lang-key="service12Description">High-pressure water jet cutting
                 services for oil &amp; gas applications enabling safe cold
                 cutting without heat-affected zones.</p><button
                 onclick="toggleService(12)"
                 class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors flex items-center"><span
-                  class="view-text">View Details</span><i
+                  class="view-text" data-lang-key="viewDetails">View Details</span><i
                   class="fa-solid fa-chevron-down ml-2 toggle-icon"></i></button>
               <div class="service-content mt-6">
                 <div class="border-t border-gray-200 pt-6">
-                  <p class="text-oil-gray mb-4">Ideal for hazardous environments
+                  <p class="text-oil-gray mb-4" data-lang-key="service12DetailPara">Ideal for hazardous environments
                     where hot work is restricted, providing precision cutting
                     without thermal distortion and reduced risk.</p>
-                  <h4 class="font-bold text-oil-dark mb-3">Key Capabilities:
+                  <h4 class="font-bold text-oil-dark mb-3" data-lang-key="keyCapabilities">Key Capabilities:
                   </h4>
                   <ul class="space-y-2">
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Cold cutting for pipes, tanks, and
+                        class="text-oil-gray" data-lang-key="service12Point1">Cold cutting for pipes, tanks, and
                         structures</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Safe execution in live plants and
+                        class="text-oil-gray" data-lang-key="service12Point2">Safe execution in live plants and
                         hazardous zones</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Precision cutting without thermal
+                        class="text-oil-gray" data-lang-key="service12Point3">Precision cutting without thermal
                         distortion</span></li>
                     <li class="flex items-start"><i
                         class="fa-solid fa-check-circle text-oil-blue mr-3 mt-1"></i><span
-                        class="text-oil-gray">Reduced risk compared to
+                        class="text-oil-gray" data-lang-key="service12Point4">Reduced risk compared to
                         conventional cutting</span></li>
                   </ul>
                 </div>
@@ -1312,43 +1330,43 @@
           <i class="fa-solid fa-oil-well text-oil-accent text-4xl sm:text-5xl lg:text-6xl mb-4 sm:mb-6"></i>
         </div>
         <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
-          Delivering Engineering Excellence with
-          <span class="text-oil-accent block mt-2">Safety, Quality, and
+          <span data-lang-key="ctaTitle1">Delivering Engineering Excellence with</span>
+          <span class="text-oil-accent block mt-2" data-lang-key="ctaTitle2">Safety, Quality, and
             Innovation</span>
         </h2>
-        <p class="text-base sm:text-lg lg:text-xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto">
+        <p class="text-base sm:text-lg lg:text-xl text-gray-300 mb-8 sm:mb-12 max-w-3xl mx-auto" data-lang-key="ctaDescription">
           Partner with Crystal Oilfield for comprehensive EPC solutions backed
           by decades of experience and unwavering commitment to excellence in
           the oil &amp; gas sector
         </p>
         <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6">
           <a href="Contact.html" class="bg-oil-accent text-white px-8 sm:px-10 py-4 sm:py-5 rounded-lg font-semibold text-base sm:text-lg hover:bg-yellow-600 transition-colors inline-flex items-center justify-center shadow-xl">
-            <i class="fa-solid fa-file-invoice mr-3"></i>Request a Quote
+            <i class="fa-solid fa-file-invoice mr-3"></i><span data-lang-key="btnRequestQuote">Request a Quote</span>
           </a>
           <a href="Portfolio.html" class="bg-white text-oil-dark px-8 sm:px-10 py-4 sm:py-5 rounded-lg font-semibold text-base sm:text-lg hover:bg-gray-100 transition-colors inline-flex items-center justify-center shadow-xl">
-            <i class="fa-solid fa-briefcase mr-3"></i>Explore Our Projects
+            <i class="fa-solid fa-briefcase mr-3"></i><span data-lang-key="btnExploreProjects">Explore Our Projects</span>
           </a>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 mt-12 sm:mt-16">
           <div
             class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
             <div class="text-4xl font-bold text-oil-accent mb-2">25+</div>
-            <p class="text-gray-300">Years of Excellence</p>
+            <p class="text-gray-300" data-lang-key="stat1Label">Years of Excellence</p>
           </div>
           <div
             class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
             <div class="text-4xl font-bold text-oil-accent mb-2">500+</div>
-            <p class="text-gray-300">Projects Completed</p>
+            <p class="text-gray-300" data-lang-key="stat2Label">Projects Completed</p>
           </div>
           <div
             class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
             <div class="text-4xl font-bold text-oil-accent mb-2">100%</div>
-            <p class="text-gray-300">Safety Compliance</p>
+            <p class="text-gray-300" data-lang-key="stat3Label">Safety Compliance</p>
           </div>
           <div
             class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
             <div class="text-4xl font-bold text-oil-accent mb-2">ISO</div>
-            <p class="text-gray-300">Certified Quality</p>
+            <p class="text-gray-300" data-lang-key="stat4Label">Certified Quality</p>
           </div>
         </div>
       </div>
@@ -1364,7 +1382,7 @@
               <div class="flex items-center mb-6">
                 <img src="CO_Logo.svg" alt="Crystal Oilfield Logo" class="h-[72px] w-auto">
               </div>
-              <p class="text-gray-300 mb-6 max-w-md">
+              <p class="text-gray-300 mb-6 max-w-md" data-lang-key="footerDescription">
                 Leading the oil and gas industry with innovative engineering
                 solutions, comprehensive EPC services, and unwavering commitment
                 to safety and quality across the GCC region.
@@ -1382,76 +1400,76 @@
                     class="fa-brands fa-youtube text-white"></i></span></div>
             </div>
             <div>
-              <h4 class="text-xl font-bold mb-6 text-oil-accent">Contact
+              <h4 class="text-xl font-bold mb-6 text-oil-accent" data-lang-key="footerContactHeading">Contact
                 Information</h4>
               <div class="space-y-4">
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-map-marker-alt text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Head Office</p>
-                    <p class="text-gray-300 text-sm">Office No. 3301,3302, Excellence Tower P. O. Box: 80025 |West Bay,<br>Doha, Qatar</p>
+                    <p class="text-white font-medium" data-lang-key="headOfficeLabel">Head Office</p>
+                    <p class="text-gray-300 text-sm" data-lang-key="headOfficeAddress">Office No. 3301,3302, Excellence Tower P. O. Box: 80025 |West Bay,<br>Doha, Qatar</p>
                   </div>
                 </div>
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-industry text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Fab Shop</p>
-                    <p class="text-gray-300 text-sm">Bldg. No.239, Zone 81, Street No.7, New Industrial Area <br>Doha, Qatar</p>
+                    <p class="text-white font-medium" data-lang-key="fabShopLabel">Fab Shop</p>
+                    <p class="text-gray-300 text-sm" data-lang-key="fabShopAddress">Bldg. No.239, Zone 81, Street No.7, New Industrial Area <br>Doha, Qatar</p>
                   </div>
                 </div>
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-phone text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Phone</p>
-                    <p class="text-gray-300 text-sm">+974-40120736</p>
+                    <p class="text-white font-medium" data-lang-key="phoneLabel">Phone</p>
+                    <p class="text-gray-300 text-sm" data-lang-key="phoneNumber">+974-40120736</p>
                   </div>
                 </div>
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-envelope text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Email</p>
-                    <p class="text-gray-300 text-sm">info@crystaloilfield.qa
+                    <p class="text-white font-medium" data-lang-key="emailLabel">Email</p>
+                    <p class="text-gray-300 text-sm" data-lang-key="emailInfo">info@crystaloilfield.qa
                     </p>
-                    <p class="text-gray-300 text-sm">proposals@crystaloilfield.qa
+                    <p class="text-gray-300 text-sm" data-lang-key="emailProposals">proposals@crystaloilfield.qa
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div>
-              <h4 class="text-xl font-bold mb-6 text-oil-accent">Quick Links
+              <h4 class="text-xl font-bold mb-6 text-oil-accent" data-lang-key="footerQuickLinksHeading">Quick Links
               </h4>
               <div class="space-y-3"><a href="index.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Home</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerHome">Home</span></a><a
                   href="About.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>About
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerAbout">About
                     Us</span></a>
                 <div class="relative group"><button
                     class="flex items-center text-gray-300 hover:text-oil-accent transition-colors w-full"><i
-                      class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm"></i><span>Services</span><i
+                      class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm"></i><span data-lang-key="footerServices">Services</span><i
                       class="fa-solid fa-chevron-down text-xs ml-2"></i></button>
                   <div class="ml-6 mt-2 space-y-2 hidden group-hover:block"><a
-                      href="Crystal Oilfield Services.html"
+                      href="Crystal%20Oilfield%20Services.html"
                       class="flex items-center text-gray-400 hover:text-oil-accent transition-colors text-sm"><i
-                        class="fa-solid fa-oil-well text-oil-accent mr-2 text-xs"></i><span>Crystal
-                        Oilfield Contracting</span></a><a href="Crystal Vision Services.html"
+                        class="fa-solid fa-oil-well text-oil-accent mr-2 text-xs"></i><span data-lang-key="footerServicesOilfield">Crystal
+                        Oilfield Contracting</span></a><a href="Crystal%20Vision%20Services.html"
                       class="flex items-center text-gray-400 hover:text-oil-accent transition-colors text-sm"><i
-                        class="fa-solid fa-industry text-oil-accent mr-2 text-xs"></i><span>Crystal
+                        class="fa-solid fa-industry text-oil-accent mr-2 text-xs"></i><span data-lang-key="footerServicesVision">Crystal
                         Vision Steel Fabrication</span></a></div>
                 </div><a href="Portfolio.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Portfolio</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerPortfolio">Portfolio</span></a><a
                   href="Media.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Media</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerMedia">Media</span></a><a
                   href="Career.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Career</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerCareer">Career</span></a><a
                   href="Contact.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Contact</span></a>
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerContact">Contact</span></a>
               </div>
             </div>
           </div>
@@ -1459,7 +1477,7 @@
         <div class="border-t border-white/20 py-6 sm:py-8">
           <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="text-center">
-              <p class="text-gray-300 text-xs sm:text-sm">© 2025 Crystal
+              <p class="text-gray-300 text-xs sm:text-sm" data-lang-key="footerCopyright">© 2025 Crystal
                 Oilfield. All
                 rights reserved.</p>
             </div>
@@ -1548,11 +1566,12 @@
         const button = card.querySelector('button');
         const viewText = button.querySelector('.view-text');
         const icon = button.querySelector('.toggle-icon');
+        const currentLang = localStorage.getItem('crystalOilfieldLang') || 'en';
 
         if (content.classList.contains('expanded'))
         {
           content.classList.remove('expanded');
-          viewText.textContent = 'View Details';
+          viewText.textContent = translations[currentLang].viewDetails;
           icon.classList.remove('fa-chevron-up');
           icon.classList.add('fa-chevron-down');
         }
@@ -1569,14 +1588,14 @@
             if (cont.classList.contains('expanded'))
             {
               cont.classList.remove('expanded');
-              txt.textContent = 'View Details';
+              txt.textContent = translations[currentLang].viewDetails;
               icn.classList.remove('fa-chevron-up');
               icn.classList.add('fa-chevron-down');
             }
           });
 
           content.classList.add('expanded');
-          viewText.textContent = 'Hide Details';
+          viewText.textContent = translations[currentLang].hideDetails;
           icon.classList.remove('fa-chevron-down');
           icon.classList.add('fa-chevron-up');
 
@@ -1622,6 +1641,431 @@
         const loader = document.getElementById('loading-container');
         if (loader) loader.classList.add('hidden');
       });
+    </script>
+    <script>
+      // Language Translation System
+      const translations = {
+        en: {
+          // Page Title
+          pageTitle: 'Oilfield Services | Crystal Oilfield Services',
+          metaDescription: 'Crystal Oilfield Contracting and Trading: EPC, oil & gas engineering, fabrication and maintenance services in Qatar and GCC.',
+          // Navigation
+          navHome: 'Home',
+          navAbout: 'About',
+          navServices: 'Services',
+          navServicesOilfield: 'Crystal Oilfield Contracting and Trading',
+          navServicesVision: 'Crystal Vision Steel Fabrication',
+          navPortfolio: 'Portfolio',
+          navMedia: 'Media',
+          navCareer: 'Career',
+          navContact: 'Contact',
+          navOtherCompanies: 'Our Other Companies',
+          mobileMenuTitle: 'Menu',
+          btnRequestQuote: 'Request a Quote',
+          languageLabel: 'Language',
+          // Company Names
+          company1Name: 'Al Bahr Al Arabi Group',
+          company2Name: 'Al Bahr Arabi Marine Engineering',
+          company3Name: 'Gulf Tech Energy Contracting LLC',
+          company4Name: 'Crystal Petroleum',
+          company5Name: 'Crystal Petrokimya Turkey',
+          company6Name: 'Crystal Care KSA',
+          // Hero Section
+          heroBadge: 'CRYSTAL OILFIELD CONTRACTING & TRADING',
+          heroTitle1: 'Complete EPC',
+          heroTitle2: 'Solutions',
+          heroDescription: 'Delivering comprehensive oil & gas construction, civil engineering, tank farm development, and specialized industrial services across Qatar & GCC region.',
+          heroButton: 'Explore Our Services',
+          // Services Section
+          servicesLabel: 'COMPREHENSIVE SERVICES',
+          servicesTitle1: 'Oil & Gas',
+          servicesTitle2: 'Engineering Excellence',
+          servicesDescription: 'From civil construction to specialized oil & gas project works, delivering complete turnkey solutions with uncompromising quality and safety standards',
+          // Common
+          viewDetails: 'View Details',
+          hideDetails: 'Hide Details',
+          // Service Cards
+          service1Title: 'Civil Construction',
+          service1Description: 'Comprehensive civil construction services for industrial, oil & gas, power, and infrastructure projects from site preparation to final finishing.',
+          service2Title: 'Oil & Gas Project Works',
+          service2Description: 'End-to-end oil & gas project execution covering onshore facilities, refineries, terminals, and gas processing plants.',
+          service3Title: 'Hard & Soft Landscaping Works',
+          service3Description: 'Integrated hard and soft landscaping solutions for industrial and infrastructure projects meeting functional and environmental requirements.',
+          service4Title: 'Tank Farm Construction',
+          service4Description: 'Specialized tank farm construction for petroleum and chemical products storage with complete civil, mechanical, and structural works.',
+          service5Title: 'Oil & Gas Plant Erection',
+          service5Description: 'Complete plant erection services including mechanical equipment, structural steel, and piping systems installation.',
+          service6Title: 'Hydrotesting of Pipelines',
+          service6Description: 'Hydrostatic testing services for pipelines and piping systems to verify strength, integrity, and leak-tightness.',
+          service7Title: 'Asset Integrity & Reliability',
+          service7Description: 'Asset integrity and reliability services maintaining safe, efficient, and compliant operations throughout the asset lifecycle.',
+          service8Title: 'Plant Change & Modification',
+          service8Description: 'Brownfield and modification projects including plant upgrades, system rerouting, and capacity enhancement.',
+          service9Title: 'Infrastructure Development',
+          service9Description: 'Infrastructure development projects supporting industrial zones, terminals, and utilities with long-term durability.',
+          service10Title: 'Petroleum Storage Tank Design & Fabrication',
+          service10Description: 'Complete tank solutions covering engineering, fabrication, erection, and testing of petroleum storage tanks.',
+          service11Title: 'MEP & HVAC Project Works',
+          service11Description: 'Complete MEP and HVAC services for industrial, commercial, and infrastructure facilities ensuring operational efficiency.',
+          service12Title: 'Water Jet Cutting for Oil & Gas',
+          service12Description: 'High-pressure water jet cutting services for oil & gas applications enabling safe cold cutting without heat-affected zones.',
+          // Key Capabilities
+          keyCapabilities: 'Key Capabilities:',
+          // Service 1 Details
+          service1DetailPara: 'Civil works executed to support heavy industrial loads, operational safety, and long-term durability in harsh environmental conditions typical of oil & gas facilities.',
+          service1Point1: 'Earthworks, excavation, backfilling, and compaction',
+          service1Point2: 'Foundations for equipment, tanks, pipe racks, and structures',
+          service1Point3: 'Concrete works (RCC, PCC, precast where applicable)',
+          service1Point4: 'Drainage systems, bund walls, and underground utilities',
+          service1Point5: 'Compliance with QCS, ASTM, and international standards',
+          // Service 2 Details
+          service2DetailPara: 'Crystal Oilfield leverages EPC experience and multidisciplinary teams to manage complex interfaces between civil, mechanical, piping, E&I, and safety systems.',
+          service2Point1: 'Onshore oil & gas facilities execution',
+          service2Point2: 'Coordination of multi-discipline construction activities',
+          service2Point3: 'Compliance with client and regulatory requirements',
+          service2Point4: 'Focus on schedule control, safety, and quality',
+          // Service 3 Details
+          service3DetailPara: 'Landscaping designed to meet functional, environmental, and aesthetic requirements while complying with local environmental guidelines.',
+          service3Point1: 'Hard landscaping: pavements, kerbs, walkways, retaining walls',
+          service3Point2: 'Soft landscaping: soil preparation, planting, turfing, irrigation',
+          service3Point3: 'Landscaping for industrial, commercial, and infrastructure sites',
+          service3Point4: 'Sustainable and low-maintenance landscape solutions',
+          // Service 4 Details
+          service4DetailPara: 'Projects executed in line with international codes such as API 650, API 653, and NFPA, ensuring safety, environmental protection, and operational reliability.',
+          service4Point1: 'Construction of tank foundations and bund walls',
+          service4Point2: 'Installation of storage tanks and associated piping',
+          service4Point3: 'Firefighting, drainage, and safety systems',
+          service4Point4: 'Compliance with petroleum storage standards',
+          // Service 5 Details
+          service5DetailPara: 'Erection activities carefully planned to minimize downtime and ensure safe execution with coordination with commissioning teams.',
+          service5Point1: 'Installation of static and rotating equipment',
+          service5Point2: 'Structural steel and pipe rack erection',
+          service5Point3: 'Alignment, leveling, and grouting works',
+          service5Point4: 'Coordination with commissioning teams',
+          // Service 6 Details
+          service6DetailPara: 'Testing carried out using calibrated equipment and approved procedures with complete documentation and certification.',
+          service6Point1: 'Hydrotesting of onshore pipelines and piping networks',
+          service6Point2: 'Test pressure as per ASME and project specifications',
+          service6Point3: 'Documentation and test certification',
+          service6Point4: 'Safe disposal and environmental compliance',
+          // Service 7 Details
+          service7DetailPara: 'Services focus on risk mitigation, inspection, and preventive maintenance with compliance to regulatory and safety requirements.',
+          service7Point1: 'Inspection and condition assessment of assets',
+          service7Point2: 'Corrosion monitoring and integrity evaluation',
+          service7Point3: 'Reliability improvement strategies',
+          service7Point4: 'Compliance with regulatory and safety requirements',
+          // Service 8 Details
+          service8DetailPara: 'Works performed while minimizing operational disruption with strict safety control and coordination with ongoing plant operations.',
+          service8Point1: 'Tie-ins, rerouting, and system upgrades',
+          service8Point2: 'Equipment replacement and retrofitting',
+          service8Point3: 'Brownfield execution with strict safety control',
+          service8Point4: 'Coordination with ongoing plant operations',
+          // Service 9 Details
+          service9DetailPara: 'These works provide the backbone required for large-scale industrial operations with compliance to international standards.',
+          service9Point1: 'Roads, drainage networks, and utility corridors',
+          service9Point2: 'Underground services and duct banks',
+          service9Point3: 'Industrial infrastructure for oil & gas facilities',
+          service9Point4: 'Long-term durability and compliance with standards',
+          // Service 10 Details
+          service10DetailPara: 'Projects executed under stringent quality and safety controls with compliance to API standards for reliable storage solutions.',
+          service10Point1: 'Engineering and design as per API standards',
+          service10Point2: 'Fabrication and erection of steel storage tanks',
+          service10Point3: 'Hydrotesting and commissioning support',
+          service10Point4: 'Suitable for crude oil, fuel, and chemical storage',
+          // Service 11 Details
+          service11DetailPara: 'Systems designed and installed to ensure operational efficiency, safety, and compliance with international energy standards.',
+          service11Point1: 'Mechanical, electrical, and plumbing installations',
+          service11Point2: 'HVAC systems for industrial and commercial buildings',
+          service11Point3: 'Testing, balancing, and commissioning',
+          service11Point4: 'Compliance with international MEP standards',
+          // Service 12 Details
+          service12DetailPara: 'Ideal for hazardous environments where hot work is restricted, providing precision cutting without thermal distortion and reduced risk.',
+          service12Point1: 'Cold cutting for pipes, tanks, and structures',
+          service12Point2: 'Safe execution in live plants and hazardous zones',
+          service12Point3: 'Precision cutting without thermal distortion',
+          service12Point4: 'Reduced risk compared to conventional cutting',
+          // CTA Section
+          ctaTitle1: 'Delivering Engineering Excellence with',
+          ctaTitle2: 'Safety, Quality, and Innovation',
+          ctaDescription: 'Partner with Crystal Oilfield for comprehensive EPC solutions backed by decades of experience and unwavering commitment to excellence in the oil & gas sector',
+          btnExploreProjects: 'Explore Our Projects',
+          // Statistics Section
+          stat1Label: 'Years of Excellence',
+          stat2Label: 'Projects Completed',
+          stat3Label: 'Safety Compliance',
+          stat4Label: 'Certified Quality',
+          // Footer
+          footerDescription: 'Leading the oil and gas industry with innovative engineering solutions, comprehensive EPC services, and unwavering commitment to safety and quality across the GCC region.',
+          footerContactHeading: 'Contact Information',
+          headOfficeLabel: 'Head Office',
+          headOfficeAddress: 'Office No. 3301,3302, Excellence Tower P. O. Box: 80025 |West Bay, Doha, Qatar',
+          fabShopLabel: 'Fab Shop',
+          fabShopAddress: 'Bldg. No.239, Zone 81, Street No.7, New Industrial Area Doha, Qatar',
+          phoneLabel: 'Phone',
+          phoneNumber: '+974-40120736',
+          emailLabel: 'Email',
+          emailInfo: 'info@crystaloilfield.qa',
+          emailProposals: 'proposals@crystaloilfield.qa',
+          footerQuickLinksHeading: 'Quick Links',
+          footerHome: 'Home',
+          footerAbout: 'About Us',
+          footerServices: 'Services',
+          footerServicesOilfield: 'Crystal Oilfield Contracting',
+          footerServicesVision: 'Crystal Vision Steel Fabrication',
+          footerPortfolio: 'Portfolio',
+          footerMedia: 'Media',
+          footerCareer: 'Career',
+          footerContact: 'Contact',
+          footerCopyright: '© 2025 Crystal Oilfield. All rights reserved.'
+        },
+        ar: {
+          // Page Title
+          pageTitle: 'خدمات حقول النفط | خدمات كريستال أويل فيلد',
+          metaDescription: 'كريستال أويل فيلد للمقاولات والتجارة: خدمات EPC وهندسة النفط والغاز والتصنيع والصيانة في قطر والخليج.',
+          // Navigation
+          navHome: '\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629',
+          navAbout: '\u0639\u0646\u0646\u0627',
+          navServices: '\u0627\u0644\u062e\u062f\u0645\u0627\u062a',
+          navServicesOilfield: '\u0643\u0631\u064a\u0633\u062a\u0627\u0644 \u0623\u0648\u064a\u0644 \u0641\u064a\u0644\u062f \u0644\u0644\u0645\u0642\u0627\u0648\u0644\u0627\u062a \u0648\u0627\u0644\u062a\u062c\u0627\u0631\u0629',
+          navServicesVision: '\u0643\u0631\u064a\u0633\u062a\u0627\u0644 \u0641\u064a\u062c\u0646 \u0644\u062a\u0635\u0646\u064a\u0639 \u0627\u0644\u0641\u0648\u0644\u0627\u0630',
+          navPortfolio: '\u0645\u062d\u0641\u0638\u0629 \u0627\u0644\u0623\u0639\u0645\u0627\u0644',
+          navMedia: '\u0627\u0644\u0648\u0633\u0627\u0626\u0637',
+          navCareer: '\u0627\u0644\u0648\u0638\u0627\u0626\u0641',
+          navContact: '\u0627\u0644\u0627\u062a\u0635\u0627\u0644',
+          navOtherCompanies: '\u0634\u0631\u0643\u0627\u062a\u0646\u0627 \u0627\u0644\u0623\u062e\u0631\u0649',
+          mobileMenuTitle: '\u0627\u0644\u0642\u0627\u0626\u0645\u0629',
+          btnRequestQuote: '\u0627\u0637\u0644\u0628 \u0639\u0631\u0636 \u0633\u0639\u0631',
+          languageLabel: '\u0627\u0644\u0644\u063a\u0629',
+          // Company Names
+          company1Name: '\u0645\u062c\u0645\u0648\u0639\u0629 \u0627\u0644\u0628\u062d\u0631 \u0627\u0644\u0623\u062d\u0645\u0631',
+          company2Name: '\u0647\u0646\u062f\u0633\u0629 \u0627\u0644\u0628\u062d\u0631 \u0627\u0644\u0623\u062d\u0645\u0631 \u0627\u0644\u0628\u062d\u0631\u064a\u0629',
+          company3Name: '\u062e\u0644\u064a\u062c \u062a\u0639\u0647\u062f \u0644\u0639\u0642\u0648\u062f \u0627\u0644\u0637\u0627\u0642\u0629 ذ.م.م',
+          company4Name: '\u0628\u0644\u0648\u0631\u064a \u0627\u0644\u0628\u0637\u0631\u0648\u0644 ',
+          company5Name: '\u0628\u0644\u0648\u0631\u064a \u0627\u0644\u0628\u0637\u0631\u0648\u0643\u064a\u0645\u064a\u0627\u0626 \u062a\u0631\u0643\u064a\u0627',
+          company6Name: '\u0628\u0644\u0648\u0631\u064a \u0643\u0627\u0631 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629',
+          // Hero Section
+          heroBadge: '\u0643\u0631\u064a\u0633\u062a\u0627\u0644 \u0623\u0648\u064a\u0644 \u0641\u064a\u0644\u062f \u0644\u0644\u0645\u0642\u0627\u0648\u0644\u0627\u062a \u0648\u0627\u0644\u062a\u062c\u0627\u0631\u0629',
+          heroTitle1: '\u062d\u0644\u0648\u0644 \u0627\u0644\u0647\u0646\u062f\u0633\u0629 \u0648\u0627\u0644\u0645\u0634\u062a\u0631\u064a\u0627\u062a \u0648\u0627\u0644\u0625\u0646\u0634\u0627\u0621\u0627\u062a',
+          heroTitle2: '\u0627\u0644\u0643\u0627\u0645\u0644\u0629',
+          heroDescription: '\u062a\u0642\u062f\u064a\u0645 \u062d\u0644\u0648\u0644 \u0634\u0627\u0645\u0644\u0629 \u0641\u064a \u0628\u0646\u0627\u0621 \u0627\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632\u060c \u0627\u0644\u0647\u0646\u062f\u0633\u0629 \u0627\u0644\u0645\u062f\u0646\u064a\u0629\u060c \u062a\u0637\u0648\u064a\u0631 \u0645\u0632\u0627\u0631\u0639 \u0627\u0644\u062e\u0632\u0627\u0646\u0627\u062a\u060c \u0648\u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u0629 \u0627\u0644\u0645\u062a\u062e\u0635\u0635\u0629 \u0641\u064a \u062c\u0645\u064a\u0639 \u0623\u0646\u062d\u0627\u0621 \u0642\u0637\u0631 \u0648\u0645\u0646\u0637\u0642\u0629 \u062f\u0648\u0644 \u0645\u062c\u0644\u0633 \u0627\u0644\u062a\u0639\u0627\u0648\u0646 \u0627\u0644\u062e\u0644\u064a\u062c\u064a.',
+          heroButton: '\u0627\u0633\u062a\u0643\u0634\u0641 \u062e\u062f\u0645\u0627\u062a\u0646\u0627',
+          // Services Section
+          servicesLabel: '\u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0634\u0627\u0645\u0644\u0629',
+          servicesTitle1: '\u0627\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632',
+          servicesTitle2: '\u0627\u0644\u062a\u0645\u064a\u0632 \u0627\u0644\u0647\u0646\u062f\u0633\u064a',
+          servicesDescription: '\u0645\u0646 \u0627\u0644\u0628\u0646\u0627\u0621 \u0627\u0644\u0645\u062f\u0646\u064a \u0625\u0644\u0649 \u0623\u0639\u0645\u0627\u0644 \u0645\u0634\u0627\u0631\u064a\u0639 \u0627\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632 \u0627\u0644\u0645\u062a\u062e\u0635\u0635\u0629\u060c \u0646\u0642\u062f\u0645 \u062d\u0644\u0648\u0644 \u0645\u062a\u0643\u0627\u0645\u0644\u0629 \u0634\u0627\u0645\u0644\u0629 \u0628\u0645\u0639\u0627\u064a\u064a\u0631 \u062c\u0648\u062f\u0629 \u0648\u0633\u0644\u0627\u0645\u0629 \u063a\u064a\u0631 \u0645\u0633\u0627\u0648\u0645\u0629',
+          // Common
+          viewDetails: '\u0639\u0631\u0636 \u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644',
+          hideDetails: '\u0625\u062e\u0641\u0627\u0621 \u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644',
+          // Service Cards
+          service1Title: '\u0627\u0644\u0628\u0646\u0627\u0621 \u0627\u0644\u0645\u062f\u0646\u064a',
+          service1Description: '\u062e\u062f\u0645\u0627\u062a \u0628\u0646\u0627\u0621 \u0645\u062f\u0646\u064a \u0634\u0627\u0645\u0644\u0629 \u0644\u0644\u0645\u0634\u0627\u0631\u064a\u0639 \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u0629 \u0648\u0627\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632 \u0648\u0627\u0644\u0637\u0627\u0642\u0629 \u0648\u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u062a\u062d\u062a\u064a\u0629 \u0645\u0646 \u0625\u0639\u062f\u0627\u062f \u0627\u0644\u0645\u0648\u0642\u0639 \u0625\u0644\u0649 \u0627\u0644\u062a\u0634\u0637\u064a\u0628 \u0627\u0644\u0646\u0647\u0627\u0626\u064a.',
+          service2Title: '\u0623\u0639\u0645\u0627\u0644 \u0645\u0634\u0627\u0631\u064a\u0639 \u0627\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632',
+          service2Description: '\u062a\u0646\u0641\u064a\u0630 \u0645\u0634\u0627\u0631\u064a\u0639 \u0627\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632 \u0645\u0646 \u0627\u0644\u0628\u062f\u0627\u064a\u0629 \u0625\u0644\u0649 \u0627\u0644\u0646\u0647\u0627\u064a\u0629 \u0628\u0645\u0627 \u0641\u064a \u0630\u0644\u0643 \u0627\u0644\u0645\u0646\u0634\u0622\u062a \u0627\u0644\u0628\u0631\u064a\u0629 \u0648\u0627\u0644\u0645\u0635\u0627\u0641\u064a \u0648\u0627\u0644\u0645\u062d\u0637\u0627\u062a \u0648\u0645\u0635\u0627\u0646\u0639 \u0645\u0639\u0627\u0644\u062c\u0629 \u0627\u0644\u063a\u0627\u0632.',
+          service3Title: '\u0623\u0639\u0645\u0627\u0644 \u062a\u0646\u0633\u064a\u0642 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 \u0627\u0644\u0635\u0644\u0628\u0629 \u0648\u0627\u0644\u0646\u0627\u0639\u0645\u0629',
+          service3Description: '\u062d\u0644\u0648\u0644 \u062a\u0646\u0633\u064a\u0642 \u0645\u062a\u0643\u0627\u0645\u0644\u0629 \u0644\u0644\u0645\u0634\u0627\u0631\u064a\u0639 \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u0629 \u0648\u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u062a\u062d\u062a\u064a\u0629 \u062a\u0644\u0628\u064a \u0627\u0644\u0645\u062a\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0648\u0638\u064a\u0641\u064a\u0629 \u0648\u0627\u0644\u0628\u064a\u0626\u064a\u0629.',
+          service4Title: '\u0628\u0646\u0627\u0621 \u0645\u0632\u0627\u0631\u0639 \u0627\u0644\u062e\u0632\u0627\u0646\u0627\u062a',
+          service4Description: '\u0628\u0646\u0627\u0621 \u0645\u0632\u0627\u0631\u0639 \u062e\u0632\u0627\u0646\u0627\u062a \u0645\u062a\u062e\u0635\u0635 \u0644\u062a\u062e\u0632\u064a\u0646 \u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a \u0627\u0644\u0628\u062a\u0631\u0648\u0644\u064a\u0629 \u0648\u0627\u0644\u0643\u064a\u0645\u064a\u0627\u0626\u064a\u0629 \u0645\u0639 \u0623\u0639\u0645\u0627\u0644 \u0645\u062f\u0646\u064a\u0629 \u0648\u0645\u064a\u0643\u0627\u0646\u064a\u0643\u064a\u0629 \u0648\u0625\u0646\u0634\u0627\u0626\u064a\u0629 \u0643\u0627\u0645\u0644\u0629.',
+          service5Title: '\u0625\u0646\u0634\u0627\u0621 \u0645\u0635\u0627\u0646\u0639 \u0627\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632',
+          service5Description: '\u062e\u062f\u0645\u0627\u062a \u0625\u0646\u0634\u0627\u0621 \u0645\u0635\u0627\u0646\u0639 \u0643\u0627\u0645\u0644\u0629 \u062a\u0634\u0645\u0644 \u0627\u0644\u0645\u0639\u062f\u0627\u062a \u0627\u0644\u0645\u064a\u0643\u0627\u0646\u064a\u0643\u064a\u0629 \u0648\u0627\u0644\u0641\u0648\u0644\u0627\u0630 \u0627\u0644\u0625\u0646\u0634\u0627\u0626\u064a \u0648\u062a\u0631\u0643\u064a\u0628 \u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0623\u0646\u0627\u0628\u064a\u0628.',
+          service6Title: '\u0627\u062e\u062a\u0628\u0627\u0631 \u0627\u0644\u0636\u063a\u0637 \u0627\u0644\u0647\u064a\u062f\u0631\u0648\u0644\u064a\u0643\u064a \u0644\u0644\u0623\u0646\u0627\u0628\u064a\u0628',
+          service6Description: '\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631 \u0627\u0644\u0647\u064a\u062f\u0631\u0648\u0633\u062a\u0627\u062a\u064a\u0643\u064a \u0644\u0644\u0623\u0646\u0627\u0628\u064a\u0628 \u0648\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0623\u0646\u0627\u0628\u064a\u0628 \u0644\u0644\u062a\u062d\u0642\u0642 \u0645\u0646 \u0627\u0644\u0642\u0648\u0629 \u0648\u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0648\u0645\u0646\u0639 \u0627\u0644\u062a\u0633\u0631\u0628.',
+          service7Title: '\u0633\u0644\u0627\u0645\u0629 \u0627\u0644\u0623\u0635\u0648\u0644 \u0648\u0627\u0644\u0645\u0648\u062b\u0648\u0642\u064a\u0629',
+          service7Description: '\u062e\u062f\u0645\u0627\u062a \u0633\u0644\u0627\u0645\u0629 \u0648\u0645\u0648\u062b\u0648\u0642\u064a\u0629 \u0627\u0644\u0623\u0635\u0648\u0644 \u0644\u0644\u062d\u0641\u0627\u0638 \u0639\u0644\u0649 \u0639\u0645\u0644\u064a\u0627\u062a \u0622\u0645\u0646\u0629 \u0648\u0641\u0639\u0627\u0644\u0629 \u0648\u0645\u062a\u0648\u0627\u0641\u0642\u0629 \u0637\u0648\u0627\u0644 \u062f\u0648\u0631\u0629 \u062d\u064a\u0627\u0629 \u0627\u0644\u0623\u0635\u0644.',
+          service8Title: '\u062a\u063a\u064a\u064a\u0631 \u0648\u062a\u0639\u062f\u064a\u0644 \u0627\u0644\u0645\u0635\u0627\u0646\u0639',
+          service8Description: '\u0645\u0634\u0627\u0631\u064a\u0639 \u0627\u0644\u062a\u062d\u062f\u064a\u062b \u0648\u0627\u0644\u062a\u0639\u062f\u064a\u0644 \u062a\u0634\u0645\u0644 \u062a\u0631\u0642\u064a\u0629 \u0627\u0644\u0645\u0635\u0627\u0646\u0639 \u0648\u0625\u0639\u0627\u062f\u0629 \u062a\u0648\u062c\u064a\u0647 \u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0648\u0632\u064a\u0627\u062f\u0629 \u0627\u0644\u0633\u0639\u0629.',
+          service9Title: '\u062a\u0637\u0648\u064a\u0631 \u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u062a\u062d\u062a\u064a\u0629',
+          service9Description: '\u0645\u0634\u0627\u0631\u064a\u0639 \u062a\u0637\u0648\u064a\u0631 \u0628\u0646\u064a\u0629 \u062a\u062d\u062a\u064a\u0629 \u062a\u062f\u0639\u0645 \u0627\u0644\u0645\u0646\u0627\u0637\u0642 \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u0629 \u0648\u0627\u0644\u0645\u062d\u0637\u0627\u062a \u0648\u0627\u0644\u0645\u0631\u0627\u0641\u0642 \u0628\u0645\u062a\u0627\u0646\u0629 \u0637\u0648\u064a\u0644\u0629 \u0627\u0644\u0623\u062c\u0644.',
+          service10Title: '\u062a\u0635\u0645\u064a\u0645 \u0648\u062a\u0635\u0646\u064a\u0639 \u062e\u0632\u0627\u0646\u0627\u062a \u062a\u062e\u0632\u064a\u0646 \u0627\u0644\u0628\u062a\u0631\u0648\u0644',
+          service10Description: '\u062d\u0644\u0648\u0644 \u062e\u0632\u0627\u0646\u0627\u062a \u0634\u0627\u0645\u0644\u0629 \u062a\u063a\u0637\u064a \u0627\u0644\u0647\u0646\u062f\u0633\u0629 \u0648\u0627\u0644\u062a\u0635\u0646\u064a\u0639 \u0648\u0627\u0644\u062a\u0631\u0643\u064a\u0628 \u0648\u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631 \u0644\u062e\u0632\u0627\u0646\u0627\u062a \u062a\u062e\u0632\u064a\u0646 \u0627\u0644\u0628\u062a\u0631\u0648\u0644.',
+          service11Title: '\u0623\u0639\u0645\u0627\u0644 \u0645\u0634\u0627\u0631\u064a\u0639 MEP \u0648HVAC',
+          service11Description: '\u062e\u062f\u0645\u0627\u062a MEP \u0648HVAC \u0643\u0627\u0645\u0644\u0629 \u0644\u0644\u0645\u0646\u0634\u0622\u062a \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u0629 \u0648\u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629 \u0648\u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u062a\u062d\u062a\u064a\u0629 \u0644\u0636\u0645\u0627\u0646 \u0627\u0644\u0643\u0641\u0627\u0621\u0629 \u0627\u0644\u062a\u0634\u063a\u064a\u0644\u064a\u0629.',
+          service12Title: '\u0642\u0637\u0639 \u0627\u0644\u0645\u064a\u0627\u0647 \u0627\u0644\u0646\u0641\u0627\u062b\u0629 \u0644\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632',
+          service12Description: '\u062e\u062f\u0645\u0627\u062a \u0642\u0637\u0639 \u0646\u0641\u0627\u062b\u0629 \u0627\u0644\u0645\u064a\u0627\u0647 \u0639\u0627\u0644\u064a\u0629 \u0627\u0644\u0636\u063a\u0637 \u0644\u062a\u0637\u0628\u064a\u0642\u0627\u062a \u0627\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632 \u0644\u062a\u0645\u0643\u064a\u0646 \u0627\u0644\u0642\u0637\u0639 \u0627\u0644\u0628\u0627\u0631\u062f \u0627\u0644\u0622\u0645\u0646 \u062f\u0648\u0646 \u0645\u0646\u0627\u0637\u0642 \u0645\u062a\u0623\u062b\u0631\u0629 \u0628\u0627\u0644\u062d\u0631\u0627\u0631\u0629.',
+          // Key Capabilities
+          keyCapabilities: '\u0627\u0644\u0642\u062f\u0631\u0627\u062a \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629:',
+          // Service 1 Details
+          service1DetailPara: '\u0623\u0639\u0645\u0627\u0644 \u0645\u062f\u0646\u064a\u0629 \u0645\u0646\u0641\u0630\u0629 \u0644\u062f\u0639\u0645 \u0627\u0644\u0623\u062d\u0645\u0627\u0644 \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u0629 \u0627\u0644\u062b\u0642\u064a\u0644\u0629 \u0648\u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0627\u0644\u062a\u0634\u063a\u064a\u0644\u064a\u0629 \u0648\u0627\u0644\u0645\u062a\u0627\u0646\u0629 \u0637\u0648\u064a\u0644\u0629 \u0627\u0644\u0623\u062c\u0644 \u0641\u064a \u0627\u0644\u0638\u0631\u0648\u0641 \u0627\u0644\u0628\u064a\u0626\u064a\u0629 \u0627\u0644\u0642\u0627\u0633\u064a\u0629 \u0627\u0644\u0646\u0645\u0648\u0630\u062c\u064a\u0629 \u0644\u0645\u0646\u0634\u0622\u062a \u0627\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632.',
+          service1Point1: '\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u062a\u0631\u0627\u0628\u060c \u0648\u0627\u0644\u062d\u0641\u0631\u060c \u0648\u0627\u0644\u0631\u062f\u0645\u060c \u0648\u0627\u0644\u062f\u0645\u0643',
+          service1Point2: '\u0627\u0644\u0623\u0633\u0627\u0633\u0627\u062a \u0644\u0644\u0645\u0639\u062f\u0627\u062a \u0648\u0627\u0644\u062e\u0632\u0627\u0646\u0627\u062a \u0648\u0631\u0641\u0648\u0641 \u0627\u0644\u0623\u0646\u0627\u0628\u064a\u0628 \u0648\u0627\u0644\u0647\u064a\u0627\u0643\u0644',
+          service1Point3: '\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u062e\u0631\u0633\u0627\u0646\u0629 (\u062e\u0631\u0633\u0627\u0646\u0629 \u0645\u0633\u0644\u062d\u0629\u060c \u062e\u0631\u0633\u0627\u0646\u0629 \u0639\u0627\u062f\u064a\u0629\u060c \u062c\u0627\u0647\u0632\u0629 \u0627\u0644\u0635\u0646\u0639 \u062d\u0633\u0628 \u0627\u0644\u0627\u0642\u062a\u0636\u0627\u0621)',
+          service1Point4: '\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0635\u0631\u0641 \u0648\u062c\u062f\u0631\u0627\u0646 \u0627\u0644\u062d\u0645\u0627\u064a\u0629 \u0648\u0627\u0644\u0645\u0631\u0627\u0641\u0642 \u0627\u0644\u062a\u062d\u062a\u064a\u0629',
+          service1Point5: '\u0627\u0644\u0627\u0645\u062a\u062b\u0627\u0644 \u0644\u0645\u0648\u0627\u0635\u0641\u0627\u062a QCS \u0648ASTM \u0648\u0627\u0644\u0645\u0639\u0627\u064a\u064a\u0631 \u0627\u0644\u062f\u0648\u0644\u064a\u0629',
+          // Service 2 Details
+          service2DetailPara: '\u062a\u0633\u062a\u0641\u064a\u062f \u0643\u0631\u064a\u0633\u062a\u0627\u0644 \u0623\u0648\u064a\u0644 \u0641\u064a\u0644\u062f \u0645\u0646 \u062e\u0628\u0631\u0629 \u0627\u0644\u0647\u0646\u062f\u0633\u0629 \u0648\u0627\u0644\u0645\u0634\u062a\u0631\u064a\u0627\u062a \u0648\u0627\u0644\u0625\u0646\u0634\u0627\u0621\u0627\u062a \u0648\u0641\u0631\u0642 \u0645\u062a\u0639\u062f\u062f\u0629 \u0627\u0644\u062a\u062e\u0635\u0635\u0627\u062a \u0644\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0648\u0627\u062c\u0647\u0627\u062a \u0627\u0644\u0645\u0639\u0642\u062f\u0629 \u0628\u064a\u0646 \u0627\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0645\u062f\u0646\u064a\u0629 \u0648\u0627\u0644\u0645\u064a\u0643\u0627\u0646\u064a\u0643\u064a\u0629 \u0648\u0627\u0644\u0623\u0646\u0627\u0628\u064a\u0628 \u0648\u0627\u0644\u0643\u0647\u0631\u0628\u0627\u0621 \u0648\u0627\u0644\u0623\u062c\u0647\u0632\u0629 \u0648\u0623\u0646\u0638\u0645\u0629 \u0627\u0644\u0633\u0644\u0627\u0645\u0629.',
+          service2Point1: '\u062a\u0646\u0641\u064a\u0630 \u0645\u0646\u0634\u0622\u062a \u0627\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632 \u0627\u0644\u0628\u0631\u064a\u0629',
+          service2Point2: '\u062a\u0646\u0633\u064a\u0642 \u0623\u0646\u0634\u0637\u0629 \u0627\u0644\u0628\u0646\u0627\u0621 \u0645\u062a\u0639\u062f\u062f\u0629 \u0627\u0644\u062a\u062e\u0635\u0635\u0627\u062a',
+          service2Point3: '\u0627\u0644\u0627\u0645\u062a\u062b\u0627\u0644 \u0644\u0645\u062a\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0639\u0645\u064a\u0644 \u0648\u0627\u0644\u0645\u062a\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u062a\u0646\u0638\u064a\u0645\u064a\u0629',
+          service2Point4: '\u0627\u0644\u062a\u0631\u0643\u064a\u0632 \u0639\u0644\u0649 \u0627\u0644\u062a\u062d\u0643\u0645 \u0641\u064a \u0627\u0644\u062c\u062f\u0648\u0644 \u0627\u0644\u0632\u0645\u0646\u064a \u0648\u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0648\u0627\u0644\u062c\u0648\u062f\u0629',
+          // Service 3 Details
+          service3DetailPara: '\u062a\u0635\u0645\u064a\u0645 \u062a\u0646\u0633\u064a\u0642 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 \u0644\u062a\u0644\u0628\u064a\u0629 \u0627\u0644\u0645\u062a\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0648\u0638\u064a\u0641\u064a\u0629 \u0648\u0627\u0644\u0628\u064a\u0626\u064a\u0629 \u0648\u0627\u0644\u062c\u0645\u0627\u0644\u064a\u0629 \u0645\u0639 \u0627\u0644\u0627\u0645\u062a\u062b\u0627\u0644 \u0644\u0644\u0645\u0628\u0627\u062f\u0626 \u0627\u0644\u062a\u0648\u062c\u064a\u0647\u064a\u0629 \u0627\u0644\u0628\u064a\u0626\u064a\u0629 \u0627\u0644\u0645\u062d\u0644\u064a\u0629.',
+          service3Point1: '\u062a\u0646\u0633\u064a\u0642 \u0635\u0644\u0628: \u0627\u0644\u0623\u0631\u0635\u0641\u0629\u060c \u0648\u0627\u0644\u062d\u0648\u0627\u0641\u060c \u0648\u0627\u0644\u0645\u0645\u0631\u0627\u062a\u060c \u0648\u0627\u0644\u062c\u062f\u0631\u0627\u0646 \u0627\u0644\u0627\u0633\u062a\u0646\u0627\u062f\u064a\u0629',
+          service3Point2: '\u062a\u0646\u0633\u064a\u0642 \u0646\u0627\u0639\u0645: \u0625\u0639\u062f\u0627\u062f \u0627\u0644\u062a\u0631\u0628\u0629\u060c \u0648\u0627\u0644\u0632\u0631\u0639\u060c \u0648\u0627\u0644\u0639\u0634\u0628\u060c \u0648\u0627\u0644\u0631\u064a',
+          service3Point3: '\u062a\u0646\u0633\u064a\u0642 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 \u0644\u0644\u0645\u0646\u0634\u0622\u062a \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u0629 \u0648\u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629 \u0648\u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u062a\u062d\u062a\u064a\u0629',
+          service3Point4: '\u062d\u0644\u0648\u0644 \u062a\u0646\u0633\u064a\u0642 \u0645\u0633\u062a\u062f\u0627\u0645\u0629 \u0648\u0645\u0646\u062e\u0641\u0636\u0629 \u0627\u0644\u0635\u064a\u0627\u0646\u0629',
+          // Service 4 Details
+          service4DetailPara: '\u062a\u0646\u0641\u064a\u0630 \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639 \u0648\u0641\u0642\u064b\u0627 \u0644\u0644\u0645\u0648\u0627\u0635\u0641\u0627\u062a \u0627\u0644\u062f\u0648\u0644\u064a\u0629 \u0645\u062b\u0644 API 650 \u0648API 653 \u0648NFPA\u060c \u0645\u0645\u0627 \u064a\u0636\u0645\u0646 \u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0648\u0627\u0644\u062d\u0645\u0627\u064a\u0629 \u0627\u0644\u0628\u064a\u0626\u064a\u0629 \u0648\u0627\u0644\u0645\u0648\u062b\u0648\u0642\u064a\u0629 \u0627\u0644\u062a\u0634\u063a\u064a\u0644\u064a\u0629.',
+          service4Point1: '\u0628\u0646\u0627\u0621 \u0623\u0633\u0627\u0633\u0627\u062a \u0627\u0644\u062e\u0632\u0627\u0646\u0627\u062a \u0648\u062c\u062f\u0631\u0627\u0646 \u0627\u0644\u062d\u0645\u0627\u064a\u0629',
+          service4Point2: '\u062a\u0631\u0643\u064a\u0628 \u062e\u0632\u0627\u0646\u0627\u062a \u0627\u0644\u062a\u062e\u0632\u064a\u0646 \u0648\u0627\u0644\u0623\u0646\u0627\u0628\u064a\u0628 \u0627\u0644\u0645\u0631\u062a\u0628\u0637\u0629',
+          service4Point3: '\u0623\u0646\u0638\u0645\u0629 \u0645\u0643\u0627\u0641\u062d\u0629 \u0627\u0644\u062d\u0631\u0627\u0626\u0642 \u0648\u0627\u0644\u0635\u0631\u0641 \u0648\u0627\u0644\u0633\u0644\u0627\u0645\u0629',
+          service4Point4: '\u0627\u0644\u0627\u0645\u062a\u062b\u0627\u0644 \u0644\u0645\u0639\u0627\u064a\u064a\u0631 \u062a\u062e\u0632\u064a\u0646 \u0627\u0644\u0628\u062a\u0631\u0648\u0644',
+          // Service 5 Details
+          service5DetailPara: '\u0623\u0646\u0634\u0637\u0629 \u0627\u0644\u0625\u0646\u0634\u0627\u0621 \u0645\u062e\u0637\u0637\u0629 \u0628\u0639\u0646\u0627\u064a\u0629 \u0644\u062a\u0642\u0644\u064a\u0644 \u0641\u062a\u0631\u0627\u062a \u0627\u0644\u062a\u0648\u0642\u0641 \u0648\u0636\u0645\u0627\u0646 \u0627\u0644\u062a\u0646\u0641\u064a\u0630 \u0627\u0644\u0622\u0645\u0646 \u0645\u0639 \u0627\u0644\u062a\u0646\u0633\u064a\u0642 \u0645\u0639 \u0641\u0631\u0642 \u0627\u0644\u062a\u0634\u063a\u064a\u0644.',
+          service5Point1: '\u062a\u0631\u0643\u064a\u0628 \u0627\u0644\u0645\u0639\u062f\u0627\u062a \u0627\u0644\u062b\u0627\u0628\u062a\u0629 \u0648\u0627\u0644\u062f\u0648\u0627\u0631\u0629',
+          service5Point2: '\u0625\u0646\u0634\u0627\u0621 \u0627\u0644\u0641\u0648\u0644\u0627\u0630 \u0627\u0644\u0625\u0646\u0634\u0627\u0626\u064a \u0648\u0631\u0641\u0648\u0641 \u0627\u0644\u0623\u0646\u0627\u0628\u064a\u0628',
+          service5Point3: '\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0645\u062d\u0627\u0630\u0627\u0629 \u0648\u0627\u0644\u062a\u0633\u0648\u064a\u0629 \u0648\u0627\u0644\u062d\u0634\u0648',
+          service5Point4: '\u0627\u0644\u062a\u0646\u0633\u064a\u0642 \u0645\u0639 \u0641\u0631\u0642 \u0627\u0644\u062a\u0634\u063a\u064a\u0644',
+          // Service 6 Details
+          service6DetailPara: '\u0625\u062c\u0631\u0627\u0621 \u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631 \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0645\u0639\u062f\u0627\u062a \u0645\u0639\u0627\u064a\u0631\u0629 \u0648\u0625\u062c\u0631\u0627\u0621\u0627\u062a \u0645\u0639\u062a\u0645\u062f\u0629 \u0645\u0639 \u062a\u0648\u062b\u064a\u0642 \u0648\u0634\u0647\u0627\u062f\u0627\u062a \u0643\u0627\u0645\u0644\u0629.',
+          service6Point1: '\u0627\u062e\u062a\u0628\u0627\u0631 \u0627\u0644\u0623\u0646\u0627\u0628\u064a\u0628 \u0627\u0644\u0628\u0631\u064a\u0629 \u0648\u0634\u0628\u0643\u0627\u062a \u0627\u0644\u0623\u0646\u0627\u0628\u064a\u0628',
+          service6Point2: '\u0636\u063a\u0637 \u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631 \u0648\u0641\u0642\u064b\u0627 \u0644\u0645\u0648\u0627\u0635\u0641\u0627\u062a ASME \u0648\u0627\u0644\u0645\u0634\u0631\u0648\u0639',
+          service6Point3: '\u0627\u0644\u062a\u0648\u062b\u064a\u0642 \u0648\u0634\u0647\u0627\u062f\u0629 \u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631',
+          service6Point4: '\u0627\u0644\u062a\u062e\u0644\u0635 \u0627\u0644\u0622\u0645\u0646 \u0648\u0627\u0644\u0627\u0645\u062a\u062b\u0627\u0644 \u0627\u0644\u0628\u064a\u0626\u064a',
+          // Service 7 Details
+          service7DetailPara: '\u062a\u0631\u0643\u0632 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0639\u0644\u0649 \u062a\u062e\u0641\u064a\u0641 \u0627\u0644\u0645\u062e\u0627\u0637\u0631 \u0648\u0627\u0644\u062a\u0641\u062a\u064a\u0634 \u0648\u0627\u0644\u0635\u064a\u0627\u0646\u0629 \u0627\u0644\u0648\u0642\u0627\u0626\u064a\u0629 \u0645\u0639 \u0627\u0644\u0627\u0645\u062a\u062b\u0627\u0644 \u0644\u0644\u0645\u062a\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u062a\u0646\u0638\u064a\u0645\u064a\u0629 \u0648\u0645\u062a\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0633\u0644\u0627\u0645\u0629.',
+          service7Point1: '\u0641\u062d\u0635 \u0648\u062a\u0642\u064a\u064a\u0645 \u062d\u0627\u0644\u0629 \u0627\u0644\u0623\u0635\u0648\u0644',
+          service7Point2: '\u0631\u0635\u062f \u0627\u0644\u062a\u0622\u0643\u0644 \u0648\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0633\u0644\u0627\u0645\u0629',
+          service7Point3: '\u0627\u0633\u062a\u0631\u0627\u062a\u064a\u062c\u064a\u0627\u062a \u062a\u062d\u0633\u064a\u0646 \u0627\u0644\u0645\u0648\u062b\u0648\u0642\u064a\u0629',
+          service7Point4: '\u0627\u0644\u0627\u0645\u062a\u062b\u0627\u0644 \u0644\u0644\u0645\u062a\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u062a\u0646\u0638\u064a\u0645\u064a\u0629 \u0648\u0627\u0644\u0633\u0644\u0627\u0645\u0629',
+          // Service 8 Details
+          service8DetailPara: '\u0623\u0639\u0645\u0627\u0644 \u0645\u0646\u0641\u0630\u0629 \u0645\u0639 \u062a\u0642\u0644\u064a\u0644 \u0627\u0644\u0627\u0636\u0637\u0631\u0627\u0628 \u0627\u0644\u062a\u0634\u063a\u064a\u0644\u064a \u0645\u0639 \u0636\u0628\u0637 \u0635\u0627\u0631\u0645 \u0644\u0644\u0633\u0644\u0627\u0645\u0629 \u0648\u0627\u0644\u062a\u0646\u0633\u064a\u0642 \u0645\u0639 \u0639\u0645\u0644\u064a\u0627\u062a \u0627\u0644\u0645\u0635\u0646\u0639 \u0627\u0644\u062c\u0627\u0631\u064a\u0629.',
+          service8Point1: '\u0627\u0644\u0631\u0628\u0637\u060c \u0648\u0625\u0639\u0627\u062f\u0629 \u0627\u0644\u062a\u0648\u062c\u064a\u0647\u060c \u0648\u062a\u0631\u0642\u064a\u0629 \u0627\u0644\u0623\u0646\u0638\u0645\u0629',
+          service8Point2: '\u0627\u0633\u062a\u0628\u062f\u0627\u0644 \u0627\u0644\u0645\u0639\u062f\u0627\u062a \u0648\u0627\u0644\u062a\u062d\u062f\u064a\u062b',
+          service8Point3: '\u062a\u0646\u0641\u064a\u0630 \u0645\u0634\u0627\u0631\u064a\u0639 \u0628\u0631\u0627\u0648\u0646\u0641\u064a\u0644\u062f \u0645\u0639 \u0636\u0628\u0637 \u0635\u0627\u0631\u0645 \u0644\u0644\u0633\u0644\u0627\u0645\u0629',
+          service8Point4: '\u0627\u0644\u062a\u0646\u0633\u064a\u0642 \u0645\u0639 \u0639\u0645\u0644\u064a\u0627\u062a \u0627\u0644\u0645\u0635\u0646\u0639 \u0627\u0644\u062c\u0627\u0631\u064a\u0629',
+          // Service 9 Details
+          service9DetailPara: '\u062a\u0648\u0641\u0631 \u0647\u0630\u0647 \u0627\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0639\u0645\u0648\u062f \u0627\u0644\u0641\u0642\u0631\u064a \u0627\u0644\u0644\u0627\u0632\u0645 \u0644\u0644\u0639\u0645\u0644\u064a\u0627\u062a \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u0629 \u0648\u0627\u0633\u0639\u0629 \u0627\u0644\u0646\u0637\u0627\u0642 \u0645\u0639 \u0627\u0644\u0627\u0645\u062a\u062b\u0627\u0644 \u0644\u0644\u0645\u0639\u0627\u064a\u064a\u0631 \u0627\u0644\u062f\u0648\u0644\u064a\u0629.',
+          service9Point1: '\u0627\u0644\u0637\u0631\u0642 \u0648\u0634\u0628\u0643\u0627\u062a \u0627\u0644\u0635\u0631\u0641 \u0648\u0645\u0645\u0631\u0627\u062a \u0627\u0644\u0645\u0631\u0627\u0641\u0642',
+          service9Point2: '\u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u062a\u062d\u062a\u064a\u0629 \u0648\u0628\u0646\u0648\u0643 \u0627\u0644\u0642\u0646\u0648\u0627\u062a',
+          service9Point3: '\u0627\u0644\u0628\u0646\u064a\u0629 \u0627\u0644\u062a\u062d\u062a\u064a\u0629 \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u0629 \u0644\u0645\u0646\u0634\u0622\u062a \u0627\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632',
+          service9Point4: '\u0645\u062a\u0627\u0646\u0629 \u0637\u0648\u064a\u0644\u0629 \u0627\u0644\u0623\u062c\u0644 \u0648\u0627\u0644\u0627\u0645\u062a\u062b\u0627\u0644 \u0644\u0644\u0645\u0639\u0627\u064a\u064a\u0631',
+          // Service 10 Details
+          service10DetailPara: '\u062a\u0646\u0641\u064a\u0630 \u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639 \u0628\u0636\u0648\u0627\u0628\u0637 \u0635\u0627\u0631\u0645\u0629 \u0644\u0644\u062c\u0648\u062f\u0629 \u0648\u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0645\u0639 \u0627\u0644\u0627\u0645\u062a\u062b\u0627\u0644 \u0644\u0645\u0639\u0627\u064a\u064a\u0631 API \u0644\u062d\u0644\u0648\u0644 \u062a\u062e\u0632\u064a\u0646 \u0645\u0648\u062b\u0648\u0642\u0629.',
+          service10Point1: '\u0627\u0644\u0647\u0646\u062f\u0633\u0629 \u0648\u0627\u0644\u062a\u0635\u0645\u064a\u0645 \u0648\u0641\u0642\u064b\u0627 \u0644\u0645\u0639\u0627\u064a\u064a\u0631 API',
+          service10Point2: '\u062a\u0635\u0646\u064a\u0639 \u0648\u0625\u0646\u0634\u0627\u0621 \u062e\u0632\u0627\u0646\u0627\u062a \u0627\u0644\u062a\u062e\u0632\u064a\u0646 \u0627\u0644\u0641\u0648\u0644\u0627\u0630\u064a\u0629',
+          service10Point3: '\u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631 \u0627\u0644\u0647\u064a\u062f\u0631\u0648\u0644\u064a\u0643\u064a \u0648\u062f\u0639\u0645 \u0627\u0644\u062a\u0634\u063a\u064a\u0644',
+          service10Point4: '\u0645\u0646\u0627\u0633\u0628\u0629 \u0644\u062a\u062e\u0632\u064a\u0646 \u0627\u0644\u0646\u0641\u0637 \u0627\u0644\u062e\u0627\u0645 \u0648\u0627\u0644\u0648\u0642\u0648\u062f \u0648\u0627\u0644\u0645\u0648\u0627\u062f \u0627\u0644\u0643\u064a\u0645\u064a\u0627\u0626\u064a\u0629',
+          // Service 11 Details
+          service11DetailPara: '\u0623\u0646\u0638\u0645\u0629 \u0645\u0635\u0645\u0645\u0629 \u0648\u0645\u0631\u0643\u0628\u0629 \u0644\u0636\u0645\u0627\u0646 \u0627\u0644\u0643\u0641\u0627\u0621\u0629 \u0627\u0644\u062a\u0634\u063a\u064a\u0644\u064a\u0629 \u0648\u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0648\u0627\u0644\u0627\u0645\u062a\u062b\u0627\u0644 \u0644\u0645\u0639\u0627\u064a\u064a\u0631 \u0627\u0644\u0637\u0627\u0642\u0629 \u0627\u0644\u062f\u0648\u0644\u064a\u0629.',
+          service11Point1: '\u062a\u0631\u0643\u064a\u0628\u0627\u062a \u0645\u064a\u0643\u0627\u0646\u064a\u0643\u064a\u0629 \u0648\u0643\u0647\u0631\u0628\u0627\u0626\u064a\u0629 \u0648\u0633\u0628\u0627\u0643\u0629',
+          service11Point2: '\u0623\u0646\u0638\u0645\u0629 HVAC \u0644\u0644\u0645\u0628\u0627\u0646\u064a \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u0629 \u0648\u0627\u0644\u062a\u062c\u0627\u0631\u064a\u0629',
+          service11Point3: '\u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631 \u0648\u0627\u0644\u0645\u0648\u0627\u0632\u0646\u0629 \u0648\u0627\u0644\u062a\u0634\u063a\u064a\u0644',
+          service11Point4: '\u0627\u0644\u0627\u0645\u062a\u062b\u0627\u0644 \u0644\u0645\u0639\u0627\u064a\u064a\u0631 MEP \u0627\u0644\u062f\u0648\u0644\u064a\u0629',
+          // Service 12 Details
+          service12DetailPara: '\u0645\u062b\u0627\u0644\u064a\u0629 \u0644\u0644\u0628\u064a\u0626\u0627\u062a \u0627\u0644\u062e\u0637\u0631\u0629 \u062d\u064a\u062b \u064a\u062a\u0645 \u062a\u0642\u064a\u064a\u062f \u0627\u0644\u0623\u0639\u0645\u0627\u0644 \u0627\u0644\u0633\u0627\u062e\u0646\u0629\u060c \u0645\u0645\u0627 \u064a\u0648\u0641\u0631 \u0642\u0637\u0639 \u062f\u0642\u064a\u0642 \u062f\u0648\u0646 \u062a\u0634\u0648\u0647 \u062d\u0631\u0627\u0631\u064a \u0648\u0645\u062e\u0627\u0637\u0631 \u0645\u0646\u062e\u0641\u0636\u0629.',
+          service12Point1: '\u0627\u0644\u0642\u0637\u0639 \u0627\u0644\u0628\u0627\u0631\u062f \u0644\u0644\u0623\u0646\u0627\u0628\u064a\u0628 \u0648\u0627\u0644\u062e\u0632\u0627\u0646\u0627\u062a \u0648\u0627\u0644\u0647\u064a\u0627\u0643\u0644',
+          service12Point2: '\u062a\u0646\u0641\u064a\u0630 \u0622\u0645\u0646 \u0641\u064a \u0627\u0644\u0645\u0635\u0627\u0646\u0639 \u0627\u0644\u0639\u0627\u0645\u0644\u0629 \u0648\u0627\u0644\u0645\u0646\u0627\u0637\u0642 \u0627\u0644\u062e\u0637\u0631\u0629',
+          service12Point3: '\u0642\u0637\u0639 \u062f\u0642\u064a\u0642 \u062f\u0648\u0646 \u062a\u0634\u0648\u0647 \u062d\u0631\u0627\u0631\u064a',
+          service12Point4: '\u0645\u062e\u0627\u0637\u0631 \u0645\u0646\u062e\u0641\u0636\u0629 \u0645\u0642\u0627\u0631\u0646\u0629 \u0628\u0627\u0644\u0642\u0637\u0639 \u0627\u0644\u062a\u0642\u0644\u064a\u062f\u064a',
+          // CTA Section
+          ctaTitle1: '\u062a\u0642\u062f\u064a\u0645 \u0627\u0644\u0627\u0645\u062a\u064a\u0627\u0632 \u0627\u0644\u0647\u0646\u062f\u0633\u064a \u0645\u0639',
+          ctaTitle2: '\u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0648\u0627\u0644\u062c\u0648\u062f\u0629 \u0648\u0627\u0644\u0627\u0628\u062a\u0643\u0627\u0631',
+          ctaDescription: '\u062a\u0639\u0627\u0648\u0646 \u0645\u0639 \u0643\u0631\u064a\u0633\u062a\u0627\u0644 \u0623\u0648\u064a\u0644 \u0641\u064a\u0644\u062f \u0644\u0644\u062d\u0635\u0648\u0644 \u0639\u0644\u0649 \u062d\u0644\u0648\u0644 \u0627\u0644\u0647\u0646\u062f\u0633\u0629 \u0648\u0627\u0644\u0645\u0634\u062a\u0631\u064a\u0627\u062a \u0648\u0627\u0644\u0625\u0646\u0634\u0627\u0621\u0627\u062a \u0627\u0644\u0634\u0627\u0645\u0644\u0629 \u0645\u062f\u0639\u0648\u0645\u0629 \u0628\u0639\u0642\u0648\u062f \u0645\u0646 \u0627\u0644\u062e\u0628\u0631\u0629 \u0648\u0627\u0644\u0627\u0644\u062a\u0632\u0627\u0645 \u0644\u0627 \u064a\u062a\u0637\u0627\u0628\u0642 \u0628\u0627\u0644\u0627\u0645\u062a\u064a\u0627\u0632 \u0641\u064a \u0642\u0637\u0627\u0639 \u0627\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632',
+          btnExploreProjects: '\u0627\u0633\u062a\u0643\u0634\u0641 \u0645\u0634\u0627\u0631\u064a\u0639\u0646\u0627',
+          // Statistics Section
+          stat1Label: '\u0633\u0646\u0648\u0627\u062a \u0645\u0646 \u0627\u0644\u0627\u0645\u062a\u064a\u0627\u0632',
+          stat2Label: '\u0645\u0634\u0627\u0631\u064a\u0639 \u0645\u0646\u062c\u0632\u0629',
+          stat3Label: '\u0627\u0644\u0627\u0645\u062a\u062b\u0627\u0644 \u0628\u0645\u0639\u0627\u064a\u064a\u0631 \u0627\u0644\u0633\u0644\u0627\u0645\u0629 100%',
+          stat4Label: '\u0627\u0644\u062c\u0648\u062f\u0629 \u0645\u0639\u062a\u0645\u062f\u0629',
+          // Footer
+          footerDescription: '\u0631\u064a\u0627\u062f\u0629 \u0635\u0646\u0627\u0639\u0629 \u0627\u0644\u0646\u0641\u0637 \u0648\u0627\u0644\u063a\u0627\u0632 \u0628\u062d\u0644\u0648\u0644 \u0647\u0646\u062f\u0633\u064a\u0629 \u0645\u0628\u062a\u0643\u0631\u0629 \u0648\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0647\u0646\u062f\u0633\u0629 \u0648\u0627\u0644\u0645\u0634\u062a\u0631\u064a\u0627\u062a \u0648\u0627\u0644\u0625\u0646\u0634\u0627\u0621\u0627\u062a \u0627\u0644\u0634\u0627\u0645\u0644\u0629 \u0645\u0639 \u0627\u0644\u0627\u0644\u062a\u0632\u0627\u0645 \u063a\u064a\u0631 \u0627\u0644\u0645\u0633\u0627\u0648\u0645 \u0628\u0627\u0644\u0633\u0644\u0627\u0645\u0629 \u0648\u0627\u0644\u062c\u0648\u062f\u0629 \u0639\u0628\u0631 \u0645\u0646\u0637\u0642\u0629 \u062f\u0648\u0644 \u0645\u062c\u0644\u0633 \u0627\u0644\u062a\u0639\u0627\u0648\u0646 \u0627\u0644\u062e\u0644\u064a\u062c\u064a.',
+          footerContactHeading: '\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u0627\u062a\u0635\u0627\u0644',
+          headOfficeLabel: '\u0627\u0644\u0645\u0642\u0631 \u0627\u0644\u0631\u0626\u064a\u0633\u064a',
+          headOfficeAddress: '\u0627\u0644\u0645\u0643\u062a\u0628 \u0631\u0642\u0645 3301\u064b3302\u061b \u0628\u0631\u062c \u0627\u0644\u062a\u0645\u064a\u0632 \u0645\u0628 80025 | \u0627\u0644\u062e\u0644\u064a\u062c \u0627\u0644\u063a\u0631\u0628\u064a\u060c \u0627\u0644\u062f\u0648\u062d\u0629\u060c \u0642\u0637\u0631',
+          fabShopLabel: '\u0648\u0631\u0634\u0629 \u0627\u0644\u062a\u0635\u0646\u064a\u0639',
+          fabShopAddress: '\u0645\u0628\u0646\u0649 \u0631\u0642\u0645 239\u061b \u0627\u0644\u0645\u0646\u0637\u0642\u0629 81\u061b \u0627\u0644\u0634\u0627\u0631\u0639 \u0631\u0642\u0645 7\u061b \u0627\u0644\u0645\u0646\u0637\u0642\u0629 \u0627\u0644\u0635\u0646\u0627\u0639\u064a\u0629 \u0627\u0644\u062c\u062f\u064a\u062f\u0629 \u0627\u0644\u062f\u0648\u062d\u0629\u061b \u0642\u0637\u0631',
+          phoneLabel: '\u0627\u0644\u0647\u0627\u062a\u0641',
+          phoneNumber: '+974-40120736',
+          emailLabel: '\u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a',
+          emailInfo: 'info@crystaloilfield.qa',
+          emailProposals: 'proposals@crystaloilfield.qa',
+          footerQuickLinksHeading: '\u0631\u0648\u0627\u0628\u0637 \u0633\u0631\u064a\u0639\u0629',
+          footerHome: '\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629',
+          footerAbout: '\u0639\u0646\u0646\u0627',
+          footerServices: '\u0627\u0644\u062e\u062f\u0645\u0627\u062a',
+          footerServicesOilfield: '\u0643\u0631\u064a\u0633\u062a\u0627\u0644 \u0623\u0648\u064a\u0644 \u0641\u064a\u0644\u062f \u0644\u0644\u0645\u0642\u0627\u0648\u0644\u0627\u062a',
+          footerServicesVision: '\u0643\u0631\u064a\u0633\u062a\u0627\u0644 \u0641\u064a\u0634\u0646 \u0644\u062a\u0635\u0646\u064a\u0639 \u0627\u0644\u0641\u0648\u0644\u0627\u0630',
+          footerPortfolio: '\u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639',
+          footerMedia: '\u0627\u0644\u0648\u0633\u0627\u0626\u0637',
+          footerCareer: '\u0627\u0644\u0648\u0638\u0627\u0626\u0641',
+          footerContact: '\u0627\u0644\u0627\u062a\u0635\u0627\u0644',
+          footerCopyright: '\u00a9 2025 \u0643\u0631\u064a\u0633\u062a\u0627\u0644 \u0623\u0648\u064a\u0644 \u0641\u064a\u0644\u062f. \u062c\u0645\u064a\u0639 \u0627\u0644\u062d\u0642\u0648\u0642 \u0645\u062d\u0641\u0648\u0638\u0629.'
+        }
+      };
+
+      // Get current language from localStorage or default to English
+      let currentLanguage = localStorage.getItem('crystalOilfieldLang') || 'en';
+
+      // Get all language buttons
+      const langEnDesktop = document.getElementById('lang-en-desktop');
+      const langArDesktop = document.getElementById('lang-ar-desktop');
+      const langEnMobile = document.getElementById('lang-en-mobile');
+      const langArMobile = document.getElementById('lang-ar-mobile');
+
+      // Get all translatable elements
+      const translatableElements = document.querySelectorAll('[data-lang-key]');
+
+      // Function to set language
+      function setLanguage(lang) {
+        currentLanguage = lang;
+        localStorage.setItem('crystalOilfieldLang', lang);
+        
+        // Update page title
+        if (translations[lang] && translations[lang].pageTitle) {
+          document.title = translations[lang].pageTitle;
+        }
+        
+        // Force LTR direction for both languages
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.body.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute('lang', lang);
+        
+        // Update all translatable elements
+        translatableElements.forEach(el => {
+          const key = el.getAttribute('data-lang-key');
+          if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
+          }
+        });
+
+        // Update SEO meta
+        if (typeof updateSEO === 'function') updateSEO(lang);
+        if (typeof injectJSONLD === 'function') injectJSONLD(lang, 'WebPage', translations[lang]?.pageTitle);
+        
+        // Update button styles
+        if (langEnDesktop && langArDesktop && langEnMobile && langArMobile) {
+          if (lang === 'en') {
+            langEnDesktop.classList.add('bg-oil-blue', 'text-white');
+            langEnDesktop.classList.remove('text-oil-gray', 'hover:bg-white');
+            langArDesktop.classList.remove('bg-oil-blue', 'text-white');
+            langArDesktop.classList.add('text-oil-gray', 'hover:bg-white');
+            
+            langEnMobile.classList.add('bg-oil-blue', 'text-white');
+            langEnMobile.classList.remove('bg-gray-100', 'text-oil-gray');
+            langArMobile.classList.remove('bg-oil-blue', 'text-white');
+            langArMobile.classList.add('bg-gray-100', 'text-oil-gray');
+          } else {
+            langArDesktop.classList.add('bg-oil-blue', 'text-white');
+            langArDesktop.classList.remove('text-oil-gray', 'hover:bg-white');
+            langEnDesktop.classList.remove('bg-oil-blue', 'text-white');
+            langEnDesktop.classList.add('text-oil-gray', 'hover:bg-white');
+            
+            langArMobile.classList.add('bg-oil-blue', 'text-white');
+            langArMobile.classList.remove('bg-gray-100', 'text-oil-gray');
+            langEnMobile.classList.remove('bg-oil-blue', 'text-white');
+            langEnMobile.classList.add('bg-gray-100', 'text-oil-gray');
+          }
+        }
+      }
+
+      // Set initial language
+      setLanguage(currentLanguage);
+
+      // Add event listeners for language buttons
+      if (langEnDesktop) langEnDesktop.addEventListener('click', () => setLanguage('en'));
+      if (langArDesktop) langArDesktop.addEventListener('click', () => setLanguage('ar'));
+      if (langEnMobile) langEnMobile.addEventListener('click', () => setLanguage('en'));
+      if (langArMobile) langArMobile.addEventListener('click', () => setLanguage('ar'));
     </script>
   </body>
 

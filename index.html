@@ -134,6 +134,7 @@
       }
     </style>
   <link rel="stylesheet" href="animations.css">
+  <script src="seo.js"></script>
   </head>
 
   <body class="bg-gray-50">
@@ -155,44 +156,44 @@
           </div><!-- Desktop Navigation -->
             <nav class="hidden lg:flex items-center space-x-5 xl:space-x-7 ml-8"><a
               href="index.html"
-              class="text-oil-dark font-semibold hover:text-oil-blue transition-colors border-b-2 border-oil-blue pb-1">Home</a><a
+              class="text-oil-dark font-semibold hover:text-oil-blue transition-colors border-b-2 border-oil-blue pb-1" data-lang-key="navHome">Home</a><a
               href="About.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">About</a>
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navAbout">About</a>
             <!-- Services Dropdown -->
             <div class="relative group"><button
-                class="flex items-center space-x-1 text-oil-gray font-medium hover:text-oil-blue transition-colors"><span>Services</span><i
+                class="flex items-center space-x-1 text-oil-gray font-medium hover:text-oil-blue transition-colors"><span data-lang-key="navServices">Services</span><i
                   class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition-transform duration-200"></i></button>
               <div
                 class="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div class="p-2"><a href="Crystal%20Oilfield%20Services.html"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-oil-well text-oil-blue"></i><span
-                      class="font-medium">Crystal Oilfield Contracting and
+                      class="font-medium" data-lang-key="navServicesOilfield">Crystal Oilfield Contracting and
                       Trading</span></a><a href="Crystal%20Vision%20Services.html"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-industry text-oil-blue"></i><span
-                      class="font-medium">Crystal Vision Steel
+                      class="font-medium" data-lang-key="navServicesVision">Crystal Vision Steel
                       Fabrication</span></a></div>
               </div>
             </div><a href="Portfolio.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Portfolio</a><a
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navPortfolio">Portfolio</a><a
               href="Media.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Media</a><a
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navMedia">Media</a><a
               href="Career.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Career</a><a
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navCareer">Career</a><a
               href="Contact.html"
-              class="text-oil-gray font-medium hover:text-oil-blue transition-colors">Contact</a>
+              class="text-oil-gray font-medium hover:text-oil-blue transition-colors" data-lang-key="navContact">Contact</a>
           </nav><!-- Right Side Actions - Desktop -->
           <div class="hidden lg:flex items-center space-x-4 xl:space-x-6">
             <!-- Language Switcher -->
             <div class="flex items-center space-x-2 bg-gray-100 rounded-lg p-2"
-              id="ie1tc"><button
-                class="px-3 py-1 bg-oil-blue text-white rounded text-sm font-medium">English</button><button
+              id="ie1tc"><button id="lang-en-desktop"
+                class="px-3 py-1 bg-oil-blue text-white rounded text-sm font-medium">English</button><button id="lang-ar-desktop"
                 class="px-3 py-1 text-oil-gray rounded text-sm font-medium hover:bg-white">العربية</button>
             </div><!-- Other Companies Dropdown -->
             <div class="relative group"><button
                 class="flex items-center space-x-2 text-oil-gray font-medium hover:text-oil-blue transition-colors px-4 py-2 rounded-lg hover:bg-gray-50"><i
-                  class="fa-solid fa-building text-sm"></i><span>Our Other
+                  class="fa-solid fa-building text-sm"></i><span data-lang-key="navOtherCompanies">Our Other
                   Companies</span><i
                   class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition-transform duration-200"></i></button>
               <div
@@ -200,33 +201,33 @@
                 <div class="p-2"><a href="https://albahralarabi.com/" target="_blank"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-building text-oil-blue"></i><span
-                      class="font-medium">Al Bahr Al Arabi Group</span></a><a
+                      class="font-medium" data-lang-key="company1Name">Al Bahr Al Arabi Group</span></a><a
                     href="https://albahralarabi.com/al-bahr-al-arabi-marine-engineering/" target="_blank"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-ship text-oil-blue"></i><span
-                      class="font-medium">Al Bahr Arabi Marine
+                      class="font-medium" data-lang-key="company2Name">Al Bahr Arabi Marine
                       Engineering</span></a><a href="https://albahralarabi.com/gulf-tech-energy-contracting-llc/" target="_blank"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-bolt text-oil-blue"></i><span
-                      class="font-medium">Gulf Tech Energy Contracting
+                      class="font-medium" data-lang-key="company3Name">Gulf Tech Energy Contracting
                       LLC</span></a><a href="#"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-oil-well text-oil-blue"></i><span
-                      class="font-medium">Crystal Petroleum</span></a><a
+                      class="font-medium" data-lang-key="company4Name">Crystal Petroleum</span></a><a
                     href="#"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-industry text-oil-blue"></i><span
-                      class="font-medium">Crystal Petrokimya Turkey</span></a><a
+                      class="font-medium" data-lang-key="company5Name">Crystal Petrokimya Turkey</span></a><a
                     href="#"
                     class="flex items-center space-x-3 px-4 py-3 text-oil-gray hover:text-oil-blue hover:bg-gray-50 rounded-lg transition-colors"><i
                       class="fa-solid fa-heart text-oil-blue"></i><span
-                      class="font-medium">Crystal Care KSA</span></a></div>
+                      class="font-medium" data-lang-key="company6Name">Crystal Care KSA</span></a></div>
               </div>
             </div><button type="button"
               onclick="location.href='Contact.html#main-contact-form'"
               class="bg-oil-accent text-white px-4 xl:px-6 py-2 xl:py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors flex items-center text-sm xl:text-base"><i
                 class="fa-solid fa-file-invoice mr-2"></i>
-              Request a Quote
+              <span data-lang-key="btnRequestQuote">Request a Quote</span>
             </button>
           </div><!-- Mobile Menu Button --><button id="mobile-menu-btn"
             class="lg:hidden text-oil-gray p-2"><i
@@ -237,69 +238,69 @@
         class="fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 overflow-y-auto">
         <div class="p-6">
           <div class="flex justify-between items-center mb-8">
-            <h3 class="text-xl font-bold text-oil-dark">Menu</h3><button
+            <h3 class="text-xl font-bold text-oil-dark" data-lang-key="mobileMenu">Menu</h3><button
               id="mobile-menu-close" class="text-oil-gray"><i
                 class="fa-solid fa-times text-2xl"></i></button>
           </div><!-- Mobile Navigation Links -->
             <nav class="space-y-4"><a href="index.html"
-              class="block text-oil-dark font-semibold hover:text-oil-blue transition-colors py-2 border-l-4 border-oil-blue pl-4">Home</a><a
+              class="block text-oil-dark font-semibold hover:text-oil-blue transition-colors py-2 border-l-4 border-oil-blue pl-4" data-lang-key="navHome">Home</a><a
               href="About.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">About</a>
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navAbout">About</a>
             <!-- Mobile Services Dropdown -->
             <div><button id="mobile-services-toggle"
-                class="flex items-center justify-between w-full text-oil-gray font-medium hover:text-oil-blue transition-colors py-2"><span>Services</span><i
+                class="flex items-center justify-between w-full text-oil-gray font-medium hover:text-oil-blue transition-colors py-2"><span data-lang-key="navServices">Services</span><i
                   class="fa-solid fa-chevron-down text-xs"></i></button>
               <div id="mobile-services-menu" class="hidden ml-4 mt-2 space-y-2">
                 <a href="Crystal%20Oilfield%20Services.html"
                   class="block text-sm text-oil-gray hover:text-oil-blue py-2"><i
-                    class="fa-solid fa-oil-well text-oil-blue mr-2"></i>
-                  Crystal Oilfield Contracting
+                    class="fa-solid fa-oil-well text-oil-blue mr-2"></i><span data-lang-key="navServicesOilfield">
+                  Crystal Oilfield Contracting</span>
                 </a><a href="Crystal%20Vision%20Services.html"
                   class="block text-sm text-oil-gray hover:text-oil-blue py-2"><i
-                    class="fa-solid fa-industry text-oil-blue mr-2"></i>
-                  Crystal Vision Steel Fabrication
+                    class="fa-solid fa-industry text-oil-blue mr-2"></i><span data-lang-key="navServicesVision">
+                  Crystal Vision Steel Fabrication</span>
                 </a></div>
             </div><a href="Portfolio.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Portfolio</a><a
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navPortfolio">Portfolio</a><a
               href="Media.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Media</a><a
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navMedia">Media</a><a
               href="Career.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Career</a><a
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navCareer">Career</a><a
               href="Contact.html"
-              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2">Contact</a>
+              class="block text-oil-gray font-medium hover:text-oil-blue transition-colors py-2" data-lang-key="navContact">Contact</a>
             <!-- Mobile Language Switcher -->
             <div class="pt-4 border-t border-gray-200">
-              <p class="text-sm text-oil-gray mb-2">Language</p>
-              <div class="flex space-x-2"><button
-                  class="flex-1 px-3 py-2 bg-oil-blue text-white rounded text-sm font-medium">English</button><button
+              <p class="text-sm text-oil-gray mb-2" data-lang-key="languageLabel">Language</p>
+              <div class="flex space-x-2"><button id="lang-en-mobile"
+                  class="flex-1 px-3 py-2 bg-oil-blue text-white rounded text-sm font-medium">English</button><button id="lang-ar-mobile"
                   class="flex-1 px-3 py-2 bg-gray-100 text-oil-gray rounded text-sm font-medium">العربية</button>
               </div>
             </div><!-- Mobile Other Companies -->
             <div class="pt-4 border-t border-gray-200"><button
                 id="mobile-companies-toggle"
                 class="flex items-center justify-between w-full text-oil-gray font-medium hover:text-oil-blue transition-colors py-2"><span><i
-                    class="fa-solid fa-building mr-2"></i>Our Other
-                  Companies</span><i
+                    class="fa-solid fa-building mr-2"></i><span data-lang-key="navOtherCompanies">Our Other
+                  Companies</span></span><i
                   class="fa-solid fa-chevron-down text-xs"></i></button>
               <div id="mobile-companies-menu"
                 class="hidden ml-4 mt-2 space-y-2"><a href="https://albahralarabi.com/"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Al
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company1Name">Al
                   Bahr Al Arabi Group</a><a href="https://albahralarabi.com/al-bahr-al-arabi-marine-engineering/"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Al
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company2Name">Al
                   Bahr Arabi Marine Engineering</a><a href="https://albahralarabi.com/gulf-tech-energy-contracting-llc/"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Gulf
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company3Name">Gulf
                   Tech Energy Contracting LLC</a><a href="#"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company4Name">Crystal
                   Petroleum</a><a href="#"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company5Name">Crystal
                   Petrokimya Turkey</a><a href="#"
-                  class="block text-sm text-oil-gray hover:text-oil-blue py-2">Crystal
+                  class="block text-sm text-oil-gray hover:text-oil-blue py-2" data-lang-key="company6Name">Crystal
                   Care KSA</a></div>
             </div><!-- Mobile Quote Button --><button type="button"
               onclick="location.href='Contact.html#main-contact-form'"
               class="w-full bg-oil-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors mt-6"><i
                 class="fa-solid fa-file-invoice mr-2"></i>
-              Request a Quote
+              <span data-lang-key="btnRequestQuote">Request a Quote</span>
             </button>
           </nav>
         </div>
@@ -327,18 +328,16 @@
           <div class="mb-4 sm:mb-6"><span
               class="inline-block bg-oil-accent/20 text-oil-accent px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold backdrop-blur-sm"><i
                 class="fa-solid fa-award mr-1 sm:mr-2"></i>
-              ISO Certified Excellence
+              <span data-lang-key="heroBadge">ISO Certified Excellence</span>
             </span></div>
           <h1
             class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-4 sm:mb-6 leading-tight">
-            Engineering
-            <span class="block text-oil-accent">Excellence</span><span
-              class="block text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light text-gray-300">in
-              Oil
-              &amp; Gas</span>
+            <span data-lang-key="heroTitle1">Engineering</span>
+            <span class="block text-oil-accent" data-lang-key="heroTitle2">Excellence</span>
+            <span class="block text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-light text-gray-300" data-lang-key="heroTitle3">in Oil &amp; Gas</span>
           </h1>
           <p
-            class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-2xl leading-relaxed">
+            class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-2xl leading-relaxed" data-lang-key="heroDescription">
             Delivering comprehensive EPC, Fabrication, and Maintenance Solutions
             across Qatar &amp; GCC region with over two decades of proven
             industrial expertise.
@@ -348,28 +347,28 @@
               onclick="location.href='Crystal%20Oilfield%20Services.html'"
               class="bg-oil-blue text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base lg:text-lg hover:bg-yellow-700 transition-all duration-300 flex items-center justify-center group"><i
                 class="fa-solid fa-cogs mr-2 sm:mr-3 group-hover:rotate-180 transition-transform duration-500"></i>
-              Explore Services
+              <span data-lang-key="btnExploreServices">Explore Services</span>
             </button></div>
           <div class="grid grid-cols-3 gap-4 sm:gap-8">
             <div class="text-center">
               <div
                 class="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-1 sm:mb-2">
                 20+</div>
-              <div class="text-xs sm:text-sm text-gray-300">Years Experience
+              <div class="text-xs sm:text-sm text-gray-300" data-lang-key="stat1Label">Years Experience
               </div>
             </div>
             <div class="text-center">
               <div
                 class="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-1 sm:mb-2">
                 500+</div>
-              <div class="text-xs sm:text-sm text-gray-300">Projects Completed
+              <div class="text-xs sm:text-sm text-gray-300" data-lang-key="stat2Label">Projects Completed
               </div>
             </div>
             <div class="text-center">
               <div
                 class="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-1 sm:mb-2">
                 50+</div>
-              <div class="text-xs sm:text-sm text-gray-300">Expert Engineers
+              <div class="text-xs sm:text-sm text-gray-300" data-lang-key="stat3Label">Expert Engineers
               </div>
             </div>
           </div>
@@ -396,24 +395,24 @@
         <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           <div>
             <div class="mb-6 sm:mb-8"><span
-                class="text-oil-blue font-semibold text-sm sm:text-base lg:text-lg tracking-wide">ABOUT
+                class="text-oil-blue font-semibold text-sm sm:text-base lg:text-lg tracking-wide" data-lang-key="aboutBadge">ABOUT
                 CRYSTAL OILFIELD</span>
               <h2
                 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-oil-dark mt-3 sm:mt-4 mb-4 sm:mb-6">
-                Pioneering Industrial
-                <span class="text-oil-blue">Solutions</span>
+                <span data-lang-key="aboutTitle1">Pioneering Industrial</span>
+                <span class="text-oil-blue" data-lang-key="aboutTitle2">Solutions</span>
               </h2>
             </div>
             <div
               class="prose prose-sm sm:prose-base lg:prose-lg text-oil-gray mb-6 sm:mb-8">
-              <p class="mb-4 sm:mb-6 text-sm sm:text-base">
+              <p class="mb-4 sm:mb-6 text-sm sm:text-base" data-lang-key="aboutPara1">
                 Crystal Oilfield stands as a beacon of engineering excellence in
                 the Middle East's oil and gas sector. With over two decades of
                 unwavering commitment to quality and innovation, we have
                 established ourselves as the premier provider of comprehensive
                 EPC solutions.
               </p>
-              <p class="mb-4 sm:mb-6 text-sm sm:text-base">Our subsidiary CVSF
+              <p class="mb-4 sm:mb-6 text-sm sm:text-base" data-lang-key="aboutPara2">Our subsidiary CVSF
                 is equipped with state of
                 Qatar and serve as the
                 cornerstone for delivering world-class industrial solutions
@@ -429,9 +428,9 @@
                   <i
                     class="fa-solid fa-shield-halved text-white text-lg sm:text-xl"></i>
                 </div>
-                <h3 class="font-bold text-oil-dark mb-2 text-sm sm:text-base">
+                <h3 class="font-bold text-oil-dark mb-2 text-sm sm:text-base" data-lang-key="aboutFeature1Title">
                   Safety First</h3>
-                <p class="text-xs sm:text-sm text-oil-gray">Zero-incident safety
+                <p class="text-xs sm:text-sm text-oil-gray" data-lang-key="aboutFeature1Text">Zero-incident safety
                   record
                   with comprehensive HSE protocols</p>
               </div>
@@ -442,9 +441,9 @@
                   <i
                     class="fa-solid fa-lightbulb text-white text-lg sm:text-xl"></i>
                 </div>
-                <h3 class="font-bold text-oil-dark mb-2 text-sm sm:text-base">
+                <h3 class="font-bold text-oil-dark mb-2 text-sm sm:text-base" data-lang-key="aboutFeature2Title">
                   Innovation</h3>
-                <p class="text-xs sm:text-sm text-oil-gray">Cutting-edge
+                <p class="text-xs sm:text-sm text-oil-gray" data-lang-key="aboutFeature2Text">Cutting-edge
                   solutions with
                   latest technology integration</p>
               </div>
@@ -452,7 +451,7 @@
             <div
               class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
               <a href="About.html"
-                class="bg-oil-blue text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-yellow-700 transition-colors text-sm sm:text-base w-full sm:w-auto text-center">
+                class="bg-oil-blue text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-yellow-700 transition-colors text-sm sm:text-base w-full sm:w-auto text-center" data-lang-key="btnReadMoreAbout">
                 Read More About Us
               </a></div>
           </div>
@@ -485,7 +484,7 @@
                 <div
                   class="text-sm sm:text-base md:text-lg font-bold text-white">
                   20+</div>
-                <div class="text-xs text-white">Years</div>
+                <div class="text-xs text-white" data-lang-key="yearsBadge">Years</div>
               </div>
             </div>
           </div>
@@ -497,15 +496,15 @@
       <div class="absolute inset-0 industrial-pattern"></div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-12 sm:mb-16"><span
-            class="text-oil-accent font-semibold text-sm sm:text-base lg:text-lg tracking-wide">OUR
+            class="text-oil-accent font-semibold text-sm sm:text-base lg:text-lg tracking-wide" data-lang-key="servicesBadge">OUR
             SERVICES</span>
           <h2
             class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-3 sm:mt-4 mb-4 sm:mb-6">
-            Comprehensive Industrial
-            <span class="text-oil-accent">Solutions</span>
+            <span data-lang-key="servicesTitle1">Comprehensive Industrial</span>
+            <span class="text-oil-accent" data-lang-key="servicesTitle2">Solutions</span>
           </h2>
           <p
-            class="text-sm sm:text-base lg:text-xl text-gray-300 max-w-3xl mx-auto px-4">
+            class="text-sm sm:text-base lg:text-xl text-gray-300 max-w-3xl mx-auto px-4" data-lang-key="servicesSubtitle">
             From concept to completion, we deliver end-to-end engineering
             solutions that meet the highest industry standards.
           </p>
@@ -517,29 +516,29 @@
               class="w-14 h-14 sm:w-16 sm:h-16 bg-oil-blue rounded-lg flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
               <i class="fa-solid fa-cogs text-white text-xl sm:text-2xl"></i>
             </div>
-            <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4" data-lang-key="service1Title">
               EPC &amp; Maintenance
             </h3>
-            <p class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6">Complete
+            <p class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6" data-lang-key="service1Desc">Complete
               Engineering, Procurement, and
               Construction services with comprehensive maintenance solutions.
             </p>
             <ul class="space-y-2 mb-4 sm:mb-6">
               <li class="flex items-center text-gray-300 text-sm"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Process Engineering
+                <span data-lang-key="service1Feature1">Process Engineering</span>
               </li>
               <li class="flex items-center text-gray-300 text-sm"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Equipment Procurement
+                <span data-lang-key="service1Feature2">Equipment Procurement</span>
               </li>
               <li class="flex items-center text-gray-300 text-sm"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Construction Management
+                <span data-lang-key="service1Feature3">Construction Management</span>
               </li>
               <li class="flex items-center text-gray-300 text-sm"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Preventive Maintenance
+                <span data-lang-key="service1Feature4">Preventive Maintenance</span>
               </li>
             </ul>
           </div>
@@ -550,24 +549,24 @@
               <i
                 class="fa-solid fa-industry text-white text-xl sm:text-2xl"></i>
             </div>
-            <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4" data-lang-key="service2Title">
               Fabrication &amp;
               Manufacturing</h3>
-            <p class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6">Advanced
+            <p class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6" data-lang-key="service2Desc">Advanced
               fabrication capabilities with
               precision manufacturing for complex industrial components.</p>
             <ul class="space-y-2 mb-4 sm:mb-6">
               <li class="flex items-center text-gray-300 text-sm"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Structural Fabrication
+                <span data-lang-key="service2Feature1">Structural Fabrication</span>
               </li>
               <li class="flex items-center text-gray-300 text-sm"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Pipeline Systems
+                <span data-lang-key="service2Feature2">Pipeline Systems</span>
               </li>
               <li class="flex items-center text-gray-300 text-sm"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Custom Components
+                <span data-lang-key="service2Feature3">Custom Components</span>
               </li>
             </ul>
           </div>
@@ -577,24 +576,24 @@
               class="w-14 h-14 sm:w-16 sm:h-16 bg-indigo-600 rounded-lg flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
               <i class="fa-solid fa-wrench text-white text-xl sm:text-2xl"></i>
             </div>
-            <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4" data-lang-key="service3Title">
               Specialized Services
             </h3>
-            <p class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6">Expert
+            <p class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6" data-lang-key="service3Desc">Expert
               specialized services including
               inspection, testing, and advanced technical solutions.</p>
             <ul class="space-y-2 mb-4 sm:mb-6">
               <li class="flex items-center text-gray-300 text-sm"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Quality Control
+                <span data-lang-key="service3Feature1">Quality Control</span>
               </li>
               <li class="flex items-center text-gray-300 text-sm"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Technical Consulting
+                <span data-lang-key="service3Feature2">Technical Consulting</span>
               </li>
               <li class="flex items-center text-gray-300 text-sm"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Equipment Testing
+                <span data-lang-key="service3Feature3">Equipment Testing</span>
               </li>
             </ul>
           </div>
@@ -605,28 +604,28 @@
               <i
                 class="fa-solid fa-building text-white text-xl sm:text-2xl"></i>
             </div>
-            <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4" data-lang-key="service4Title">
               Civil &amp;
               Infrastructure</h3>
-            <p class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6">
+            <p class="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6" data-lang-key="service4Desc">
               Comprehensive civil engineering and
               infrastructure development services for industrial facilities.</p>
             <ul class="space-y-2 mb-4 sm:mb-6">
               <li class="flex items-center text-gray-300 text-sm"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Site Development
+                <span data-lang-key="service4Feature1">Site Development</span>
               </li>
               <li class="flex items-center text-gray-300 text-sm"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Foundation Works
+                <span data-lang-key="service4Feature2">Foundation Works</span>
               </li>
               <li class="flex items-center text-gray-300 text-sm"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Utility Systems
+                <span data-lang-key="service4Feature3">Utility Systems</span>
               </li>
               <li class="flex items-center text-gray-300 text-sm"><i
                   class="fa-solid fa-check text-oil-accent mr-2"></i>
-                Roads &amp; Access
+                <span data-lang-key="service4Feature4">Roads &amp; Access</span>
               </li>
             </ul>
           </div>
@@ -639,15 +638,15 @@
       </div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-12 sm:mb-16"><span
-            class="text-oil-blue font-semibold text-sm sm:text-base lg:text-lg tracking-wide">OUR
+            class="text-oil-blue font-semibold text-sm sm:text-base lg:text-lg tracking-wide" data-lang-key="portfolioBadge">OUR
             PORTFOLIO</span>
           <h2
             class="text-3xl sm:text-4xl lg:text-5xl font-bold text-oil-dark mt-3 sm:mt-4 mb-4 sm:mb-6">
-            Landmark Projects &amp;
-            <span class="text-oil-blue">Success Stories</span>
+            <span data-lang-key="portfolioTitle1">Landmark Projects &amp;</span>
+            <span class="text-oil-blue" data-lang-key="portfolioTitle2">Success Stories</span>
           </h2>
           <p
-            class="text-sm sm:text-base lg:text-xl text-oil-gray max-w-3xl mx-auto px-4">
+            class="text-sm sm:text-base lg:text-xl text-oil-gray max-w-3xl mx-auto px-4" data-lang-key="portfolioDescription">
             Showcasing our expertise through successful project deliveries
             across the GCC region.
           </p>
@@ -664,14 +663,14 @@
             </div>
             <div
               class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-lg sm:text-xl font-bold mb-2">Tank Farm Project -
+              <h3 class="text-lg sm:text-xl font-bold mb-2" data-lang-key="project1Title">Tank Farm Project -
                 Somalia
               </h3>
-              <p class="text-xs sm:text-sm text-gray-300 mb-3">Prefabrication,
+              <p class="text-xs sm:text-sm text-gray-300 mb-3" data-lang-key="project1Description">Prefabrication,
                 Supply and
                 Erection of Tank Farm for Mahamud Osman General Trading LLC</p>
               <div class="flex items-center justify-between"><span
-                  class="text-oil-accent font-semibold text-sm sm:text-base">USD
+                  class="text-oil-accent font-semibold text-sm sm:text-base" data-lang-key="project1Value">USD
                   15M Project</span></div>
             </div>
           </div>
@@ -685,13 +684,13 @@
             </div>
             <div
               class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-lg sm:text-xl font-bold mb-2">Asia Petrochem
+              <h3 class="text-lg sm:text-xl font-bold mb-2" data-lang-key="project2Title">Asia Petrochem
                 Terminal</h3>
-              <p class="text-xs sm:text-sm text-gray-300 mb-3">Oil Storage
+              <p class="text-xs sm:text-sm text-gray-300 mb-3" data-lang-key="project2Description">Oil Storage
                 Terminal
                 construction in Hamriyah Free Zone for Asia Petrochem FZE</p>
               <div class="flex items-center justify-between"><span
-                  class="text-oil-accent font-semibold text-sm sm:text-base">AED
+                  class="text-oil-accent font-semibold text-sm sm:text-base" data-lang-key="project2Value">AED
                   7.5M Project</span></div>
             </div>
           </div>
@@ -705,13 +704,13 @@
             </div>
             <div
               class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-lg sm:text-xl font-bold mb-2">ATS Terminals
+              <h3 class="text-lg sm:text-xl font-bold mb-2" data-lang-key="project3Title">ATS Terminals
                 Project</h3>
-              <p class="text-xs sm:text-sm text-gray-300 mb-3">Oil Storage
+              <p class="text-xs sm:text-sm text-gray-300 mb-3" data-lang-key="project3Description">Oil Storage
                 Terminal
                 development for ATS Terminals FZE in Hamriyah Free Zone</p>
               <div class="flex items-center justify-between"><span
-                  class="text-oil-accent font-semibold text-sm sm:text-base">AED
+                  class="text-oil-accent font-semibold text-sm sm:text-base" data-lang-key="project3Value">AED
                   5M Project</span></div>
             </div>
           </div>
@@ -725,13 +724,13 @@
             </div>
             <div
               class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-lg sm:text-xl font-bold mb-2">GREENOL Storage
+              <h3 class="text-lg sm:text-xl font-bold mb-2" data-lang-key="project4Title">GREENOL Storage
                 Terminal</h3>
-              <p class="text-xs sm:text-sm text-gray-300 mb-3">Comprehensive Oil
+              <p class="text-xs sm:text-sm text-gray-300 mb-3" data-lang-key="project4Description">Comprehensive Oil
                 Storage
                 Terminal facility for GREENOL FZC in Hamriyah</p>
               <div class="flex items-center justify-between"><span
-                  class="text-oil-accent font-semibold text-sm sm:text-base">AED
+                  class="text-oil-accent font-semibold text-sm sm:text-base" data-lang-key="project4Value">AED
                   18M Project</span></div>
             </div>
           </div>
@@ -745,14 +744,14 @@
             </div>
             <div
               class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-lg sm:text-xl font-bold mb-2">AXCL Gulf Terminal
+              <h3 class="text-lg sm:text-xl font-bold mb-2" data-lang-key="project5Title">AXCL Gulf Terminal
               </h3>
-              <p class="text-xs sm:text-sm text-gray-300 mb-3">Advanced Oil
+              <p class="text-xs sm:text-sm text-gray-300 mb-3" data-lang-key="project5Description">Advanced Oil
                 Storage
                 Terminal construction for AXCL Gulf FZC in Hamriyah Free Zone
               </p>
               <div class="flex items-center justify-between"><span
-                  class="text-oil-accent font-semibold text-sm sm:text-base">AED
+                  class="text-oil-accent font-semibold text-sm sm:text-base" data-lang-key="project5Value">AED
                   20M Project</span></div>
             </div>
           </div>
@@ -766,21 +765,21 @@
             </div>
             <div
               class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-lg sm:text-xl font-bold mb-2">Infinite Mining
+              <h3 class="text-lg sm:text-xl font-bold mb-2" data-lang-key="project6Title">Infinite Mining
                 Complex</h3>
-              <p class="text-xs sm:text-sm text-gray-300 mb-3">Oil Storage
+              <p class="text-xs sm:text-sm text-gray-300 mb-3" data-lang-key="project6Description">Oil Storage
                 Terminal and
                 Distillation Plant for Infinite Mining &amp; Energy FZC</p>
               <div class="flex items-center justify-between"><span
-                  class="text-oil-accent font-semibold text-sm sm:text-base">AED
+                  class="text-oil-accent font-semibold text-sm sm:text-base" data-lang-key="project6Value">AED
                   52.6M Project</span></div>
             </div>
           </div>
         </div>
         <div class="text-center"><a href="Portfolio.html"
             class="inline-block bg-oil-blue text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base lg:text-lg hover:bg-yellow-700 transition-colors"><i
-              class="fa-solid fa-folder-open mr-2 sm:mr-3"></i>
-            View All Projects
+              class="fa-solid fa-folder-open mr-2 sm:mr-3"></i><span data-lang-key="btnViewAllProjects">
+            View All Projects</span>
           </a></div>
       </div>
     </section>
@@ -789,13 +788,13 @@
       <div class="absolute inset-0 industrial-pattern opacity-30"></div>
       <div class="relative max-w-7xl mx-auto px-6">
         <div class="text-center mb-16"><span
-            class="text-oil-accent font-semibold text-lg tracking-wide">MEDIA
+            class="text-oil-accent font-semibold text-lg tracking-wide" data-lang-key="mediaBadge">MEDIA
             CENTER</span>
           <h2 class="text-5xl font-bold text-white mt-4 mb-6">
-            Latest News &amp;
-            <span class="text-oil-accent">Media Coverage</span>
+            <span data-lang-key="mediaTitle1">Latest News &amp;</span>
+            <span class="text-oil-accent" data-lang-key="mediaTitle2">Media Coverage</span>
           </h2>
-          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-lang-key="mediaDescription">
             Stay updated with our latest achievements, industry insights, and
             company developments through our comprehensive media coverage.
           </p>
@@ -804,45 +803,45 @@
           <div id="press-releases"
             class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
             <h3 class="text-2xl font-bold text-white mb-6 flex items-center"><i
-                class="fa-solid fa-newspaper text-oil-accent mr-3"></i>
-              Press Releases
+                class="fa-solid fa-newspaper text-oil-accent mr-3"></i><span data-lang-key="pressReleasesTitle">
+              Press Releases</span>
             </h3>
             <div class="space-y-4">
               <div class="border-b border-white/20 pb-4">
                 <div class="flex justify-between items-start mb-2">
-                  <h4 class="text-white font-semibold">Q1 2024 Financial Results
-                  </h4><span class="text-oil-accent text-sm">Mar 20</span>
+                  <h4 class="text-white font-semibold" data-lang-key="press1Title">Q1 2024 Financial Results
+                  </h4><span class="text-oil-accent text-sm" data-lang-key="press1Date">Mar 20</span>
                 </div>
-                <p class="text-gray-300 text-sm">Record-breaking quarterly
+                <p class="text-gray-300 text-sm" data-lang-key="press1Description">Record-breaking quarterly
                   performance with 35% revenue growth...</p>
               </div>
               <div class="border-b border-white/20 pb-4">
                 <div class="flex justify-between items-start mb-2">
-                  <h4 class="text-white font-semibold">New Partnership with
-                    Shell</h4><span class="text-oil-accent text-sm">Mar
+                  <h4 class="text-white font-semibold" data-lang-key="press2Title">New Partnership with
+                    Shell</h4><span class="text-oil-accent text-sm" data-lang-key="press2Date">Mar
                     18</span>
                 </div>
-                <p class="text-gray-300 text-sm">Strategic alliance for
+                <p class="text-gray-300 text-sm" data-lang-key="press2Description">Strategic alliance for
                   renewable energy projects across the region...</p>
               </div>
               <div class="pb-4">
                 <div class="flex justify-between items-start mb-2">
-                  <h4 class="text-white font-semibold">Safety Excellence Award
-                  </h4><span class="text-oil-accent text-sm">Mar 15</span>
+                  <h4 class="text-white font-semibold" data-lang-key="press3Title">Safety Excellence Award
+                  </h4><span class="text-oil-accent text-sm" data-lang-key="press3Date">Mar 15</span>
                 </div>
-                <p class="text-gray-300 text-sm">Recognition for achieving 1000+
+                <p class="text-gray-300 text-sm" data-lang-key="press3Description">Recognition for achieving 1000+
                   days without incidents...</p>
               </div>
             </div><a href="Media.html#press-releases"
-              class="text-oil-accent font-semibold hover:text-yellow-400 transition-colors mt-4">
-              View All Press Releases <i
+              class="text-oil-accent font-semibold hover:text-yellow-400 transition-colors mt-4"><span data-lang-key="btnViewAllPressReleases">
+              View All Press Releases</span> <i
                 class="fa-solid fa-arrow-right ml-2"></i></a>
           </div>
           <div id="media-gallery"
             class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
             <h3 class="text-2xl font-bold text-white mb-6 flex items-center"><i
-                class="fa-solid fa-images text-oil-accent mr-3"></i>
-              Media Gallery
+                class="fa-solid fa-images text-oil-accent mr-3"></i><span data-lang-key="mediaGalleryTitle">
+              Media Gallery</span>
             </h3>
             <div class="grid grid-cols-2 gap-4 mb-6"><img
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/89160d86c9-40aeca44858228035600.png"
@@ -857,8 +856,8 @@
                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/539ebe87ae-050749a1ccf51d1296c0.png"
                 alt="Heavy industrial equipment"
                 class="w-full h-24 object-cover rounded-lg"></div><a href="Media.html#gallery"
-              class="text-oil-accent font-semibold hover:text-yellow-400 transition-colors">
-              View Full Gallery <i
+              class="text-oil-accent font-semibold hover:text-yellow-400 transition-colors"><span data-lang-key="btnViewFullGallery">
+              View Full Gallery</span> <i
                 class="fa-solid fa-arrow-right ml-2"></i></a>
           </div>
         </div>
@@ -870,15 +869,15 @@
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
         <div class="text-center">
           <div class="mb-6 sm:mb-8"><span
-              class="text-oil-accent font-semibold text-sm sm:text-base lg:text-lg tracking-wide">COMPANY
+              class="text-oil-accent font-semibold text-sm sm:text-base lg:text-lg tracking-wide" data-lang-key="companyOverviewBadge">COMPANY
               OVERVIEW</span>
             <h2
               class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-3 sm:mt-4 mb-4 sm:mb-6">
-              Download Our
-              <span class="text-oil-accent">Company Brochure</span>
+              <span data-lang-key="brochureTitle1">Download Our</span>
+              <span class="text-oil-accent" data-lang-key="brochureTitle2">Company Brochure</span>
             </h2>
             <p
-              class="text-sm sm:text-base lg:text-xl text-gray-300 max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
+              class="text-sm sm:text-base lg:text-xl text-gray-300 max-w-3xl mx-auto mb-6 sm:mb-8 px-4" data-lang-key="brochureDescription">
               Get comprehensive information about our services, capabilities,
               and successful projects.
               Fill out the form below to receive our detailed company brochure.
@@ -892,28 +891,28 @@
                 <i
                   class="fa-solid fa-download text-white text-2xl sm:text-3xl"></i>
               </div>
-              <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Company
+              <h3 class="text-xl sm:text-2xl font-bold text-white mb-2" data-lang-key="brochureCardTitle">Company
                 Brochure
               </h3>
-              <p class="text-gray-300 text-xs sm:text-sm">Complete overview of
+              <p class="text-gray-300 text-xs sm:text-sm" data-lang-key="brochureCardDescription">Complete overview of
                 our services
                 and capabilities</p>
             </div><button id="download-brochure-btn"
               class="w-full bg-oil-accent text-white py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base lg:text-lg hover:bg-yellow-600 transition-colors flex items-center justify-center group"><i
-                class="fa-solid fa-file-pdf mr-2 sm:mr-3 group-hover:scale-110 transition-transform"></i>
-              Download Brochure (PDF)
+                class="fa-solid fa-file-pdf mr-2 sm:mr-3 group-hover:scale-110 transition-transform"></i><span data-lang-key="btnDownloadBrochure">
+              Download Brochure (PDF)</span>
             </button>
             <div
               class="mt-4 flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-gray-300 text-xs sm:text-sm">
               <span class="flex items-center"><i
-                  class="fa-solid fa-file-pdf text-red-400 mr-1"></i>
-                PDF Format
+                  class="fa-solid fa-file-pdf text-red-400 mr-1"></i><span data-lang-key="pdfFormat">
+                PDF Format</span>
               </span><span class="flex items-center"><i
-                  class="fa-solid fa-weight-hanging text-oil-accent mr-1"></i>
-                2.5 MB
+                  class="fa-solid fa-weight-hanging text-oil-accent mr-1"></i><span data-lang-key="fileSize">
+                2.5 MB</span>
               </span><span class="flex items-center"><i
-                  class="fa-solid fa-file-lines text-blue-400 mr-1"></i>
-                24 Pages
+                  class="fa-solid fa-file-lines text-blue-400 mr-1"></i><span data-lang-key="pageCount">
+                24 Pages</span>
               </span></div>
           </div>
         </div>
@@ -926,47 +925,47 @@
         <div class="p-8">
           <div class="flex justify-between items-center mb-6">
             <div>
-              <h3 class="text-2xl font-bold text-oil-dark">Download Brochure
+              <h3 class="text-2xl font-bold text-oil-dark" data-lang-key="modalTitle">Download Brochure
               </h3>
-              <p class="text-oil-gray">Please fill out the form to download</p>
+              <p class="text-oil-gray" data-lang-key="modalSubtitle">Please fill out the form to download</p>
             </div><button id="close-modal"
               class="text-oil-gray hover:text-oil-dark"><i
                 class="fa-solid fa-times text-xl"></i></button>
           </div>
           <form id="brochure-form" class="space-y-4">
-            <div><input type="text" name="name" placeholder="Full Name *"
+            <div><input type="text" name="name" data-lang-key="formNamePlaceholder" placeholder="Full Name *"
                 required=""
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-oil-blue">
             </div>
-            <div><input type="email" name="email" placeholder="Email Address *"
+            <div><input type="email" name="email" data-lang-key="formEmailPlaceholder" placeholder="Email Address *"
                 required=""
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-oil-blue">
             </div>
-            <div><input type="tel" name="phone" placeholder="Phone Number"
+            <div><input type="tel" name="phone" data-lang-key="formPhonePlaceholder" placeholder="Phone Number"
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-oil-blue">
             </div>
-            <div><input type="text" name="company" placeholder="Company Name"
+            <div><input type="text" name="company" data-lang-key="formCompanyPlaceholder" placeholder="Company Name"
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-oil-blue">
             </div>
             <div><select name="service"
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-oil-blue">
-                <option value="">Service Interest (Optional)</option>
-                <option value="epc">EPC &amp; Maintenance</option>
-                <option value="fabrication">Fabrication &amp; Manufacturing
+                <option value="" data-lang-key="formServiceOption0">Service Interest (Optional)</option>
+                <option value="epc" data-lang-key="formServiceOption1">EPC &amp; Maintenance</option>
+                <option value="fabrication" data-lang-key="formServiceOption2">Fabrication &amp; Manufacturing
                 </option>
-                <option value="specialized">Specialized Services</option>
-                <option value="civil">Civil &amp; Infrastructure</option>
+                <option value="specialized" data-lang-key="formServiceOption3">Specialized Services</option>
+                <option value="civil" data-lang-key="formServiceOption4">Civil &amp; Infrastructure</option>
               </select></div>
             <div class="flex items-start space-x-2"><input type="checkbox"
                 id="agree-terms" name="terms" required="" class="mt-1"><label
-                for="agree-terms" class="text-sm text-oil-gray">
+                for="agree-terms" class="text-sm text-oil-gray" data-lang-key="formAgreeTerms">
                 I agree to receive communications from Crystal Oilfield and
                 understand my information will be used according to the privacy
                 policy.
               </label></div><button type="submit"
               class="w-full bg-oil-blue text-white py-3 rounded-lg font-semibold hover:bg-yellow-700 transition-colors"><i
-                class="fa-solid fa-download mr-2"></i>
-              Submit &amp; Download
+                class="fa-solid fa-download mr-2"></i><span data-lang-key="btnSubmitDownload">
+              Submit &amp; Download</span>
             </button>
           </form>
         </div>
@@ -976,15 +975,15 @@
       class="py-12 sm:py-16 bg-gradient-to-r from-oil-dark to-gray-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-8 sm:mb-12"><span
-            class="text-oil-accent font-semibold text-sm sm:text-base lg:text-lg tracking-wide">QUALITY
+            class="text-oil-accent font-semibold text-sm sm:text-base lg:text-lg tracking-wide" data-lang-key="qualityAssuranceBadge">QUALITY
             ASSURANCE</span>
           <h2
             class="text-3xl sm:text-4xl font-bold text-white mt-3 sm:mt-4 mb-4 sm:mb-6">
-            Certified Excellence &amp;
-            <span class="text-oil-accent">Industry Standards</span>
+            <span data-lang-key="certificationTitle1">Certified Excellence &amp;</span>
+            <span class="text-oil-accent" data-lang-key="certificationTitle2">Industry Standards</span>
           </h2>
           <p
-            class="text-sm sm:text-base lg:text-xl text-gray-300 max-w-3xl mx-auto px-4">
+            class="text-sm sm:text-base lg:text-xl text-gray-300 max-w-3xl mx-auto px-4" data-lang-key="certificationDescription">
             Our commitment to quality is validated by internationally recognized
             certifications.
           </p>
@@ -998,9 +997,9 @@
               <i
                 class="fa-solid fa-certificate text-oil-blue text-xl sm:text-2xl"></i>
             </div>
-            <h3 class="text-white font-bold mb-2 text-sm sm:text-base">ISO 9001
+            <h3 class="text-white font-bold mb-2 text-sm sm:text-base" data-lang-key="cert1Title">ISO 9001
             </h3>
-            <p class="text-gray-300 text-xs sm:text-sm">Quality Management
+            <p class="text-gray-300 text-xs sm:text-sm" data-lang-key="cert1Description">Quality Management
               System</p>
           </div>
           <div id="cert-iso-14001"
@@ -1010,9 +1009,9 @@
               <i
                 class="fa-solid fa-leaf text-green-600 text-xl sm:text-2xl"></i>
             </div>
-            <h3 class="text-white font-bold mb-2 text-sm sm:text-base">ISO 14001
+            <h3 class="text-white font-bold mb-2 text-sm sm:text-base" data-lang-key="cert2Title">ISO 14001
             </h3>
-            <p class="text-gray-300 text-xs sm:text-sm">Environmental Management
+            <p class="text-gray-300 text-xs sm:text-sm" data-lang-key="cert2Description">Environmental Management
             </p>
           </div>
           <div id="cert-ohsas-45001"
@@ -1022,9 +1021,9 @@
               <i
                 class="fa-solid fa-shield-halved text-red-600 text-xl sm:text-2xl"></i>
             </div>
-            <h3 class="text-white font-bold mb-2 text-sm sm:text-base">ISO 45001
+            <h3 class="text-white font-bold mb-2 text-sm sm:text-base" data-lang-key="cert3Title">ISO 45001
             </h3>
-            <p class="text-gray-300 text-xs sm:text-sm">Occupational Health
+            <p class="text-gray-300 text-xs sm:text-sm" data-lang-key="cert3Description">Occupational Health
               &amp; Safety
             </p>
           </div>
@@ -1037,14 +1036,14 @@
       </div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-12 sm:mb-16"><span
-            class="text-oil-blue font-semibold text-sm sm:text-base lg:text-lg tracking-wide">OUR
+            class="text-oil-blue font-semibold text-sm sm:text-base lg:text-lg tracking-wide" data-lang-key="groupCompaniesBadge">OUR
             NETWORK</span>
           <h2
             class="text-3xl sm:text-4xl lg:text-5xl font-bold text-oil-dark mt-3 sm:mt-4 mb-4 sm:mb-6">
-            Our
-            Group&nbsp;<span class="text-oil-blue">Companies</span></h2>
+            <span data-lang-key="groupCompaniesTitle1">Our
+            Group</span>&nbsp;<span class="text-oil-blue" data-lang-key="groupCompaniesTitle2">Companies</span></h2>
           <p
-            class="text-sm sm:text-base lg:text-xl text-oil-gray max-w-3xl mx-auto px-4">
+            class="text-sm sm:text-base lg:text-xl text-oil-gray max-w-3xl mx-auto px-4" data-lang-key="groupCompaniesSubtitle">
             Part of a comprehensive network of specialized companies delivering
             integrated solutions.
           </p>
@@ -1059,32 +1058,32 @@
                 <i class="fa-solid fa-eye text-white text-lg sm:text-2xl"></i>
               </div>
               <div>
-                <h3 class="text-lg sm:text-2xl font-bold text-oil-dark">Crystal
+                <h3 class="text-lg sm:text-2xl font-bold text-oil-dark" data-lang-key="groupCompany1Name">Crystal
                   Vision</h3>
-                <p class="text-oil-gray text-xs sm:text-base">Technology
+                <p class="text-oil-gray text-xs sm:text-base" data-lang-key="groupCompany1Subtitle">Technology
                   Solutions</p>
               </div>
             </div>
-            <p class="text-oil-gray mb-4 sm:mb-6 text-sm sm:text-base">Advanced
+            <p class="text-oil-gray mb-4 sm:mb-6 text-sm sm:text-base" data-lang-key="groupCompany1Desc">Advanced
               automation, control systems,
               and digital transformation solutions for industrial facilities.
             </p>
             <ul class="space-y-2 mb-4 sm:mb-6">
               <li class="flex items-center text-oil-gray text-sm"><i
                   class="fa-solid fa-check text-oil-blue mr-2"></i>
-                Industrial Automation
+                <span data-lang-key="groupCompany1Feature1">Industrial Automation</span>
               </li>
               <li class="flex items-center text-oil-gray text-sm"><i
                   class="fa-solid fa-check text-oil-blue mr-2"></i>
-                Control Systems
+                <span data-lang-key="groupCompany1Feature2">Control Systems</span>
               </li>
               <li class="flex items-center text-oil-gray text-sm"><i
                   class="fa-solid fa-check text-oil-blue mr-2"></i>
-                Digital Solutions
+                <span data-lang-key="groupCompany1Feature3">Digital Solutions</span>
               </li>
             </ul><button
               class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors text-sm sm:text-base">
-              Visit Website <i
+              <span data-lang-key="btnVisitWebsite">Visit Website</span> <i
                 class="fa-solid fa-external-link-alt ml-2"></i></button>
           </div>
           <div id="company-2"
@@ -1095,31 +1094,31 @@
                 <i class="fa-solid fa-leaf text-white text-lg sm:text-2xl"></i>
               </div>
               <div>
-                <h3 class="text-lg sm:text-2xl font-bold text-oil-dark">Crystal
+                <h3 class="text-lg sm:text-2xl font-bold text-oil-dark" data-lang-key="groupCompany2Name">Crystal
                   Green</h3>
-                <p class="text-oil-gray text-xs sm:text-base">Environmental
+                <p class="text-oil-gray text-xs sm:text-base" data-lang-key="groupCompany2Subtitle">Environmental
                   Solutions</p>
               </div>
             </div>
-            <p class="text-oil-gray mb-4 sm:mb-6 text-sm sm:text-base">
+            <p class="text-oil-gray mb-4 sm:mb-6 text-sm sm:text-base" data-lang-key="groupCompany2Desc">
               Sustainable environmental solutions,
               waste management, and renewable energy integration services.</p>
             <ul class="space-y-2 mb-4 sm:mb-6">
               <li class="flex items-center text-oil-gray text-sm"><i
                   class="fa-solid fa-check text-oil-blue mr-2"></i>
-                Waste Management
+                <span data-lang-key="groupCompany2Feature1">Waste Management</span>
               </li>
               <li class="flex items-center text-oil-gray text-sm"><i
                   class="fa-solid fa-check text-oil-blue mr-2"></i>
-                Environmental Consulting
+                <span data-lang-key="groupCompany2Feature2">Environmental Consulting</span>
               </li>
               <li class="flex items-center text-oil-gray text-sm"><i
                   class="fa-solid fa-check text-oil-blue mr-2"></i>
-                Renewable Energy
+                <span data-lang-key="groupCompany2Feature3">Renewable Energy</span>
               </li>
             </ul><button
               class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors text-sm sm:text-base">
-              Visit Website <i
+              <span data-lang-key="btnVisitWebsite">Visit Website</span> <i
                 class="fa-solid fa-external-link-alt ml-2"></i></button>
           </div>
           <div id="company-3"
@@ -1131,32 +1130,32 @@
                   class="fa-solid fa-shipping-fast text-white text-lg sm:text-2xl"></i>
               </div>
               <div>
-                <h3 class="text-lg sm:text-2xl font-bold text-oil-dark">Crystal
+                <h3 class="text-lg sm:text-2xl font-bold text-oil-dark" data-lang-key="groupCompany3Name">Crystal
                   Logistics
                 </h3>
-                <p class="text-oil-gray text-xs sm:text-base">Supply Chain
+                <p class="text-oil-gray text-xs sm:text-base" data-lang-key="groupCompany3Subtitle">Supply Chain
                   Solutions</p>
               </div>
             </div>
-            <p class="text-oil-gray mb-4 sm:mb-6 text-sm sm:text-base">
+            <p class="text-oil-gray mb-4 sm:mb-6 text-sm sm:text-base" data-lang-key="groupCompany3Desc">
               Comprehensive logistics, supply chain
               management, and procurement services for industrial projects.</p>
             <ul class="space-y-2 mb-4 sm:mb-6">
               <li class="flex items-center text-oil-gray text-sm"><i
                   class="fa-solid fa-check text-oil-blue mr-2"></i>
-                Global Procurement
+                <span data-lang-key="groupCompany3Feature1">Global Procurement</span>
               </li>
               <li class="flex items-center text-oil-gray text-sm"><i
                   class="fa-solid fa-check text-oil-blue mr-2"></i>
-                Logistics Management
+                <span data-lang-key="groupCompany3Feature2">Logistics Management</span>
               </li>
               <li class="flex items-center text-oil-gray text-sm"><i
                   class="fa-solid fa-check text-oil-blue mr-2"></i>
-                Warehouse Solutions
+                <span data-lang-key="groupCompany3Feature3">Warehouse Solutions</span>
               </li>
             </ul><button
               class="text-oil-blue font-semibold hover:text-yellow-700 transition-colors text-sm sm:text-base">
-              Visit Website <i
+              <span data-lang-key="btnVisitWebsite">Visit Website</span> <i
                 class="fa-solid fa-external-link-alt ml-2"></i></button>
           </div>
         </div>
@@ -1172,7 +1171,7 @@
               <div class="flex items-center mb-6">
                 <img src="CO_Logo.svg" alt="Crystal Oilfield Logo" class="h-[72px] w-auto">
               </div>
-              <p class="text-gray-300 mb-6 max-w-md">
+              <p class="text-gray-300 mb-6 max-w-md" data-lang-key="footerDescription">
                 Leading the oil and gas industry with innovative engineering
                 solutions, comprehensive EPC services, and unwavering commitment
                 to safety and quality across the GCC region.
@@ -1190,34 +1189,34 @@
                     class="fa-brands fa-youtube text-white"></i></span></div>
             </div>
             <div>
-              <h4 class="text-xl font-bold mb-6 text-oil-accent">Contact
+              <h4 class="text-xl font-bold mb-6 text-oil-accent" data-lang-key="footerContactTitle">Contact
                 Information</h4>
               <div class="space-y-4">
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-map-marker-alt text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Head Office</p>
-                    <p class="text-gray-300 text-sm">Office No. 3301,3302, Excellence Tower P. O. Box: 80025 |West Bay,<br>Doha, Qatar</p>
+                    <p class="text-white font-medium" data-lang-key="footerHeadOffice">Head Office</p>
+                    <p class="text-gray-300 text-sm" data-lang-key="footerHeadOfficeAddress">Office No. 3301,3302, Excellence Tower P. O. Box: 80025 |West Bay,<br>Doha, Qatar</p>
                   </div>
                 </div>
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-industry text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Fab Shop</p>
-                    <p class="text-gray-300 text-sm">Bldg. No.239, Zone 81, Street No.7, New Industrial Area <br>Doha, Qatar</p>
+                    <p class="text-white font-medium" data-lang-key="footerFabShop">Fab Shop</p>
+                    <p class="text-gray-300 text-sm" data-lang-key="footerFabShopAddress">Bldg. No.239, Zone 81, Street No.7, New Industrial Area <br>Doha, Qatar</p>
                   </div>
                 </div>
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-phone text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Phone</p>
+                    <p class="text-white font-medium" data-lang-key="footerPhone">Phone</p>
                     <p class="text-gray-300 text-sm">+974-40120736</p>
                   </div>
                 </div>
                 <div class="flex items-start space-x-3"><i
                     class="fa-solid fa-envelope text-oil-accent mt-1"></i>
                   <div>
-                    <p class="text-white font-medium">Email</p>
+                    <p class="text-white font-medium" data-lang-key="footerEmail">Email</p>
                     <p class="text-gray-300 text-sm">info@crystaloilfield.qa
                     </p>
                     <p class="text-gray-300 text-sm">proposals@crystaloilfield.qa
@@ -1227,39 +1226,39 @@
               </div>
             </div>
             <div>
-              <h4 class="text-xl font-bold mb-6 text-oil-accent">Quick Links
+              <h4 class="text-xl font-bold mb-6 text-oil-accent" data-lang-key="footerQuickLinks">Quick Links
               </h4>
               <div class="space-y-3"><a href="index.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Home</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerHome">Home</span></a><a
                   href="About.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>About
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerAbout">About
                     Us</span></a>
                 <div class="relative group"><button
                     class="flex items-center text-gray-300 hover:text-oil-accent transition-colors w-full"><i
-                      class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm"></i><span>Services</span><i
+                      class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm"></i><span data-lang-key="footerServices">Services</span><i
                       class="fa-solid fa-chevron-down text-xs ml-2"></i></button>
                   <div class="ml-6 mt-2 space-y-2 hidden group-hover:block"><a
                       href="Crystal Oilfield Services.html"
                       class="flex items-center text-gray-400 hover:text-oil-accent transition-colors text-sm"><i
-                        class="fa-solid fa-oil-well text-oil-accent mr-2 text-xs"></i><span>Crystal
+                        class="fa-solid fa-oil-well text-oil-accent mr-2 text-xs"></i><span data-lang-key="footerCrystalOilfield">Crystal
                         Oilfield Contracting</span></a><a href="Crystal Vision Services.html"
                       class="flex items-center text-gray-400 hover:text-oil-accent transition-colors text-sm"><i
-                        class="fa-solid fa-industry text-oil-accent mr-2 text-xs"></i><span>Crystal
+                        class="fa-solid fa-industry text-oil-accent mr-2 text-xs"></i><span data-lang-key="footerCrystalVision">Crystal
                         Vision Steel Fabrication</span></a></div>
                 </div><a href="Portfolio.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Portfolio</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerPortfolio">Portfolio</span></a><a
                   href="Media.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Media</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerMedia">Media</span></a><a
                   href="Career.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Career</span></a><a
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerCareer">Career</span></a><a
                   href="Contact.html"
                   class="flex items-center text-gray-300 hover:text-oil-accent transition-colors group"><i
-                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span>Contact</span></a>
+                    class="fa-solid fa-chevron-right text-oil-accent mr-2 text-sm group-hover:translate-x-1 transition-transform"></i><span data-lang-key="footerContact">Contact</span></a>
               </div>
             </div>
           </div>
@@ -1267,7 +1266,7 @@
         <div class="border-t border-white/20 py-6 sm:py-8">
           <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="text-center">
-              <p class="text-gray-300 text-xs sm:text-sm">© 2025 Crystal
+              <p class="text-gray-300 text-xs sm:text-sm" data-lang-key="footerCopyright">© 2025 Crystal
                 Oilfield. All
                 rights reserved.</p>
             </div>
@@ -1410,6 +1409,511 @@
           );
         }, 2000);
       });
+
+      // Language Translation System
+      const translations = {
+        en: {
+          // Page Title
+          pageTitle: 'Home | Crystal Oilfield Services',
+          // SEO
+          metaDescription: 'Crystal Oilfield delivers ISO-certified EPC, fabrication, and maintenance solutions across Qatar and the GCC with proven engineering excellence.',
+          // Navigation
+          navHome: 'Home',
+          navAbout: 'About',
+          navServices: 'Services',
+          navServicesOilfield: 'Crystal Oilfield Contracting and Trading',
+          navServicesVision: 'Crystal Vision Steel Fabrication',
+          navPortfolio: 'Portfolio',
+          navMedia: 'Media',
+          navCareer: 'Career',
+          navContact: 'Contact',
+          navOtherCompanies: 'Our Other Companies',
+          btnRequestQuote: 'Request a Quote',
+          mobileMenu: 'Menu',
+          languageLabel: 'Language',
+          
+          // Hero Section
+          heroBadge: 'ISO Certified Excellence',
+          heroTitle1: 'Engineering',
+          heroTitle2: 'Excellence',
+          heroTitle3: 'in Oil & Gas',
+          heroDescription: 'Delivering comprehensive EPC, Fabrication, and Maintenance Solutions across Qatar & GCC region with over two decades of proven industrial expertise.',
+          btnExploreServices: 'Explore Services',
+          stat1Label: 'Years Experience',
+          stat2Label: 'Projects Completed',
+          stat3Label: 'Expert Engineers',
+          
+          // About Section
+          aboutBadge: 'ABOUT CRYSTAL OILFIELD',
+          aboutTitle1: 'Pioneering Industrial',
+          aboutTitle2: 'Solutions',
+          aboutPara1: "Crystal Oilfield stands as a beacon of engineering excellence in the Middle East's oil and gas sector. With over two decades of unwavering commitment to quality and innovation, we have established ourselves as the premier provider of comprehensive EPC solutions.",
+          aboutPara2: 'Our subsidiary CVSF is equipped with state of Qatar and serve as the cornerstone for delivering world-class industrial solutions across the GCC region.',
+          aboutFeature1Title: 'Safety First',
+          aboutFeature1Text: 'Zero-incident safety record with comprehensive HSE protocols',
+          aboutFeature2Title: 'Innovation',
+          aboutFeature2Text: 'Cutting-edge solutions with latest technology integration',
+          yearsBadge: 'Years',
+          btnReadMoreAbout: 'Read More About Us',
+          
+          // Portfolio Section
+          portfolioBadge: 'OUR PORTFOLIO',
+          portfolioTitle1: 'Landmark Projects &',
+          portfolioTitle2: 'Success Stories',
+          portfolioDescription: 'Showcasing our expertise through successful project deliveries across the GCC region.',
+          project1Title: 'Tank Farm Project - Somalia',
+          project1Description: 'Prefabrication, Supply and Erection of Tank Farm for Mahamud Osman General Trading LLC',
+          project1Value: 'USD 15M Project',
+          project2Title: 'Asia Petrochem Terminal',
+          project2Description: 'Oil Storage Terminal construction in Hamriyah Free Zone for Asia Petrochem FZE',
+          project2Value: 'AED 7.5M Project',
+          project3Title: 'ATS Terminals Project',
+          project3Description: 'Oil Storage Terminal development for ATS Terminals FZE in Hamriyah Free Zone',
+          project3Value: 'AED 5M Project',
+          project4Title: 'GREENOL Storage Terminal',
+          project4Description: 'Comprehensive Oil Storage Terminal facility for GREENOL FZC in Hamriyah',
+          project4Value: 'AED 18M Project',
+          project5Title: 'AXCL Gulf Terminal',
+          project5Description: 'Advanced Oil Storage Terminal construction for AXCL Gulf FZC in Hamriyah Free Zone',
+          project5Value: 'AED 20M Project',
+          project6Title: 'Infinite Mining Complex',
+          project6Description: 'Oil Storage Terminal and Distillation Plant for Infinite Mining & Energy FZC',
+          project6Value: 'AED 52.6M Project',
+          btnViewAllProjects: 'View All Projects',
+          
+          // Media Section
+          mediaBadge: 'MEDIA CENTER',
+          mediaTitle1: 'Latest News &',
+          mediaTitle2: 'Media Coverage',
+          mediaDescription: 'Stay updated with our latest achievements, industry insights, and company developments through our comprehensive media coverage.',
+          pressReleasesTitle: 'Press Releases',
+          press1Title: 'Q1 2024 Financial Results',
+          press1Date: 'Mar 20',
+          press1Description: 'Record-breaking quarterly performance with 35% revenue growth...',
+          press2Title: 'New Partnership with Shell',
+          press2Date: 'Mar 18',
+          press2Description: 'Strategic alliance for renewable energy projects across the region...',
+          press3Title: 'Safety Excellence Award',
+          press3Date: 'Mar 15',
+          press3Description: 'Recognition for achieving 1000+ days without incidents...',
+          btnViewAllPressReleases: 'View All Press Releases',
+          mediaGalleryTitle: 'Media Gallery',
+          btnViewFullGallery: 'View Full Gallery',
+          
+          // Company Overview / Brochure Section
+          companyOverviewBadge: 'COMPANY OVERVIEW',
+          brochureTitle1: 'Download Our',
+          brochureTitle2: 'Company Brochure',
+          brochureDescription: 'Get comprehensive information about our services, capabilities, and successful projects. Fill out the form below to receive our detailed company brochure.',
+          brochureCardTitle: 'Company Brochure',
+          brochureCardDescription: 'Complete overview of our services and capabilities',
+          btnDownloadBrochure: 'Download Brochure (PDF)',
+          pdfFormat: 'PDF Format',
+          fileSize: '2.5 MB',
+          pageCount: '24 Pages',
+          
+          // Quality Assurance / Certifications Section
+          qualityAssuranceBadge: 'QUALITY ASSURANCE',
+          certificationTitle1: 'Certified Excellence &',
+          certificationTitle2: 'Industry Standards',
+          certificationDescription: 'Our commitment to quality is validated by internationally recognized certifications.',
+          cert1Title: 'ISO 9001',
+          cert1Description: 'Quality Management System',
+          cert2Title: 'ISO 14001',
+          cert2Description: 'Environmental Management',
+          cert3Title: 'ISO 45001',
+          cert3Description: 'Occupational Health & Safety',
+          
+          // Footer Section
+          footerDescription: 'Leading the oil and gas industry with innovative engineering solutions, comprehensive EPC services, and unwavering commitment to safety and quality across the GCC region.',
+          footerContactTitle: 'Contact Information',
+          footerHeadOffice: 'Head Office',
+          footerHeadOfficeAddress: 'Office No. 3301,3302, Excellence Tower P. O. Box: 80025 |West Bay,<br>Doha, Qatar',
+          footerFabShop: 'Fab Shop',
+          footerFabShopAddress: 'Bldg. No.239, Zone 81, Street No.7, New Industrial Area <br>Doha, Qatar',
+          footerPhone: 'Phone',
+          footerEmail: 'Email',
+          footerQuickLinks: 'Quick Links',
+          footerHome: 'Home',
+          footerAbout: 'About Us',
+          footerServices: 'Services',
+          footerCrystalOilfield: 'Crystal Oilfield Contracting',
+          footerCrystalVision: 'Crystal Vision Steel Fabrication',
+          footerPortfolio: 'Portfolio',
+          footerMedia: 'Media',
+          footerCareer: 'Career',
+          footerContact: 'Contact',
+          footerCopyright: '© 2025 Crystal Oilfield. All rights reserved.',
+          
+          // Brochure Download Modal
+          modalTitle: 'Download Brochure',
+          modalSubtitle: 'Please fill out the form to download',
+          formNamePlaceholder: 'Full Name *',
+          formEmailPlaceholder: 'Email Address *',
+          formPhonePlaceholder: 'Phone Number',
+          formCompanyPlaceholder: 'Company Name',
+          formServiceOption0: 'Service Interest (Optional)',
+          formServiceOption1: 'EPC & Maintenance',
+          formServiceOption2: 'Fabrication & Manufacturing',
+          formServiceOption3: 'Specialized Services',
+          formServiceOption4: 'Civil & Infrastructure',
+          formAgreeTerms: 'I agree to receive communications from Crystal Oilfield and understand my information will be used according to the privacy policy.',
+          btnSubmitDownload: 'Submit & Download',
+          
+          // Services Section
+          servicesBadge: 'OUR SERVICES',
+          servicesTitle1: 'Comprehensive Industrial',
+          servicesTitle2: 'Solutions',
+          servicesSubtitle: 'From concept to completion, we deliver end-to-end engineering solutions that meet the highest industry standards.',
+          service1Title: 'EPC & Maintenance',
+          service1Desc: 'Complete Engineering, Procurement, and Construction services with comprehensive maintenance solutions.',
+          service1Feature1: 'Process Engineering',
+          service1Feature2: 'Equipment Procurement',
+          service1Feature3: 'Construction Management',
+          service1Feature4: 'Preventive Maintenance',
+          service2Title: 'Fabrication & Manufacturing',
+          service2Desc: 'Advanced fabrication capabilities with precision manufacturing for complex industrial components.',
+          service2Feature1: 'Structural Fabrication',
+          service2Feature2: 'Pipeline Systems',
+          service2Feature3: 'Custom Components',
+          service3Title: 'Specialized Services',
+          service3Desc: 'Expert specialized services including inspection, testing, and advanced technical solutions.',
+          service3Feature1: 'Quality Control',
+          service3Feature2: 'Technical Consulting',
+          service3Feature3: 'Equipment Testing',
+          service4Title: 'Civil & Infrastructure',
+          service4Desc: 'Comprehensive civil engineering and infrastructure development services for industrial facilities.',
+          service4Feature1: 'Site Development',
+          service4Feature2: 'Foundation Works',
+          service4Feature3: 'Utility Systems',
+          service4Feature4: 'Roads & Access',
+          
+          // Other Companies Dropdown
+          company1Name: 'Al Bahr Al Arabi Group',
+          company2Name: 'Al Bahr Arabi Marine Engineering',
+          company3Name: 'Gulf Tech Energy Contracting LLC',
+          company4Name: 'Crystal Petroleum',
+          company5Name: 'Crystal Petrokimya Turkey',
+          company6Name: 'Crystal Care KSA',
+          
+          // Group Companies Section
+          groupCompaniesBadge: 'OUR NETWORK',
+          groupCompaniesTitle1: 'Our Group',
+          groupCompaniesTitle2: 'Companies',
+          groupCompaniesSubtitle: 'Part of a comprehensive network of specialized companies delivering integrated solutions.',
+          groupCompany1Name: 'Crystal Vision',
+          groupCompany1Subtitle: 'Technology Solutions',
+          groupCompany1Desc: 'Advanced automation, control systems, and digital transformation solutions for industrial facilities.',
+          groupCompany1Feature1: 'Industrial Automation',
+          groupCompany1Feature2: 'Control Systems',
+          groupCompany1Feature3: 'Digital Solutions',
+          groupCompany2Name: 'Crystal Green',
+          groupCompany2Subtitle: 'Environmental Solutions',
+          groupCompany2Desc: 'Sustainable environmental solutions, waste management, and renewable energy integration services.',
+          groupCompany2Feature1: 'Waste Management',
+          groupCompany2Feature2: 'Environmental Consulting',
+          groupCompany2Feature3: 'Renewable Energy',
+          groupCompany3Name: 'Crystal Logistics',
+          groupCompany3Subtitle: 'Supply Chain Solutions',
+          groupCompany3Desc: 'Comprehensive logistics, supply chain management, and procurement services for industrial projects.',
+          groupCompany3Feature1: 'Global Procurement',
+          groupCompany3Feature2: 'Logistics Management',
+          groupCompany3Feature3: 'Warehouse Solutions',
+          btnVisitWebsite: 'Visit Website'
+        },
+        ar: {
+          // Page Title
+          pageTitle: 'الصفحة الرئيسية | خدمات كريستال أويل فيلد',
+          // SEO
+          metaDescription: 'تقدم كريستال أويل فيلد حلول الهندسة والمشتريات والإنشاءات والتصنيع والصيانة المعتمدة من ISO في قطر ودول مجلس التعاون الخليجي مع تميز هندسي مثبت.',
+          // Navigation
+          navHome: 'الرئيسية',
+          navAbout: 'عننا',
+          navServices: 'الخدمات',
+          navServicesOilfield: 'كريستال أويل فيلد للمقاولات والتجارة',
+          navServicesVision: 'كريستال فيجن لتصنيع الفولاذ',
+          navPortfolio: 'المشاريع',
+          navMedia: 'الإعلام',
+          navCareer: 'التوظيف',
+          navContact: 'اتصل بنا',
+          navOtherCompanies: 'شركاتنا الأخرى',
+          btnRequestQuote: 'طلب عرض أسعار',
+          mobileMenu: 'القائمة',
+          languageLabel: 'اللغة',
+          
+          // Hero Section
+          heroBadge: 'التميز المعتمد من ISO',
+          heroTitle1: 'التميز الهندسي',
+          heroTitle2: 'في قطاع النفط والغاز',
+          heroTitle3: '&nbsp;',
+          heroDescription: 'تقديم حلول شاملة للهندسة والمشتريات والإنشاءات والتصنيع والصيانة في قطر ودول مجلس التعاون الخليجي مع أكثر من عقدين من الخبرة الصناعية المثبتة.',
+          btnExploreServices: 'استكشف خدماتنا',
+          stat1Label: 'سنوات من الخبرة',
+          stat2Label: 'مشروع منجز',
+          stat3Label: 'مهندس خبير',
+          
+          // About Section
+          aboutBadge: 'عن كريستال أويل فيلد',
+          aboutTitle1: 'رواد الحلول الصناعية',
+          aboutTitle2: 'المتكاملة',
+          aboutPara1: 'تقف كريستال أويل فيلد كمنارة للتميز الهندسي في قطاع النفط والغاز في الشرق الأوسط. مع أكثر من عقدين من الالتزام الثابت بالجودة والابتكار، أصبحنا المزود الأول للحلول الشاملة للهندسة والمشتريات والإنشاءات.',
+          aboutPara2: 'شركتنا التابعة CVSF مجهزة بأحدث المرافق في قطر وتعمل كحجر الأساس لتقديم حلول صناعية عالمية المستوى في جميع أنحاء منطقة دول مجلس التعاون الخليجي.',
+          aboutFeature1Title: 'السلامة أولاً',
+          aboutFeature1Text: 'سجل سلامة بدون حوادث مع بروتوكولات شاملة للصحة والسلامة والبيئة',
+          aboutFeature2Title: 'الابتكار',
+          aboutFeature2Text: 'حلول متطورة مع أحدث تقنيات التكامل التكنولوجي',
+          yearsBadge: 'سنة',
+          btnReadMoreAbout: 'اقرأ المزيد عنا',
+          
+          // Portfolio Section
+          portfolioBadge: 'محفظة أعمالنا',
+          portfolioTitle1: 'مشاريع بارزة و',
+          portfolioTitle2: 'قصص نجاح',
+          portfolioDescription: 'عرض خبرتنا من خلال تسليم المشاريع الناجحة في جميع أنحاء منطقة دول مجلس التعاون الخليجي.',
+          project1Title: 'مشروع مزرعة الخزانات - الصومال',
+          project1Description: 'التصنيع المسبق والتوريد والتركيب لمزرعة الخزانات لشركة محمود عثمان للتجارة العامة',
+          project1Value: 'مشروع بقيمة 15 مليون دولار',
+          project2Title: 'محطة آسيا بتروكيم',
+          project2Description: 'بناء محطة تخزين النفط في المنطقة الحرة بحمرية لشركة آسيا بتروكيم',
+          project2Value: 'مشروع بقيمة 7.5 مليون درهم',
+          project3Title: 'مشروع محطات ATS',
+          project3Description: 'تطوير محطة تخزين النفط لشركة ATS Terminals FZE في المنطقة الحرة بحمرية',
+          project3Value: 'مشروع بقيمة 5 ملايين درهم',
+          project4Title: 'محطة GREENOL للتخزين',
+          project4Description: 'منشأة شاملة لمحطة تخزين النفط لشركة GREENOL FZC في حمرية',
+          project4Value: 'مشروع بقيمة 18 مليون درهم',
+          project5Title: 'محطة AXCL Gulf',
+          project5Description: 'بناء محطة تخزين النفط المتقدمة لشركة AXCL Gulf FZC في المنطقة الحرة بحمرية',
+          project5Value: 'مشروع بقيمة 20 مليون درهم',
+          project6Title: 'مجمع التعدين اللانهائي',
+          project6Description: 'محطة تخزين النفط ومصنع التقطير لشركة Infinite Mining & Energy FZC',
+          project6Value: 'مشروع بقيمة 52.6 مليون درهم',
+          btnViewAllProjects: 'عرض جميع المشاريع',
+          
+          // Media Section
+          mediaBadge: 'مركز الإعلام',
+          mediaTitle1: 'أحدث الأخبار و',
+          mediaTitle2: 'التغطية الإعلامية',
+          mediaDescription: 'ابق على اطلاع بأحدث إنجازاتنا ورؤى الصناعة وتطورات الشركة من خلال تغطيتنا الإعلامية الشاملة.',
+          pressReleasesTitle: 'البيانات الصحفية',
+          press1Title: 'النتائج المالية للربع الأول 2024',
+          press1Date: '20 مارس',
+          press1Description: 'أداء ربع سنوي قياسي مع نمو في الإيرادات بنسبة 35٪...',
+          press2Title: 'شراكة جديدة مع شل',
+          press2Date: '18 مارس',
+          press2Description: 'تحالف استراتيجي لمشاريع الطاقة المتجددة في جميع أنحاء المنطقة...',
+          press3Title: 'جائزة التميز في السلامة',
+          press3Date: '15 مارس',
+          press3Description: 'التقدير لتحقيق أكثر من 1000 يوم بدون حوادث...',
+          btnViewAllPressReleases: 'عرض جميع البيانات الصحفية',
+          mediaGalleryTitle: 'معرض الوسائط',
+          btnViewFullGallery: 'عرض المعرض الكامل',
+          
+          // Company Overview / Brochure Section
+          companyOverviewBadge: 'نظرة عامة على الشركة',
+          brochureTitle1: 'تحميل',
+          brochureTitle2: 'كتيب الشركة',
+          brochureDescription: 'احصل على معلومات شاملة حول خدماتنا وقدراتنا ومشاريعنا الناجحة. املأ النموذج أدناه للحصول على كتيب الشركة التفصيلي.',
+          brochureCardTitle: 'كتيب الشركة',
+          brochureCardDescription: 'نظرة شاملة على خدماتنا وقدراتنا',
+          btnDownloadBrochure: 'تحميل الكتيب (PDF)',
+          pdfFormat: 'صيغة PDF',
+          fileSize: '2.5 ميجابايت',
+          pageCount: '24 صفحة',
+          
+          // Quality Assurance / Certifications Section
+          qualityAssuranceBadge: 'ضمان الجودة',
+          certificationTitle1: 'التميز المعتمد و',
+          certificationTitle2: 'معايير الصناعة',
+          certificationDescription: 'يتم التحقق من التزامنا بالجودة من خلال شهادات معترف بها دوليًا.',
+          cert1Title: 'ISO 9001',
+          cert1Description: 'نظام إدارة الجودة',
+          cert2Title: 'ISO 14001',
+          cert2Description: 'الإدارة البيئية',
+          cert3Title: 'ISO 45001',
+          cert3Description: 'الصحة والسلامة المهنية',
+          
+          // Footer Section
+          footerDescription: 'نقود صناعة النفط والغاز بحلول هندسية مبتكرة وخدمات هندسة ومشتريات وإنشاءات شاملة والتزام ثابت بالسلامة والجودة في جميع أنحاء منطقة دول مجلس التعاون الخليجي.',
+          footerContactTitle: 'معلومات الاتصال',
+          footerHeadOffice: 'المقر الرئيسي',
+          footerHeadOfficeAddress: 'مكتب رقم 3301،3302، برج التميز ص.ب: 80025 |الخليج الغربي،<br>الدوحة، قطر',
+          footerFabShop: 'ورشة التصنيع',
+          footerFabShopAddress: 'مبنى رقم 239، منطقة 81، شارع رقم 7، المنطقة الصناعية الجديدة <br>الدوحة، قطر',
+          footerPhone: 'الهاتف',
+          footerEmail: 'البريد الإلكتروني',
+          footerQuickLinks: 'روابط سريعة',
+          footerHome: 'الرئيسية',
+          footerAbout: 'عنا',
+          footerServices: 'الخدمات',
+          footerCrystalOilfield: 'كريستال أويل فيلد للمقاولات',
+          footerCrystalVision: 'كريستال فيجن لتصنيع الفولاذ',
+          footerPortfolio: 'المشاريع',
+          footerMedia: 'الإعلام',
+          footerCareer: 'الوظائف',
+          footerContact: 'اتصل بنا',
+          footerCopyright: '© 2025 كريستال أويل فيلد. جميع الحقوق محفوظة.',
+          
+          // Brochure Download Modal
+          modalTitle: 'تحميل الكتيب',
+          modalSubtitle: 'يرجى ملء النموذج للتحميل',
+          formNamePlaceholder: 'الاسم الكامل *',
+          formEmailPlaceholder: 'عنوان البريد الإلكتروني *',
+          formPhonePlaceholder: 'رقم الهاتف',
+          formCompanyPlaceholder: 'اسم الشركة',
+          formServiceOption0: 'الخدمة المرغوبة (اختياري)',
+          formServiceOption1: 'الهندسة والمشتريات والإنشاءات والصيانة',
+          formServiceOption2: 'التصنيع والتصنيع',
+          formServiceOption3: 'الخدمات المتخصصة',
+          formServiceOption4: 'البنية التحتية والمدنية',
+          formAgreeTerms: 'أوافق على تلقي الاتصالات من كريستال أويل فيلد وأفهم أن معلوماتي ستستخدم وفقًا لسياسة الخصوصية.',
+          btnSubmitDownload: 'إرسال وتحميل',
+          
+          // Services Section
+          servicesBadge: 'خدماتنا',
+          servicesTitle1: 'حلول صناعية',
+          servicesTitle2: 'شاملة',
+          servicesSubtitle: 'من المفهوم إلى الإنجاز، نقدم حلول هندسية شاملة تلبي أعلى معايير الصناعة.',
+          service1Title: 'الهندسة والمشتريات والإنشاءات والصيانة',
+          service1Desc: 'خدمات هندسية ومشتريات وإنشاءات كاملة مع حلول صيانة شاملة.',
+          service1Feature1: 'الهندسة العملية',
+          service1Feature2: 'شراء المعدات',
+          service1Feature3: 'إدارة البناء',
+          service1Feature4: 'الصيانة الوقائية',
+          service2Title: 'التصنيع والتشكيل',
+          service2Desc: 'قدرات تصنيع متقدمة مع تصنيع دقيق للمكونات الصناعية المعقدة.',
+          service2Feature1: 'التصنيع الإنشائي',
+          service2Feature2: 'أنظمة الأنابيب',
+          service2Feature3: 'المكونات المخصصة',
+          service3Title: 'الخدمات المتخصصة',
+          service3Desc: 'خدمات متخصصة خبيرة بما في ذلك التفتيش والاختبار والحلول التقنية المتقدمة.',
+          service3Feature1: 'مراقبة الجودة',
+          service3Feature2: 'الاستشارات الفنية',
+          service3Feature3: 'اختبار المعدات',
+          service4Title: 'الهندسة المدنية والبنية التحتية',
+          service4Desc: 'خدمات هندسة مدنية شاملة وتطوير البنية التحتية للمرافق الصناعية.',
+          service4Feature1: 'تطوير الموقع',
+          service4Feature2: 'أعمال الأساسات',
+          service4Feature3: 'أنظمة المرافق',
+          service4Feature4: 'الطرق والوصول',
+          
+          // Other Companies Dropdown
+          company1Name: 'مجموعة البحر العربي',
+          company2Name: 'البحر العربي للهندسة البحرية',
+          company3Name: 'شركة الخليج تك للطاقة والمقاولات',
+          company4Name: 'كريستال للبترول',
+          company5Name: 'كريستال بتروكيميا تركيا',
+          company6Name: 'كريستال كير السعودية',
+          
+          // Group Companies Section
+          groupCompaniesBadge: 'شبكتنا',
+          groupCompaniesTitle1: 'شركات',
+          groupCompaniesTitle2: 'مجموعتنا',
+          groupCompaniesSubtitle: 'جزء من شبكة شاملة من الشركات المتخصصة التي تقدم حلولاً متكاملة.',
+          groupCompany1Name: 'كريستال فيجن',
+          groupCompany1Subtitle: 'حلول التكنولوجيا',
+          groupCompany1Desc: 'حلول متقدمة للأتمتة وأنظمة التحكم والتحول الرقمي للمرافق الصناعية.',
+          groupCompany1Feature1: 'الأتمتة الصناعية',
+          groupCompany1Feature2: 'أنظمة التحكم',
+          groupCompany1Feature3: 'الحلول الرقمية',
+          groupCompany2Name: 'كريستال جرين',
+          groupCompany2Subtitle: 'الحلول البيئية',
+          groupCompany2Desc: 'حلول بيئية مستدامة وإدارة النفايات وخدمات دمج الطاقة المتجددة.',
+          groupCompany2Feature1: 'إدارة النفايات',
+          groupCompany2Feature2: 'الاستشارات البيئية',
+          groupCompany2Feature3: 'الطاقة المتجددة',
+          groupCompany3Name: 'كريستال لوجستكس',
+          groupCompany3Subtitle: 'حلول سلسلة التوريد',
+          groupCompany3Desc: 'خدمات شاملة للوجستيات وإدارة سلسلة التوريد والمشتريات للمشاريع الصناعية.',
+          groupCompany3Feature1: 'المشتريات العالمية',
+          groupCompany3Feature2: 'إدارة اللوجستيات',
+          groupCompany3Feature3: 'حلول المستودعات',
+          btnVisitWebsite: 'زيارة الموقع'
+        }
+      };
+
+      // Get current language from localStorage or default to English
+      let currentLanguage = localStorage.getItem('crystalOilfieldLang') || 'en';
+
+      // Get all language buttons
+      const langEnDesktop = document.getElementById('lang-en-desktop');
+      const langArDesktop = document.getElementById('lang-ar-desktop');
+      const langEnMobile = document.getElementById('lang-en-mobile');
+      const langArMobile = document.getElementById('lang-ar-mobile');
+
+      // Get all translatable elements
+      const translatableElements = document.querySelectorAll('[data-lang-key]');
+
+      // Function to set language
+      function setLanguage(lang) {
+        currentLanguage = lang;
+        localStorage.setItem('crystalOilfieldLang', lang);
+        
+        // Update page title
+        if (translations[lang] && translations[lang].pageTitle) {
+          document.title = translations[lang].pageTitle;
+        }
+        
+        // Force LTR direction for both languages
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.body.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute('lang', lang);
+        
+        // Update all translatable elements
+        translatableElements.forEach(el => {
+          const key = el.dataset.langKey;
+          if (translations[lang] && translations[lang][key]) {
+            // Handle special cases for input placeholders
+            if (el.tagName === 'INPUT' && el.type === 'email') {
+              el.placeholder = translations[lang][key];
+            } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+              el.placeholder = translations[lang][key];
+            } else {
+              el.innerHTML = translations[lang][key];
+            }
+          }
+        });
+
+        // Refresh SEO and JSON-LD when language changes
+        if (typeof updateSEO === 'function') {
+          updateSEO(lang);
+        }
+        if (typeof injectJSONLD === 'function') {
+          injectJSONLD(lang, 'WebPage');
+        }
+        
+        // Update button styles for desktop
+        if (lang === 'en') {
+          langEnDesktop.classList.add('bg-oil-blue', 'text-white');
+          langEnDesktop.classList.remove('text-oil-gray', 'hover:bg-white');
+          langArDesktop.classList.remove('bg-oil-blue', 'text-white');
+          langArDesktop.classList.add('text-oil-gray', 'hover:bg-white');
+          
+          langEnMobile.classList.add('bg-oil-blue', 'text-white');
+          langEnMobile.classList.remove('bg-gray-100', 'text-oil-gray');
+          langArMobile.classList.remove('bg-oil-blue', 'text-white');
+          langArMobile.classList.add('bg-gray-100', 'text-oil-gray');
+        } else {
+          langArDesktop.classList.add('bg-oil-blue', 'text-white');
+          langArDesktop.classList.remove('text-oil-gray', 'hover:bg-white');
+          langEnDesktop.classList.remove('bg-oil-blue', 'text-white');
+          langEnDesktop.classList.add('text-oil-gray', 'hover:bg-white');
+          
+          langArMobile.classList.add('bg-oil-blue', 'text-white');
+          langArMobile.classList.remove('bg-gray-100', 'text-oil-gray');
+          langEnMobile.classList.remove('bg-oil-blue', 'text-white');
+          langEnMobile.classList.add('bg-gray-100', 'text-oil-gray');
+        }
+      }
+
+      // Add click event listeners to language buttons
+      langEnDesktop.addEventListener('click', () => setLanguage('en'));
+      langArDesktop.addEventListener('click', () => setLanguage('ar'));
+      langEnMobile.addEventListener('click', () => setLanguage('en'));
+      langArMobile.addEventListener('click', () => setLanguage('ar'));
+
+      // Initialize language on page load
+      setLanguage(currentLanguage);
     </script>
     <script src="animations.js"></script>
     <script>
